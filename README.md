@@ -1,2 +1,2 @@
-# formelsammlung
+# Formelsammlung
 Formelsammlung für Ingenieure
