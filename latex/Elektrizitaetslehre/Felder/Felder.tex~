@@ -1,0 +1,379 @@
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 
+%==========================================================
+% Titel:    Elektrizitätslehre, Grundlagen
+% Autor:    Thomas Küng
+% Erstellt: 24.08.2002
+% Geändert:
+%==========================================================
+
+\section{Allgemein} \index{Strömungsfeld!Allgemein}
+
+\Hauptbox{
+  \Bildbox{\input Elektrizitaetslehre/Felder/Abbildungen/Allgemein.pstex_t}
+  \Formelbox{
+   \[J = \frac{\Delta I}{\Delta A}\]
+   \[I = \int{\vec{J}\,d\vec{A}} = \vec{J}\vec{A}\]
+ }}{
+  \Groessenbox{
+    $I$      & Strom                         & $[A]$ \\
+    $J$      & Stromdichte                   & $[\frac{A}{m^2}]$ \\
+    $A$      & Fläche                        & $[m^2]$ \\
+  }}
+
+\section{Spezielle Felder}
+\subsection{Räumliches Zentralfeld (Kugelanordnung)}
+
+
+\Hauptbox{
+  \Bildbox{\input Elektrizitaetslehre/Felder/Abbildungen/Zentralfeld.pstex_t}
+  \Formelbox{
+   \[J(r) = \frac{I}{A_{\mathrm{Kugel}}} = \frac{I}{4 \pi r^2}\]
+   \[I = J(r) 4 \pi r^2 -I = 0\]
+   \[J(r) = \kappa E(r) \qquad E(r) = \rho E(r)\]
+   \[E(r) =  \frac{I}{4 \pi \kappa r^2} \]
+   \[U_{12} = \frac{I}{4 \pi \kappa} \left(\frac{1}{r_1}-\frac{1}{r_2} \right) \]
+   {\footnotesize
+   \[V(r) = \int\limits_r^{R_2}\vec{E}(x)\, d\vec{x} = \frac{I}{4 \pi \kappa} \left(\frac{1}{r}-\frac{1}{R_2} \right)\]}
+   \[G = 4 \pi \kappa \frac{R_1 R_2}{R_2-R_1} \]
+ }}{
+  \Groessenbox{
+    $I$      & Strom                         & $[A]$ \\
+    $J$      & Stromdichte                   & $[\frac{A}{m^2}]$ \\
+    $E$      & el.\ Feldstärke               & $[\frac{V}{m}]$ \\
+    $U$      & Spannung                      & $[V]$ \\
+    $\rho$   & Spez.\ Widerstand             & {\small $[\frac{\Omega mm^2}{m}]$} \\
+    $\kappa$ & spez.\ Leitwert               & $[\frac{S}{m}]$ \\
+    $G$      & Leitwert                      & $[S]$ \\
+    $R,r$    & Radius                        & $[m]$ \\
+    $V$      & Potential                     & $[V]$ \\
+    $A$      & Fläche                        & $[m^2]$ \\
+  }}
+
+\subsection{Zylindrisches Zentralfeld}
+
+\Hauptbox{
+  \Bildbox{\input Elektrizitaetslehre/Felder/Abbildungen/Koaxial.pstex_t}
+  \Formelbox{
+   \[J(r) = \frac{I}{A_{\mathrm{Kugel}}} = \frac{I}{4 \pi r^2}\]
+   \[J(r) = \frac{I}{2 \pi r l}\]
+   \[J(r) = \kappa E(r) \qquad E(r) = \rho E(r)\]
+   \[E(r) =  \frac{I}{2 \pi \kappa r l} \]
+   \[U_{12} = \frac{I}{2 \pi \kappa l} \ln \frac{r_2}{r_1} \]
+   \[U = \frac{I}{2 \pi \kappa l} \ln \frac{R_2}{R_1} \]
+   \[V(r) = \frac{I}{2 \pi \kappa l} \ln \frac{R_2}{r} \]
+   \[G = \frac{2 \pi \kappa l}{\ln \frac{R_2}{R_1}} \]
+ }}{
+  \Groessenbox{
+    $I$      & Strom                         & $[A]$ \\
+    $J$      & Stromdichte                   & $[\frac{A}{m^2}]$ \\
+    $E$      & el.\ Feldstärke               & $[\frac{V}{m}]$ \\
+    $U$      & Spannung                      & $[V]$ \\
+    $V$      & Potential                     & $[V]$ \\
+    $\rho$   & Spez.\ Widerstand             & {\small $[\frac{\Omega mm^2}{m}]$} \\
+    $\kappa$ & spez.\ Leitwert               & $[\frac{S}{m}]$ \\
+    $G$      & Leitwert                      & $[S]$ \\
+    $R,r$    & Radius                        & $[m]$ \\
+    $A$      & Fläche                        & $[m^2]$ \\
+  }}
+
+\subsection{Leistung und räumliche Leistungsdichte} 
+
+\Hauptbox{
+  \Bildbox{\input Elektrizitaetslehre/Felder/Abbildungen/Leistungsdichte.pstex_t}
+  \Formelbox{
+    \[p(x,y,z) = \frac{\Delta P}{\Delta I}\]
+    {\small
+    \begin{eqnarray*}
+      p(x,y,z) &=& E(x,y,z)J(x,y,z)\\
+      &=& \kappa(x,y,z)E²(x,y,z)\\
+      &=& \rho(x,y,z)J²(x,y,z)\\
+    \end{eqnarray*}}
+    Gesammtleistung $P$ aus $p$:
+    \[P = \sum \Delta p = \sum \limits_n P_n \Delta V\]
+ }} {
+  \Groessenbox{
+    $I$      & Strom                         & $[A]$ \\
+    $J$      & Stromdichte                   & $[\frac{A}{m^2}]$ \\
+    $E$      & el.\ Feldstärke               & $[\frac{V}{m}]$ \\
+    $U$      & Spannung                      & $[V]$ \\
+    $\rho$ & Spez.\ Widerstand             & {\small $[\frac{\Omega mm^2}{m}]$} \\
+    $\kappa$ & spez.\ Leitwert               & $[\frac{S}{m}]$ \\
+    $G$      & Leitwert                      & $[S]$ \\
+    $R,r$    & Radius                        & $[m]$ \\
+    $A$      & Fläche                        & $[m^2]$ \\ 
+  }}
+
+\chapter{Elektrostatik}
+
+\section{Das Coulobsche Gesetz}
+
+\Hauptbox{
+  \Bildbox{\input Elektrizitaetslehre/Felder/Abbildungen/Coulomb.pstex_t}
+  \Formelbox{
+    \[F = \frac{Q_1 Q_2}{4 \pi \epsilon r^2}\]
+    $F > 0 \rightarrow$ Abstossung
+    \[\epsilon = \epsilon_0 \epsilon_r\] 
+    $\epsilon_0 = 8.854 \cdot 10^{-12} \frac{C}{Nm}$
+    \vspace{3 ex}
+ }} {
+  \Groessenbox{
+    $F$      & Kraft                         & $[N]$ \\
+    $Q$      & Ladung                        & $[C]$ \\
+    $r$      & Radius                        & $[m]$ \\
+    $\epsilon$ & Dielektrizität              & $[\frac{C}{Nm}]$ \\
+    $\epsilon_r$ & rel.\ Dielektrizität       \\
+    $\epsilon_0$ & Dielektrizitäts"-konstante  & $[\frac{C}{Nm}]$ \\
+  }}
+
+\section{Das elektrostatsiche Feld (Allgemein)}
+
+\Hauptbox{
+  \Bildbox{\input Elektrizitaetslehre/Felder/Abbildungen/E-Statik.pstex_t \\
+    \vfill
+    Bei mehreren Ladungen gilt das Superpositionsprinzip }
+  \Formelbox{
+    \[\vec{E} = \frac{\vec{F}}{q} = \frac{Q}{4 \pi \epsilon r^2}\vec{e}_r\]
+    \[V(r) = \frac{Q}{4 \pi \epsilon r}\]
+    \[U_{AB} = V_A - V_B = \int\limits_A^B \vec{E}\,d\vec{s}\]
+    \[\vec{D} = \epsilon \vec{E}\]
+    \[\psi_{el} = \int\limits_A \vec{D}\, d \vec{A}\]
+    \[\sigma = \frac{\Delta Q}{\Delta A}\]
+    \[Q = C U \]
+ }} {
+  \Groessenbox{
+    $F$      & Kraft                         & $[N]$ \\
+    $Q$      & Ladung                        & $[C]$ \\
+    $q$      & Probeladung                   & $[C]$ \\
+    $r$      & Radius                        & $[m]$ \\
+    $C$      & Kapazität                     & $[F]$ \\
+    $E$      & el.\ Feldstärke               & $[\frac{V}{m}]$ \\
+    $U$      & Spannung                      & $[V]$ \\
+    $V$      & Potential                     & $[V]$ \\
+    $\sigma$ & Oberfl.\ Ladungsdichte        & {\small $[\frac{\Omega mm^2}{m}]$} \\
+    $A$      & Fläche                        & $[m^2]$ \\ 
+    $\psi_{el}$ & el.\ Fluss                 & $[C]$ \\
+    $\epsilon$ & Dielektrizität              & $[\frac{C}{Nm}]$ \\
+    $\epsilon_r$ & rel.\ Dielektrizität       \\
+    $\epsilon_0$ & Dielektrizitäts"-konstante  & $[\frac{C}{Nm}]$ \\
+  }}
+
+\section{Spezielle Felder}
+
+\subsection{Räumliches Zentralfeld (Kugelanordnung)}
+
+
+\Hauptbox{
+  \Bildbox{\input Elektrizitaetslehre/Felder/Abbildungen/Zentralfeld.pstex_t \\}
+  \Formelbox{
+    \[\sigma =  \frac{Q}{4 \pi R^2} = const\]
+    für $R_1 < r < R_2$ gilt:
+    \[E(r) = \frac{Q}{4 \pi \epsilon r^2} = \frac{1}{\epsilon} D(r)\]
+    \[D(r) = \frac{Q}{4 \pi r^2} = \frac{Q R^2}{4 \pi r^2} = \frac{\sigma R^2}{r^2}\]
+    \[V(r) = \frac{Q}{4 \pi \epsilon}\left(\frac{1}{r}-\frac{1}{R_2}\right)\]
+    Hülle bei $r$:
+    \[\psi_{el} = D(r) 4 \pi r^2 = Q\]
+    Kugelkondensator:
+    \[U = \frac{Q}{4 \pi \epsilon}\left(\frac{1}{R_1}-\frac{1}{R_2}\right)\]
+    \[C = \frac{Q}{U} = \frac{\psi_{el}}{U} = 4 \pi \epsilon \frac{R_1 R_2}{R_2 - R_1}\]
+ }} {
+  \Groessenbox{
+    $Q$      & Ladung                        & $[C]$ \\
+    $R, r$   & Radius                        & $[m]$ \\
+    $C$      & Kapazität                     & $[F]$ \\
+    $E$      & el.\ Feldstärke               & $[\frac{V}{m}]$ \\
+    $U$      & Spannung                      & $[V]$ \\
+    $V$      & Potential                     & $[V]$ \\
+    $\sigma$ & Oberfl.\ Ladungsdichte        & {\small $[\frac{\Omega mm^2}{m}]$} \\
+    $A$      & Fläche                        & $[m^2]$ \\ 
+    $\psi_{el}$ & el.\ Fluss                 & $[C]$ \\
+    $\epsilon$ & Dielektrizität              & $[\frac{C}{Nm}]$ \\
+    $\epsilon_r$ & rel.\ Dielektrizität       \\
+    $\epsilon_0$ & Dielektrizitäts"-konstante  & $[\frac{C}{Nm}]$ \\
+  }}
+
+\vfill
+
+\subsection{Zylindrisches Zentralfeld}
+
+
+\Hauptbox{
+  \Bildbox{\input Elektrizitaetslehre/Felder/Abbildungen/Koaxial.pstex_t}
+  \Formelbox{
+    \[\sigma =  \frac{Q}{2 \pi R_1 l} = const\]
+    für $R_1 < r < R_2$ gilt:
+    \[E(r) = \frac{Q}{2 \pi \epsilon r l} = \frac{1}{\epsilon} D(r)\]
+    \[D(r) = \frac{Q}{2 \pi r l} = \frac{\sigma R}{r}\]
+    \[V(r) = \frac{Q}{2 \pi \epsilon l}\ln \frac{R_2}{r}\]
+    Hülle bei $r$:
+    \[\psi_{el} = D(r) 2 \pi r l = Q\]
+    Kondensator:
+    \[U = \frac{Q}{2 \pi \epsilon l}\ln \frac{R_1}{R_2}\]
+    \[C = \frac{Q}{U} = \frac{\psi_{el}}{U} = \frac{2 \pi \epsilon l}{\ln \frac{R_1}{R_1}}\]
+ }} {
+  \Groessenbox{
+    $Q$      & Ladung                        & $[C]$ \\
+    $R, r$   & Radius                        & $[m]$ \\
+    $C$      & Kapazität                     & $[F]$ \\
+    $E$      & el.\ Feldstärke               & $[\frac{V}{m}]$ \\
+    $U$      & Spannung                      & $[V]$ \\
+    $V$      & Potential                     & $[V]$ \\
+    $\sigma$ & Oberfl.\ Ladungsdichte        & {\small $[\frac{\Omega mm^2}{m}]$} \\
+    $A$      & Fläche                        & $[m^2]$ \\ 
+    $\psi_{el}$ & el.\ Fluss                 & $[C]$ \\
+    $\epsilon$ & Dielektrizität              & $[\frac{C}{Nm}]$ \\
+    $\epsilon_r$ & rel.\ Dielektrizität       \\
+    $\epsilon_0$ & Dielektrizitäts"-konstante  & $[\frac{C}{Nm}]$ \\
+  }}
+
+\subsection{Homogenes Feld (Plattenkondesator)}
+
+
+\Hauptbox{
+  \Bildbox{\input Elektrizitaetslehre/Felder/Abbildungen/Plattenkond.pstex_t}
+  \Formelbox{
+    \[\sigma = D = \frac{Q}{A}\]
+    \[E = \frac{\sigma}{\epsilon} = \frac{Q}{A \epsilon}\]
+    Kondensator:
+    \[U = \frac{\sigma}{\epsilon} d = \frac{Q}{A \epsilon} d\]
+    \[C = \frac{Q}{U} = \frac{\epsilon A}{d}\]
+    \vspace{8 ex}
+ }} {
+  \Groessenbox{
+    $Q$      & Ladung                        & $[C]$ \\
+    $d$      & Abstand                       & $[m]$ \\
+    $C$      & Kapazität                     & $[F]$ \\
+    $E$      & el.\ Feldstärke               & $[\frac{V}{m}]$ \\
+    $U$      & Spannung                      & $[V]$ \\
+    $V$      & Potential                     & $[V]$ \\
+    $\sigma$ & Oberfl.\ Ladungsdichte        & {\small $[\frac{\Omega mm^2}{m}]$} \\
+    $A$      & Fläche                        & $[m^2]$ \\ 
+    $\psi_{el}$ & el.\ Fluss                 & $[C]$ \\
+    $\epsilon$ & Dielektrizität              & $[\frac{C}{Nm}]$ \\
+    $\epsilon_r$ & rel.\ Dielektrizität       \\
+    $\epsilon_0$ & Dielektrizitäts"-konstante  & $[\frac{C}{Nm}]$ \\
+  }}
+
+\subsection{Paralleldrahtleitung}
+
+
+\Hauptbox{
+  \Bildbox{\input Elektrizitaetslehre/Felder/Abbildungen/Parallel.pstex_t}
+  \Formelbox{
+    Es gilt das Superpositionsprinzip:
+    \[E_{tot} = E_{Leiter_1} + E_{Leiter_2}\]
+    Kondensator:
+    \[C = \frac{Q}{U} = \frac{\pi \epsilon l}{\ln \frac{a - R}{R}}\]
+    \[C' = \frac{Q}{U} = \frac{\pi \epsilon }{\ln \frac{a - R}{R}}\]
+    \vspace{9 ex}
+ }} {
+  \Groessenbox{
+    $Q$      & Ladung                        & $[C]$ \\
+    $d$      & Abstand                       & $[m]$ \\
+    $C$      & Kapazität                     & $[F]$ \\
+    $E$      & el.\ Feldstärke               & $[\frac{V}{m}]$ \\
+    $U$      & Spannung                      & $[V]$ \\
+    $V$      & Potential                     & $[V]$ \\
+    $\sigma$ & Oberfl.\ Ladungsdichte        & {\small $[\frac{\Omega mm^2}{m}]$} \\
+    $A$      & Fläche                        & $[m^2]$ \\ 
+    $\psi_{el}$ & el.\ Fluss                 & $[C]$ \\
+    $\epsilon$ & Dielektrizität              & $[\frac{C}{Nm}]$ \\
+    $\epsilon_r$ & rel.\ Dielektrizität       \\
+    $\epsilon_0$ & Dielektrizitäts"-konstante  & $[\frac{C}{Nm}]$ \\
+  }}
+
+
+\section{Energie im elektrischen Feld}
+
+
+\Hauptbox{
+  \Bildbox{\boxdump{}}
+  \Formelbox{
+    \[W = \frac{C U^2}{2}\]
+    \[w = \frac{W}{V}\]
+    Allgemein:
+    \[w(x,y,z) = \frac{d\ W(x,y,z)}{d\ V} \]
+ }} {
+  \Groessenbox{
+    $W$      & Energie                       & $[J]$ \\
+    $w$      & Energiedichte                 & $[J/m^3]$ \\
+    $U$      & Spannung                      & $[V]$ \\
+    $C$      & Kapazität                     & $[F]$ \\
+    $V$      & Volumen                       & $[m^3]$ \\
+  }}
+
+\section{Kräfte im elektrischen Feld}
+
+\subsection{Allgemein}
+
+\[\Delta W = F \,\Delta x \quad \Leftrightarrow \quad F = \frac{\Delta W}{\,\Delta x} \quad \Leftrightarrow \quad F(x) = \frac{\,dW(x)}{\,dx}\]
+
+\subsubsection{ Prinzip der virtuellen Verschiebung}
+ Man denkt sich den Leiter, auf den die Kraft berchnet werden soll, um $\,\Delta x$ in diejenige Richtung verschoben, in welche die Kraft berechnet werden soll: $\rightarrow$ Energiedifferenz $\,\Delta W$
+
+
+\subsection{Verschiebung}
+
+\Hauptbox{
+  \Bildbox{\input Elektrizitaetslehre/Felder/Abbildungen/Kraftplatten.pstex_t}
+
+  \Formelbox{
+    Mit eingeschalteter Quelle:
+    \[W(x) = \frac{C U^2}{2} = \frac{\epsilon A U^2}{2 d} = \frac{\epsilon a x U^2}{2 d} \]
+    \[F(x) = \frac{\,dW(x)}{\,dx} = \frac{\epsilon a U^2}{2 d} \]
+    Mit ausgeschalteter Quelle:
+    \[W(x) = \frac{\epsilon A U^2}{2 d} = \frac{\epsilon a x^2_0 U^2}{2 x d} \]
+    \[F(x) = \frac{\,dW(x)}{\,dx} = \frac{\epsilon a x^2_0 U^2}{2 x^2 d} \]
+    \vspace{5ex}
+ }} {
+  \Groessenbox{
+    $Q$      & Ladung                        & $[C]$ \\
+    $d$      & Abstand                       & $[m]$ \\
+    $x$      & Überlappung                   & $[m]$ \\
+    $C$      & Kapazität                     & $[F]$ \\
+    $E$      & el.\ Feldstärke               & $[\frac{V}{m}]$ \\
+    $U$      & Spannung                      & $[V]$ \\
+    $V$      & Potential                     & $[V]$ \\
+    $\sigma$ & Oberfl.\ Ladungsdichte        & {\small $[\frac{\Omega mm^2}{m}]$} \\
+    $A$      & Fläche                        & $[m^2]$ \\ 
+    $\psi_{el}$ & el.\ Fluss                 & $[C]$ \\
+    $\epsilon$ & Dielektrizität              & $[\frac{C}{Nm}]$ \\
+    $\epsilon_r$ & rel.\ Dielektrizität       \\
+    $\epsilon_0$ & Dielektrizitäts"-konstante  & $[\frac{C}{Nm}]$ \\
+  }}
+
+\subsection{Anziehung}
+
+\Hauptbox{
+  \Bildbox{\input Elektrizitaetslehre/Felder/Abbildungen/KraftAnziehung.pstex_t}
+  \Formelbox{
+    \[W(x) = \frac{C U^2}{2} = \frac{\epsilon A U^2}{2 x} \]
+    \[F(x) = \frac{\,dW(x)}{\,dx} = \frac{\epsilon A U^2}{2 x^2} \]
+
+
+    \vspace{26ex}
+ }} {
+  \Groessenbox{
+    $Q$      & Ladung                        & $[C]$ \\
+    $x$      & Abstand                       & $[m]$ \\
+    $C$      & Kapazität                     & $[F]$ \\
+    $E$      & el.\ Feldstärke               & $[\frac{V}{m}]$ \\
+    $U$      & Spannung                      & $[V]$ \\
+    $V$      & Potential                     & $[V]$ \\
+    $\sigma$ & Oberfl.\ Ladungsdichte        & {\small $[\frac{\Omega mm^2}{m}]$} \\
+    $A$      & Fläche                        & $[m^2]$ \\ 
+    $\psi_{el}$ & el.\ Fluss                 & $[C]$ \\
+    $\epsilon$ & Dielektrizität              & $[\frac{C}{Nm}]$ \\
+    $\epsilon_r$ & rel.\ Dielektrizität       \\
+    $\epsilon_0$ & Dielektrizitäts"-konstante  & $[\frac{C}{Nm}]$ \\
+  }}
+
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 

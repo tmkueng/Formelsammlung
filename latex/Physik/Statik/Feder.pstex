@@ -1,0 +1,145 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: Feder.pstex
+%%Creator: fig2dev Version 3.2 Patchlevel 3c
+%%CreationDate: Fri Dec 28 15:27:34 2001
+%%For: adrian@adis-pinguin (Adrian Freihofer)
+%%BoundingBox: 0 0 60 59
+%%Magnification: 1.0000
+%%EndComments
+/$F2psDict 200 dict def
+$F2psDict begin
+$F2psDict /mtrx matrix put
+/col-1 {0 setgray} bind def
+/col0 {0.000 0.000 0.000 srgb} bind def
+/col1 {0.000 0.000 1.000 srgb} bind def
+/col2 {0.000 1.000 0.000 srgb} bind def
+/col3 {0.000 1.000 1.000 srgb} bind def
+/col4 {1.000 0.000 0.000 srgb} bind def
+/col5 {1.000 0.000 1.000 srgb} bind def
+/col6 {1.000 1.000 0.000 srgb} bind def
+/col7 {1.000 1.000 1.000 srgb} bind def
+/col8 {0.000 0.000 0.560 srgb} bind def
+/col9 {0.000 0.000 0.690 srgb} bind def
+/col10 {0.000 0.000 0.820 srgb} bind def
+/col11 {0.530 0.810 1.000 srgb} bind def
+/col12 {0.000 0.560 0.000 srgb} bind def
+/col13 {0.000 0.690 0.000 srgb} bind def
+/col14 {0.000 0.820 0.000 srgb} bind def
+/col15 {0.000 0.560 0.560 srgb} bind def
+/col16 {0.000 0.690 0.690 srgb} bind def
+/col17 {0.000 0.820 0.820 srgb} bind def
+/col18 {0.560 0.000 0.000 srgb} bind def
+/col19 {0.690 0.000 0.000 srgb} bind def
+/col20 {0.820 0.000 0.000 srgb} bind def
+/col21 {0.560 0.000 0.560 srgb} bind def
+/col22 {0.690 0.000 0.690 srgb} bind def
+/col23 {0.820 0.000 0.820 srgb} bind def
+/col24 {0.500 0.190 0.000 srgb} bind def
+/col25 {0.630 0.250 0.000 srgb} bind def
+/col26 {0.750 0.380 0.000 srgb} bind def
+/col27 {1.000 0.500 0.500 srgb} bind def
+/col28 {1.000 0.630 0.630 srgb} bind def
+/col29 {1.000 0.750 0.750 srgb} bind def
+/col30 {1.000 0.880 0.880 srgb} bind def
+/col31 {1.000 0.840 0.000 srgb} bind def
+
+end
+save
+newpath 0 59 moveto 0 0 lineto 60 0 lineto 60 59 lineto closepath clip newpath
+-4.0 61.0 translate
+1 -1 scale
+
+/cp {closepath} bind def
+/ef {eofill} bind def
+/gr {grestore} bind def
+/gs {gsave} bind def
+/sa {save} bind def
+/rs {restore} bind def
+/l {lineto} bind def
+/m {moveto} bind def
+/rm {rmoveto} bind def
+/n {newpath} bind def
+/s {stroke} bind def
+/sh {show} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/slw {setlinewidth} bind def
+/srgb {setrgbcolor} bind def
+/rot {rotate} bind def
+/sc {scale} bind def
+/sd {setdash} bind def
+/ff {findfont} bind def
+/sf {setfont} bind def
+/scf {scalefont} bind def
+/sw {stringwidth} bind def
+/tr {translate} bind def
+/tnt {dup dup currentrgbcolor
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add srgb}
+  bind def
+/shd {dup dup currentrgbcolor 4 -2 roll mul 4 -2 roll mul
+  4 -2 roll mul srgb} bind def
+/$F2psBegin {$F2psDict begin /$F2psEnteredState save def} def
+/$F2psEnd {$F2psEnteredState restore end} def
+
+$F2psBegin
+%%Page: 1 1
+10 setmiterlimit
+ 0.06299 0.06299 sc
+%
+% Fig objects follow
+%
+% Polyline
+7.500 slw
+n 270 225 m 450 270 l 90 315 l 450 360 l 90 405 l 450 450 l
+ 90 495 l
+ 270 540 l gs col0 s gr 
+% Polyline
+n 270 90 m
+ 270 225 l gs col0 s gr 
+% Polyline
+n 270 540 m
+ 270 675 l gs col0 s gr 
+% Polyline
+gs  clippath
+832 30 m 787 30 l 787 134 l 810 59 l 832 134 l cp
+eoclip
+n 810 225 m
+ 810 45 l gs col0 s gr gr
+
+% arrowhead
+n 832 134 m 810 59 l 787 134 l 832 134 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+n 810 225 m 990 270 l 630 360 l 990 450 l 630 540 l 990 630 l
+ 630 720 l
+ 810 765 l gs col0 s gr 
+% Polyline
+gs  clippath
+787 960 m 832 960 l 832 856 l 810 931 l 787 856 l cp
+eoclip
+n 810 765 m
+ 810 945 l gs col0 s gr gr
+
+% arrowhead
+n 787 856 m 810 931 l 832 856 l 787 856 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+n 270 540 m
+ 405 540 l gs col0 s gr 
+% Polyline
+n 810 765 m
+ 315 765 l gs col0 s gr 
+% Polyline
+gs  clippath
+345 780 m 375 780 l 375 689 l 360 749 l 345 689 l cp
+375 525 m 345 525 l 345 616 l 360 556 l 375 616 l cp
+eoclip
+n 360 540 m
+ 360 765 l gs col0 s gr gr
+
+% arrowhead
+n 375 616 m 360 556 l 345 616 l 375 616 l  cp gs 0.00 setgray ef gr  col0 s
+% arrowhead
+n 345 689 m 360 749 l 375 689 l 345 689 l  cp gs 0.00 setgray ef gr  col0 s
+$F2psEnd
+rs

@@ -1,0 +1,299 @@
+%==========================================================
+% Titel:    Formelsammlung-HSR
+% Autor:    Adrian Freihofer
+% Erstellt: 7.11.2001
+% Geändert:
+%==========================================================
+
+\chapter{Diode}
+
+\section{Ideale Diode}
+
+\index{ideale Diode}
+\index{Diode!ideale}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+  \input{Elektronik/Diode/idealeDiode.pstex_t}
+  }
+  \Formelbox{
+    \footnotesize Sperrbereich (SB) : \normalsize \[ i_D = 0 \mbox{, } u_D < 0 \] 
+    \footnotesize Durchlassbereich (DB): \normalsize \[ i_D \ge 0 \mbox{, } u_D = 0 \]
+    }
+  }
+  {\Groessenbox{
+     $ u_D$          & Spannungs über Diode        & $ [V] $                 \\
+     $ i_D$          & Strom durch Diode            & $ [A] $                \\
+}}
+
+\section{Konstantspannungsmodel}
+
+\index{Diode!Konstantspannungsmodell}
+
+\label{kmod}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+  \input{Elektronik/Diode/konstModell.pstex_t}
+  }
+  \Formelbox{
+           \[u_{F SI Diode} = 0.6 \]
+           \[u_{F Germanium Diode} = 0.3 \]
+           \[u_{F Shottky Diode} = 0.1 \]
+           \[u_{F LED rot} = 1.6 \]
+      }
+  }
+  {\Groessenbox{
+     $ u_F$          & Forwärts-Spannungs        & $ [V] $                 \\
+}}
+
+
+\section{Arbeitspunktberechnung}
+
+\index{Diode!Arbeitspunktberechnung}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+  \input{Elektronik/Diode/arbeitspunkt.pstex_t}
+  }
+  \Formelbox{
+         \footnotesize Teilweise ist es nur durch ausprobieren möglich zu sagen, ob die Diode leitet oder sperrt. \normalsize
+      }
+  }
+  {\Groessenbox{
+    $ i_D$          & Strom durch Diode            & $ [A] $                \\  
+}}
+\vfill
+
+
+\section{Kennlinie}
+
+\index{Diode!Kennlinie}
+\index{Diode!Durchlassbereich}
+\index{Diode!Sperrbereich}
+\index{Diode!übergangsbereich}
+\index{Diode!Durchbruchbereich}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+    \scriptsize Kennlinie allgemein: \normalsize
+    \input{Elektronik/Diode/kennlinie2.pstex_t}
+    \scriptsize 
+    \begin{tabular}{ll}
+      I & Durchlassbereich \\
+      II & Übergangsbereich\\
+      III & Sperrbereich\\
+      IV & Durchbruchbereich\\
+      & \\
+    \end{tabular}
+    Kennlinie Ge- und Si-Diode: \normalsize
+    \input{Elektronik/Diode/kennlinie}
+  }
+  \Formelbox{
+        \[ i_D = I_S ( e^\frac{u_D}{U_T} - 1 ) \]
+        \[ i_D = I_S ( e^\frac{u_D-r_b i_D}{m U_T} -1 ) \]
+        \[ U_T = \frac{k T}{e} = 8.6 \cdot 10^{-5} \cdot T\]
+        \scriptsize $U_T(300K) = 26mV $ , $U_T(348K) = 30mV$ , $U_T(393K) = 34mV$ \normalsize
+        \scriptsize \\ Für normale Si-Diode gilt: \\
+        $I_S = 10^{-12} A $ , $ r_b = 0.1 \Omega $ , $m = 1$ \normalsize
+        \scriptsize \\ \\ Die vier Bereiche der Kennlinie: 
+        \begin{tabbing}
+          I:  \quad\= $ -0.1V < u_D < 0.1V $ \\
+              \> \vspace{0.5cm} $\Rightarrow $ Diodengleichung exakt verwenden \\
+          II: \> $u_D > 0.1V $ \\
+              \> \vspace{0.5cm} $\Rightarrow $ Diodengleichung wird: $ i_D = | I_S| e^{\frac{u_D}{U_T}}$\\
+              \> Verhältnis zweier Spannungen: \\
+              \> \vspace{0.5cm} $ \frac{I_{D2}}{I_{D1}} = e^{\frac{U_{D2}-U_{D1}}{U_T}} \rightarrow U_{D2}- U_{D1} = U_T \ln \frac{I_{D2}}{I_{D1}} $ \\
+          III:\> $ u_D < - 0.1 V $ \\
+          \> $ i_D = -I_S $ oder $ i_D = | I_S |$ \\
+          IV: \> Siehe Zehner-Diode 
+        \end{tabbing}
+        \normalsize
+      }
+  }
+  {\Groessenbox{
+    $ i_D$          & Strom durch Diode            & $ [A] $                \\
+    $ u_D$          & Spannung über Diode          & $ [V] $                \\
+    $ U_T$          & Temperatur"-spannung         & $ [V] $                \\ 
+    $ T $           & Temperatur                   & $ [K] $                \\  
+    $ I_S $         & Sätti"-gungs"-strom          & $ [A] $ \\
+    $ I_R $         & Sperr"-strom                 & $ [A] $ \\ 
+    $ r_b $         & Bahnwider"-stand             & $ [\Omega]$ \\
+    $ m $           & Korrekturfakt.              & $ [1] $ \\
+    $ k$            & Bolzmann"-konst. $=1.38 \cdot 10^{-23} $          & $ [\frac{Ws}{K}] $ \\
+    $ e$            & Elemen"-tar"-la"-dung $ = 1.602 \cdot 10^{-19}$           & $ [As] $   \\
+}}
+
+\subsection{Differentieller Widerstand}
+
+\label{rdiff}
+
+\index{Diode!Differentieller Widerstand}
+
+\Hauptbox{                                                                    
+  \Bildbox{ 
+    \input{Elektronik/Diode/tangente.pstex_t}
+    \footnotesize Für kleine Signale wird die Kennlinie der Diode durch eine Tangente $(= r_d)$  approximiert. \normalsize
+  }
+  \Formelbox{
+         \[ r_d = \frac{d u_D}{d i_D} = \frac{1}{g_d} \approx \frac{U_T}{I_{D0}} \]
+         \footnotesize Falls $ m=1 $ und $ r_b = 0 $ gilt: \normalsize
+         \[ g_d = \frac{d i_D}{d u_D} = I_S e^{\frac{u_D}{U_T}} \frac{1}{U_T} = \frac{i_D}{U_T} \]
+         \vspace{3.1cm}
+      }
+  }
+  {\Groessenbox{
+    $ r_d$          & Differentieller Widerstand   & $ [\Omega] $ \\
+    $ d_d$          & Differentieller Leitwert     & $ [S] $ \\
+    $ i_D$          & Strom durch Diode            & $ [A] $                \\  
+    $ u_D$          & Spannung über Diode          & $ [V] $                \\ 
+    $ U_T$          & Temperatur"-spannung         & $ [V] $                \\   
+    $ m $           & Korrekturfakt.              & $ [1] $ \\
+    $ I_{D0} $      & DC-Strom im Arbeitspunkt     & $ [A] $ \\
+}}
+\vfill
+
+\section{DC- und AC-Analyse von Diodenschaltungen}
+
+\index{Diode!DC-Analyse}
+\index{Diode!AC-Analyse}
+
+\subsection{Vorgehen}
+\begin{enumerate}
+\item Schaltung aufteilen in AC- und DC-Ersatzschltbild
+\item In DC-Ersatzschaltung den Arbeitspunkt bestimmen (Konstantspannungsmodell)
+\item Berechnen der dynamischen Widerstände im Arbeitspunkt (approximieren der Diodenkennlinie)
+\item Kleinsignalanalyse (Lineare Netzwerktheorie)
+\item Gesamtlösung setzt sich aus Arbeitspunkt und Wechselstromlösung zusammen
+\end{enumerate}
+
+
+\subsection{Kleinsignalanalyse}
+
+\index{Diode!Kleinsignalanalyse}
+
+\Hauptbox{                                                                    
+  \Bildbox{ 
+    \input{Elektronik/Diode/kleinsignal.pstex_t}
+    \footnotesize Arbeitspunktbestimmung \normalsize
+  }
+  \Formelbox{
+    \footnotesize 
+    DC-Ersatzschaltung: Konstantspannungsmodell (siehe S. \pageref{kmod}) \\
+    AC-Ersatzschaltung: Differentieller Widerstand (siehe S. \pageref{rdiff}) \\
+    \\Resultierendes Gleichungssystem:
+    \normalsize
+    \[ \left| \begin{array}{l} i_D = \frac{U_{Q0}-u_D}{R_V} \\ i_D = I_S e^{}\frac{u_D}{U_T} \end{array} \right| \]
+    \begin{tabular}{lll}
+      $i_D = 0$                        & $u_D <= U_E $ & \\ 
+      $i_D = \frac{1}{r_D (u_D -U_E)}$ & $u_D => U_E$ & \\
+    \end{tabular}
+    \[ U_E = U_{D0} -I_{D0} rd \]
+    \vspace{0.2cm}
+    }
+  }
+  {\Groessenbox{
+    $ U_F$          & Flussspan.                  & $ [V] $ \\
+    $ R_V$          & Vorwiderstand                  & $ [\Omega] $ \\
+    $ U_{Q0}$       & Quellspan.                     & $ [V] $ \\  
+    $ I_{D0}$       & Arbeitsstrom                   & $ [A] $ \\ 
+    $ U_{D0}$       & Arbeitspan.                    & $ [V] $ \\ 
+    $ U_T$          & Temperatur"-spannung           & $ [V] $ \\   
+    $ u_D $         & Spannung über Diode            & $ [V] $ \\
+    $ i_D $         & Strom durch Diode              & $ [A] $ \\
+    $ I_S $         & Sättigungs"-strom              & $ [A] $ \\
+    $ U_E $         & Gleichspan.                    & $ [V] $ \\
+}}
+
+
+\subsection{Grosssignalanalyse}
+
+\index{Diode!Grosssignalanalyse}
+
+\Hauptbox{                                                                    
+  \Bildbox{ 
+    \input{Elektronik/Diode/grosssignal.pstex_t}
+    \footnotesize Für Grosssignalanalyse wird die Kennlinie durch eine Gerade durch die Punkte $ 0.1 i_{Dmax} $ und $ 0.9 i_{Dmax} $ approximiert. \normalsize
+  }
+  \Formelbox{
+    \[ U_E = u_D(0.1 I_{Dmax}) - 0.1 I_{Dmax} r_F  \]
+    \[ r_F = \frac{\Delta u_D}{0.8 I_{Dmax}} \] 
+    }  
+  }
+  {\Groessenbox{
+    $ u_D$          & Spannung über Diode          & $ [V] $       \\  
+    $ i_D$          & Strom durch Diode            & $ [A] $       \\ 
+    $ r_F$          & Diodenwider"-stand             & $ [\Omega] $  \\   
+}}
+\vfill
+
+\section{Z-Dioden}
+
+\index{Diode!Z-Diode}
+\index{Z-Diode}
+\index{Diode!Temperaturkoeffizient}
+
+\Hauptbox{                                                                    
+  \Bildbox{ 
+    \input{Elektronik/Diode/zdiode.pstex_t}
+  }
+  \Formelbox{        
+         \[ r_Z = \frac{d u_Z}{d i_Z} \]
+         \footnotesize Teperaturkoeffizient: \normalsize
+         \[ \alpha = \frac{\frac{dU_Z}{dT}}{U_Z} \] 
+         \footnotesize
+         $ \alpha < 0 $ bei $ U_Z < 5.6V $ \\
+         $ \alpha \approx 0 $ bei $ U_Z \approx 5.6V $ \\
+         $ \alpha > 0 $ bei $ U_Z > 5.6V $ \\ 
+         \normalsize
+         \footnotesize
+         Temperaturkompensation durch Serieschaltung: $ \alpha_1 U_{Z1} = - \alpha_2 U_{Z2} $
+         \normalsize
+      }
+  }
+  {\Groessenbox{
+    $ r_Z$          & Z-Widerstand                 & $ [\Omega] $ \\
+    $ r_d$          & Differentieller Widerstand   & $ [\Omega] $ \\
+    $ U_Z$          & Zehnersp.                    & $ [V] $ \\
+    $ U_F$          & Flusssp.                  & $ [V] $                \\  
+    $ T $           & Temperatur                   & $ [K] $ \\
+}}
+
+
+\subsection{Z-Dioden zur Spannungsstabilisierung}
+
+\index{Diode!Spannungsstabilisierung}
+\index{Spannungsstabilisierung}
+
+\Hauptbox{                                                                    
+  \Bildbox{ 
+    \input{Elektronik/Diode/spannungsstab.pstex_t}
+  }
+  \Formelbox{        
+         \[ I_{totmin} = \frac{U_{Smin}-U_{outmin}}{R} \]
+         \[ I_{totmax} = \frac{U_{Smax}-U_{outmin}}{R} \]
+         \[ I_{outmin} = I_{totmin} - I_{Lmax} \] 
+         \[ I_{outmax} = I_{totmax} - I_{Lmin} \]
+         \[ P_{Zmax} = U_{outnom} I_{outmax} \]
+         \footnotesize Rippelunterdrückung: \normalsize 
+         \[ u_{out} = u_S \frac{r_Z \| R_L}{R + (r_Z \| R_L)} \]
+      }
+  }
+  {\Groessenbox{
+    $ I_{tot} $     & I-Eingang                  & $ [A] $ \\
+    $ U_S $         & Speisesp.                  & $ [V] $ \\
+    $ I_L$          & Laststrom                  & $ [A] $ \\
+    $ U_{out}$      & Ausgangssp.                & $ [V] $ \\  
+    $ R $           & Vorwiderstand              & $ [\Omega] $ \\
+    $ R_L $         & Lastwiderstand             & $ [\Omega] $ \\
+    $ P_Z$          & P-Verslust                 & $ [W] $ \\
+    $ r_Z$          & Differentieller Widerstand & $ [\Omega] $ \\ 
+    $ u_S$          & Rippel am Eingang          & $ [V] $\\
+    $ u_{out} $     & Rippel am Ausgang          & $ [V] $ \\
+}}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 

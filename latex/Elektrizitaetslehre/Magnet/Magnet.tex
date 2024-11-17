@@ -1,0 +1,850 @@
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 
+%==========================================================
+% Titel:    Elektrizitätslehre, Magnetismus
+% Autor:    Thomas Küng
+% Erstellt: 7.11.2001
+% Geändert:
+%==========================================================
+
+\section{Feldstärke} \index{Magnetismus!Feldstärke}
+
+
+\Hauptbox{
+ \Bildbox{
+\input Elektrizitaetslehre/Magnet/Abbildungen/Feldstaerke.pstex_t  \\ \\ \\
+\begin{footnotesize}siehe spezielle Anordnungen ab S. \pageref{spezAnord}.\end{footnotesize}}
+ \Formelbox{Biot-Savart \index{Biot-Savart}
+   \[\vec{H} = \frac{Q}{4 \pi r^3}(\vec{v} \times \vec{r})\]
+   \[H = \frac{Q v }{4 \pi r^2} \sin{\alpha}\]
+Leiterbezogen
+  \[d\vec{H} = \frac{I}{4\pi r^3}(d\vec{s}\times \vec{r})\]
+  \[dH = \frac{I\,ds}{4\pi r^2} \sin{\alpha}\]
+  \[H = \int{d\vec{H}}= \int{\frac{I}{4\pi r^2} \sin{\alpha}\,ds}\]
+  }}{
+ \Groessenbox{
+  $H$      & Feldstärke                    & $[\frac{A}{m}]$ \\
+  $I$      & Strom                         & $[A]$ \\
+  $ds$     & infinit"-desimal"-klei"-nes Leiterstück & $[m]$ \\
+  $r$      & Radius                        & $[m]$ \\
+  $v$      & Geschwin"-dig"-keit           & $[\frac{m}{s}]$ $[m]$\\
+  $\alpha$ & Winkel                        & $[rad]$ \\
+ }}
+
+\section{Permeabilität} \index{Magnetismus!Permeabilität} \index{Permeabilität}
+
+\Hauptbox{
+  \Bildbox{\boxdump{}
+    }
+  \Formelbox{
+    \[ \mu = \mu_0 \mu_r \]
+    \vfill
+    \vspace{2ex}
+    {\scriptsize    
+    \[ \mu_0 = \frac{4 \pi}{10}\cdot 10^{-6} \frac{Vs}{Am} = 1.257 \cdot 10^{-6}\frac{H}{m} \]
+    }
+    }}{
+  \Groessenbox{
+    $\mu$      & Permeabi"-li"-tät             & $[\frac{H}{m}]$\\
+    $\mu_r$    & Permeabi"-li"-tätszahl        & $ [ 1] $\\
+    $\mu_0$    & Permeabi"-li"-tät des Vakuums & $[\frac{H}{m}]$\\
+    }}
+\vfill
+
+\section{Magnetische Flussdichte} \index{Magnetismus!Flussdichte}
+
+\Hauptbox{
+  \Bildbox{\begin{footnotesize}siehe spezielle Anordnungen ab S. \pageref{spezAnord}.\end{footnotesize}
+    }
+  \Formelbox{
+    \[ \vec{B} = \mu \vec{H} \]
+    \vspace{7ex}
+    }}{
+  \Groessenbox{
+    $H$        & Feldstärke             & $[\frac{A}{m}]$ \\
+    $\mu$      & Permeabi"-li"-tät      & $[\frac{H}{m}]$\\
+    $B$        & Flussdichte, Induktion & $[T]$, $[\frac{Vs}{m^2}]$\\
+    }}
+
+
+\section{Kräfte im Magnetischen Feld} \index{Magnetismus!Kräfte} \index{Kräfte im Magnetfeld}
+
+\subsection{Kräfte auf Ladungen}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/F_para_Ladung.pstex_t 
+    \scriptsize $\vec v$, $ \vec H$, $ \vec F$ bilden ein Rechtssystem \normalsize
+    }
+  \Formelbox{ Für parallele Bahnen
+    \[ F_A = \frac{\mu_0 Q_1 Q_2 v_1 v_2 }{4 \pi r^2 } \]
+    Allgemein
+    \[ F = Q_2 \vec{v_2} \times \left( \frac{\mu}{4 \pi} \frac{Q_1 \vec{v_1} \times \frac{\vec{r}}{r}}{r^2} \right) \]
+    }\\ \hline
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/F_H-Feld.pstex_t
+    }
+  \Formelbox{
+    \[ F = Q (\vec{v} \times \vec{B}) \]
+    \[ F = Q (\vec{v} \times \mu \vec{H}) \]
+    \[ F = Q v \mu H \sin{\alpha} \]
+    }} {
+  \Groessenbox{
+    $H$ & Feldstärke & $[\frac{A}{m}]$ \\
+    $F$        & Kraft auf La"-dung $Q_1$ & $[N]$\\
+    $Q_{1,2}$  & Lanung                   & $[C]$\\
+    $v_{1,2}$  & Geschwin"-dig"-keit      & $[\frac{m}{s}]$ $[m]$\\
+    $r$        & Radius                   & $[m]$\\
+    $\mu$      & Permeabi"-li"-tät        & $[\frac{H}{m}]$\\ 
+    $B$        & Flussdichte, Induktion   & $[T]$, $[\frac{Vs}{m^2}]$\\
+    }}
+\vfill
+
+\subsection{Kraft auf Leiter im $B$-Feld}
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Kraft_Leiter.pstex_t
+    }  
+  \Formelbox{
+    \[d \vec{F} = \frac{dQ}{dt}(\vec{ds} \times \vec{B}) = I(d \vec{s} \times \vec{B}) \]
+    \[ dF = I B ds \sin{\alpha}\]
+    für geraden Leiter:
+    \[ F = I B l \sin{\alpha}\]
+    \vspace{2cm}
+    }} {
+  \Groessenbox{
+    $B$        & Flussdichte, Induktion             & $[T]$, $[\frac{Vs}{m^2}]$\\
+    $F$        & Kraft auf Leiter        & $[N]$\\
+    $Q$        & Lanung                  & $[C]$\\
+    $I$        & Strom                   & $[A]$\\
+    $\alpha$   & Winkel                  & $[rad]$ \\
+    $ds$       & infinit"-desimal"-klei"-nes Leiterstück & $[m]$ \\
+    $l$        & Länge                   &$[m]$\\
+}}
+
+\subsection{Kräfte auf paralle Leiter}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/F_para_Leiter.pstex_t 
+    }
+  \Formelbox{
+    \[ F = \frac{\mu l I_1 I_2}{2 \pi a} \]
+    $\vec{I_1} \uparrow \downarrow \vec{I_2}  \Rightarrow$ Abstossung \\
+    $\vec{I_1} \uparrow \uparrow \vec{I_2} \Rightarrow$  Anziehung\\
+    \\
+    \\
+    }} {
+  \Groessenbox{
+    $F_A$       & Kraft zwisch"-en den Lei"-tern & $[N]$\\
+    $L_{1,2}$   & Leiter                 & $[C]$\\
+    $I_{1,2}$   & Strom                  & $[A]$\\
+    $a$         & Abstand                & $[m]$\\
+    $\mu$       & Permeabi"-li"-tät      & $[\frac{H}{m}]$\\
+    }}
+
+\subsection{Kräfte auf Randflächen eines Feldes}
+\Hauptbox{
+  \Bildbox{
+	\begin{footnotesize}Energie $W$ siehe S. \pageref{feldEnergie}\end{footnotesize} \\ \\ \\ \\ \\ \\ \\
+        \input{Elektrizitaetslehre/Magnet/Abbildungen/randKraft.pstex_t}
+	\begin{footnotesize}Rotation: \\ \end{footnotesize}
+        \input{Elektrizitaetslehre/Magnet/Abbildungen/mrot.pstex_t}
+    }
+  \Formelbox{
+    \[ F = \frac{dW(s)}{ds}\]
+    Prinzip der virtuellen Verschiebung:
+    Fläche um $ds$ verschoben \\ ($s$-Richtung $=$ Kraftrichtung)
+    \[ F=\frac{1}{2}B H A \]
+    \begin{footnotesize}Bei Drehbewegung:\end{footnotesize}
+    \[ M_{rot} = \frac{dW(\alpha)}{d\alpha} \]
+    }} {
+  \Groessenbox{
+    $F$         & Kraft                         & $[N]$ \\
+    $s$         & Weg                           & $[m]$ \\
+    $W$         & Energie                       & $[J]$\\ 
+    $B$         & Flussdichte, Induktion        & $[T]$, $[\frac{Vs}{m^2}]$\\
+    $H$         & Feldstärke                    & $[\frac{A}{m}]$ \\
+    $A$         & Fläche                        & $[m^2]$ \\
+    $M_{rot}$   & Drehmoment                    & $[Nm] $ \\
+    $\alpha $   & Winkel                        & $[rad] $\\
+    }}
+\vfill
+
+
+\section{Durchflutung} \index{Magnetismus!Durchflutung} \index{Durchflutung}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Durchflutung.pstex_t 
+    }
+  \Formelbox{
+    \[ \Theta = \oint\limits_S{\vec{H}\,ds} = I \]
+    \[ \Theta = \sum_{k=1}^n{ I_k } + \int \limits_{A_s} \!\!\!\!\int{ \vec{J}\,\vec dA} \] 
+    } \\ \hline
+  \Bildbox{
+    {\normalfont \bfseries Nicht geschlossenser Weg $A \rightarrow B$}
+    }
+  \Formelbox{
+    \[ U_{mg AB} = \int\limits_A^B{ \vec{H}\,d\vec{s}} \]
+    z.B Luftspalt: $ U_{mg AB} = H l $
+    } \\ \hline
+  \Bildbox{
+    {\normalfont \bfseries Feld um Leiter}
+    }
+  \Formelbox{
+    \[ \Theta = \oint\limits_S {\vec{H}\,ds} = I \]
+    } \\ \hline
+  \Bildbox{
+    {\normalfont \bfseries Spule}
+    }
+  \Formelbox{
+    \[ \Theta = N I \]
+    }} {
+  \Groessenbox{
+    $\Theta$       & Durchflutung                & $[A]$\\
+    $J$            & Stromdichte                 & $[\frac{A}{m^2}]$\\
+    $I$            & Strom                       & $[A]$\\
+    $s$            & Geschlos"-sene Kurve        & $[m]$\\
+    $H$            & Feldstärke                  & $[\frac{A}{m}]$\\
+    $U_{mg}$       & Magnetische Spannung        & $[A]$\\
+    $l $           & Länge                       & $[m]$\\ 
+    }}
+
+\section{Magnetischer Fluss} \index{Magnetismus!Fluss}
+
+
+\Hauptbox{
+  \Bildbox{\begin{footnotesize}siehe spezielle Anordnungen ab S. \pageref{spezAnord}.\end{footnotesize}
+    }
+  \Formelbox{
+    \[ \Phi = \int \!\!\!\! \int \limits_A{ \vec{B}\,dA} \]
+    \[ \Phi = \Lambda \Theta  = \frac{\Theta}{R_m} \]
+    Homogenes Feld: 
+    \[ \Phi = B A \]
+    \vspace{1ex}
+    }}{
+  \Groessenbox{
+    $\Phi$     & Magnetischer Fluss            & $[Vs]$, $[Wb]$ \\
+    $A$        & Fläche                        & $[m^2]$\\
+    $B$        & Flussdichte, Induktion        & $[T]$, $[\frac{Vs}{m^2}]$\\
+    $\Theta$   & Durchflutung                  & $[A]$\\
+    $\Lambda$  & Magnetischer Leitwert         & $[\frac{Vs}{A}]$, $[\Omega s]$\\
+    }}
+\vfill
+
+
+\section{Ohmsches Gesetz des magnetischen Kreises} 
+
+\index{Magnetismus!Ohmsches Gesetz} 
+\index{Magnetismus!Widerstand}  
+\index{Magn. Widerstand}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/mg_Kreis.pstex_t 
+    }
+  \Formelbox{
+    \[ R_m = \frac{\Theta}{\Phi} \]
+    \[ \Lambda = \frac{1}{R_m} \]
+    für homogenes Feld:
+    \[ R_{m_n} = \frac{l_n}{\mu_n A_n}\]
+	\vspace{0.4cm}
+    }}{
+  \Groessenbox{
+    $R_m$      & Magnetischer Widerstand       & $[\frac{A}{Vs}]$\\
+    $\Phi$     & Magnetischer Fluss            & $[Vs]$, $[Wb]$ \\
+    $\Theta$   & Durchflutung                  & $[A]$\\
+    $\Lambda$  & Magnetischer Leitwert         & $[\frac{Vs}{A}]$, $[\Omega s]$\\
+    $l$        & Länge                         & $[m]$\\
+    $A$        & Querschnitt                   & $[m^2]$\\
+    $\mu$      & Permeabilität                 & $[\frac{H}{m}]$ \\
+    }}
+
+
+\section{Spulenfluss} 
+
+\index{Spulenfluss|see{Magnetismus}} 
+\index{Magnetismus!Spulenfluss} 
+
+\Hauptbox{
+  \Bildbox{\flushleft Flüsse durch alle Einzelwindungsflächen aufsummiert (ver"-ketteter Fluss)
+    }
+  \Formelbox{
+    \[ \Psi = N \Phi = \Lambda N^2 I \]
+    \[ \Psi = L I \]
+    \vspace{15ex}
+    }}{
+  \Groessenbox{
+    $\Psi$     & Spulenfluss                   & $[Vs]$\\
+    $\Phi$     & Magnetischer Fluss Einzelw.   & $[Vs]$, $[Wb]$ \\
+    $L$        & Induktivität                  & $[\frac{Vs}{A}]$\\
+    $N$        & Windungszahl                  & $[1]$\\
+    $I$        & Strom                         & $[A]$\\
+    $\Lambda$  & Magnetischer Leitwert         & $[\frac{Vs}{A}]$, $[\Omega s]$\\
+    }}
+
+
+\section{Induktivität} 
+
+\index{Magnetismus!Induktivität} 
+\index{Induktivität}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Induktivitaet.pstex_t 
+    }
+  \Formelbox{
+    \[ L = \frac{N \Phi}{I} = \frac{\Psi}{I} \]
+    \[ L = N^2 \Lambda = \frac{N^2}{R_m} \]
+    \[ L = \frac{2 W}{I^2}\]
+    \vspace{11.2ex}
+    }}{
+  \Groessenbox{
+    $W$        & Energie des Feldes            & $[Ws]$, $[J]$\\
+    $L$        & Induktivität                  & $[H]$\\
+    $\Phi$     & Magnetischer Fluss Einzelw.   & $[Vs]$, $[Wb]$ \\
+    $N$        & Windungszahl                  & $[1] $\\
+    $I$        & Strom                         & $[A]$\\
+    $\Lambda$  & Magnetischer Leitwert         & $[\frac{Vs}{A}]$, $[\Omega s]$\\
+    $R_m$      & Magnetischer Widerstand       & $[\frac{A}{Vs}]$\\
+    $\Psi$     & Spulenfluss                   & $[Wb] $\\
+    }}
+\vfill
+
+
+\section{Gegeninduktivität und induktive Kopplung}
+
+\index{Gegeninduktivität} 
+\index{Magnetismus!Gegeninduktivität}
+\index{induktive Kopplung} 
+\index{Magnetismus!induktive Kopplung}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Gegenkopplung.pstex_t
+    \scriptsize 1. Index: Wirkungsort \\ 2. Index: Ursachort \normalsize
+    }
+  \Formelbox{
+    \[M_{21} = \frac{\Psi_{21}}{I_1} = \frac{N_2 \Phi_{21}}{I_1}\]
+    \[M_{12} = \frac{\Psi_{12}}{I_2} = \frac{N_1 \Phi_{12}}{I_2}\]
+    \[M = \sqrt{L_1 L_2} \mbox{\hspace*{1em} \small ohne Streufluss}\]
+    \[M = k \sqrt{L_1 L_2} \mbox{\hspace*{1em} \small mit Streufluss}\]
+    \[k_{12} = \frac{\Phi_{12}}{\Phi_{22}} \qquad k_{21} = \frac{\Phi_{21}}{\Phi_{11}}\]
+    \[\sigma = 1 - \frac{M^2}{L_1 L_2} = 1 -k^2\]
+    }}{
+  \Groessenbox{
+    $\Psi$     & Spulenfluss                   & $[Vs]$\\
+    $\Phi$     & Magnetischer Fluss durch Windung           & $[Vs]$, $[Wb]$ \\
+    $\Phi$     & Magnetischer Streuluss        & $[Vs]$, $[Wb]$ \\
+    $L$        & Induktivität                  & $[\frac{Vs}{A}]$\\
+    $N$        & Windungszahl                  & $[1]$\\
+    $I$        & Strom                         & $[A]$\\
+    $k$        & Kopplungsfak.                 & $[1]$ \\
+    $\sigma$   & Streukoef.                    & $ [1]$\\
+    $M$        & Gegen"-induktivität           & $[\frac{Vs}{A}]$\\
+    }}
+
+
+\section{Brechung magnetischer Feldlinien} 
+
+\index{Magnetismus!Brechung}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Brechung.pstex_t
+    }
+  \Formelbox{
+   \[ B_{n1} = B_{n2} \]
+   \[ \frac{H_{n1}}{H_{n2}} = \frac{\mu_{r2}}{\mu_{r1}} \]
+   \[ H_{t1} = H_{t2} \]
+   \[ \frac{B_{t1}}{B_{t2}} = \frac{\mu_{r1}}{\mu_{r2}} \]
+   \[ \frac{\tan{ \alpha_1}}{\tan{ \alpha_2}} = \frac{\mu_{r1}}{\mu_{r2}} \] 
+    }}{
+  \Groessenbox{
+    $H$        & Feldstärke                    & $[\frac{A}{m}]$ \\
+    $B$        & Flussdichte, Induktion        & $[T]$, $[\frac{Vs}{m^2}]$\\
+    $\alpha$   & Winkel                        & $[rad]$ \\
+    $\mu$      & Permeabi"-li"-tät             & $[\frac{H}{m}]$\\
+ }}
+
+\vfill
+
+\section{Räumliche Energiedichte} 
+
+\index{Magetismus!Energiedichte}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump{}
+    }
+  \Formelbox{
+   
+   Inhomogenes Feld:
+   \[ W_{mg_{(x,y,z)}} = \frac{1}{2}B_{(x,y,z)} H_{(x,y,z)} \]
+   Homogenes Feld:
+   \[ W_{mg_{(x,y,z)}} = \frac{\mu}{2}H_{(x,y,z)}^2 \] 
+    }}{
+  \Groessenbox{
+    $W$        & Energiedichte                 & $[\frac{Ws}{m^3}]$ $[\frac{J}{m^3}]$\\
+    $H$        & Feldstärke                    & $[\frac{A}{m}]$ \\
+    $B$        & Flussdichte, Induktion        & $[T]$, $[\frac{Vs}{m^2}]$\\ [2pt]
+    $\mu$      & Permeabi"-li"-tät             & $[\frac{H}{m}]$\\
+ }}
+
+
+\section{Energie im magnetischen Feld} 
+\label{feldEnergie}
+\index{Magnetismus!Energie}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Energie.pstex_t  
+    }
+  \Formelbox{
+    für $t \geq T$:    
+   \[ W = \frac{U^2 T^2}{2 L} \]  
+   \[ W = \frac{\Psi^2}{2 L} \]
+   \[ W = \frac{L I^2}{2} \]
+   \[ W = \frac{I \Psi}{2} \]
+   \[ W = \frac{\Phi^2 R_m}{2} \]
+   \[ W = \frac{\Theta^2 \Lambda}{2} \]
+    }}{
+  \Groessenbox{
+    $W$        & Enegie                        & $[Ws]$ \\
+    $\mu$      & Permeabi"-li"-tät             & $[\frac{H}{m}]$\\
+    $\Psi$     & Spulenfluss                   & $[Vs]$\\
+    $\Phi$     & Magnetischer Fluss            & $[Vs]$, $[Wb]$ \\
+    $L$        & Induktivität                  & $[\frac{Vs}{A}]$\\
+    $I$        & Strom                         & $[A]$\\
+    $R_m$      & Magnetischer Widerstand       & $[\frac{A}{Vs}]$\\
+    $U$        & Spannung                      & $[V]$\\
+    $t$        & Zeit                          & $[s]$\\
+    $T$        & Zeitpunkt                     & $[s]$\\
+    $\Theta$   & Durchflutung                  & $[A]$\\
+    $\Lambda$  & Magnetischer Leitwert         & $[\frac{Vs}{A}]$, $[\Omega s]$\\
+ }}
+
+\vfill
+
+\section{Induktionsgesetz} 
+
+\index{Induktionsgesetz}  
+\index{Magnetismus!Induktionsgesetz}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Induktion.pstex_t  
+    }
+  \Formelbox{
+    \[u_i = \frac{d\Psi}{dt}\]
+    \[ \oint \vec{E}\,d\vec{s} = -\frac{d\Phi}{dt} = -u_i\]
+    $\vec{E}$ bildet mit $d\vec{B}$ eine Linksschraube
+    \vspace{16ex}
+    }}{
+  \Groessenbox{
+    $\Psi$     & Spulenfluss                   & $[Vs]$\\
+    $t$        & Zeit                          & $[s]$\\
+    $E$        & Elekrto"-statisches Feld      & $[\frac{V}{m}]$\\
+    $u_i$      & Induktions"-spannung          & $[V]$\\
+    $\Phi$     & Magnetischer Fluss            & $[Vs]$, $[Wb]$ \\
+    $ds$ & infinit"-desimal"-klei"-nes Leiterstück & $[m]$ \\
+    $B$        & Flussdichte, Induktion        & $[T]$, $[\frac{Vs}{m^2}]$\\
+ }}
+
+\section{Selbstinduktion}  
+
+\index{Selbstinduktion}  
+\index{Magnetismus!Selbstinduktion}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Selbstinduktion.pstex_t 
+    $di$ während $dt$
+    }
+  \Formelbox{
+    Für Schleife:
+    \[u_i = \frac{d\Phi}{dt} = L \frac{di}{dt}\]
+    Für Spule:
+    \[u_i = \frac{d\Psi}{dt} = L \frac{di}{dt}\]
+    \vspace{12ex}
+    }}{
+  \Groessenbox{
+    $\Psi$     & Spulenfluss                   & $[Vs]$\\
+    $t$        & Zeit                          & $[s]$\\
+    $E$        & Elekrto"-statisches Feld      & $[\frac{V}{m}]$\\
+    $u_i$      & Induktions"-spannung          & $[V]$\\
+    $\Phi$     & Magnetischer Fluss            & $[Vs]$, $[Wb]$ \\
+    $L$        & Induktivität                  & $[\frac{Vs}{A}]$\\
+    $i$        & Strom                         & $[A]$\\
+    $B$        & Flussdichte, Induktion        & $[T]$, $[\frac{Vs}{m^2}]$\\
+ }}
+
+\vfill
+
+\section{Serie- und Parallelschaltung von Induktivitäten}  
+
+\index{Induktivitäten! Parallelschaltung} 
+\index{Induktivitäten!Serieschaltung}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump
+    }
+  \Formelbox{
+    Serieschaltung
+    \[ L_{Ers.} = L_1 + L_2 + \dots +L_n\]
+    Parallelschaltung
+    \[ L_{Ers.} = \frac{1}{\frac{1}{L_1}+\frac{1}{L_2}+\dots+\frac{1}{L_n}}\]
+       }} {
+     \Groessenbox{
+    $L$        & Induktivität                  & $[\frac{Vs}{A}]$\\
+    }} 
+
+\section{Trafogleichungen} 
+
+\index{Trafogleichungen}  
+\index{Magnetismus!Trafogleichungen}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Trafo.pstex_t    \\  \\ 
+    \input Elektrizitaetslehre/Magnet/Abbildungen/wickelsinn.pstex_t    
+    }
+  \Formelbox{
+    \[ u_1 = u_{11} + u_{12} = L_1\frac{di_1}{dt} - M\frac{di_2}{dt}\]
+    \[ u_2 = u_{21} + u_{22} = M\frac{di_1}{dt} - L_2\frac{di_2}{dt}\]
+    \[ u_1 = j \omega L_1 \underline{i}_1 - j \omega M \underline{i}_2 \]
+    \[ u_2 = j \omega M \underline{i}_1 - j \omega L_2  \underline{i}_2 \]
+    }} {
+     \Groessenbox{
+    $u$        & Induktions"-spannung          & $[V]$\\
+    $i$        & Strom                         & $[A]$\\
+    $L$        & Induktivität                  & $[\frac{Vs}{A}]$\\
+    $t$        & Zeit                          & $[s]$\\
+    $M$        & Gegen"-induktivität           & $[\frac{Vs}{A}]$\\
+    $\omega$   & Kreisfrequenz                 & $[\frac{1}{s}]$\\
+    $ R $      & (Kupfer-) Widerstand          & $[\Omega] $ \\
+    }} 
+\vfill
+
+\section{Nichtlinearität} 
+
+\index{Nichtlinerarität}  
+\index{Magnetismus!Nichtlinerarität}
+
+\subsection{$B(H)$-Kurve in $\Phi(\Theta)$-Kurve umrechnen}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Nichtlin.pstex_t     
+    }
+  \Formelbox{
+    Leerlauf
+    \[B_k(0) = B_c = \frac{\mu_0 A_L \Theta_0}{l_L A_{Fe}}\]
+    Kurzschluss
+    \[H_0 = \frac{\Theta_0}{l_{Fe}}\]
+    \begin{footnotesize}Umrechung:\end{footnotesize}
+    \[ \Phi_{Fe} = A_{Fe} B_{Fe} \]
+    \[ \Theta _{Fe} = l_{Fe} H_{Fe} \]
+    \[ B_L = \frac{A_{Fe}}{A_L} B_{Fe} \]
+       }} {
+     \Groessenbox{
+    $B$        & Flussdichte, Induktion        & $[T]$, $[\frac{Vs}{m^2}]$\\
+    $H$        & Feldstärke                    & $[\frac{A}{m}]$ \\
+    $\mu$      & Permeabi"-li"-tät             & $[\frac{H}{m}]$\\
+    $\Theta$   & Durchflutung                  & $[A]$\\
+    $l$        & Länge                         & $[m]$\\
+    $A$        & Querschnitt                   & $[m^2]$\\
+    $\Phi$     & Magnetischer Fluss            & $[Vs]$, $[Wb]$ \\
+    }}
+
+
+
+\subsection{Luftspaltkennwert $\alpha$ }
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump     
+    }
+  \Formelbox{
+    \[\alpha = \frac{A_L\, l_{Fe}}{A_{Fe} \, l_L}\]
+    \[\frac{1}{\mu_{reff}}= \frac{1}{\mu_{rFe}} + \frac{1}{\alpha}\]
+    \[\mu_{reff} = \frac{\mu_{rFe} \, \alpha}{\mu_{rFe} + \alpha}\]
+       }} {
+     \Groessenbox{
+    $\alpha$   & Luftspalt"-kenn"-grösse           & $[1]$ \\
+    $\mu$      & Permeabi"-li"-tät             & $[\frac{H}{m}]$\\
+    $l$        & Länge                         & $[m]$\\
+    $A$        & Querschnitt                   & $[m^2]$\\
+    }}
+\vfill
+
+\section{Spezielle Anordnungen}
+\label{spezAnord}
+\subsection{Langer gerader Leiter $l \gg d$} \index{Magnetismus!Feldstärke!Langer gerader Leiter}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/gerader_Leiter.pstex_t  
+    }
+  \Formelbox{  
+      Bezugspunkt ausserhalb des Leiters im Abstand $r$
+      \[ H = \frac{I}{2 \pi r} \]
+      \[ \vec H = \frac{I}{2 \pi |\vec r|^2} (\vec e_1 \times \vec r ) \]
+      }}{
+    \Groessenbox{
+      $H$                 & Feldstärke         & $[\frac{A}{m}]$ \\
+      $r  $               & Abstand vom Leiter & $[m]$ \\
+      $I$                 & Strom              & $[A]$ \\
+      }}
+
+
+\subsection{Kurzer, gerader Leiter} 
+
+\index{Magnetismus!Feldstärke!Kurzer, gerader Leiter}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/kurzer_Leiter.pstex_t
+    \vspace{1.5ex}
+    }
+  \Formelbox{
+    \[ H = \frac{I}{4 \pi r} \int\limits^{\alpha_1}_{\alpha_2}{\cos{\varphi}\,d\varphi}\]
+    \[ H = \frac{I}{4 \pi r} (\sin{\alpha_1} -\sin{\alpha_2}) \]
+      }}{
+    \Groessenbox{
+      $H$                 & Feldstärke         & $[\frac{A}{m}]$ \\
+      $r$                 & Abstand vom Leiter & $[m]$ \\
+      $I$                 & Strom              & $[A]$ \\
+      $\alpha$            & Winkel             & $[rad]$ \\
+      }}
+\vfill
+
+
+\subsection{Kreisförmige Drahtschleife} 
+
+\index{Induktivität!Drahtschleife}
+\index{Magnetismus!Feldstärke!Kreisförmiger Leiter}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Kreisleiter.pstex_t
+   
+    \vspace{6ex}
+
+ \input Elektrizitaetslehre/Magnet/Abbildungen/Schleife.pstex_t
+    $D \gg d$
+    }
+  \Formelbox{  
+   Bezugspunkt: $M$
+   Teilkreis:
+   \[ H = \frac{I}{4 \pi r} \int\limits^{\alpha}_0{d \varphi}\]
+   Vollkreis:
+   \[H = \frac{I}{2r}\]
+   Feld auf der Achse:
+   \[ H = \frac{ |I| r^2}{2 ( x^2 + r^2 ) ^\frac{3}{2}} \]
+   \[ \Phi = \frac{\mu D}{2} \ln \frac{D}{d} \Theta \]
+   \[ \Lambda = \mu \frac{D}{2} \ln \frac{D}{d}\]
+   \[ R_m =  \frac{2}{\mu D \ln \frac {D}{d}}\]
+   \[ L = \mu \frac{D}{2} \ln \frac {D}{d} \]
+   }}{
+    \Groessenbox{
+      $H$                 & Feldstärke                    & $[\frac{A}{m}]$ \\
+      $M$                 & Mittelpunkt                   & \\
+      $I$                 & Strom                         & $[A]$ \\
+      $r$                 & Radius                        & $[m]$\\
+      $\mu$               & Permeabi"-li"-tät             & $[\frac{H}{m}]$\\
+      $d$                 & Draht Durchmesser             & $[m]$\\
+      $D$                 & Schleifen Durchmesser         & $[m]$ \\
+      $\Lambda$           & Magnetischer Leitwert         & $[\frac{Vs}{A}]$, $[\Omega s]$\\
+      $R_m$               & Magnetischer Widerstand       & $[\frac{A}{Vs}]$\\
+      $L$                 & Induktivität                  & $[\frac{Vs}{A}]$\\
+      $\Phi$              & Magnetischer Fluss            & $[Vs]$, $[Wb]$ \\
+      $\Theta$            & Durchflutung                  & $[A]$\\
+      $x$                 & senkrechter Abstand zu M      & $[m]$\\
+      }}
+
+\subsection{Voller Leiter} \index{Magnetismus!Feldstärke!Voller Leiter}
+
+\Hauptbox{
+  \Bildbox{ 
+    \input Elektrizitaetslehre/Magnet/Abbildungen/voller_Leiter.pstex_t 
+    }
+  \Formelbox{
+    \[ H = \frac{I x}{2 \pi r^2}\]
+    gilt nur für $x \leq r$
+      }}{
+    \Groessenbox{
+      $H$                 & Feldstärke                    & $[\frac{A}{m}]$ \\
+      $r$                 & Abstand von der Leiter"-achse & $[m]$ \\
+      $I$                 & Strom                         & $[A]$ \\
+      $x$                 & Abstand von der Achse         & $[m]$ \\
+      }}
+\vfill
+
+
+\subsection{Koaxialkabel} \index{Magnetismus!Feldstärke!Koaxialkabel}
+
+\Hauptbox{
+  \Bildbox{ 
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Koax.pstex_t 
+    $l \gg R_1, R_2$
+    }
+  \Formelbox{
+    \[ H = \frac{I}{2 \pi R_1^2} r \mbox{\hspace{1em}für $0 \leq r < R_1$}\]
+    \[ H = \frac{I}{2 \pi r} \mbox{\hspace{1em}für $R_1 \leq r \leq R_2$ }\]
+    \[ H = \frac{I}{2 \pi r} \left(1-\frac{r-R_2}{d} \right) \] für $R_2 \ < r \leq R_2+d$ \\ 
+    \[ \Phi = \frac{\mu l}{2 \pi} \ln \frac{R_2}{R_1} \Theta \]
+    \[ \Lambda = \mu \frac{l}{2 \pi} \ln \frac{R_2}{R_1}\]
+    \[ R_m =  \frac{2 \pi}{\mu l \ln \frac {R_2}{R_1}}\]
+    \[ L = \mu \frac{l}{2 \pi} \ln \frac {R_2}{R_1} \]
+    \[ L' = \frac{\mu}{2 \pi} \ln \frac {R_2}{R_1} \]
+      }}{
+    \Groessenbox{
+      $H$                 & Feldstärke                    & $[\frac{A}{m}]$ \\
+      $r$                 & Abstand von der Leiter"-achse & $[m]$ \\
+      $I$                 & Strom                         & $[A]$ \\
+      $R$                 & Radius                        & $[m]$ \\
+      $d$                 & Manteldicke                   & $[m]$ \\  
+      $\mu$               & Permeabi"-li"-tät             & $[\frac{H}{m}]$\\
+      $l$                 & Länge                         & $[m]$\\
+      $\Lambda$           & Magnetischer Leitwert         & $[\frac{Vs}{A}]$, $[\Omega s]$\\
+      $R_m$               & Magnetischer Widerstand       & $[\frac{A}{Vs}]$\\
+      $L'$                & Induktivitäts"-belag          & $[\frac{Vs}{Am}]$\\
+      $L$                 & Induktivität                  & $[\frac{Vs}{A}]$\\  
+      $\Phi$              & Magnetischer Fluss            & $[Vs]$, $[Wb]$ \\
+      $\Theta$            & Durchflutung                  & $[A]$\\
+      }}
+
+\subsection{Paralleldrahtleitung} \index{Induktivität!Paralleldrahtleitung}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Paralleldraht.pstex_t
+    $l \gg a$ \\
+    $a \gg R$
+    }
+  \Formelbox{
+    \[ \Lambda = \mu \frac{l}{\pi} \ln \frac{a-R}{R}\]
+    \[ R_m =  \frac{\pi}{\mu l \ln \frac {a-R}{R}}\]
+    \[ L = \mu \frac{l}{\pi} \ln \frac {a-R}{R} \]
+    \[ L' = \frac{\mu}{2 \pi} \ln \frac {a-R}{R} \]
+    \vspace{2ex}
+    }}{
+    \Groessenbox{
+      $\mu$               & Permeabi"-li"-tät             & $[\frac{H}{m}]$\\
+      $l$                 & Länge                         & $[m]$\\
+      $a$                 & Abstand                       & $[m]$\\
+      $R$                 & Radius                        & $[m]$ \\
+      $\Lambda$           & Magnetischer Leitwert         & $[\frac{Vs}{A}]$, $[\Omega s]$\\
+      $R_m$               & Magnetischer Widerstand       & $[\frac{A}{Vs}]$\\
+      $L'$                & Induktivitäts"-belag          & $[\frac{Vs}{Am}]$\\
+      $L$                 & Induktivität                  & $[\frac{Vs}{A}]$\\
+      }}
+\vfill
+
+\subsection{Zylinderspule} \index{Magnetismus!Feldstärke!Zylinderspule}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Zylinderspule.pstex_t 
+    }
+  \Formelbox{
+    Bezugspunkt: Mittelpunkt der Achse im Innern
+
+    \[ H = \frac{I N}{\sqrt{l^2 + d^2}} \]
+    Bezugspunkt: Mittelpunkt der Stirnflächen
+    \[ H = \frac{I N}{2\sqrt{l^2 + d^2}}\]
+      }\\ \hline
+  \Bildbox{
+    {\normalfont \bfseries Sehr lange Zylinderspule} ($l \gg d$) {\normalfont \bfseries und Ringspule} (mittlerer Umfang $l$)
+      }
+  \Formelbox{
+    Bezugspunkt für $H$-Feld:\\ im Inneren der Spule
+    \[ H = \frac{I N}{l}\]   
+    \[ \Phi = \frac{\mu A}{l} \Theta = \mu \frac{\pi d^2}{4 l} \Theta \] 
+    \[ \Lambda = \mu \frac{A}{l} = \mu \frac{\pi d^2}{4 l} \]
+    \[ R_m =  \frac{l}{\mu A} = \frac{4 l}{\mu \pi d^2} \]
+    \[ L = \mu N^2 \frac{A}{l} = \mu N^2 \frac{\pi d^2}{4 l} \]
+    }}{
+    \Groessenbox{
+      $H$                                                       & Feldstärke & $[\frac{A}{m}]$ \\
+      $l$                 & Länge bzw. mittl. Umfang der Spule  & $[m]$ \\
+      $d$                 & Durchmesser                         & $[m]$ \\
+      $I$                 & Strom                               & $[A]$ \\
+      $A$                 & Stirnfläche                         & $[m^2]$\\
+      $\mu$               & Permeabi"-li"-tät                   & $[\frac{H}{m}]$\\ 
+      $N$                 & Windungszahl                        & $[1]$\\
+      $\Lambda$           & Magnetischer Leitwert               & $[\frac{Vs}{A}]$, $[\Omega s]$\\
+      $R_m$               & Magnetischer Widerstand             & $[\frac{A}{Vs}]$\\
+      $L$                 & Induktivität                        & $[\frac{Vs}{A}]$\\
+      $\Phi$              & Magnetischer Fluss                  & $[Vs]$, $[Wb]$ \\
+      $\Theta$            & Durchflutung                        & $[A]$\\
+      }}
+\vfill
+
+\subsection{Ringspule (Toroid)} \index{Induktivität!Ringspule, Toroid}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Ringspule.pstex_t 
+    }
+  \Formelbox{
+    \[ \Lambda = \mu \frac{a}{2 \pi} \ln \frac{R+a}{R}\]
+    \[ R_m =  \frac{2 \pi }{\mu a \ln \frac {R+a}{R}}\]
+    \[ L = \mu N^2 \frac{a}{2 \pi } \ln \frac {R+a}{R} \]
+    \[ \Phi = \frac{\mu a}{2 \pi} \ln \frac{R_1 + a}{R_1} \Theta \]
+    \[ H = \frac{N I}{R + \frac{a}{2}n}\]
+    für $ a \ll R$:
+    \[ L = \frac{\mu N^2 A}{2 R \pi }\]
+    \[ \Phi \approx \frac{\mu A}{l_{mittl.}} \Theta \hspace{1em} \]
+    }}{
+    \Groessenbox{
+      $a$                 & Spulen Breite, Höhe           & $[m]$\\
+      $R$                 & Innenradius                   & $[m]$ \\
+      $\mu$               & Permeabi"-li"-tät             & $[\frac{H}{m}]$\\
+      $N$                 & Windungszahl                  & $[1]$\\
+      $\Lambda$           & Magnetischer Leitwert         & $[\frac{Vs}{A}]$, $[\Omega s]$\\
+      $R_m$               & Magnetischer Widerstand       & $[\frac{A}{Vs}]$\\
+      $L$                 & Induktivität                  & $[\frac{Vs}{A}]$\\
+      $\Phi$              & Magnetischer Fluss            & $[Vs]$, $[Wb]$ \\
+      $\Theta$            & Durchflutung                  & $[A]$\\
+      $A$                 & Fläche                        & $[m^2]$\\
+      }}
+
+
+
+\subsection{Kreisrahmenspule} \index{Induktivität!Kreisrahmenspule}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Magnet/Abbildungen/Kr_Rahmen.pstex_t
+    $D \gg d$
+    }
+  \Formelbox{
+    \[ \Lambda = \mu \frac{D}{2} \ln \frac{D}{d}\]
+    \[ R_m =  \frac{2}{\mu D \ln \frac {D}{d}}\]
+    \[ L = \mu N^2 \frac{D}{2} \ln \frac {D}{d} \]
+\vspace{14ex}
+    }}{
+    \Groessenbox{
+      $a$                 & Spulen Breite, Höhe           & $[m]$\\
+      $\mu$               & Permeabi"-li"-tät             & $[\frac{H}{m}]$\\
+      $d$                 & Draht Durchmesser             & $[m]$\\
+      $D$                 & Schleifen Durchmesser         & $[m]$ \\
+      $N$                 & Windungszahl                  & $[1]$\\
+      $\Lambda$           & Magnetischer Leitwert         & $[\frac{Vs}{A}]$, $[\Omega s]$\\
+      $R_m$               & Magnetischer Widerstand       & $[\frac{A}{Vs}]$\\
+      $L$                 & Induktivität                  & $[\frac{Vs}{A}]$\\
+      }}
+\vfill
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 

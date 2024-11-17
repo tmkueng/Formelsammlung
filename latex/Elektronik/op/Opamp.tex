@@ -1,0 +1,748 @@
+%==========================================================
+% Titel:    Formelsammlung-HSR
+% Autor:    Adrian Freihofer
+% Erstellt: 7.11.2001
+% Geändert:
+%==========================================================
+
+\chapter{Operationsverstärker}
+
+\section{Verstärkung}
+
+\index{Verstärkung}
+\index{Dezibel}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+  \input{Elektronik/op/Verst.pstex_t}
+  }
+  \Formelbox{
+           Spannungsverstärkung: \[ A_U[dB] = 20 \log \frac{u_{out}}{u_{in}} \]
+           Leistungsverstärkung: \[ A_P[dB] = 10 \log \frac{P_{out}}{P_{in}} \]
+           \[  A_{tot}[dB] = \sum_i A_i [dB]\]
+           \[ A_{tot}[1] = A_1[1]  A_2[1] \ldots A_n[1] \]
+      }
+  }
+  {\Groessenbox{
+     $ A_U$          & Spannungs"-ver"-stär"-kung        & $ [1] $                 \\
+     $ A_P$          & Leistungs"-ver"-stär"-kung        & $ [1] $                \\
+     $ A_{tot}$      & A total                           & $ [1] $                \\
+     $ u_{in} $      & Eingangsspan"-nung                & $ [V] $                \\
+     $ u_{out} $     & Ausgangsspan"-nung                & $ [V] $                \\
+}}
+
+
+\section{Idealer OP}
+
+\index{Operationsverstärker!Idealer-}
+\index{Idealer OP}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+  \input{Elektronik/op/idOPalg.pstex_t}
+  }
+  \Formelbox{
+           \[ R_{out} = 0 \]
+           \[ R_{in} = \infty \]
+           \[ i_{in} = 0 \]
+           \[ u_{in} = 0 \]
+      }
+  }
+  {\Groessenbox{
+     $ R_{out}$     & Ausgangs"-wider"-stand        & $ [\Omega] $                 \\
+     $ R_{in}$      & Eingangs"-wider"-stand        & $ [\Omega] $                \\
+     $ i_{in}$      & Eingangsstrom                 & $ [A] $                \\
+     $ u_{in} $     & Eingangsspan"-nung              & $ [V] $                \\
+}}
+\vfill
+
+
+\subsection{Invertierender Verstärker}
+
+\index{Operationsverstärker}
+\index{Verstärker!Invertierend}
+\index{Operationsverstärker!Verstärker!Invertierend}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Elektronik/op/InVer.pstex_t}
+  }
+  \Formelbox{
+           \[A_{CL} = \frac{u_{out}}{u_{in}} = - \frac{R_F}{R_1}\]
+           \vspace{3.7cm}
+      }
+  }
+  {\Groessenbox{
+     $ u_{out}$     & Ausgangs"-span"-nung        & $ [V] $                 \\
+     $ u_{in}$      & Eingangs"-span"-nung        & $ [V] $                \\
+     $ R_1$         & Widerstand              & $ [\Omega] $                \\
+     $ R_F $        & Rückkopp"-lungs"-wi"-der"-stand & $ [\Omega] $                \\
+     $ A_{CL} $     & Closed Loop Gain            & $[1]$ \\
+}}
+
+
+
+\subsection{Nichtinvertierender Verstärker}
+
+\index{Verstärker!Nicht Invertierend}
+\index{Operationsverstärker!Verstärker!Nicht Invertierend}
+\index{Spannungsfolger}
+\index{Operationsverstärker!Spannungsfolger}
+
+\label{niVer}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Elektronik/op/NiInVer.pstex_t}
+  \input{Elektronik/op/spannungsfolger.pstex_t}
+  }
+
+  \Formelbox{
+           \[A_{CL} = \frac{u_{out}}{u_{in}} = \frac{R_F}{R_1}+1\]
+           Impedanzwandler: \[ R_F = 0 , R_1 = \infty \Rightarrow A=1\]
+           \vspace{1.1cm}
+      }
+  }
+  {\Groessenbox{
+     $ u_{out}$     & Ausgangs"-span"-nung        & $ [V] $                 \\
+     $ u_{in}$      & Eingangs"-span"-nung        & $ [V] $                \\
+     $ R_1$         & Widerstand              & $ [\Omega] $                \\
+     $ R_F $        & Rückkopp"-lungs"-wi"-der"-stand & $ [\Omega] $                \\
+}}
+
+
+\subsection{Addierer}
+
+\index{Operationsverstärker!Addierer}
+\index{Addierer}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Elektronik/op/InvAddierer.pstex_t}
+  }
+
+  \Formelbox{
+           \[ u_{out} = A_1 u_{in1} + A_2 u_{in2} + ... \] \[+ A_n u_{inn} \]
+           \[ A_n = - \frac{R_F}{R_n} \]
+           \vspace{1.6cm}
+      }
+  }
+  {\Groessenbox{
+     $ u_{out}$     & Ausgangs"-span"-nung            & $ [V] $                 \\
+     $ u_{in}$      & Eingangs"-span"-nung            & $ [V] $                \\
+     $ A$           & Verstärkung                     & $ [1] $                \\
+     $ R_F $        & Rückkopp"-lungs"-wi"-der"-stand & $ [\Omega] $           \\  
+     $ R_n $        & Wi"-der"-stand                  & $ [\Omega] $           \\
+}}
+\vfill
+
+\subsection{Subtrahierer}
+
+\index{Operationsverstärker!Subtrahierer}
+\index{Subtrahierer}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Elektronik/op/subtrahierer.pstex_t}
+  }
+  \Formelbox{
+           \[ u_{out} = A_1 u_{inn} + A_2 u_{inp} \]
+           \[ A_n = - \frac{R_F}{R_1} \]
+           \[ A_p = \frac{R_2}{R_2 + R_3} \left ( \frac{R_F}{R_1}+1 \right ) \]
+           Differenzverst.: $|A_1| = |A_2|$
+           \[ \frac{R_2}{R_3} = \frac{R_F}{R_1} = u_{Diff}\]
+           \[ u_{out} = u_{Diff} ( u_{inp} - u_{inn}) \]
+           meist: $R_1 = R_3 , R_F = R_2$
+           }
+  }
+  {\Groessenbox{
+     $ u_{out}$     & Ausgangs"-span"-nung            & $ [V] $                 \\
+     $ u_{in}$      & Eingangs"-span"-nung            & $ [V] $                \\
+     $ u_{Diff} $   & Differenz"-span"-nung           & $ [V] $              \\
+     $ A$           & Verstärkung                     & $ [1] $                \\
+     $ R_F $        & Rückkopp"-lungs"-wi"-der"-stand & $ [\Omega] $           \\  
+     $ R_n $        & Wi"-der"-stand                  & $ [\Omega] $           \\
+}}
+
+\subsection{Mehrfach Addierer und Subtrahierer}
+
+\index{Operationsverstärker!Addierer}
+\index{Addierer}
+\index{Operationsverstärker!Subtrahierer}
+\index{Subtrahierer}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Elektronik/op/MehrfachAddSub.pstex_t}
+	\begin{footnotesize}Dummy input\end{footnotesize}
+  }
+
+  \Formelbox{ 
+    \footnotesize{  falls: $ A_{n1} + A_{n2} + ... = A_{p1} + A_{p2} + ... $}
+           \[ u_{out} = \sum_i A_{pi} u_{pi} - \sum_j A_{nj} u_{nj} \]
+           \scriptsize{ Beispiele :}
+           \[ R_{n1} = \frac{R_F}{|A_{n1}|} , R_{p1} = \frac{R_F}{|A_{p1}|}\]
+\tiny{     \[ A_{n1} =  \frac{R_F}{R_{n1}} \]}
+   \tiny{  \[ A_{p1} = \left (\frac{R_F}{R_{n1} \| ... \| R_{nj}} +1 \right ) 
+           \left( \frac{(R_{p2} \| ... \| R_{pi}) \| R_V }{R_{p1} + (R_{p2} \| ... \| R_{pi} ) \| R_V } \right )\]}
+      }
+  }
+  {\Groessenbox{
+     $ u_{out}$     & Ausgangs"-span"-nung            & $ [V] $                 \\
+     $ u_{n,p}$     & Eingangs"-span"-nung            & $ [V] $                \\
+     $ A$           & Verstärkung                     & $ [1] $                \\
+     $ R_F $        & Rückkopp"-lungs"-wi"-der"-stand & $ [\Omega] $           \\  
+     $ R_n $        & Wi"-der"-stand                  & $ [\Omega] $           \\
+}}
+
+
+\subsection{Instrumentationsverstärker}
+
+\index{Instrumentationsverstärker}
+\index{Operationsverstärker!Differenzverstärker}
+\index{Symetrischer Eingang}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Elektronik/op/SymEing.pstex_t}
+  }
+  \Formelbox{
+           \[ u_{out} = (u_{inp} - u_{inn}) \frac{2 R_1 + P}{P} \]
+           \[ A_{Diff} = 1 + \frac{2 R_1}{P} \]
+           \[ u_p - u_n = i(2 R_1 + P) \]
+           \vspace{0.2cm}
+      }
+  }
+  {\Groessenbox{
+     $ u_{out}$     & Ausgangs"-span"-nung            & $ [V] $                \\
+     $ u_{inn}$     & Eingangs"-span"-nung            & $ [V] $                \\ 
+     $ u_{inp}$     & Eingangs"-span"-nung            & $ [V] $                \\
+     $ A_{Diff}$    & Diff-Verst.                     & $ [1] $                \\
+}}
+\vfill
+
+\subsection{Stromquelle}
+
+\index{Stromquelle}
+\index{Operationsverstärker!Stromquelle}
+
+\Hauptbox{  
+  \Bildbox{
+    \input{Elektronik/op/IQuelle1.pstex_t} \vspace{0.5cm}
+    \input{Elektronik/op/IQuelle2.pstex_t}   
+  }
+  \Formelbox{
+           Variante 1 und 2: \[ i_L = \frac{u_{ref}}{R_1}\]
+      } \hline
+  \Bildbox{
+    \input{Elektronik/op/IQuelle3.pstex_t}    
+  }
+  \Formelbox{
+           Variante 3: \[ i_L = - \frac{u_{ref}}{R_1} \cdot \frac{R_2 + R_3}{R_3} \]
+      } \hline
+\Bildbox{
+    \input{Elektronik/op/IQuelle4.pstex_t}   
+  }
+  \Formelbox{
+           Variante 4: \\ falls $R_{2a} = R_{2b} = R_{2c} = R_{2d}  $:  \[ i_L = \frac{u_{ref}}{R_1} \]
+      }
+  }
+  {\Groessenbox{
+     $ u_{ref}$     & Referenz"-span"-nung            & $ [V] $                 \\
+     $ i_L $        & Strom durch $R_L$               & $ [A] $                \\
+     $ R_L $        & Lastwider"-stand                & $ [\Omega] $                \\
+     $ R$           & Widerstand                      & $ [\Omega] $           \\  
+}}
+
+
+\subsection{Stromspiegel}
+
+\index{Stromspiegel}
+\index{Operationsverstärker!Stromspiegel}
+
+\Hauptbox{  
+  \Bildbox{
+    \input{Elektronik/op/ISpiegel.pstex_t}  
+  }
+  \Formelbox{
+    \[ n = \frac{i_{out}}{i_{in}} = \frac{R_1}{R_2}\]
+    \[ u_{R_1} = u_{R_2}, R_1 i_{in} = R_2 i_{out} \]
+    \vspace{2.3cm}
+    }
+  }
+  {\Groessenbox{
+     $ i_{in}$      & Referenz"-strom               & $ [A] $                 \\
+     $ i_{out} $    & Strom durch $R_L$             & $ [A] $                \\
+     $ R_L $        & Lastwider"-stand              & $ [\Omega] $                \\
+     $ R$           & Widerstand                    & $ [\Omega] $           \\  
+     $ n $          & Teilerverhält"-nis              & $ [1]$ \\
+}}
+\vfill
+
+
+\subsection{Differentieller UI-Wandler}
+
+\index{Differentieller UI-Wandler}
+\index{Operationsverstärker!Differentieller UI-Wandler}
+
+\Hauptbox{  
+  \Bildbox{
+    \input{Elektronik/op/Diff_UI-Wandler.pstex_t}  
+  }
+
+  \Formelbox{
+    \[ i_L = \frac{u_1 - u_2}{R} \]
+    \[ R = R_a = R_b = R_c = R_d \]
+    }
+  }
+  {\Groessenbox{
+     $ u_1$         & Eingagssp. 1                  & $ [V] $                 \\
+     $ u_2 $        & Einganssp. 2                  & $ [V] $                \\
+     $ R_L $        & Lastwider"-stand              & $ [\Omega] $                \\
+     $ R$           & Widerstand                    & $ [\Omega] $           \\  
+}}
+
+
+\subsection{Schmitt-Trigger}
+
+\index{Schmitt-Trigger}
+\index{Komparator}
+\index{Operationsverstärker!Schmitt-Trigger}
+\index{Operationsverstärker!Komparator}
+
+\Hauptbox{
+  \Bildbox{
+   \begin{flushleft} \footnotesize{Nicht invertierend:}\end{flushleft}
+   \input{Elektronik/op/NiInvSchmitt.pstex_t}
+   \input{Elektronik/op/NiInvSchmittKennl.pstex_t}
+   \begin{flushleft} \footnotesize{Invertierend:}\end{flushleft} 
+   \input{Elektronik/op/InvSchmitt.pstex_t} 
+   \input{Elektronik/op/SchmittKenn.pstex_t} 
+  }
+  \Formelbox{
+    Nicht invertierend:
+    \[ u_T^+ = u_{ref} + \frac{R_1}{R_F} (u_{ref} - u_{outmin}) \] 
+    \[ u_T^- = u_{ref} - \frac{R_1}{R_F} (u_{outmax} - u_{ref}) \]
+    \[ u_H =  u_T^+ - u_T^- \]
+    \[ u_H = (u_{outmax} - u_{outmin}) \frac{R_1}{R_F} \]
+    Invertierend:
+    \[ u_T^+ = u_{ref} + \frac{R_1( u_{outmax} - u_{ref})}{R_1 + R_F}  \]
+    \[ u_T^- = u_{ref} - \frac{R_1 (u_{ref} - u_{outmin})}{R_1 + R_F} \]
+    \[ u_H = \frac{R_1(u_{outmax} - u_{outmin})}{R_1 + R_F} \]
+    }
+  }
+  {\Groessenbox{
+     $ u_T^+ $     & Sprung"-span"-nung $\nearrow$     & $ [V] $                 \\
+     $ u_T^- $     & Sprung"-span"-nung $\searrow$     & $ [V] $                \\ 
+     $ u_H$        & Hysterese"-span"-nung           & $ [V] $                \\
+     $ u_{ref}$    & Referenz"-span"-nung            & $ [V] $                \\ 
+     $ u_{outmax}$ & $\rightarrow $ +Speisung        & $ [V] $                \\
+     $ u_{outmin}$ & $\rightarrow $ -Speisung        & $ [V] $                \\
+     $ R_F$        & Rückkopp"-lungs-Wi"-der"-stand  & $ [\Omega] $                \\
+     $ R_1$        & Widerstand                      & $ [\Omega] $                \\
+}}
+\vfill
+
+
+\subsection{Wien-Robinson Oszillator}
+\index{Wien-Robinson Oszillator}
+\index{Oszillator}
+\index{Operationsverstärker!Wien-Robinson Oszillator}
+\index{Operationsverstärker!Oszillator}
+
+\Hauptbox{
+  \Bildbox{
+   \input{Elektronik/op/wienRobinson.pstex_t}
+  }
+  \Formelbox{
+     \begin{small}\[ |G| = \frac{\omega T}{\sqrt{(1-\omega ^2 T^2)^2 + (\omega 2 D T)^2}}\]\end{small}
+     \[ T = RC, \qquad D = \frac{3}{2} \]
+     \[ \varphi = 90^\circ - \arctan \left( \frac{\omega 2 D T}{1 - \omega ^2 T ^2} \right) \]
+     Amplitudenbedingung: $A_{Loop} \geq 1$ \\
+     Phasenbedingung: \\ $ \varphi_{Loop} = n \cdot 360 ^\circ$ ,\\$ n = 0, \pm 1, \pm 2, \ldots $
+	\vspace{0.1cm}
+    }
+  }
+  {\Groessenbox{
+     $ T $         & Periode                         & $ [s] $      \\
+     $ D $         & Dämpfung                        & $ [1] $      \\ 
+     $ u_{out}$    & Ausgang                         & $ [V] $      \\     
+     $ R$          & Widerstand                      & $ [\Omega] $ \\
+     $ C$          & Kapazität                       & $ [F] $      \\
+}}
+\newpage
+
+\subsection{Beschaltung des OPs mit Zweitoren}
+\index{Zweitore}
+\index{Vierpole}
+\index{Operationsverstärker!Beschaltung mit Zweitor}
+\index{Operationsverstärker!Invertierender Verstärker}
+
+\Hauptbox{
+  \Bildbox{
+   \input{Elektronik/op/opZweitor.pstex_t}
+  }
+  \Formelbox{
+     Gilt nur für invertierenden Verstärker, da sonst kein virtueller Kurzschluss am Ausgang der Zweitore ist!
+     \[ A(s) = \frac{u_{in}}{u_{out}} = -\frac{Z_F(s)}{Z_1(s)} \]
+     \[ Z(s) = \frac{u_{in}(s)}{i_{ok}(s)} \]
+    }
+  }
+  {\Groessenbox{
+     $ A $         & Verstärkung                     & $ [1] $      \\
+     $ u_{in}$     & Eingang                         & $ [V] $      \\    
+     $ u_{out}$    & Ausgang                         & $ [V] $      \\     
+     $ Z$          & Impedanz                        & $ [\Omega] $ \\
+     $ i_{ok}$     & Kurzschluss"-strom              & $ [A] $      \\
+     $ s $         & Laplace Operator                & $ [1] $      \\
+}}
+
+\subsubsection{Häufig verwendete Zweitore}
+\Hauptbox{
+  \Bildbox{
+   \input{Elektronik/op/zweitorRCp.pstex_t}
+  }
+  \Formelbox{
+    \[ \frac{R}{1 + sRC} \]
+    }\hline
+\Bildbox{
+   \input{Elektronik/op/zweitorRCs.pstex_t}
+  }
+  \Formelbox{
+    \[ \frac{1}{sC} (1 + sRC) \]
+    }\hline
+\Bildbox{
+   \input{Elektronik/op/zweitorRRC.pstex_t}
+  }
+  \Formelbox{
+    \[ (R_1 + R_2) \frac{1 + s \frac{R_1 R_2 C}{R_1 + R_2}}{1 + s R_2 C} \]
+    }\hline
+\Bildbox{
+   \input{Elektronik/op/zweitorRRC2.pstex_t}
+  }
+  \Formelbox{
+    \[ R(2 + s RC) \]
+    }\hline
+\Bildbox{
+   \input{Elektronik/op/zweitorCCR.pstex_t}
+  }
+  \Formelbox{
+    \[ \frac{1}{sC} \frac{1 + s 2 RC}{sRC} \]
+    }\hline
+  \Bildbox{
+   \input{Elektronik/op/zweitorRRCC.pstex_t}
+  }
+  \Formelbox{
+    \[ R_2 \frac{1 + s 2 R_1 C_1}{1 + s 2 R_1 C_1 + s^2 R_1 R_2 C_1 ^2} \]
+    }\hline
+\Bildbox{
+   \input{Elektronik/op/zweitorRRCCC.pstex_t}
+  }
+  \Formelbox{
+  \begin{scriptsize}\[ \frac{R_2 (1 + s 2 R_1 C_1)}{1 + s(2 R_1 C_2 + R_2 C_2) + s^2 R_1 R_2 C_1 (C_1 + 2 C_2 )} \]\end{scriptsize}
+    }
+  }
+  {\Groessenbox{
+     $ R$          & Kapazität                       & $ [F] $      \\    
+     $ C$          & Widerstand                      & $ [\Omega] $      \\     
+     $ Z$          & Impedanz                        & $ [\Omega] $ \\
+     $ s $         & Laplace Operator                & $ [1] $      \\
+}}
+
+\vfill
+
+
+
+\section{Realer Operationsverstärker} 
+
+\index{Realer OP}
+\index{Operationsverstärker!Fehler}
+\index{Operationsverstärker!Realer}
+
+\subsection{Ein- und Ausgangsspannungsbereich}
+
+\index{Operationsverstärker!Ausgangsspannungsbereich}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Elektronik/op/spannungsbereiche.pstex_t} 
+    \scriptsize 1: Eingangsspannungsbereich \\
+    2: Ausgangsspannungsbereich \normalsize
+  }
+  \Formelbox{
+    \footnotesize input rail to rail (IRR): \normalsize
+    \[ U_{rand1} \mbox{, } U_{rand2} = 0 \] 
+    \footnotesize output rail to rail (ORR): \normalsize
+    \[ U_{rand3} \mbox{, } U_{rand4} = 0 \]
+    }
+  }
+  {\Groessenbox{
+     $ U_{rand}$     & Randspannung                  & $ [V] $                 \\
+     $ U_{pos} $     & Positive Speise"-span"-nung   & $ [V] $                \\ 
+     $ U_{neg} $     & Negative Spei"-se"-span"-nung & $ [V] $                \\
+}}
+
+
+\subsection{Übertragungskennlinie}
+
+\index{Operationsverstärker!Übertragungskennlinie}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Elektronik/op/ukennlinie.pstex_t} 
+  }
+  \Formelbox{
+    \[ U_O = A_O U_{Diff} \]
+    \[ A_O = \frac{d U_O}{d U_D} \]
+    \vspace{0.7cm}
+    }
+  }
+  {\Groessenbox{
+     $ U_{O}$        & Ausgangs"-span"-nung                & $ [V] $                 \\
+     $ U_{Diff} $    & Differenz"-span"-nung               & $ [V] $                \\ 
+     $ A_{O} $       & Open Loop Verstärkung               & $ [1] $                \\
+}}
+
+
+\subsection{Gleichtaktfehler (Common Mode Error)}
+
+\index{Operationsverstärker!Gleichtaktfehler}
+\index{Operationsverstärker!Common Mode Error}
+\index{Gleichtaktfehler}
+\index{Common Mode Error}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Elektronik/op/gleichtaktfehler.pstex_t} \\ \\ \\
+    \input{Elektronik/op/offset.pstex_t} 
+  }
+  \Formelbox{
+    \[ U_m = \frac{U_{pos} + U_{neg}}{2} \]
+    \[ U_B = \frac{U_P + U_N}{2} \]
+    \[ U_{CM} = U_B - U_m \]
+    \[ U_{OS} = \frac{|U_{CM}|}{CMRR} \]
+    \[ U_{OE} = |U_{OS}| A_{pos}\]
+    \footnotesize \[ U_{OE} = A_O \left( U_{Diff} + \frac{U_{CM}}{CMRR} + \frac{U_m}{A_O} \right) \]\normalsize
+    \small \[ CMRR_{max} = \frac{U_{Diff}}{U_{CM}} = \frac{U_{Diff}+1}{4 \epsilon} \] \normalsize
+    \vspace{0.5cm}
+    }
+  }
+  {\Groessenbox{
+     $ U_m $       & Mittenspan.                      & $ [V] $                 \\
+     $ U_{B} $     & Biasspan.                        & $ [V] $                \\ 
+     $ U_{CM} $    & Common Mode Span"-nung                & $ [V] $                \\
+     $ U_{OS} $    & Offsetspan"-nung                      & $ [V] $                \\
+     $ U_{pos}$    & Speisespan-                           & $ [V] $                \\
+     $ U_{neg}$    & nung                                  &                        \\ 
+     $ U_{P} $     & Span"-nung am pos. Eingang            & $ [V] $                \\ 
+     $ U_{N} $     & Span"-nung am neg. Eingang            & $ [V] $                \\
+     $ A_O $       & Open Loop Verstärkung                 & $ [1]$                 \\
+     \scriptsize CMRR \normalsize      & Gleichtakt"-un"-ter"-drückung               & $ [1] $                \\
+     $ \epsilon $ & Wider"-stands"-tol"-le"-ranz              & $ [1] $ \\
+}}
+\vfill
+
+\subsection{Effektive, geschlossene Verstärkung}
+
+\index{Operationsverstärker!Geschlossene Verstärkung}
+
+\Hauptbox{
+  \Bildbox{
+	\begin{footnotesize}Beim realen OP ist $ A_0 \neq \infty $\end{footnotesize}\\
+	\input{Elektronik/op/verError.pstex_t}
+  }
+  \Formelbox{
+	\begin{footnotesize}Nicht invertierend:\end{footnotesize}
+    \[ \frac{1}{|A_{Cl real}|} = \frac{1}{|A_{Cl id}|} + \frac{1}{|A_0|}\]
+    \begin{footnotesize}Invertierend:\end{footnotesize}
+    \[ \frac{1}{|A_{Cl real}|} = \frac{1}{|A_{Cl id}|} + \frac{1}{|\eta A_0|} \]
+    \[ \eta = \frac{R_F}{R_F + R_1} \]
+    }}
+  {\Groessenbox{
+     $ A_{Cl real} $    & Effektive Verstärkung real               & $ [1] $   \\
+     $ A_{Cl id} $      & Closed Loop Verstärkung ideal            & $ [1] $   \\ 
+     $ A_O $            & Open Loop Verstärkung                    & $ [1] $   \\
+     $ R $              & Widerstand                               & $[\Omega] $ \\
+}}
+
+
+\subsection{Offsetfehler}
+
+\index{Operationsverstärker!Offsetfehler}
+\index{Offsetfehler}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Elektronik/op/offset.pstex_t} 
+  }
+  \Formelbox{
+    \[ U_{OE} = U_{OS} A_{pos} \]
+    \[ U_{OE} = U_{OS} \left(1 + \frac{R_F}{R_1} \right) \]
+    \vspace{1.4cm}
+    }
+  }
+  {\Groessenbox{
+     $ U_{OE} $      & Offset-Feh"-ler-Span"-nung      & $ [V] $                 \\
+     $ U_{OS} $      & Off"-set"-span"-nung            & $ [V] $                \\ 
+     $ A_{pos} $     & pos. Verstärkung (DC)           & $ [1] $                \\
+     $ R_F , R_1 $   & siehe Seite \pageref{niVer}     & $ [\Omega] $           \\
+}}
+
+
+\subsection{Versorgungsspannungsfehler (Power supply error)}
+
+\index{Operationsverstärker!Versorgungsspannunngsfehler}
+\index{Versorgungsspannungsfehler}
+\index{Operationsverstärker!Power supply error}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Elektronik/op/versorgUfehler.pstex_t} 
+  }
+  \Formelbox{
+    \[ U_{OS} = \frac{\Delta U_S}{PSRR} \]
+    \[ U_{OE} = |U_{OS}| A_{pos} \]
+    \vspace{3.9cm}
+    }
+  }
+  {\Groessenbox{
+     $ U_S $         & Speisung                        & $ [V] $                \\
+     $ U_{OE} $      & Offset-Feh"-ler-Span"-nung      & $ [V] $                \\
+     $ U_{OS} $      & Off"-set"-span"-nung            & $ [V] $                \\ 
+     $ A_{pos} $     & pos. Verstärkung                & $ [1] $                \\
+     \scriptsize PSRR \normalsize & Unter"-drückung der Spei"-se"-span"-nungs"-ein"-flüs"-se  & $ [1] $           \\
+}}
+\vfill
+
+
+\subsection{Eingangsströme (Bias- und Offsetstrom)}
+
+\index{Biasstrom}
+\index{Operationsverstärker!Biasstrom}
+\index{Operationsverstärker!Eingangsströme}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Elektronik/op/eingangsstrom.pstex_t}  
+    \scriptsize Unterdrückungsmassnahmen \normalsize
+    \input{Elektronik/op/unterdruckungBiasstrom.pstex_t}
+  }
+  \Formelbox{
+    \[ I_{OS} = |I_P - I_N | \]
+    \[ I_B = \frac{I_P + I_N}{2} \]
+    \[ U_{OE} = | - I_P R_2 A_{pos} + I_N R_F | \]
+    \scriptsize Bester Fall (Einfluss $I_B = 0$ ): \normalsize \[ R_2 = R_F \| R_1 \]
+	$\Downarrow$
+    \[ U_{OE} = | - I_{OS} R_F| \]
+    }
+  }
+  {\Groessenbox{
+     $ I_{OS} $      & Off"-set"-strom                 & $ [A] $                \\
+     $ I_{P, N} $    & Strom am pos, neg Eingang       & $ [A] $                \\
+     $ I_{B} $       & Biasstrom                       & $ [A] $                \\
+     $ U_{OE} $      & Offset-Feh"-ler-Span"-nung      & $ [V] $                \\ 
+     $ A_{pos} $     & pos. Verstärkung                & $ [1] $                \\
+     $ R_{1,2} $     & Widerstand nach GND             & $ [ \Omega ] $ \\
+}}
+
+
+
+\subsection{Kombination der statischen Fehler}
+
+\index{Operationsverstärker!Statische Fehler}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump
+  }
+  \Formelbox{
+   \scriptsize $ U_{OE} = A_{pos} ($ |Offsetfehler| $+$ |Versorgungsspannungsfehler |$+$| Gleichtaktfehler |$) +$ Eingangsstromfehler \normalsize 
+    \scriptsize \[U_{OE} = A_{pos} \left [ |U_{OS}| + | \frac{\Delta U_S}{PSRR}| +| \frac{\Delta U_{CM}}{CMRR}| \right ] + \ast \]
+    Worst-Case: 
+    \[ \ast = \left( I_N R_F - I_P R_2 \frac{R_F + R_1 }{R_1} \right)\]
+    Bei unterdrücktem Biasstrom - Fehler:
+    \[ \ast = | I_{OS} | R_F \] \normalsize 
+    }
+  }
+  {\Groessenbox{
+     $ I_{OS} $      & Off"-set"-strom                 & $ [A] $                \\
+     $ I_{P, N} $    & Strom am pos, neg Eingang       & $ [A] $                \\
+     $ I_{B} $       & Biasstrom                       & $ [A] $                \\
+     $ U_{OE} $      & Offset-Feh"-ler-Span"-nung      & $ [V] $                \\ 
+     $ A_{pos} $     & pos. Verstärkung                & $ [1] $                \\
+}}
+
+
+\subsection{Dynamischer Eingangswiderstand}
+
+\index{Operationsverstärker!Dynamischer Eingakgswiderstand}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Elektronik/op/R-eing.pstex_t}  
+  }
+  \Formelbox{
+    \footnotesize Messung bei verbundenen Eingängen: \normalsize \[ r_{cm} = 2  r_{cm} \| 2 r_{cm} \]
+    }
+  }
+  {\Groessenbox{
+     $ r_d $       & Dynamischer Widerstand                & $ [\Omega] $                \\
+     $ r_{cm} $    & Common Mode Resistance                & $ [\Omega] $                \\
+}}
+\vfill
+
+
+\subsection{Frequenzgang}
+
+\index{Operationsverstärker!Frequenzgang}
+\index{Operationsverstärker!Transitfrequenz}
+\index{Operationsverstärker!Bandbreite}
+\index{Operationsverstärker!GBP}
+\index{GBP}
+\index{Operationsverstärker!Verstärkungsbandbreitenprodukt}
+\index{Verstärkungsbandbreitenprodukt}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Elektronik/op/frequenzgang}  
+  }
+  \Formelbox{
+    \begin{footnotesize}Knick: \end{footnotesize}
+    \[ f_0: A_{OL} = A_{DC} -3 dB \]\scriptsize( ca. 100 Hz in Grafik )  \normalsize    
+    \[ f_T: A_{OL} = 0dB = 1 \] \scriptsize ( ca. $10^7$ Hz in Grafik ) \normalsize   
+    \[ f_0 = \frac{f_T}{A_0} \]
+    \scriptsize Der Verstärkungsabfall beträgt - 20 $\frac{dB}{Dec}$ \normalsize
+    \[A_{CL real}(s) = \frac{A_{CL DC}}{1 + sT_{neu}} \]
+    \[A_{CL DC} = \frac{A_{OL DC}}{1 + k(s) A_{OL DC}} \]
+    \[T_{neu} = \frac{T_0}{1 + k(s) A_{OL DC}} \]
+    \[\omega_{neu} = \omega _0 [1 + k(s) A_{OL DC}] \]
+\begin{footnotesize}Nichtinvertierneder Verstärker:\end{footnotesize}
+    \[ k(s) = \frac{R_1 + R_F}{R_1} \]
+    \[ f_{neu} = f_0 ( 1 + k A_{OL DC}) \]
+    \[ f_{neu} A_{CL} ^+ = GBP (=f_T) \]
+    \[ f_{neu } = f_0 A_{OL DC} \]
+\begin{footnotesize}Invertierneden Verstärker:\end{footnotesize}
+    \[ f_{neu} = k \cdot BGP = \frac{GBP}{A_{CL}^- + 1} \] 
+    \[ f_{neu} ( A_{CL}^- + 1) = GBP (=f_T) \]
+    \[ f_{neu} = \frac{1}{2} f_0 A_{OL DC} \]
+    }
+  }
+  {\Groessenbox{
+     $ f_0 $    & Kleinsignal Bandbreite                & $ [Hz] $                \\
+     $ f_T $    & Transitfrequnz, Verstärkungs- Bandbreiten- Produkt    & $ [Hz] $ \\
+     $ A_{OL} $ & Open Loop Gain                        & $ [1]  $                \\
+     $ A_{CL} $ & Closed Loop Gain                      & $ [1]  $                \\
+     $ A_{CL}^+ $ & $A_{CL} $ nichtinvertiereder Verstärker    & $ [1]  $                \\
+     $ s $      & Laplace Operator                      & $ [1]  $      \\
+     $ T_{neu} $& Closed Loop Zeitkonst.                & $ [s]  $ \\
+     $ k $      & Faktor des Spannungsteilers           & $ [1]  $ \\
+     $ \omega $ & Knickfrequenz                         & $ [Hz] $ \\
+     $ f_{neu} $& Knickfrequenz                         & $ [Hz] $ \\
+     $ GBP $    & Verstärkungs Bandbreitenprodukt       & $ [1] $ \\
+}}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 

@@ -1,0 +1,920 @@
+%==========================================================
+% Titel:    Physik, Wärmelehre 
+% Autor:    Adrian Freihofer
+% Erstellt: 7.11.2001
+% Geändert:
+%==========================================================
+
+
+\chapter{Wärmelehre}                                           \index{Wärmelehre}
+
+
+\section{Temperatur}                                            \index{Temperatur}
+                                                                \index{Temperatur!Kelvin}
+                                                                \index{Temperatur!Celcius}
+                                                                \index{Temperatur!Farenheit}
+
+\Hauptbox{
+  \Bildbox{
+  \includegraphics{Physik/Warmelehre/termometer.eps}
+  }
+
+  \Formelbox{
+      Absolute Temperatur:  \[ T = \frac{2}{3 k} \bar E_{kin} \]
+      \[ \bar E_{kin} = \frac{1}{2} m \bar{v²}\]
+
+      Umrechnungen:       \\
+      $T(K)=T(C°)+273.15 $  \\
+      $T(F)=\frac{9}{5}T(C°)+32 $        \\
+      $T(C°)=\frac{5}{9}(T(F)-32)$
+      \vspace{1.2cm}
+      }
+  }
+  {\Groessenbox{
+     $ T$                & Temperatur                            & $ [K] $                 \\
+     $ k$                & Bolzmann-konst. $ 1.381 E^{-23} $     & $ [\frac{J}{K}] $                \\
+     $ m$                & Masse                                 & $ [kg] $                \\
+     $ E_{kin}$          & kinetische Energie der Gasatome       & $ [J] $                \\
+     $ v$                & Ge"-schwin"-dig"-keit                 & $ [\frac{m}{s}] $                \\
+                         & Kelvin                                & $ [K] $ \\
+                         & Celcius                               & $ [^{\circ} C] $ \\
+                         & Farenheit                             & $ [F] $ \\
+}}
+
+
+\section{Ausdehnung von Materialien}                            \index{Ausdehnung!Längen-}
+                                                                \index{Ausdehnung!Volumen-}
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Warmelehre/Langenausdehnung.pstex_t}
+  }
+  \Formelbox{
+      Längenausdehnung:  \[ \Delta l = \alpha  l \Delta T \]
+      Volumenausdehnung:  \[ \Delta V = \gamma V  \Delta T \]
+      \[ \gamma = 3 \alpha = \frac{\Delta V}{\gamma  \Delta T}\]       
+      \[ \alpha = \frac{\Delta \gamma}{\gamma \Delta T}        \]
+      \[ \sigma = E \alpha \Delta T = E \frac{\Delta l}{l}\]
+      }
+  }
+  {\Groessenbox{
+     $ l$          & Länge                          & $ [m] $                 \\
+     $ V$          & Volumen                        & $ [m³] $                \\
+     $ \alpha $    & Längenausd. koef.              & $ [\frac{1}{K}] $            \\
+     $ \gamma $    & Volumenausd. koef.             & $ [m³] $                \\
+     $ \Delta T $  & Temperatur                     & $ [K] $                 \\
+     $ \sigma $    & Spannung bzw. Druck            & $ [\frac{N}{m^2}] $           \\
+     $ E $         & Elastizi"-täts"-mo"-dul        & $ [\frac{N}{m^2}] $           \\
+}}
+\vfill
+
+%Ideale Gase
+
+\section{Ideale Gase}                                              \index{Gase!Ideal}
+                                                                   \index{Ideale Gase}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Warmelehre/idealGas.pstex_t}
+  }
+
+  \Formelbox{
+      \[ p   V = konst. \]
+      \[ \frac{V}{T} = konst. \]
+      \[ \frac{p   V}{T} = konst. \]
+      \[ p   V = N   k   T \]
+      \[ N = n   N_A \]
+      \[ R = N_A   k \]
+      \[ p   V = n R T \]
+      \[ m = nM \]
+      \[ \varrho = \frac{m}{V} = \frac{p   M}{R   T} \]
+ \scriptsize Volumen eines idealen Gases: $22.4 \cdot 10 ^{-3} \frac{ m^3} {mol}$ bei $ p = 10133 Pa$ und T = 273.15 K \normalsize 
+      }
+  }
+  {\Groessenbox{
+     $ p $       & Druck                                     & $ [\frac{N}{m^2}] $  \\
+     $ V $       & Volumen                                   & $ [m^3] $  \\
+     $ T $       & Temperatur                                & $ [K] $  \\
+     $ N $       & Anz. Moleküle                             &   \\
+     $ n $       & Anz. Mol                                  &   \\
+     $ m $       & Gasmasse                                  & $ [kg] $ \\
+     $ M $       & Molmasse                                  & $ [kg] $ \\
+     $ \varrho $ & Dichte                                    & $ [\frac{kg}{m^3}] $ \\ 
+     $ N_A $     & Anz. Atome pro 12g C $ = 6,022 \cdot 10^{23}$      & $ \frac{1}{mol}$  \\
+     $ k $       & Bolzmann-konst.$ = 1,381 \cdot 10^{-23}$  & $ [\frac{J}{K}] $  \\
+     $ R $       & Univers.-Gaskonst. $= 8,314$              & $ [\frac{J}{mol K}] $ \\
+}}
+
+
+%Gemische idealer Gase
+
+\section{Gemische idealer Gase}                                       \index{Gase!Gemische}
+                                                                      \index{Gemische idealer Gase}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Warmelehre/Partialdruck.pstex_t}
+  }
+
+  \Formelbox{
+      \[ \sum_{i=1}^{z} p_i = p \]
+      \[ p_i = q_i p \]
+      \[ M = \sum_{i=1}^{z} q_i M_i \]
+      \[ \mu_i = \frac{M_i}{M} q_i \]
+      }
+  }
+  {\Groessenbox{
+     $ p$          & (Gesamt-) Druck      & $ [\frac{N}{m²}] $  \\
+     $ p_i $       & Partialdruck        & $ [\frac{N}{m²}] $   \\
+     $ q $         & Konzentration       & $ [\frac{1}{K}] $    \\
+     $ M $         & Molmasse            & $ [kg] $             \\
+     $ \mu_i $     & Massenkon"-zen"-tra"-tion &                \\
+}}
+\vfill
+
+
+%Reale Gase
+
+\section{Reale Gase}                                                  \index{Gase!Reale}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Warmelehre/realGas.pstex_t}
+  }
+
+  \Formelbox{
+      \[ (p + \frac{a}{V_m ^2})(V_m -b) = RT \]
+      \[ p=n \frac{RT}{V-nb}-n² \frac{a}{V²} \]
+      \[ a= 3 p_k V_{mk} ² = \frac{9}{8} R T_k V_{mk} \]
+      \[ b= \frac{V_{mk}}{3} = \frac{R T_k}{8 p_k} \]
+      \[ T_k = \frac{8 a}{27 R b} \]
+      \[ p_k = \frac{a}{27 b²} \]
+      \[ V_mk = 3b \]
+      }
+  }
+  {\Groessenbox{
+     $ p $         & Druck                & $ [\frac{N}{m²}] $                 \\
+     $ V_m $       & Molvolumen           & $ [m^3] $                \\
+     $ R $         & Univers.-Gaskonst.   & $ [\frac{J}{mol K}] $  \\
+     $ T $         & Temperatur           & $ [K] $                \\
+     $ n $         & Anz. Mol             & \\
+     $ a $         & Van der Waal-konst.  & $ [Nm] $                 \\
+     $ b $         & Van der Waal-konst.  & $ [m³]  $  \\
+     $ T_k $       & Kritische Temperatur & $ [K] $ \\
+     $ p_k $       & Kritischer Druck     & $ [\frac{N}{m²}] $ \\
+     $ V_{mk} $    & Kritisches Volumen   & $ [m³] $ \\
+}}
+
+%Wärme
+
+\section{Wärme}                                                          \index{Wärme}
+                                                                         \index{Isochor}
+                                                                         \index{Isobar}
+                                                                         \index{Wärme!Energie}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Warmelehre/InnereEnergie.pstex_t}
+  }
+
+  \Formelbox{
+      \[ dU = \delta W + \delta Q \]
+      \[ \delta Q = C dT \]
+      \[ \delta Q = c m dT \]
+      \[ \delta Q = C_m n dT \]
+      \[ C = m c \]
+      \[ C_m = M c \]
+      \[ C_{mp} - C_{mv} = R \]
+      \[ m = n M \]
+      \vspace{1.7cm}
+      }
+  }
+  {\Groessenbox{
+     $ U $         & Innere Energie                & $ [J] $                 \\
+     $ W $         & Arbeit                        & $ [J] $                 \\
+     $ Q $         & Wärme                         & $ [J] $                 \\
+     $ C $         & Wärme"-ka"-pa"-zi"-tät        & $ [\frac{J}{K}] $       \\
+     $ C_m $       & Molare Wärme"-ka"-pa"-zi"-tät & $ [\frac{J}{mol K}] $   \\
+     $ C_{mv} $    & $C_m$, isochor \footnotemark  & $ [\frac{J}{mol K}] $   \\
+     $ C_{mp} $    & $C_m$, isobar \footnotemark   & $ [\frac{J}{mol K}] $   \\
+     $ c $         & spez. Wärme"-ka"-pa"-zi"-tät  & $ [\frac{J}{kg K}] $    \\
+     $ m $         & Masse                         & $ [kg] $                \\
+     $ M $         & Molmasse                      & $ [\frac{kg}{mol}] $    \\
+     $ n $         & Anz. Mol                      &                         \\
+     $ R $         & Univers.-Gk.$ = 8.314$        & $ [\frac{J}{mol K}] $   \\
+}}
+
+\addtocounter{footnote}{-1}
+\footnotetext{Isochore Proszesse sind Zustandsänderungen bei konstantem Volumen}
+\stepcounter{footnote}
+\footnotetext{Isobare Prozesse sind Zustandsänderungen bei konstantem Druck}
+\vfill
+
+
+\subsection{Molare Wärme kristalliner Festkörper}                  \index{Wärme!Molare-}
+                                                                   \index{Debye-Temperetur}
+                                                                   \index{Temperatur!Debeye-}
+\Hauptbox{
+  \Bildbox{
+    \boxdump
+  }
+  \Formelbox{
+    falls $T > \Theta_D $ :
+      \[ C_{mv} = 3 R \]
+      falls $T << \Theta_D $ :
+      \[ C_{mv} = \frac{12 \pi^4}{5} R \left( \frac{T}{\Theta _D} \right)^3  \]
+      }
+  }
+  {\Groessenbox{
+     $ C_{mv} $    & $C_m$, isochor                  & $[\frac{J}{mol K}] $  \\
+     $ T $         & Temperatur                    & $ [K] $                 \\
+     $ \Theta_D $  & Debye-Temp.                   & $ [K] $                 \\
+     $ R $         & Univers.-Gaskonst.            & $ [\frac{J}{mol K}] $   \\
+}}
+
+
+\subsection{Austausch von Wärmemengen}                                                    \index{Wärme!Austausch-}
+                                                                                          \index{Austausch von Wärmemengen}
+                                                                                          \index{Mischtemperatur}
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Warmelehre/mischen.pstex_t}
+  }
+
+  \Formelbox{
+      \[ \bar{t} = \frac{m_1 c_1 t_1 + m_2 c_2 t_2 +...}{m_1 c_1 + m_2 c_2 + ... } \]
+      }
+  }
+  {\Groessenbox{
+     $ \bar{t} $   & Mischtemp.                              & $ [K] $                 \\
+     $ t $         & Temperatur                              & $ [K] $                 \\
+     $ m $         & Masse                                   & $ [kg] $                \\
+     $ c $         & spez. Wärme"-ka"-pa"-zi"-tät            & $ [\frac{J}{kg K}] $    \\
+}}
+
+
+
+%Phasen und Phasenübergänge
+
+\section{Phasen und Phasenübergänge}                                                    \index{Phasenübergänge}
+                                                                                        \index{Dampfdruck}
+                                                                                        \index{Schmelzdruck}
+                                                                                        \index{Druck!Dampfdruck}
+                                                                                        \index{Druck!Schmelzdruck}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Warmelehre/Phasenubergange.pstex_t}
+    }
+
+  \Formelbox{
+      \scriptsize Schmelzen: \normalsize
+      \[ Q = m Q_s \mbox{\hspace{1cm}} q_s = \frac{Q_s}{m}\]
+      \scriptsize Verdampfen: \normalsize
+      \[ Q = m Q_v \mbox{\hspace{1cm}} q_v = \frac{Q_v}{m}\]
+      \[  \frac{dp_s}{dT}=\frac{q_s}{T {\left( \frac{1}{\varrho _g} - \frac{1}{\varrho _f}\right)}}\]
+      \[  \frac{dp_f}{dT}=\frac{q_f}{T {\left( \frac{1}{\varrho _f} - \frac{1}{\varrho _s}\right)}}\]
+      \vspace{2.1cm}
+      }
+  }
+  {\Groessenbox{
+     $ Q $              & Wärme                             & $ [J]$ \\
+     $ m $              & Masse                             & $ [ kg] $ \\
+     $ Q_s$             & Schmelzenergie                    & $ [J] $ \\
+     $ Q_v $            & Verdampf-Energie                  & $ [ J ] $ \\
+     $ q_s $            & spez. Q-Schmelz                   & $ [ \frac{J}{kg} ]$ \\
+     $ q_v $            & spez. Q-Verdampf                  & $ [ \frac{J}{kg} ]$ \\
+     $ p_s $            & Dampfdruck                        & $ [Pa] $                 \\
+     $ p_f $            & Schmelzdruck                      & $ [Pa] $                 \\
+     $ T $              & Temperatur                        & $ [K] $                \\ 
+     $ \varrho _g $     & Dichte Phase gasförmig            & $ [\frac{kg}{m³}] $     \\
+     $ \varrho _f $     & Dichte Phase flüssig              & $ [\frac{kg}{m³}] $      \\
+     $ \varrho _s $     & Dichte Phase fest                 & $ [\frac{kg}{m³}] $       \\
+}}
+\vfill
+
+\subsection{Schmelz- und Verdampfungsenergien}
+
+\begin{tabular}{|l|l|l|l|l|}
+  \hline Substanz & $T_{schmelz} [K]$ & $Q_s [\frac{kJ}{kg}] $ & $ T_{verdampf} [K] $ & $Q_v [\frac{kJ}{kg}]$  \\
+  \hline 
+  Blei          & 600   & 24,7  & 2023   & 858 \\
+  Brom          & 266   & 67,4  & 332    & 369 \\
+  Ethanol       & 159   & 109   & 351    & 879 \\
+  Gold          & 1336  & 62,8  & 3081   & 1701 \\
+  Helium        & -     & -     & 4,2    & 21 \\
+  Kohlendioxid  & -     & -     & 194.6  & 573 \\
+  Kupfer        & 1356  & 205   & 2839   & 4726 \\
+  Quecksilber   & 234   & 11,3  & 630    & 296 \\
+  Sauerstoff    & 54,4  & 13,8  & 90,2   & 213 \\
+  Schwefel      & 388   & 38,5  & 717,75 & 287  \\
+  Silber        & 1234  & 105   & 2436   & 2323 \\ 
+  Stickstoff    & 63    & 25,7  & 77,35  & 199 \\ 
+  Wasser        & 273,15& 333,5 & 373,15 & 2257 \\ 
+  Zink          & 692   & 102   & 1184   & 1768 \\ 
+  \hline
+\end{tabular}
+
+
+\section{Luftfeuchtigkeit}                                                    \index{Luftfeuchtigkeit}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump
+  }
+  \Formelbox{
+      \[ f = \frac{m_W}{V} \]
+      \[ f_r = \frac{m_W}{m_s} = \frac{p_D}{p_s} (\cdot 100\% ) \]
+      \[ p_s = p_{s0} 10^{\frac{7,5 \vartheta}{\vartheta +237}} \qquad\mbox{,$\vartheta \ge 0 \mbox{°}C$}\qquad \]
+      \[ p_s = p_{s0} 10^{\frac{9,5 \vartheta}{\vartheta +265,5}} \qquad\mbox{,$\vartheta \le 0 \mbox{°}C$}\qquad \]
+      \[p_D = p_s(\vartheta_d)\]
+      \[ \vartheta = \frac{237 \log \frac{p_s}{6,107}}{7,5 - \log \frac{p_s}{6,107}} \mbox{,$p_s \ge 610,7Pa$} \]
+      \[ \vartheta = \frac{265,5 \log \frac{p_s}{6,107}}{9,5 - \log \frac{p_s}{6,107}} \mbox{,$p_s \le 610,7Pa$} \]
+      \vspace{0.5cm}
+      }
+  }
+  {\Groessenbox{
+     $ f $    & Luftfeuchtig"-keit absolut                      & $ [\frac{kg}{m³}] $     \\
+     $ f_r$   & Luftfeuchtig"-keit relativ                      & $ [1] $                 \\
+     $ m_W $  & Wasser"-dampf"-mas"-se                          & $ [kg] $                \\
+     $ m_s $  & Dampf"-mas"-se im Sät"-ti"-gungs"-zu"-stand     & $ [\frac{kg}{m³}] $ \\
+     $ V $    & Volumen                                         & $ [m³] $            \\
+     $ p_D $  & Partialdruck Was"-ser"-dampf                    & $ [Pa] $            \\
+     $ p_s $  & Sättigungs"-druck Was"-ser"-dampf               & $ [Pa] $            \\     
+     $ \vartheta $ & Temperatur                                 & $ [ ^\circ C ] $ \\
+     $ p_{s0} $ & 61070                                         & $ [ Pa ] $ \\
+}}
+\vfill
+
+
+\section{Kinetische Gastheorie}
+
+\index{Kinetische Gastheorie}
+\index{Gase!Kinetische Gastheorie}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Warmelehre/gasmol.pstex_t}
+    Einatomige Moleküle haben keine Rotationsenergie, deshalb ist in diesem Fall: $ E_{kin} = E_{trans}$
+  }
+
+  \Formelbox{
+    \scriptsize Translationsenergie: \normalsize \[ \bar E_{kin} = N \frac{m \bar v²}{2} = \frac{3}{2} N k T  = \frac{3}{2}n R T\]
+    \[ U = N_A \bar E = N_A \frac{f}{2} k T = \frac{f}{2} R T \]
+    \[ U = E_{kin} + E_{pot} \]
+    \[ pV = \frac{2}{3} N_A \frac{m v²}{2} \]
+    \scriptsize Mittlere Energie pro Molekül: \normalsize \[ \bar{E} = \frac{f}{2} k T \]
+    \[ \bar E_{kin} \approx T_{abs} \]
+    \[ C_{mv} = \frac{f}{2} R \]
+    \scriptsize{f=3 bei einatomigen Molekülen \\ f=5 bei zweiatomigen Molekülen \\f=6 bei mehratomigen Molekülen} 
+    \\Volumen eines idealen Gases: $22.4 \cdot 10 ^{-3} \frac{ m^3} {mol}$ bei $ p = 10133 Pa$ und T = 273.15 K\normalsize 
+    \vspace{3cm}
+    }
+  }
+  {\Groessenbox{
+     $ p $         & Druck                                   & $ [Pa] $                \\ 
+     $ V $         & Volumen                                 & $ [m³] $                \\
+     $ N $         & Anz. Moleküle                           & $ [1] $                 \\
+     $ n $         & Anz. Mol                                & $ [1]$                  \\
+     $ v $         & Molekül Ge"-schwin"-dig"-keit           & $ [\frac{m}{s}] $       \\
+     $ E_{kin} $   & Kinetische Ener"-gie der Mo"-le"-kü"-le & $ [J] $                 \\
+     $ E_{pot} $   & Potentielle Energie                     & $ [J] $                 \\
+     $ U $         & Innere Energie                          & $ [J] $                 \\
+     $ T_{abs} $   & Temperatur absolut                      & $ [K] $                 \\ 
+     $ T $         & Temperatur                              & $ [K] $                 \\
+     $ f $         & Freiheitsgrad                           & $ [1] $                 \\ 
+     $ m $         & Masse                                   & $ [ kg ] $              \\  
+     $ C_{mv} $    & Molare Wärme"-ka"-pa"-zi"-tät           & $ [\frac{J}{mol K}] $   \\
+     $ N_A $       & Anz. Atome pro 12g C $ = 6,022 \cdot 10^{23}$      & $ \frac{1}{mol}$  \\  
+     $ k $         & Bolzmann-konst.  $= 1,381 \cdot 10^{-23}$ & $ [\frac{J}{K}] $     \\ 
+     $ R $         & Univers.-Gk.$ = 8.314$        & $ [\frac{J}{mol K}] $           \\    
+}}
+\vfill
+
+
+\subsection{Mittlere freie Weglänge, Wärmeleitung, Diffusion und Viskosität}
+
+\index{Gase!Mittlere freie Weglänge}
+\index{Kinetische Gastheorie!Mittlere freie Weglänge}
+\index{Gase!Wärmeleitung}
+\index{Wärmeleitung in Gasen}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Warmelehre/freierWeg.pstex_t} \vspace{0.5cm}
+  \input{Physik/Warmelehre/trefferwahrschwinlichkeit.pstex_t}
+  }
+
+  \Formelbox{
+      \[ \bar \lambda = \frac{1}{\sqrt{2} n \pi d²} \]
+      \[ N = N_0 e^{-x / \bar \lambda} \]
+      \scriptsize{Wahrscheinlichkeit $f(x) dx $, dass ein Molekül einen frei"-en Weg auf der Strecke dx hat:}
+      \normalsize{}\[ f(x) dx = n \sigma e^{-x / \bar \lambda } dx \]
+      \[ \sigma = \pi d² \]  
+      \vspace{0.1cm}
+      \[ \lambda_Q = \frac{1}{6} n \bar v \bar \lambda f k \] 
+      \[ D = \frac{1}{3} \bar v \bar \lambda \]
+      \[ \eta = \frac{1}{3} \bar v \bar \lambda \varrho \]
+      \vspace{1.8cm}
+      }
+  }
+  {\Groessenbox{
+     $ \bar{\lambda} $ & Mittlere freie Weg"-län"-ge zwi"-schen 
+                         Mo"-le"-kül"-zu"-sam"-men"-stoss                      & $ [m] $                 \\
+     $ n $             & Anz. Moleküle \scriptsize {( $ \neq $ Anz. Mole )}    & $ [1] $                 \\
+     $ d $             & $ \emptyset $- Molekül                                  & $ [m] $                \\
+     $ N $             & Anz. Moleküle durch Schicht dx                        & $ [1] $    \\
+     $ \sigma $        & Querschnitt                                           & $ [m²] $ \\   
+     $ \bar{\lambda_Q} $ & Wärmelei"-tungs"-koeff.                             & $ [\frac{W}{m^2 K}] $      \\
+     $ v $               & v - Moleküle                                        & $ [m/s] $   \\
+     $ f $             & Freiheitsgrad                                         & $ [1] $ \\ 
+     $ k $             & Bolzmann-konst.  $= 1,381 \cdot 10^{-23} $            & $ [\frac{J}{K}] $    \\ 
+     $ D $             & Diffusions"-konst.                                    & $ [\frac{m²}{s}] $ \\
+     $ \eta $          & Viskosität                                            & $ [\frac{kg}{ms}] $ \\
+     $ \varrho $       & Dichte                                                & $ [\frac{kg}{m³}] $ \\
+}}
+
+
+
+
+\subsection{Maxwellsche Geschwindigkeitsverteilung}
+
+\index{Maxwellsche Geschwindigkeitsverteilung}
+
+\Hauptbox{
+  \Bildbox{
+  \boxdump
+  }
+  \Formelbox{
+      \scriptsize{Wahrscheinlichkeit, dass ein Molekül eine Geschwindigkeit zwischen v und v + dv aufweist:}
+      \normalsize{} \[ f(v) dv = \sqrt{\frac{2 m³}{\pi k³ T³}}v² e^{- \frac{m v²}{2 k T}}dv \]
+      \[ v_0 = \sqrt{\frac{2 k T}{m}} \]
+      \[ u = \sqrt{\frac{3 k T }{m}} = \sqrt{\bar v²} \]
+      \[ \bar v = \sqrt{\frac{8 k T}{\pi m}} = 2 \sqrt{\frac{2 R T}{\pi M }}\]
+      }
+  }
+  {\Groessenbox{
+     $ f(v)$       & Dichtefunktion                              &       \\
+     $ m $         & Molekülmasse                                & $ [kg] $      \\
+     $ v $         & v - Moleküle                                & $ [m/s] $   \\
+     $ T $         & freie Weglänge                              & $ [m] $    \\
+     $ k $         & Bolzmann-konst.  $= 1,381 \cdot 10^{-23}$   & $ [\frac{J}{K}] $   \\
+     $ v_0 $       & v- wahrschein"-lichst                       & $ [ \frac{m}{s} ] $ \\
+     $ u $         & spez. $ \bar v $                            & $ [\frac{m}{s} ] $ \\
+}}
+
+
+\section{Temperaturstrahlung, Strahlungsgesetze}
+
+\index{Temperaturstrahlung}
+\index{Strahlung!Temperatur-}
+\index{Temperaturstrahlung}
+\index{Strahlung!Gesetze-}
+\index{Energie!Strahlung}
+\index{Strahlungsenergie}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Warmelehre/Raumwinkel.pstex_t}
+  \vspace{4cm}
+  \input{Physik/Warmelehre/Strahlung.pstex_t}
+  }
+  \Formelbox{
+    \[ \Omega = \frac{A}{R²} \mbox{\hspace{2cm}}  I = \frac{\Phi}{\Omega}\]
+    \[ E= \frac{\Phi}{A} \]
+    \[ A_{\lambda} = \frac{\Phi_{\lambda a}}{\Phi_{\lambda e}}\]
+    \[ K = \int_{HR} L(\vartheta, \varphi) \cos (\vartheta) d \Omega \] 
+    Diffuse Strahlung: \[K = L \int _{HR} L \cos (\vartheta) d \Omega = L \pi \]
+    \scriptsize{$ HR = Halbraum: z>0$} \normalsize
+   \[ \frac{K_\lambda ( \lambda, T) }{A_\lambda( \lambda , T)} = f( \lambda , T ) \]
+    \[ K_\lambda = \epsilon_\lambda ( \lambda , T ) K_{\lambda s} ( \lambda , T) \]
+    \[ \epsilon_\lambda ( \lambda , T) \equiv A_\lambda ( \lambda , T) \]
+    \[ \mbox{Körper schwarz: } K_s = \sigma T^4 \]
+    \[ \mbox{Körper grau: } K = \epsilon \sigma T^4 \mbox{, } A = \epsilon\]
+    \[ P_e = \epsilon_\lambda \sigma A T^4 \]
+    \[ P_{eNetto} = \epsilon_\lambda \sigma A ( T^4 - T_0 ^4) \]
+    \[ K_{\nu s} ( \nu, T ) d \nu = \frac{ 2 \pi h \nu^3 }{c^2(e^{\frac{h\nu}{k T}} -1)} d \nu \] 
+    \[ K_{\lambda s} ( \lambda, T ) d \lambda = \frac{ 2 \pi h c^2 }{\lambda^5(e^{\frac{h c}{\lambda k T}} -1)} d \lambda \]
+    \[ \lambda_{max} T = b \]
+    \[ \nu = c / \lambda \]    
+    \[ E_{Str} = \frac{1.05 \cdot 10 ^{-34} c_0}{\lambda} \]   
+    }
+  }
+  {\Groessenbox{
+     $ \Omega$     & Raumwinkel                                           & $ [sr]$      \\
+     $ A $         & Fläche, Flächenaus"-schnitt                          & $ [m²] $      \\
+     $ R $         & Kugelradius                                          & $ [m] $   \\
+     $ I $         & Strahlstärke                                         & $ [W] $    \\
+     $ \Phi $      & Strahlungs"-strom                                    & $ [W] $   \\
+     $ E $         & Bestrah"-lungs"-stärke                               & $ [ \frac{W}{m²} ] $ \\
+     $ K $         & Emmisionsver"-mö"-gen                                & $ [ \frac{W}{m²} ] $ \\
+     $ L $         & Strahldichte                                         & $ [ \frac{W}{m² sr}] $ \\
+     $ A_\lambda $ & Absorbations"-zahl \scriptsize{$($Schwarzer Körper $\Rightarrow A_\lambda = 1 )$}
+                                    \normalsize{}                         & $ [1 ] $ \\
+     $ \epsilon_\lambda $ & Emissions"-ver"-hältn.                        & $ [1] $ \\ 
+     $ \lambda $          & Wellenlänge                                   & $ [ m ] $ \\
+     $ \nu $              & Frequenz                                      & $ [ Hz ] $ \\
+     $ T $                & Temp. Körper                                  & $ [K] $ \\
+     $ T_0 $              & Umgebungs"-temp.                              & $ [ K ] $ \\
+     $ P_e $              & Strahlungs"-lei"-stung                        & $ [ W ] $ \\    
+     $ E_{Str} $   & Strahlungs Energie                                         & $ [J] $           \\   
+     $ k $                & Bolzmann"-konst.  $= 1,381 \cdot 10^{-23}$    & $ [\frac{J}{K}] $   \\
+     $ \sigma $           & Bolzmann"-konst. $= 5,671 \cdot 10^{-8} $     & $ [\frac{W}{mK}]$      \\
+     $ h $                & Planksche Konst. $= 6,626 \cdot 10^{-34} $    & $ [ Js ] $ \\ 
+     $ b $                & Konst. $= 2,898 \cdot 10^{-3} $               & $ [ mK ] $ \\       
+     $ c_0 $       &  Lichtgeschw.  \small $= 299'792'458$ (Vakuum) \normalsize & $ [\frac{m}{s}] $  \\    
+}}
+\vfill
+
+
+\subsection{Strahlungsaustausch}
+
+\index{Temperaturstrahlung}
+\index{Strahlung!Wärme}
+\index{Wärmeaustausch}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Warmelehre/strahlungsaustausch.pstex_t}
+  }
+  \Formelbox{
+    \[ j = C_{12} ( T_1^4 - T_2^4) = S_{12} - S_{21} \]
+    \[ j = \frac{A_1 A_2}{A_1+A_2-A_1 A_2} \sigma \]
+    \[ C_{12} = \frac{1}{\frac{1}{\epsilon_1} + \frac{1}{\epsilon_2} -1} \sigma \]
+    \vspace{2.8cm}
+    }
+  }
+  {\Groessenbox{
+     $ C_{12} $           & Strahlungs"-aus"-tausch"-zahl                 & $ [ \frac{W}{m^2 K^4}] $ \\
+     $ T $                & Temperatur                                    & $ [ K ] $ \\ 
+     $ S $                & Entropie                                      & $ [ \frac{J}{m^2} ] $ \\
+     $ A $                & Absortionszahl                                & $ [ 1] $ \\
+     $ \epsilon $         & Emissionsver"-hält"-nis                       & $ [K] $ \\  
+     $ j $                & Wärme"-strom"-dichte                              & $ [ \frac{W}{m^2} ] $ \\
+     $ \sigma $           & Bolzmann"-konst. $= 5,671 \cdot 10^{-8} $     & $ [\frac{W}{mK}]$   \\   
+}}
+\vfill
+
+
+
+
+\section{Wärmetransport}
+
+\index{Wärmetransport}
+\index{Wärmebedarf eines Gebäudes}
+\index{k-Wert}
+
+\Hauptbox{
+  \Bildbox{ 
+    \vspace{5cm}
+  \input{Physik/Warmelehre/warmedurchgang.pstex_t}
+\vspace{1cm}
+\footnotesize
+\begin{tabular}{|l|l|}
+\hline Wärmeübergang & $\alpha$ \\
+\hline Wandflächen &  \\
+innen & 8 \\
+aussen & 20 \\
+\hline Boden, Decke &  \\
+nach oben & 8 \\
+nach unten & 6 \\
+\hline
+\end{tabular}
+\normalsize
+\parbox[t][6cm][t]{3cm}{}
+\input{Physik/Warmelehre/k-zylinder.pstex_t}
+  }
+  \Formelbox{
+    \[ \frac{\partial T}{\partial t} = \frac{\lambda}{\varrho c} \frac{\partial ^2 T}{\partial x^2} = \frac{\lambda}{\varrho c} \Delta T \]  
+    \[ I = \dot{Q} = \lambda A \frac{dT}{dx} = j A \]
+    \[ \Delta T = I R \]
+    \[ R = \frac {\Delta x}{\lambda A } \]
+    \[ R = R_1 + R_2 + ... + R_n \] 
+    \scriptsize Wandschicht: \normalsize \[ j = - \lambda \frac{dT}{dx} = \lambda \frac{T_{wi} - T_{wa}}{d}\]
+    \scriptsize Übergangsschicht innen: \normalsize \[ j = \alpha_i ( T_i -T_{wi} ) \] 
+    \scriptsize Übergangsschicht aussen: \normalsize \[ j = \alpha_a ( T_{wa} -T_{a} ) \] 
+    \[ j = k (T_i - T_a)\]
+    \[ \dot{Q}_w = A j = A k \Delta T\]  
+    \[ k= \frac{1}{\frac{1}{\alpha_i} + \sum_s \frac{d_s}{\lambda_s} + \frac{1}{\alpha_a}} = \frac{j}{\Delta T} \]     
+    \scriptsize  Für zylinderförmige Wand: \normalsize
+    \[ \dot{Q} = 2 \pi r l j = 2 \pi r_a l k_a \Delta T \]
+    \[ k_a = \frac{1}{r_a} \frac{1}{  \frac{1}{r_i \alpha_i} + \sum_s \frac{1}{\lambda_s} \\ln \frac{r_{sa}}{r_{si}} + \frac{1}{r_a \alpha_a}   }\]
+       \scriptsize Wärmebedarf eines Gebäudes: \normalsize \[ Q = (\sum_w A_w k_w + \varrho c_p \dot{V} ) G\] 
+    \[ G = \int_{Heizsaison} \Delta T dt \]
+    }
+  }
+  {\Groessenbox{
+     $ I $                & Wärmestrom                                    & $ [ W ] $ \\
+     $ R $                & Wärmewi"-der"-stand                           & $ [ \frac{K}{W} ] $ \\
+     $ j $                & Wärmestrom"-dichte                            & $ [ \frac{W}{m^2} ] $ \\
+     $ \lambda $          & Wärmelei"-tungs"-koeff.                       & $ [ \frac{W}{mK}] $ \\ 
+     $ T_L $              & Luft-Temperatur                               & $ [ K ] $ \\  
+     $ T_W $              & Wand-Temperatur                               & $ [ K ] $ \\ 
+     $ T_{i,a} $          & Innen- / Aussen- Temperatur                   & $ [ K ] $ \\ 
+     $ t $                & Zeit                                          & $ [ s ] $ \\ 
+     $ \varrho $          & Dichte                                        & $ [ \frac{kg}{m^3} ] $ \\ 
+     $ d $                & Wandduchm.                                    & $ [ m ] $ \\ 
+     $ \alpha $           & Wärmeüber"-gang                               & $ [ \frac{W}{m^2K}] $ \\ 
+     $ k $                & k-Wert, Wärme"-durch"-gangs"-zahl             & $ [ \frac{W}{m^2 K}] $ \\ 
+     $ Q $                & Wärmebedarf                                   & $ [ J ] $ \\ 
+     $ A $                & Wandfläche                                    & $ [ m^2] $ \\ 
+     $ \dot{V} $          & Luftaustausch                                 & $ [ \frac{m^3}{s}] $ \\ 
+     $ G $                & Heiztage                                      & $ [ Kd ] $ \\ 
+     $ r $                & Zylinderradius                                & $ [ m ] $ \\
+     $ l $                & Zylinderlänge                                 & $ [ m ] $ \\
+}} 
+
+\vfill
+
+
+
+
+
+\section{Zustandänderungen}
+\index{Zustandsänderungen}
+
+\subsection{Isobare Zustandsänderung}
+\index{isobar}
+\index{Zustandsänderungen!isobar}
+
+\Hauptbox{
+  \Bildbox{ 
+    \input{Physik/Warmelehre/isobar.pstex_t}
+   Isobar: $ p=konstant $
+  }
+  \Formelbox{
+      \[ Q = n C_{mp} (T_2 - T_1 ) \]
+      \[ W = p (V_2 - V_1) = nR(T_2 -T_1) \]
+      \[ W = p_0 \int_{V_1} ^{V_2} dV \]
+      \vspace{2cm}
+      }
+  }
+   {\Groessenbox{
+     $ Q $         & Wärme                                   & $ [ J ] $ \\
+     $ p $         & Druck                                   & $ [Pa] $                 \\ 
+     $ V $         & Volumen                                 & $ [m³] $                 \\
+     $ C_{mp} $    & Molare Wärme"-ka"-pa"-zi"-tät           & $ [\frac{J}{mol K}] $                 \\
+     $ T $         & Temperatur                              & $ [K] $                 \\ 
+     $ n $         & Anz. Mol Gas                            & $ [ 1] $ \\
+     $ W $         & Arbeit                                  & $ [ J ] $ \\
+     $ R $         & Univers.-Gaskonst.                      & $ [\frac{J}{mol K}] $           \\
+}}
+
+\subsection{Isochore Zustandsänderungen}
+\index{isochor}
+\index{Zustandsänderungen!isochor}
+
+\Hauptbox{
+  \Bildbox{ 
+    \input{Physik/Warmelehre/isochor.pstex_t}
+   Isochor: $ V=konstant $
+  }
+  \Formelbox{
+      \[ Q = n C_{mv} (T_2 - T_1 ) \]
+      \[ W = 0 \]
+      \vspace{2cm}
+      }
+  }
+  {\Groessenbox{
+     $ Q $         & Wärme                                   & $ [ J ] $ \\
+     $ C_{mv} $    & Molare Wärme"-ka"-pa"-zi"-tät           & $ [\frac{J}{mol K}] $                 \\
+     $ T $         & Temperatur                              & $ [K] $                 \\ 
+     $ n $         & Anz. Mol Gas                            & $ [ 1] $ \\
+     $ W $         & Arbeit                                  & $ [ J ] $ \\
+}}
+
+
+
+
+\subsection{Isotherme Zustandsänderungen}
+\index{isotherm}
+\index{Zustandsänderungen!isotherm}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Warmelehre/isotherm.pstex_t}
+   isotherm: $ T=konst. $
+  }
+  \Formelbox{
+    \scriptsize Expansion: \normalsize
+      \[ Q_{ab} = n R T \ln \left( \frac{V_2}{V_1} \right) = W_{ab} \]
+      \scriptsize Kompression: \normalsize
+      \[ Q_{zu} = n R T \ln \left( \frac{V_1}{V_2} \right) = W_{zu} \] 
+      \[\frac{V_1}{V_2} = \frac{p_2}{p_1}\]
+      \[ \mid W_{zu} \mid = \mid Q_{ab} \mid \]
+      }
+  }
+  {\Groessenbox{
+     $ Q $         & Wärme                                   & $ [ J ] $ \\
+     $ V $         & Volumen                                 & $ [m³] $                 \\
+     $ T $         & Temperatur                              & $ [K] $                 \\ 
+     $ n $         & Anz. Mol Gas                            & $ [ 1] $ \\
+     $ W $         & Arbeit                                  & $ [ J ] $ \\
+     $ p $         & Druck                                   & $ [ Pa ] $ \\
+     $ R $         & Univers.-Gaskonst.            & $ [\frac{J}{mol K}] $           \\  
+}}
+\vfill
+
+\subsection{Adiabatische Zustandsänderungen}
+\index{adiabatisch}
+\index{Zustandsänderungen!adiabatisch}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Warmelehre/adiabatisch.pstex_t}
+   Adiabatisch: $ Q=konst.  $ (kein Wärmeaustausch)
+  }
+  \Formelbox{
+    \[ dU = \delta Q - \delta W \]
+    \[ pV^{\kappa} = konst. \] 
+    \footnotesize \[ \rightarrow p_2 = p_1 \left( \frac{V_1}{V_2} \right) ^\kappa\] \normalsize
+    \[ T V^{\kappa -1} = konst. \]
+    \footnotesize \[ \rightarrow  T_2  = T_1 \left( \frac{V_1}{V_2} \right) ^{\kappa -1 } \] \normalsize
+    \[ T^\kappa p^{1-\kappa} \mbox{ und } T p^{\frac{1}{\kappa} -1} = konst. \]
+    \footnotesize \[ \rightarrow  T_2 = T_1 \left( \frac{p_1}{p_2} \right) ^{\frac{1-\kappa}{\kappa}}\]\normalsize
+    \[ \kappa = \frac{C_{mp}}{C_{mv}} \]
+    \[ \kappa = \frac{f+2}{f}  \mbox{ \hspace{1cm}} C_{mv} = \frac{f}{2} R \]
+    \[ W = n C_{mv} (T_1 - T_2 )\]
+    \[ \Delta W = \frac{p_2 V_2 - p_1 V_1}{\kappa - 1} \]
+    \[ \Delta W = C_{mv} ( p_1 V_1 - p_2 V_2 ) \]
+    }
+  }
+  {\Groessenbox{
+     $ U $         & Innere Energie                          & $ [ J ] $     \\
+     $ p $         & Druck                                   & $ [Pa] $                 \\ 
+     $ V $         & Volumen                                 & $ [m³] $                 \\
+     $ \kappa $    & Adiabaten"-ex"-po"-nent                 & $ [1] $                 \\
+     $ C_{mv} $    & Molare Wärme"-ka"-pa"-zi"-tät isochor   & $ [\frac{J}{mol K}] $                 \\
+     $ C_{mp} $    & Molare Wärme"-ka"-pa"-zi"-tät isobar    & $ [\frac{J}{mol K}] $                 \\
+     $ T $         & Temperatur                              & $ [K] $                 \\
+     $ f $         & Freiheitsgrad                           & $ [1] $                 \\     
+     $ n $         & Anz. Mol                                & $ [1] $                 \\  
+     $ W $         & Arbeit                                  & $ [ J]$                  \\
+}}
+
+
+\subsection{Expansion und Kompression}
+
+\index{Expansion}
+\index{Komression}
+\index{Arbeit!Expansions-}
+\index{Arbeit!Kompressions-}
+\index{Energie!Expansions-}
+\index{Energie!Kompressions-}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Warmelehre/w-exp-komp.pstex_t}
+  }
+  \Formelbox{
+    \scriptsize Expansion: \normalsize \[ W = \int _{V_1} ^{V_2} p dV = A_1\]
+    \scriptsize Kompression: \normalsize \[ W = \int _{V_2} ^{V_1} p dV = -A_2\]
+    }
+  }
+  {\Groessenbox{
+     $ W $         & Arbeit                                  & $ [ J ] $     \\
+     $ p $         & Druck                                   & $ [Pa] $                 \\ 
+     $ V $         & Volumen                                 & $ [m³] $                 \\
+}}
+\vfill
+
+\subsection{Enthalpie}% \footnote{bedeutet Wärmeinhalt}}
+
+\index{Enthalpie}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Warmelehre/system.pstex_t}
+    \scriptsize Maschine \normalsize
+  }
+  \Formelbox{
+    \[ H = U + p V\]
+    \[ W = Q - \Delta H\]
+    \[ W_{tot} = W_g + p_2 V_2 - p_1 V_1 \] 
+    \scriptsize Isotherm: \normalsize $ W = W_g $ 
+    \scriptsize Adiabatisch: \normalsize $ W = \kappa W_g $  
+    \vspace{1.3cm}
+    }
+  }
+  {\Groessenbox{
+     $ H $         & Enthalpie                               & $ [ J ] $ \\
+     $ W $         & Arbeit                                  & $ [ J ] $ \\
+     $ W_g $       & W im abgeschlos"-se"-nen Sy"-stem       & $ [ J ] $ \\
+     $ Q $         & Wärme                                   & $ [ J ] $ \\
+     $ p $         & Druck                                   & $ [Pa] $  \\ 
+     $ V $         & Volumen                                 & $ [m³] $  \\
+     $ \kappa $    & Adiabaten exp.                          & $ [ 1] $ \\
+}}
+
+
+\section{Kreisprozesse}
+
+\index{Kreisprozess}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Warmelehre/kreisprozess.pstex_t}
+    \scriptsize Rechtslaufend (Uhrzeigersinn): Wärmekraftmaschine
+
+    Linkslaufend: Wärmepumpe \normalsize
+  }
+  \Formelbox{
+    \[ W = \underbrace{\int _{V_1}^{V_2} p dV}_{Kurve C_1} + \underbrace{\int _{V_2}^{V_1} p dV}_{Kurve C_2} \]
+    \[ W =\oint \delta W = \oint \delta Q\]
+    \[ Q = W \]
+    }
+  }
+  {\Groessenbox{
+     $ W $         & Arbeit                                  & $ [ J ] $ \\
+     $ Q $         & Wärme                                   & $ [ J ] $ \\
+     $ p $         & Druck                                   & $ [Pa] $  \\ 
+     $ V $         & Volumen                                 & $ [m³] $  \\
+}}
+\vfill
+
+
+
+\subsection{Carnotprozess}
+
+\index{Carnotprozess}
+\index{Wirkungsgrad!Carnot}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Warmelehre/carnot.pstex_t}
+    \vspace{8.6cm}
+    Beispiel Motor:
+    
+    $T_1 = T_{Zylinder}$
+
+
+    $T_2 = T_{Abgas} $
+  }
+  \Formelbox{
+    I: \scriptsize Isotherme Expansion: \normalsize
+    \[ W_{ab} = R T_1 \ln \frac{V_2}{V_1} = Q_{zu} \]
+    \[ U = konst. \]
+    II: \scriptsize Adiabatische Expansion: \normalsize
+    \[ W_{ab} = C_{mv}(T_1 - T_2 ) \]
+    \[ Q_{zu} = 0 \]
+    III: \scriptsize Isotherme Kompression: \normalsize
+    \[ W_{zu} = R T_2 \ln \frac{V_3}{V_4} = Q_{ab} \]
+    \[ U = konst. \]
+    IV: \scriptsize Adiabatische Kompression: \normalsize
+    \[ W_{zu} =  C_{mv}(T_1 - T_2 ) \]
+    \[ Q_{zu} = 0 \]
+    \[ \eta_C = \frac{T_1 -T_2 }{T_1} \] 
+    \scriptsize Carnot-Wärmepumpe: \normalsize
+    \[ \epsilon_C = \frac{T_1}{T_1 -T_2 } \]
+    \scriptsize Carnot-Kältemaschine: \normalsize
+    \[ \epsilon_C = \frac{T_2}{T_1 -T_2 } \]
+    }
+  }
+  {\Groessenbox{
+     $ W $         & Arbeit                                  & $ [ J ] $ \\
+     $ Q $         & Wärme                                   & $ [ J ] $ \\
+     $ U $         & Innere Energie                          & $ [ J ] $ \\
+     $ V $         & Volumen                                 & $ [m³] $  \\
+     $ C_{mv} $    & Molare Wärme"-ka"-pa"-zi"-tät isochor   & $ [\frac{J}{mol K}] $ \\
+     $ R $         & Univers.-Gaskonst.                      & $ [\frac{J}{mol K}] $ \\ 
+     $ \eta_C $    & Cornot-Wirkungsgrad (bei Wärmekraftmaschine) & $[1]$ \\
+     $ \epsilon_C $& Carnot-Leistungszahl (bei Wärmepunpe)   & $[1]$ \\
+}}
+\vfill
+
+
+\section{Entropie}% \footnotemark} 
+%\footnotetext{Entropie bedeutetd ''zurückführen''}
+
+\index{Entropie}
+\index{zurückgeführte Energie}
+
+\Hauptbox{
+  \Bildbox{  
+  Im abgeschlossenen System gilt: 
+  \begin{itemize}
+    \item S kann niemals abnehmen.  
+    \item Bei allen Vorgängen nimmt S zu oder bleibt gleich.
+    \item Der Zustand wo S maximal ist, ist der stabile Zustand.
+  \end{itemize}
+   
+  }
+  \Formelbox{
+    \[ S = S_0 + \int^{P}_0  \frac{\delta Q_r}{T} \]
+    \[ dS = \frac{\delta Q_r}{T} \]
+    \[ \Delta S = S_2 - S_1 = \int^2 _1 \frac{\delta Q_r}{T} \]
+    \[ S = k \cdot \ln(W) \]
+    }
+  }
+  {\Groessenbox{
+     $ S$                & Entropie                            & $ [\frac{J}{K}] $      \\
+     $ P$                & Punkt P                             & $ [1] $                \\
+     $ Q_r$              & Wärme                               & $ [J] $                \\
+     $ T$                & Temperatur                          & $ [K] $                \\
+     $ W$                & Wahr"-schein"-lich"-keit            & $ [1] $                \\ 
+}}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 
+ 

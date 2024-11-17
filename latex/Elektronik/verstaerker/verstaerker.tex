@@ -1,0 +1,225 @@
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 
+%==========================================================
+% Titel:    Elektronik, Verstärker
+% Autor:    Adrian Freihofer
+% Erstellt: 19.03.2002
+% Geändert:
+
+
+\chapter{Gegengekoppelte Verstärker} \index{Verstärker}
+                                \index{Gegenkopplung}
+				\index{Rückkopplung}
+				\index{Verstärker!Gegenkopplung}
+				\index{Verstärker!Rückkopplung}
+
+\section{Mit- und Gegenkopplung} \index{Verstärker!Mitkopplung}
+				\index{Mitkopplung}
+
+\Hauptbox{
+  \Bildbox{
+	\input{Elektronik/verstaerker/rueckGegenKoppl.pstex_t}
+    }
+  \Formelbox{
+	Gegenkopplung:    
+	\[ A_{CL} = \frac{U_{out}}{U_{in}} = \frac{A_o}{1 + k A_{o}} \]
+	Mitkopplung:    
+	\[ A_{CL} = \frac{U_{out}}{U_{in}} = \frac{A_o}{1 - k A_{o}} \]
+    }} {
+  \Groessenbox{
+    $A_{CL}$   & Closed Loop Verstärkung & $[1]$ \\
+    $A_o$      & Open Loop Verstärkung   & $[1]$\\
+    $U$        & Spannung                & $[V]$ \\
+    $k$        & Faktor                  & $[1]$ \\
+}}
+
+\subsection{Gegenkopplung beim OP} \index{Gegenkopplung}
+
+\Hauptbox{
+  \Bildbox{
+	\input{Elektronik/verstaerker/gkOp.pstex_t}\\ \\
+	\begin{small}Bodeplot:\end{small}\\ \\
+	\input{Elektronik/verstaerker/gkBode.pstex_t}
+    }
+  \Formelbox{ 
+	Ideal:
+	\[ A_{CL} = \frac{n A_o}{1 + k A_{o}} \]
+	\begin{footnotesize}Nicht invertierend:\end{footnotesize}
+	\[ n=1 \]
+	\[ | A_{CLideal}| = \frac{R_F + R_1}{R_1} = \frac{1}{k} \]
+	\begin{footnotesize}Inveriterend:\end{footnotesize}
+	\[ n = \frac{R_F}{R_1 + R_F} \, \mbox{\hspace{0.5cm}} k = \frac{R_1}{R_1+R_F} \]
+	\[ |A_{CLideal}| = \frac{R_F}{R_1} \]
+	Real:
+	\[A_{CLreal} = n A_o \| A_{CLideal}  \]
+    }} {
+  \Groessenbox{
+    $A_{CL}$   & Closed Loop Verstärkung & $[1]$ \\
+    $A_o$      & Open Loop Verstärkung   & $[1]$\\
+    $k$        & GK-Faktor               & $[1]$ \\
+    $n$        & Faktor                  & $[1]$ \\
+    $R$        & Widerstand              & $[\Omega]$ \\
+}}
+\vfill
+
+\section{Gegenkopplungsarten}
+
+\index{Gegenkopplungsarten}
+
+\Hauptbox{
+  \Bildbox{
+	\begin{small}Serie-Parallel\end{small}\\ \\
+	\input{Elektronik/verstaerker/spGk.pstex_t}
+    }
+  \Formelbox{ 
+	\begin{footnotesize}Eingang: Seriell\\
+	Ausgang: Parallel\end{footnotesize}
+	\[ r_{iCL} \rightarrow \infty \mbox{\hspace{1cm}} r_{oCL} \rightarrow 0 \]
+	\[ r_{iCL} = r_i(1+kA_o) \]
+	\[ r_{oCL} = \frac{u_{out}}{i_{out}} = \frac{r_{o}}{1 + kA_o} \]
+    }\hline
+ \Bildbox{
+	\begin{small}Parallel-Parallel\end{small}\\ \\
+	\input{Elektronik/verstaerker/ppGk.pstex_t}
+    }
+  \Formelbox{ 
+	\begin{footnotesize}Eingang: Parallel\\
+	Ausgang: Parallel\end{footnotesize}
+	\[ r_{iCL} \rightarrow 0 \mbox{\hspace{1cm}} r_{oCL} \rightarrow 0 \]
+	\[ r_{iCL} = \frac{r_{i}}{1+kA_o}\]
+	\[ r_{oCL} = \frac{u_{out}}{i_{out}} = \frac{r_o}{1 + kA_o} \]
+    }\hline
+ \Bildbox{
+	\begin{small}Parallel-Serie\end{small}\\ \\
+	\input{Elektronik/verstaerker/psGk.pstex_t}
+    }
+  \Formelbox{ 
+	\begin{footnotesize}Eingang: Parallel\\
+	Ausgang: Seriell\end{footnotesize}
+	\[ r_{iCL} \rightarrow 0 \mbox{\hspace{1cm}} r_{oCL} \rightarrow \infty \]
+	\[ r_{iCL} = \frac{r_{i}}{1+kA_o}\]
+	\[ r_{oCL} = \frac{u_{out}}{i_{out}} = r_o(1+kA_o) \]
+    }\hline
+ \Bildbox{
+	\begin{small}Serie-Serie\end{small}\\ \\
+	\input{Elektronik/verstaerker/ssGk.pstex_t}
+    }
+  \Formelbox{ 
+	\begin{footnotesize}Eingang: Seriell\\
+	Ausgang: Seriell\end{footnotesize}
+	\[ r_{iCL} \rightarrow \infty \mbox{\hspace{1cm}} r_{oCL} \rightarrow \infty \]
+	\[ r_{iCL} = r_i(1+kA_o) \]
+	\[ r_{oCL} = \frac{u_{out}}{i_{out}} = r_o(1+kA_o) \]
+    }
+} {
+  \Groessenbox{
+    $A_o$   & Open Loop Verstärkung   & $[1]$ \\
+    $k$       & Faktor                  & $[1]$ \\
+    $r_i$     & Open Loop r-Eingang     & $[\Omega]$ \\
+    $r_o$     & Open Loop r-Ausgang     & $[\Omega]$ \\
+    $r_{iCL}$ & Closed Loop r-Eingang   & $[\Omega]$ \\
+    $r_{oCL}$ & Closed Loop r-Ausgang   & $[\Omega]$ \\
+    $u_{out}$ & u-Ausgang               & $[V]$ \\
+    $i_{out}$ & i-Ausgang               & $[A]$\\
+    $R_S$     & Quell-Widerst.          & $[\Omega]$ \\
+    $R_L$     & Last-Widerst.           & $[\Omega]$ \\
+}}
+ \vfill 
+
+\subsection{Bestimmung der Gegenkopplungsart}
+\begin{enumerate}
+\item Forwärtspfad, Rückwärtspfad und Gegenkopplugsschleife einzeichnen.
+\item Anzahl Inversionen im Vorwärtspfad ($\Rightarrow $ Invertierend oder nicht invertierend) bzw. in der Schleife bestimmen ($\Rightarrow $ Gegenkopplung bei ungerade Anzahl bzw. Mittkopplung bei gerader Anzahl).
+\item Knoten (out, in$+$ und in$-$ ) der Äquivalenten OP-Schaltung bestimmen.
+\item Äquivalenten OP-Schaltung zeichnen.
+\end{enumerate} 
+
+\subsection{Eingangsschaltungen} \index{Verstärker!Eingangschaltungen}
+Eingangsschaltungen bei Serieschaltung (Spannungsaddition)\\ 
+\input{Elektronik/verstaerker/eingSchalt.pstex_t} \\
+Eingangsschaltungen bei Parallelschaltung von Verstärkereingnag und Ausgang (Stromaddition)\\ 
+\input{Elektronik/verstaerker/eingSchalt2.pstex_t}
+
+\subsection{Ausgangsschaltungen}\index{Verstärker!Ausgangschaltungen}
+Ausgangsschaltungen bei Parallelschaltung von Last und Eingang (Spannungsabnahme am Ausgang)\\ 
+\input{Elektronik/verstaerker/ausgSchalt.pstex_t} \\
+Ausgangsschaltungen bei Serieschaltung von Last und Eingang (Stromabnahme am Ausgang)\\ 
+\input{Elektronik/verstaerker/ausgSchalt2.pstex_t}
+\vfill
+
+\section{Schleifenverstärkung}
+
+\index{Schleifenverstärkung}
+\index{Verstärker!Schleifenverstärkung}
+
+\Hauptbox{
+  \Bildbox{
+	\begin{small}Beispiel:\end{small} \\
+	\input{Elektronik/verstaerker/schleifenVerst.pstex_t}
+    }
+  \Formelbox{    
+	\[ A_L = k A_o = \frac{u_{xout}}{u_{xin}}\]
+	\begin{small}Gegenkopplungsgrad:\end{small}
+	\[ 1 + A_L = 1 + k A_L \]
+	\begin{small}$U_{Bias} $ legt den Arbeitspunkt fest. \end{small} \\
+	\begin{small}Es soll eine Trennstelle gewählt werden bei der $ r_{loop out} \gg r_{loop in} $ gilt $ \Rightarrow $ Belastung des Schleifenausganges kann vernachlässigt werden.\end{small} \vspace{0.1cm}	
+    }} {
+  \Groessenbox{
+    $A_L$      & Schliefen- Verstärkung & $[1]$ \\
+    $A_o$      & Open Loop Verstärkung   & $[1]$\\
+    $U$        & Spannung                & $[V]$ \\
+    $k$        & Faktor                  & $[1]$ \\
+    $R$        & Widerstand              & $[\Omega]$ \\
+}}
+
+
+\section{Wirkung der GK auf die Sensivität der Verstärkung}
+
+\index{Sensivität}
+
+\Hauptbox{
+  \Bildbox{
+	\begin{footnotesize}Die Sensitivität $ S_x^N $ ist ein Mass für die Empfindlichkeit einer Schaltungseigenschaft N gegenüber Schwankungen eines Parameters x.\end{footnotesize}
+    }
+  \Formelbox{    
+	\[ S_x^N = \frac{\frac{dN}{N}}{\frac{dx}{x}} \]
+	\[ S_{A_o}^{A_{CL}} = \frac{\frac{dA_{CL}}{A_{CL}}}{\frac{dA_o}{A_o}} = \frac{A_o}{A_{CL}} \frac{dA_{CL}}{dA_o}\]
+	\[ S_{A_o}^{A_{CL}} =\frac{1}{1 + k A_o} \]
+	\vspace{0.3cm}
+    }} {
+  \Groessenbox{
+    $ S $      & Sensitivität            & $[1]$\\
+    $A_L$      & Schliefen- Verstärkung  & $[1]$ \\
+    $A_o$      & Open Loop Verstärkung   & $[1]$\\   
+    $k$        & Faktor                  & $[1]$ \\
+    $x$        & veränderter Parameter   & $[...]$ \\
+    $N$        & Beeinflusste Grösse     & $[...]$ \\
+}}
+
+\section{Das Verstärkungs-Bandbreiten-Produkt}
+
+\index{Verstärkungs Bandbreiten Produkt}
+\index{GBP}
+\index{Verstärker!GBP}
+\index{Transitfrequenz}
+\index{Verstärker!Transitfrequenz}
+
+\Hauptbox{
+  \Bildbox{
+	\begin{small}Für alle Punkte die auf einer Amplitudengeraden mit einer Neignung von $ \pm 20 \frac{dB}{Dek} $ liegen gilt das Gesetz vom konstanten Verstärkungs-Bandbreiten-Produkt. Siehe auch S. \pageref{GBP}\end{small} \\ \\
+\input{Elektronik/verstaerker/gbp.pstex_t}
+    }
+  \Formelbox{    \label{GBPElektronik}
+	\[ A f = f_T = GBP \]
+	\[ A_1 f_1 = A_2 f_2 \]
+	\[ A_{oDC} = f_o = GBP \]
+    }} {
+  \Groessenbox{
+    $ f_T $    & Transitfrequenz $ = $ Amplitude $ \cap $ $ 0dB$-Achse      & $[\frac{1}{s}]$\\
+    $f$        & Frequenz     & $[\frac{1}{s}]$ \\
+    $A$        & Verstärkung  & $[1]$ \\
+    $A_{oDC}$  & Open-Loop DC-Gain & $[1]$ \\
+}}
+%==========================================================

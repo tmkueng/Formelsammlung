@@ -1,0 +1,379 @@
+%==========================================================
+% Titel:    Physik, Schwingungen 
+% Autor:    Adrian Freihofer
+% Erstellt: 7.11.2001
+% Geändert:
+%==========================================================
+
+
+\chapter{Schwingungen}                                          \index{Schwingungen}
+
+
+\section{Freie Schwingungen}                                    \index{Schwingungen!freie Schwingung}
+
+\subsection{Ungedämpfte, harmonische Schwingung}
+
+\index{Schwingungen!Ungedämpfte Schwingung}
+\index{Schwingungen!Harmonische Schwingung}
+                                                                
+\Hauptbox{
+  \Bildbox{
+    \scriptsize Zeitfunktion: \normalsize
+    \input{Physik/Schwingungen/Sinus} 
+    \scriptsize Zeigerbild: \normalsize \\
+    \input{Physik/Schwingungen/Zeigerbild.pstex_t} 
+    \scriptsize Phasenkurve: \normalsize \\
+    \input{Physik/Schwingungen/Phasenkurve.pstex_t}
+  }
+
+  \Formelbox{
+      \footnotesize Funktion: \normalsize  \[ y = A \sin(\omega t + \varphi) \]
+      \[ T = \frac{2 \pi}{\omega} \]
+      \[ f = \frac{1}{T} \]
+      \[ \omega = 2 \pi f \]
+      \[ \ddot y + \omega ^2 y = 0 \] 
+      \footnotesize Bei einer harmonischen Schwingung ist die Beschleunigung proportional zur Auslenkung: \normalsize
+      \[ a(t) = \ddot y = -A \omega _0 ^2 \sin (\omega _0 t ) \]
+      \[v(t) = \dot y = A  \omega_0 \cos (\omega _0 t ) \]
+      \footnotesize Energie bleibt konstant: \normalsize 
+      \[ E_{ges} = \frac{1}{2} c A^2  = E_{pot} + E_{kin} \]
+      \[ E_{pot} = \frac{1}{2} c A^2 \cos ^2 (\omega t + \varphi ) \]
+      \[ E_{kin} = \frac{1}{2} c A^2 \sin ^2 (\omega t + \varphi ) \] 
+      }
+  }
+  {\Groessenbox{
+     $ y$                & schwingende Grösse                    & $ [m]\footnotemark $ \\
+     $ A$                & Amplitude                             & $ [1] $              \\
+     $ \omega$           & Kreisfrequenz                         & $ [\frac{1}{s}] $    \\
+     $ \varphi$          & Nullphasen"-winkel                    & $ [rad] $        \\
+     $ t$                & Zeit                                  & $ [s] $          \\
+     $T$                 & Periode                               & $ [s] $ \\
+     $f$                 & Frequenz                              & $ [\frac{1}{s}] $ \\
+     $a$                 & Beschleuni"-gung                      & $ [\frac{m}{s^2} ] $ \\
+     $v$                 & Geschw.                               & $ [\frac{m}{s} ] $ \\
+     $E$                 & Energie                               & $ [ J ] $ \\
+     $c$                 & Konstante                             & $ [\frac{N}{m}] $\\
+}}
+\vfill
+
+
+ \footnotetext{m gilt nur bei mechanischen Schwingungen} 
+
+\subsection{Ungedämpfte, periodische Schwingung}
+
+\index{Schwingungen!periodische Schwingung}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Schwingungen/spektrum.pstex_t}
+  }
+  \Formelbox{
+      \footnotesize Fourierreihe: \normalsize   
+      \[ y = A_0 + \sum _{k=1} ^\infty A_k \sin (\omega _k t + \varphi _k ) \]      
+      \[ \omega _k = k \omega_1 \]
+      \[ \omega _1 = \frac{2 \pi}{T} \]
+      \scriptsize \[ y = A_0 + \sum _{k=1} ^\infty [a_k \sin (\omega_k t) + b_k \cos (\omega _k t)] \] 
+      \[ A_k = \sqrt{a_k ^2 + b_k ^2} \]
+      \[ \varphi _k = \arctan \left( \frac{b_k}{a_k} \right) \] \normalsize
+      }
+  }
+  {\Groessenbox{
+     $ y$                & schwingende Grösse                    & $ [m] $               \\
+     $ A$                & Amplitude                             & $ [1] $               \\
+     $ \omega$           & Kreisfrequenz                         & $ [\frac{1}{s}] $     \\
+     $ \varphi$          & Nullphasen"-winkel                    & $ [rad] $             \\
+     $T$                 & Periode der Grundschwingung           & $ [s] $ \\
+}}
+
+
+\subsection{Ungedämpfte, nicht periodische Schwingung}
+
+\index{Schwingungen!aperiodische Schwingung}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump
+  }
+  \Formelbox{
+      \footnotesize Fourierreihe: \normalsize   
+      \[ y = \int _\infty ^\infty A(\omega) e^{j\omega t} d \omega \] 
+      \vspace{0.9cm}
+      }
+  }
+  {\Groessenbox{
+     $ y$                & schwingende Grösse                    & $ [m] $               \\
+     $ A$                & Amplitude                             & $ [1] $               \\
+     $ \omega$           & Kreisfrequenz                         & $ [\frac{1}{s}] $     \\
+     $ t$                & Zeit                                  & $ [s] $               \\
+}}
+\vfill
+
+
+
+\subsection{Federpendel}
+
+\index{Schwingungen!Federpendel}
+\index{Pendel!Federpendel}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Schwingungen/federpendel1.pstex_t}
+  }
+  \Formelbox{
+      \footnotesize Federmasse vernachlässigt: \normalsize   
+      \[ m \ddot y + c y = 0 \] 
+      \[ y = A \sin ( \omega_0 t + \varphi ) \]
+      \[ \omega_0 = \sqrt{\frac{c}{m}} \]
+      \[ T = 2 \pi \sqrt{\frac{m}{c}} \]
+      \[ a(t) = -\left ( \frac{c}{m} \right) y(t) \]
+      \footnotesize Energiesatz: \normalsize  \[ \frac{1}{2} c A^2 = \frac{1}{2} c y^2(t) + \frac{1}{2} m v^2(t) \]
+      }\\ \hline
+    \Bildbox{
+      \input{Physik/Schwingungen/federpendel2.pstex_t}
+      }
+    \Formelbox{
+      \footnotesize Mit Federmasse: \normalsize   
+      \[ T = 2 \pi \sqrt{\frac{m + \frac{m_F}{3}}{c}} \]
+      }
+    }
+  {\Groessenbox{
+     $ y$                & schwingende Grösse                    & $ [m] $ \\
+     $ A$                & Amplitude                             & $ [1] $              \\
+     $ \omega$           & Kreisfrequenz                         & $ [\frac{1}{s}] $    \\
+     $ \varphi$          & Nullphasen"-winkel                    & $ [rad] $        \\
+     $ t$                & Zeit                                  & $ [s] $          \\
+     $T$                 & Periode                               & $ [s] $ \\
+     $f$                 & Frequenz                              & $ [\frac{1}{s}] $ \\
+     $m$                 & Bewegte Masse                         & $ [ kg ] $ \\
+     $m_F$               & Masse der Feder                       & $ [ kg ] $ \\
+     $c$                 & Feder"-kon"-stan"-te (siehe S. \pageref{cfeder} )   & $ [ \frac{N}{m} ] $ \\
+     $a$                 & Beschleuni"-gung                      & $ [\frac{m}{s^2} ] $ \\
+}}
+
+
+\subsection{Drehpendel}
+
+\index{Schwingungen!Drehpendel}
+\index{Pendel!Drehpendel}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Schwingungen/drehpendel.pstex_t}
+  }
+  \Formelbox{
+    \[ J \ddot y + c \varphi = 0 \] 
+    \[ \omega _0 = \sqrt{\frac{c}{J}} \]
+    \[ T = 2 \pi \sqrt{\frac{J}{c}} \]
+    \footnotesize bestimmung von Massenträgheitsmomenten: \normalsize
+    \[ J_{unbek} = J_{bek} \frac{T_{unbek} ^2}{T_{bek} ^2} \]
+    }
+  }
+  {\Groessenbox{
+     $ y$                & schwingende Grösse                    & $ [m] $ \\
+     $ \omega$           & Kreisfrequenz                         & $ [\frac{1}{s}] $    \\
+     $ \varphi$          & Nullphasen"-winkel                    & $ [rad] $        \\
+     $T$                 & Periode                               & $ [s] $ \\
+     $c$                 & Feder"-kon"-stan"-te                  & $ [ \frac{N}{m} ] $ \\
+     $J$                 & Massen"-träg"-heits"-mo"-ment         & $ [ \frac{kg}{m^2} ] $ \\
+}}
+\vfill
+
+\subsection{Mathematisches Pendel}
+
+\index{Schwingungen!Mathematisches Pendel}
+\index{Pendel!Mathematisches Pendel}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Schwingungen/mathpendel.pstex_t}
+  }
+  \Formelbox{
+    \[ l \ddot y + g \sin (\varphi ) = 0 \] 
+    \[ l \ddot y + g \varphi = 0 \]
+    \[ \omega _0 = \sqrt{\frac{g}{l}} \]
+    \[ T = 2 \pi \sqrt{\frac{l}{g}} \]
+    }
+  }
+  {\Groessenbox{
+     $ y$                & schwingende Grösse                    & $ [m] $ \\
+     $ \omega$           & Kreisfrequenz                         & $ [\frac{1}{s}] $    \\
+     $ \varphi$          & Winkel                                & $ [rad] $        \\
+     $T$                 & Periode                               & $ [s] $ \\
+     $l$                 & Pendellänge                           & $ [m] $ \\
+     $g$                 & Erdbeschl. $=9.81$                    & $ [ \frac{m}{s^2} ] $ \\
+}}
+
+
+\subsection{Physikalisches Pendel}
+
+\index{Schwingungen!Physikalisches Pendel}
+\index{Pendel!Physikalisches Pendel}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Schwingungen/physpendel.pstex_t} 
+    \vspace{5cm}
+    \footnotesize Perkussionszentrum \normalsize
+    \input{Physik/Schwingungen/perkussion.pstex_t}
+  }
+  \Formelbox{
+    \[ J_A \ddot \varphi  + m g a \sin (\varphi ) = 0 \] 
+    \[ l^* = \frac{J_A}{ma}  \]
+    \[ J_A \ddot \varphi + m g a \varphi = 0 \]
+    \[ \omega _0 = \sqrt{\frac{mga}{J_A}} \]
+    \[ T = 2 \pi \sqrt{\frac{J_A}{mga}} =2 \pi \sqrt{\frac{J_S + m a^2}{mga}}\] 
+    \[ T = 2 \pi \sqrt{\frac{J_{A1} + J_{A2}}{g (m_1 a_1 + m_2 a_2)}} \]
+    \[ J_A = J_S + m a^2 \]
+    \[ \omega _{max} = \sqrt{\frac{g}{2} \sqrt{\frac{m}{J_S}}} \]
+    \[ \omega (A) = \omega(M) \]
+    \[ x = \frac{J_S}{m a} \]
+    \[ E = \frac{ m \omega_0 ^2 A ^2}{2} \]
+    } 
+  }
+  {\Groessenbox{
+     $ J_A$              & Masseträgheit bez. A-Achse            & $ [kgm^2] $ \\
+     $ J_S$              & Masseträgheit bez. Achse $\|$ a (siehe S. \pageref{J})     & $ [kgm^2] $ \\
+     $ S$                & Schwerpunkt                           & $ [1] $    \\
+     $ a$                & Anstand zu S                          & $ [m] $        \\
+     $T$                 & Periode                               & $ [s] $ \\
+     $l^*$               & Pendellänge des entsp. math. Pendel   & $ [m] $ \\
+     $ y$                & schwingende Grösse                    & $ [m] $ \\
+     $ A$                & Amplitude                             & $ [1] $              \\
+     $ \omega$           & Kreisfrequenz                         & $ [\frac{1}{s}] $    \\
+     $ \varphi$          & Winkel                                & $ [rad] $        \\
+     $ t$                & Zeit                                  & $ [s] $          \\
+     $f$                 & Frequenz                              & $ [\frac{1}{s}] $ \\
+     $m$                 & Bewegte Masse                         & $ [ kg ] $ \\
+     $E$                 & Energie                               & $ [ J ] $ \\
+     $M$                 & Schwing-Mit"-tel"-punkt, Per"-kus"-sions"-zen"-trum & \\ 
+     $x$                 & Abstand M,S                           & $[m]$\\
+     $g$                 & Erdbeschl. $ = 9.81$                  & $ [\frac{m}{s^2} ] $ \\
+}}
+\vfill
+
+\subsection{Gedämpfte Schwingung mit konstanter Reibung}
+
+\index{Schwingung!Gedämpfte Schwingung}
+\index{Gedämpfte Schwingung}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Schwingungen/gedaempftKonst}
+  }
+  \Formelbox{
+    \[ \Delta A = 4 \frac{F_R}{c} \] 
+    \[ m \ddot y + c y + F_R = 0 \]
+    }
+  }
+  {\Groessenbox{
+     $ \Delta A$         & $\Delta$ Amplitude pro Periode        & $ [m] $ \\
+     $ F_R $             & Reibkraft                             & $ [\frac{1}{s}] $    \\
+     $ c$                & Feder"-kon"-stan"-te                  & $ [\frac{N}{m}] $        \\
+}}
+
+
+\subsection{Schwingung mit geschwindigkeitsproportionaler Dämpfung ($D < 1$ )}
+
+\index{Schwingung!Gedämpfte Schwingung}
+\index{Gedämpfte Schwingung}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Schwingungen/gedaempftNKonst}
+  }
+  \Formelbox{
+    \[ m \ddot y + b \dot y + cy = 0 \] 
+    \[ y = A e^{-\delta t} \sin ( \omega _d t + \phi _0 ) \]
+    \[ \delta = \frac{b}{2m} \mbox{\hspace{1cm}} F_R = -b \dot y \]
+    \[ \omega _d = \sqrt{\omega _0 ^2 - \delta ^2 } \]
+    \[ \omega _0 = \sqrt{\frac{c}{m}} \]
+    \[ D = \frac {\delta}{\omega _0 } \]
+    \[ D = \frac{ \frac{\Lambda}{2 \pi}}{\sqrt{1 + \left( \frac{\Lambda}{2 \pi} \right )^2}} \]
+    \[ \omega _d = \omega _0 \sqrt{ 1 - D^2} \]
+    \[ \Lambda = \frac{2 \pi D}{\sqrt{1 - D^2}} \]  
+    \[ \Lambda = \delta T  \]  
+    \[ \Lambda = \ln \frac{A_n}{A_{n + 1}} \mbox{\hspace{1cm}} \frac{A_n}{A_{n + 1}}  = e ^{\delta T} \] 
+    \[ \frac{E_1}{E_2} = \frac{A_1 ^2}{A_2 ^2} \]
+    }
+  }
+  {\Groessenbox{
+     $ y$                & schwingende Grösse                    & $ [m] $ \\
+     $ \omega$           & Kreisfre"-quenz                       & $ [\frac{1}{s}] $    \\
+     $ \varphi$          & Win"-kel                              & $ [rad] $        \\
+     $T$                 & Periode                               & $ [s] $ \\
+     $\delta$            & Abkling"-konst.                       & $ [1] $ \\
+     $b$                 & Dämpfungs"-konst.                     & $ [ \frac{kg}{s}] $ \\
+     $m$                 & Masse                                 & $ [kg] $\\  
+     $c$                 & Feder"-konst.                         & $ [ \frac{N}{m} ]$\\
+     $D$                 & Dämpfungs"-grad                       & $ [ 1 ] $ \\
+     $\Lambda$           & log. Dekre"-ment                      & $ [ 1] $ \\
+     $ A $               & Amplitude                             & $ [ 1 ]$ \\   
+     $ E $               & Energie                               & $ [ J ]$ \\ 
+}}
+\vfill
+
+
+\subsection{Aperiodeische Lösung ($D > 1$ )}
+
+\index{Schwingung!Aperiodische Schwingung}
+\index{Aperiodische Schwingung}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Schwingungen/verD}
+  }
+  \Formelbox{
+    \[ y = b_1 e^{\lambda_1 t} + b_2 e^{\lambda_2 t}  \]
+    \[ \lambda_1 = - \omega _0 ( D + \sqrt{D^2 -1 } ) \]
+    \[ \lambda_2 = - \omega _0 ( D - \sqrt{D^2 -1 } ) \]
+    \footnotesize Grenzfall $D = 1$\normalsize
+    \[ \frac{c}{m} = \frac {b^2}{4 m^2} \]
+    \[y = ( b_1 + b_2 t ) e ^{- \delta t} \]
+    }
+  }
+  {\Groessenbox{
+     $ y$                & schwingende Grösse                    & $ [m] $ \\
+     $ \omega$           & Kreisfre"-quenz                       & $ [\frac{1}{s}] $    \\
+     $\delta$            & Abkling"-konst.                       & $ [1] $ \\
+     $b$                 & Dämpfungs"-konst.                     & $ [ \frac{kg}{s}] $ \\
+     $D$                 & Dämpfungs"-grad                       & $ [ 1 ] $ \\
+     $m$                 & Masse                                 & $ [ kg ] $ \\
+     $c$                 & Federkonstante                        & $ [ \frac{N}{m} ] $ \\
+}}
+
+\subsection{Elektrischer Schwingkreis}
+
+\index{Elektrischer Schwingkreis}
+\index{Schwingungen!Elektrischer Schwingkreis}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Schwingungen/elsk.pstex_t}
+  }
+  \Formelbox{
+    \[ I = I_0 e^{-\delta t} \sin(\omega_d t + \phi_0) \]
+    \[ \delta = \frac{R}{2L} \]
+    \[ \omega_d = \omega_0 \sqrt{1 -D^2} \]
+    \[ \omega _0 = \frac{1}{\sqrt{LC}} \]
+    \[ D = \frac{R}{2} \sqrt{\frac{C}{L}} \]
+    \[ \omega _d = \frac{1}{\sqrt{LC}} \sqrt{1- \frac{R^2 C}{4 L}} \]
+    }
+  }
+  {\Groessenbox{
+     $ I$                & Strom                                 & $ [A] $ \\
+     $ R$                & Widerstand                            & $ [\Omega ]$ \\
+     $ L$                & Induktivität                          & $ [ H ] $ \\
+     $ \omega$           & Kreisfre"-quenz                       & $ [\frac{1}{s}] $    \\
+     $\delta$            & Abkling"-konst.                       & $ [1] $ \\
+     $t$                 & Zeit                                  & $ [s] $ \\
+     $D$                 & Dämpfungs"-grad                       & $ [ 1 ] $ \\ 
+}}
+\vfill
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 
+ 

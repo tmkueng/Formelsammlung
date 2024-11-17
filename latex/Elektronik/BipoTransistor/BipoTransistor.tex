@@ -1,0 +1,259 @@
+%==========================================================
+% Titel:    Formelsammlung-HSR
+% Autor:    Adrian Freihofer
+% Erstellt: 7.11.2001
+% Geändert:
+%==========================================================
+
+\chapter{Bipolar Transistor}
+
+\section{NPN- und PNP-Transistor}
+
+\index{Transistor!NPN}
+\index{Transistor!PNP}
+\index{Transistor!Funktionsweise}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	NPN:\\ \\
+  \input{Elektronik/BipoTransistor/NPN-Trans.pstex_t} \\ \\
+	PNP:\\ \\
+  \input{Elektronik/BipoTransistor/PNP-Trans.pstex_t}
+  }
+  \Formelbox{
+	\[ i_E = i_C + i_B \]
+	\[ i_C = A i_E \]
+	\[ B = \frac{A}{1-A} = \frac{i_C}{i_B} \]
+	DC-Ersatzschaltung:
+	\[ i_B = I_{SB} e^{\frac{u_{BE}}{U_T}} \]
+	\[ i_C = B I_{SB} e^{\frac{u_{BE}}{U_T}} \]	
+	\vspace{1.6cm}
+      }
+  }
+  {\Groessenbox{
+     $ A $          & Strom"-ver"-stär"-kung in B-Schal"-tung $= 0.9 ... 0.998 $       & $ [1] $     \\
+     $ B $          & Strom"-ver"-stär"-kung                                & $ [1] $   \\
+     $ i_B $        & Basisstrom                                            & $ [A] $   \\
+     $ i_C $        & Kollektorstrom                                        & $ [A] $   \\
+     $ i_E $        & Emitterstrom                                          & $ [A] $   \\
+     $ u_{BE} $     & Span. B $\rightarrow$ E                               & $ [V] $   \\
+     $ u_{T} $      & Temp.-Span. Diode B $\rightarrow$ E $\approx 0.026$   & $ [V] $   \\
+     $ i_{SB} $     & Stromquelle zw. C $\rightarrow$ B                         & $ [A] $   \\
+}}
+\vfill
+
+\section{Der ideale Transistor bei Gleichspannung}
+\index{Transistor!Idealer}
+
+\subsection{DC-Ersatzschaltung}
+
+\index{Transistor!DC-Ersatzschaltung}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	NPN:\\ \\
+  \input{Elektronik/BipoTransistor/ErsatzNPN.pstex_t} \\ \\
+	PNP:\\ \\
+  \input{Elektronik/BipoTransistor/ErsatzPNP.pstex_t} 
+  }
+  \Formelbox{
+	\[ B = \frac{I_C}{I_B} \]
+	\[ I_C = B I_B \]
+	\[ I_E = I_B + I_C = I_B + B I_B \]
+	\[ I_E = (1+B) I_B \]
+	falls $B \gg 1 $ gilt:
+	\[ I_C \approx I_E \approx B I_B \]
+	\[ A = \frac{I_C}{I_E} = \frac{B I_B}{(1+B) I_B} = \frac{B}{1+B} \]
+      }
+  }
+  {\Groessenbox{
+     $ A $          & Strom"-ver"-stär"-kung in B-Schal"-tung $\approx 1 $ falls $ B \gg 1$      & $ [1] $     \\
+     $ B $          & DC-Strom"-ver"-stär"-kung                                & $ [1] $   \\
+     $ I_B $        & Basisstrom                                            & $ [A] $   \\
+     $ I_C $        & Kollektorstrom                                        & $ [A] $   \\
+     $ I_E $        & Emitterstrom                                          & $ [A] $   \\
+     $ U_{F} $      & Span. Diode $\approx 0.6$                             & $ [V] $   \\
+}}
+
+
+
+\section{Verstärkerschaltungen}
+\index{Transistor!Verstärkerschaltungen}
+
+\subsection{Dynamische Innenwiderstände des Transistors}
+
+\index{Transistor!Dynamische Innenwiderstände}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+  \input{Elektronik/BipoTransistor/dynamischeInnenwiderst.pstex_t}
+  }
+  \Formelbox{
+	\[ r_{iB} = r_{BB'} + ( \beta + 1) (R_E + r_E ) \]
+	\[ r_{iE} = r_{E}' = r_E + \frac{r_{BB'} + R_B}{\beta +1} \]
+	\begin{footnotesize}\[ r_{iC} = r_{CE} \left( 1+ \frac{\beta R_E}{R_E + R_B + r_{BB'} + r_{B'E}} \right) \]\end{footnotesize}
+	\[ r_{iC} \approx R_C \] 
+	\[ r_E = \frac{U_{temp}}{I_E} = \frac{r_{B'E}}{\beta +1} = \frac{\frac{U_{temp}}{I_B}}{\beta + 1} \]
+	\[ r_{CE} = \frac{U_{Early} + U_{CE}}{I_C} \approx \frac{U_{Early}}{I_C} \]
+	\vspace{1.1cm}      }
+  }
+  {\Groessenbox{
+     $ r_{iB} $     & r-Basis                               & $ [\Omega] $ \\
+     $ r_{iE} $     & r-Emitter                             & $ [\Omega] $ \\
+     $ r_{iC} $     & r-Kollektor                           & $ [\Omega] $ \\
+     $ r_{BB'} $    & Basis"-bahn"-wi"-der"-stand           & $ [\Omega] $ \\
+     $ r_{E} $      & innerer r-Emitter                     & $ [\Omega] $ \\
+     $ R_{E} $      & R-Emitter                             & $ [\Omega] $ \\
+     $ \beta $      & AC-Strom"-ver"-stär"-kung             & $ [1] $   \\
+     $ R_B $        & R-Basis                               & $ [\Omega] $   \\
+     $ I_C $        & Kollektorstrom                        & $ [A] $   \\
+     $ I_E $        & Emitterstrom                          & $ [A] $   \\
+     $ U_{Early} $  & Early-Span. $= 20...400, typ. 100$    & $ [V] $   \\
+     $ U_{temp} $   & Temp-Span. $\approx 0.026$            & $ [V] $   \\
+}}
+\vfill
+
+\subsection{Emitterschaltug}
+
+\index{Transistor!Emitterschaltug}
+\index{Emitterschaltug}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	invertierend:\\ \\
+  \input{Elektronik/BipoTransistor/Emitterschaltung.pstex_t}
+  }
+  \Formelbox{
+	\[ A = \frac{u_{out}}{u_{in}} = - \frac{R_C}{R_E + r_E ' + \frac{R_C}{\mu}} \]
+	\[ A \approx - \frac{R_C}{R_E + r_E '} \]
+	\[ \mbox{Falls } R_E = 0 \mbox{: } A = \frac{ R_C \| r_{CE}}{r_E'} \]
+	\[ \mu = \frac{r_{CE}}{r_E'} \approx \frac{U_{Early}}{U_{temp}} \]
+	\[ r_E = \frac{U_{temp}}{I_E} = \frac{r_{B'E}}{\beta + 1} \]
+	\[ r_E' = r_E + \frac{r_{BB'} + R_B}{\beta +1} \]
+	\[ r_{CE} = \frac{U_{Early} + U_{CE}}{I_C} \approx \frac{U_{Early}}{I_C} \]
+	\begin{scriptsize}\[ r_{0C} \approx R_C \mbox{\hspace{0.5cm}} r_{0E} = r_{iE} \| R_E \mbox{\hspace{0.5cm}} r_{0B} = r_{iB} \| R_1 \| R_2 \]\end{scriptsize}
+      }
+  }
+  {\Groessenbox{
+     $ A $          & Ver"-stär"-kung                       & $ [1] $ \\
+     $ \mu $        & max. theoretisch A                    & $ [1] $ \\ 
+     $ \beta $      & AC-Strom"-ver"-stär"-kung             & $ [1] $   \\
+     $ R_{C} $      & R-Kollektor                           & $ [\Omega] $ \\
+     $ R_{E} $      & R-Emitter                             & $ [\Omega] $ \\
+     $ R_{B} $      & R-Basis                               & $ [\Omega] $ \\
+     $ r_{BB'} $    & Basis"-bahn"-wi"-der"-stand           & $ [\Omega] $ \\
+     $ r_{E} $      & innerer r-Emitter                     & $ [\Omega] $ \\
+     $ I_{C} $      & I-Kollektor                           & $ [A] $ \\
+     $ I_E $        & Emitterstrom                          & $ [A] $   \\
+     $ U_{Early} $  & Early-Span. $= 20...400, typ. 100$    & $ [V] $   \\
+     $ U_{temp} $   & Temp-Span. $\approx 0.026$            & $ [V] $   \\   
+}}
+
+\subsubsection{Arbeitspunktberechnung}
+
+\index{Transistor!Emitterschaltug!Arbeitspunkt}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+  \input{Elektronik/BipoTransistor/EmitterArbeitsp.pstex_t}
+  }
+  \Formelbox{
+	\[ U_{0_{Ersatz-Quelle}} = U_0 = \frac{U^+ }{R_1 + R_2} R_2 \]
+	\[ R_{i_{Ersatz-Quelle}} = R_1 \| R_2 \]
+	\[ U_{R_E} = \frac{ (U_0 - U_{BE} ) (\beta + 1) R_E}{(R_1 \| R_2) + (\beta + 1) R_E } \]
+	\[ \mbox{Falls } I_B = 0 \mbox{: } U_{RE} = U_0 -U_{BE} \]
+	\[ I_B = \frac{(U_0 -U_{BE} -U_{R_E} )}{R_1 \| R_2} \]
+	\[ I_C = I_E - I_B \]
+	\[ U_{R_E} = I_C R_C \rightarrow U_C\]
+      }
+  }
+  {\Groessenbox{
+     $ \beta $      & AC-Strom"-ver"-stär"-kung             & $ [1] $   \\
+     $ R_{C} $      & R-Kollektor                           & $ [\Omega] $ \\
+     $ R_{E} $      & R-Emitter                             & $ [\Omega] $ \\
+     $ I_{C} $      & I-Kollektor                           & $ [A] $ \\
+     $ I_E $        & Emitterstrom                          & $ [A] $   \\
+     $ U^+ $        & Speise-Span.                          & $ [V] $   \\  
+     $ U_{BE} $     & B-E-Span. $\approx 0.6$               & $ [V] $   \\  
+     $ U_{0} $      & Span.der gedachten Quelle des Basis"-span"-nungs"-tei"-lers    & $ [V] $   \\
+     $ R_{i} $      & R-Innen                               & $ [\Omega] $ \\   
+}}
+\vfill
+
+
+\subsection{Basisschaltung}
+
+\index{Transistor!Basisschaltug}
+\index{Basisschaltug}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	nicht invertierend:\\ \\
+  \input{Elektronik/BipoTransistor/Basisschaltung.pstex_t}
+  }
+  \Formelbox{
+	\[ A = \frac{u_{out}}{u_{in}} = \frac{R_C}{R_E + r_E ' + \frac{R_C}{\mu}} \]
+	\[ A \approx \frac{R_C}{R_E + r_E '} \]
+	Falls $R_E = 0$ :
+	\[ A = \frac{ R_C \| r_{CE}}{r_E'} \]
+	\[ \mu = \frac{r_{CE}}{r_E'} \approx \frac{U_{Early}}{U_{temp}} \]
+	\[ r_E = \frac{U_{temp}}{I_E} = \frac{r_{B'E}}{\beta + 1} \]
+	\[ r_E' = r_E + \frac{r_{BB'} + R_B}{\beta +1} \]
+	\[ r_{CE} = \frac{U_{Early} + U_{CE}}{I_C} \approx \frac{U_{Early}}{I_C} \]
+        \begin{scriptsize}\[ r_{0C} \approx R_C \mbox{\hspace{0.5cm}} r_{0E} = r_{iE} \| R_E \mbox{\hspace{0.5cm}} r_{0B} = r_{iB} \| R_1 \| R_2 \]\end{scriptsize}
+      }
+  }
+  {\Groessenbox{
+     $ A $          & Ver"-stär"-kung                       & $ [1] $ \\
+     $ \mu $        & max. theoretisch A                    & $ [1] $ \\ 
+     $ \beta $      & AC-Strom"-ver"-stär"-kung             & $ [1] $   \\
+     $ R_{C} $      & R-Kollektor                           & $ [\Omega] $ \\
+     $ R_{E} $      & R-Emitter                             & $ [\Omega] $ \\
+     $ R_{B} $      & R-Basis                               & $ [\Omega] $ \\
+     $ r_{BB'} $    & Basis"-bahn"-wi"-der"-stand           & $ [\Omega] $ \\
+     $ r_{E} $      & innerer r-Emitter                     & $ [\Omega] $ \\
+     $ I_{C} $      & I-Kollektor                           & $ [A] $ \\
+     $ I_E $        & Emitterstrom                          & $ [A] $   \\
+     $ U_{Early} $  & Early-Span. $= 20...400, typ. 100$    & $ [V] $   \\
+     $ U_{temp} $   & Temp-Span. $\approx 0.026$            & $ [V] $   \\   
+}}
+
+
+
+\subsection{Kollektorschaltung (Emitterfolger)}
+
+\index{Transistor!Kollektorschaltug}
+\index{Transistor!Emitterfolger}
+\index{Kollektorschaltug}
+\index{Emitterfolger}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	nicht invertierend:\\ \\
+  \input{Elektronik/BipoTransistor/Kollektorschaltung.pstex_t}
+  }
+  \Formelbox{
+	\[ A = \frac{u_{out}}{u_{in}} = \frac{R_E}{R_E + r_E '} \]
+	Falls $ R_E \gg r_E '$ gilt :
+	\[ A \approx 1 \]
+	\[ r_E' = r_E + \frac{r_{BB'} + R_B}{\beta +1} \]
+      }
+  }
+  {\Groessenbox{
+     $ A $          & Ver"-stär"-kung                       & $ [1] $ \\
+     $ R_{E} $      & R-Emitter                             & $ [\Omega] $ \\
+     $ R_{B} $      & R-Basis                               & $ [\Omega] $ \\
+     $ r_{E} $      & innerer r-Emitter                     & $ [\Omega] $ \\
+     $ r_{BB'} $    & Basis"-bahn"-wi"-der"-stand           & $ [\Omega] $ \\ 
+     $ \beta $      & AC-Strom"-ver"-stär"-kung             & $ [1] $   \\
+}}
+
+
+
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 

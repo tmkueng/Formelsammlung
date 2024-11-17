@@ -1,0 +1,696 @@
+%==========================================================
+% Titel:    Formelsammlung-HSR
+% Autor:    Adrian Freihofer
+% Erstellt: 20.08.2002
+% Geändert:
+%==========================================================
+
+\chapter{Feldeffekt Transistor}
+
+\section{Verschiedene Typen}
+
+\index{Fet!Fet-Typen}\index{Fet-Typen}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	n-Kanal:\\ \\
+	\input{Elektronik/fet/nFet.pstex_t} \\
+	p-Kanal:\\ \\
+	\input{Elektronik/fet/pFet.pstex_t}
+  }
+  \Formelbox{
+	\begin{footnotesize}JFET: Die Isoltion zwischen Kanal und Gate besteht aus einer pn-Sperrschicht (Diode). \\ \\
+	MOSFET: Die Isoltion zwischen Kanal und Gate besteht aus einer $ SiO_2$-Schicht. \\ \\
+	Der selbstsperrende MOSFET sowie der JFET werden mit der Gatespannung gesperrt. \\ \\	
+	Bulk ist meistens mit Source verbunden. \end{footnotesize}
+      }
+  }
+  {\Groessenbox{
+     	$ G $          & Gate       &      \\ 
+	$ D $          & Drain       &      \\ 
+	$ B $          & Bulk oder Substrat    &      \\ 
+	$ S $          & Source       &      \\
+}}
+\vfill
+
+\section{Der ideale MOSFET (Handrechnung)}
+\index{Fet!MOSFET!ideal} 
+\Hauptbox{                                                                    
+  \Bildbox{
+\begin{footnotesize}Im gesättigten Bereich verhält sich ein FET annähernd wie eine Stromquelle, im ungesättigten Bereich stellt er einen Widerstand dar. Die Steuergrösse ist $ u_{GS}$.\end{footnotesize} \\ \\
+	\input{Elektronik/fet/kennlinieNFet.pstex_t}
+	\begin{itemize}
+	\item Drainstrom fliesst nur falls $|u_{GS}| > |U_{T}|$.
+	\item Gatestrom ist 0.
+	\end{itemize} 
+  }
+  \Formelbox{
+	\[ U_{DSsat} = U_{GS} - U_{T} \]
+	\[ I_{Dsat} = K \frac{U_{DS} ^2}{2} \]
+	\[ I_D = I_D' \frac{W}{L} \]
+	\[ K = \frac{2 I_{DSS} ^*}{U_{T} ^2} \]
+	\[ K = K' \frac{W}{L} \qquad \qquad K' = \mu C_{ox} \]
+	\[ k' \approx K' \qquad \qquad C_{ox} = \frac{\epsilon_{ox}}{t_{ox}} \]
+	\[ U_A \approx a L \]
+        \begin{footnotesize}Im ohmschen Bereich gilt:\end{footnotesize}
+	\[ U_{DS} < U_{DSsat} \]
+	\[ I_D = K \left[ (U_{GS} - U_{T} ) U_{DS} - \frac{U ^2 _{DS}}{2} \right ] \]
+	\[r_{DS} = \frac{dV_{DS}}{dI_D} = \frac{|U_A| + U_{DS}}{I_D} \]
+        \begin{footnotesize}Im gesättigten Bereich gilt:\end{footnotesize}
+	\[ U_{DS} > U_{DSsat} \]
+	\[ I_D = \frac{k}{2} (U_{GS} - U_{T}) ^2 \]
+        \begin{footnotesize}Nur bei n-Kanal:\end{footnotesize}
+	\[ U_{T} > 0 \]
+	\[ U_{GS} > U_{T} \Rightarrow I_D > 0 \]
+        \begin{footnotesize}Nur bei p-Kanal:\end{footnotesize}
+	\[ U_{T} < 0 \]
+	\[ U_{GS} < U_{T} \Rightarrow I_D > 0 \]
+      } 
+  }
+  {\Groessenbox{
+     	$ I_D $       & Drainstrom                                  & $[A]$ \\ 
+	$ U_{T} $    & Schwellspan"-nung (0.6...8)                 & $[V]$ \\ 
+	$ K $         & Trans"-kon"-duk"-tanz"-pa"-ra"-me"-ter      & $[\frac{A}{V^2}]$  \\ 
+	$ k' $        & spez. k ($k'_N \approx 44\cdot 10^{-6}, k'_P \approx 17 \cdot 10^{-6} $)                               & $[\frac{A}{V^2}]$  \\  
+        $ k $         & wie K jedoch gesättigt                      & $[\frac{A}{V^2}]$  \\ 
+	$ U_{DS} $    & DS-Spannung                       & $[V]$ \\
+	$ U_{GS} $    & GS-Spannung                        & $[V]$  \\
+	$ I_{DSS} ^*$ & ev. anstelle von K gegeben                  & $[A]$  \\
+	$ W $         & Kanalbreite                                 & $[m]$ \\ 
+	$ L $         & Kanallänge                                  & $[m]$ \\ 
+	$ C_{ox} $    & spez. Kapazität Kanal-Gate                  & $[\frac{F}{m^2}]$ \\ 
+	$ \epsilon_{ox} $ & Dielektri"-zi"-täts"-konst. ($SiO_2 = 3.9 \cdot 8.86 \cdot 10 ^{-3} $) & $[\frac{F}{m}]$ \\ 
+	$ t_{ox} $    & Dicke Isolation Kanal-Gate                  & $[m]$ \\ 
+	$ \mu $       & Beweglichkeit Ladungsträger im Kanal (Für $Si$: $\mu_p = 580$ , $\mu_n = 230$) & $[\frac{cm^2}{sV} ] $ \\
+	$ r_{DS} $    & dyn. Drain-Source Widerstand                & $[\Omega]$ \\ 
+	$ U_A $       & Earlyspan"-nung                             & $[V]$ \\ 
+	$ L $         & Gatelänge                                   & $[m]$ \\
+	$ a $         & Early Faktor $\approx 6$                    & $[\frac{V}{\mu m}]$ \\
+}}
+\vfill
+
+
+\section{Der reale MOSFET}
+
+\index{Fet!MOSFET!real} 
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	\begin{footnotesize}Im Exp-Bereich, bei schwacher Inversion: \newline $ 0 < U_{GS} < (U_T - 60mV) $\\
+	Im Quad-Bereich, bei starker Inversion: \newline $ U_{GS} > (U_T - 60mV) $\\
+	Dazwischen: Moderate Inversion \end{footnotesize}\\ \\
+	\input{Elektronik/fet/kennlinieReal.pstex_t} \\ \\
+\begin{small}Im Leckstrombereich, im Schwellenbereich und im linearen Bereich existieren keine handlichen Formeln.\end{small}\\  \\
+\input{Elektronik/fet/fetAufbau.pstex_t} 
+  }
+  \Formelbox{ \label{satt}
+	\begin{small}Im EXP-Bereich gilt:\end{small}
+	\[ U_{DSsat} \approx 5 U_{temp} \approx 130mV \]
+	\begin{footnotesize}ungesättigt: $ U_{DS} \leq U_{DSsat} $ \end{footnotesize}
+	\begin{scriptsize}\[ I_D = I_M e^{\frac{U_{GS} - U_M} {n U_{temp}}} \left( 1 - e^{\frac{-U_{DS}}{U_{temp}}} \right) (1 + \lambda U_{DS}) \] \end{scriptsize}
+	\begin{footnotesize}gesättigt: $ U_{DS} \geq U_{DSsat} $\end{footnotesize}
+	\[ I_D = I_M e^{\frac{U_{GS}-U_M}{n U_{temp}}} (1 + \lambda U_{DS} ) \]
+	\begin{small}Im Quadratischen Bereich gilt:\end{small}
+	\[ U_{DSsat} = U_{GS} - U_T = \sqrt{2 \frac{I_D}{k}}\]
+	\begin{footnotesize}ungesättigt: $ U_{DS} \leq U_{DSsat} $\end{footnotesize}
+	\begin{scriptsize}\[ I_D = K \left[ (U_{GS} - U_{T} ) U_{DS} - \frac{U ^2 _{DS}}{2} \right ]( 1 + \lambda_{U_{DS}}) \]\end{scriptsize}
+	\begin{footnotesize}gesättigt: $ U_{DS} \geq U_{DSsat} $\end{footnotesize}
+	 \[ I_D = \frac{k}{2} (U_{GS} - U_{T}) ^2 ( 1 + \lambda_{U_{DS}}) \]
+	\[ \lambda = \frac{1}{U_A} \]
+	\[ U_T = T_{T0} \pm \Delta U_T \qquad N \rightarrow +\]
+	\[ \Delta U_T = \gamma ( \sqrt{U_{SB} \pm \Phi_0} \sqrt{\Phi_0}) \]
+	\[ U_{temp} = \frac{kT}{e} = 86\frac{\mu U}{K}T \]
+	\[ I_M = I_M' \frac{W}{L} \]
+	\[ n = 1 + \frac{\gamma}{2 \sqrt{U_{SB} + \Phi_0}}  \]
+	\[ K = K' \frac{W}{L} = \mu C_{oc} \frac{W}{L} \]
+	\[ k = k'\frac{W}{L} = \mu C_{ox} \frac{W}{L}, \qquad \alpha = \frac{K'}{k'} \]
+      }
+  }
+  {\Groessenbox{
+	$ I_D $       & Drainstrom                                  & $[A]$ \\ 
+	$ I_M $       & Drain"-strom"-gren"-ze                      & $[A]$ \\ 
+	$ U_{GS} $    & U Gate Source                               & $[V]$ \\ 
+	$ U_{DS} $    & Drain-Source                                & $[V]$ \\
+	$ U_{T} $     & Schwellsp.                                  & $[V]$ \\ 
+	$ U_{T0} $    & $U_{T0N} \approx 0.6$ $U_{T0P} \approx 0.65$& $[V]$ \\ 
+	$ U_{SB} $    & U Source Bulk                               & $[V]$ \\ 
+	$ U_{temp} $  & U-Temp. $\approx 26\cdot 10^{-3}$           & $[V]$ \\ 
+	$ U_A $       & Early-Span.                                 & $[V]$ \\
+	$ \Phi_0 $    & Fermi-Pot.$ = 2\Phi_F = 0.6$                & $[V]$ \\  
+	$ k $         & Transkond.                                  & $[\frac{A}{V^2}]$  \\ 
+	$ K$          & k ungesättigt                               & $[\frac{A}{V^2}]$  \\ 
+	$ K',k' $     & bei quadratischem Kanal typisch:  $k_N = 44\cdot 10^{-6}$,  $k_P = 17\cdot 10^{-6}$                     & $[\frac{A}{V^2}]$  \\ 
+	$ \alpha $    & Transkond. Verhältnis $ \approx 1$          & $[1]$ \\
+	$ n $         & Subthreshold Slope Faktor $\approx 1.5 $    & $[1]$ \\
+	$ \gamma $    & $\gamma \approx 0.6  $                      & $[\sqrt{V} ] $ \\
+	$ \lambda $   & Mod-fakt. (0.01...0.05)                     & $ [\frac{1}{V} ]$ \\
+	$ W $         & Kanal-Länge                                 & $[m]$ \\ 
+	$ L $         & Kanal-Breite                                & $[m]$ \\ 
+	$ T $         & Temperatur                                  & $[K]$ \\
+	$ \mu $       & Beweglichkeit Ladungsträger im Kanal (Für $Si$: $\mu_p = 580$ , $\mu_n = 230$) & $[\frac{cm^2}{sV} ] $ \\
+}}
+\vfill
+
+\section{Kleinsignal Ersatzschaltbild für tiefe Frequenzen}
+\label{rs}
+\index{Fet!Kleinsignal Ersatz}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	$\pi$-Ersatzschaltbild:\\ \\
+	\input{Elektronik/fet/piErsatz.pstex_t} \\ \\
+	T-Ersatzschaltbild:\\ \\
+	\input{Elektronik/fet/tErsatz.pstex_t} \\ 
+	\begin{footnotesize}Die Kleinsignal-Er"-satz"-schalt"-bil"-der gelten für n- und p-Kanal FETs\end{footnotesize} \\
+	\\
+	\input{Elektronik/fet/early.pstex_t}
+  }
+  \Formelbox{
+\begin{small}Steilheit im Stromquellenbetrieb bei starker Inversion:\end{small}
+	\[ g_m = \frac{dI_D}{dU_{GS}} \thickapprox K(U_{GS} - U_{T}) \]
+	\[ g_m = K (U_{GS} - U_{T} ) ( 1 + \lambda U_{DS} ) \]
+	\[ g_m = \sqrt{2 k I_D (1 + \lambda U_{DS} ) }  \]
+	\[ g_m \thickapprox \sqrt{2 k I_D}\]
+	\[ \frac{g_{m1}}{g_{m2}} = \sqrt{\frac{I_{D1}} {I_{D2}}} \]
+	\[ r_S = \frac{1}{g_m} \]	
+	\begin{footnotesize}Ausgangswiderstand:\end{footnotesize}
+	\[ r_{DS} = \frac{U_A + |U_{DS}|}{| I_D | } \thickapprox \frac{| U_A |}{| I_D | }  \] 	
+	\begin{small}Steilheit im Stromquellenbetrieb bei schwacher Inversion:\end{small}
+        \[ g_m = \frac{dI_D}{dU_{GS}} = \frac{I_D}{n U_{temp}} \]
+	\[ r_S = \frac{1}{g_m} = \frac{n U_{temp}}{I_D} \]
+	\begin{small}Body Steilheit im Stromquellenbetrieb bei starker Inversion:\end{small}
+	\[ g_{mB} = \frac{d I_D}{d U_{SB}} \]
+	\[ g_{mB} = -g_m \frac{\gamma}{2 \sqrt{U_{SB} + \Phi _0}} \]
+	\[ g_{mB} = -g_{mB}(n-1) \]
+	\begin{small}$\Rightarrow $ Back-Gate hat die halbe Wirkung des Gate bei $U_{SB} = 0$\end{small}
+      }
+  }
+  {\Groessenbox{
+     	$ g_m $       & Steilheit Übertragungskennlinie             & $[1] $     \\ 
+	$ g_{mB} $    & Body - Steilheit                            & $[1] $     \\ 
+	$ r_S $       & int. Source Widerstand                      & $[ \Omega ] $ \\
+	$ I_D $       & Drainstrom                                  & $[A]$ \\	
+	$ U_{T} $     & Schwellspan"-nung (0.6...8)                 & $[V]$ \\	
+        $ U_A $       & Early-Span.                                 & $[V]$ \\	
+	$ U_{temp} $  & U-Temp. $\approx 26\cdot 10^{-3}$           & $[V]$ \\ 
+	$ U_{DS} $    & Drain-Source-Spannung                       & $[V]$ \\
+	$ U_{GS} $    & Gate-Source-Spannung                        & $[V]$  \\
+	$ U_{SG} $    & Source-Gate-Spannung                        & $[V]$  \\	
+	$ U_{SB} $    & Source-Bulk-Spannung                        & $[V]$  \\	
+	$ K $         & Trans"-kon"-duk"-tanz"-pa"-ra"-me"-ter      & $[\frac{A}{V^2}]$  \\
+	$ n $         & Subthreshold Slope Faktor $\approx 1.5 $    & $[1]$ \\
+	$ \lambda $   & Mod-fakt. (0.01...0.05)                     & $ [\frac{1}{V} ]$ \\
+	$ \Phi_0 $    & Fermi-Pot.$ = 2\Phi_F = 0.6$                & $[V]$ \\  
+	$ \gamma $    & $\gamma \approx 0.6  $                      & $[\sqrt{V} ] $ \\
+}}
+\vfill
+
+\section{DC-Berechnung mit idealen MOSFET Gleichungen}
+
+\index{Fet!DC-Berechnung}\index{Fet!Gleichstrom}
+
+\Hauptbox{
+  \Bildbox{
+	\boxdump
+  }
+  \Formelbox{
+	\begin{footnotesize}Bei Verstärkern muss der Arbeitspunkt im Sättigungsbereich liegen! \\ $ \Rightarrow $ prüfen ob $ u_{DS} > u_{GS} - U_{T} $ \end{footnotesize}
+      }\hline                                                                    
+  \Bildbox{
+	n-Kanal:\\ \\
+	\input{Elektronik/fet/dcNFet.pstex_t} 
+  }
+  \Formelbox{
+	\[ i_D = \frac{k}{2} ( u_{GS} - U_{T})^2 \]
+	\[ I: \mbox{\hspace{0.5cm}} U_G - i_D R_S - u_{GS} = 0\]
+	\[ u_{GS} = \left (U_{T}-\frac{1}{k R_S} \right ) +\] \[ \sqrt{\frac{2}{k R_S} ( U_{G} - U_{T}) + \frac{1}{(k R_S)^2}} \]
+      }\hline
+\Bildbox{
+	p-Kanal:\\ \\
+	\input{Elektronik/fet/dcPFet.pstex_t}
+		
+  }
+  \Formelbox{
+	\[ i_D = \frac{k}{2} ( u_{GS} - U_{T})^2 \]
+	\[ I: U_G - i_D R_S - u_{GS} = 0\]
+	\[ u_{SG} = \left (|U_{T}|-\frac{1}{k R_S} \right ) + \] \[ \sqrt{\frac{2}{k R_S} ( U_{GP} - |U_{T}|) + \frac{1}{(k R_S)^2}} \]
+	\[ U_{GP} = U^+ - U_G \]
+      }\hline
+\Bildbox{
+	\begin{footnotesize}Arbeitspunkt:\end{footnotesize}	
+  }
+  \Formelbox{
+	\[ u_{DS} = U^+ - i_D ( R_S + R_D ) \]
+      }
+  }
+  {\Groessenbox{  	
+	$ i_D $       & Drainstrom                                  & $[A]$ \\
+	$ U^+ $       & Speisespan"-nung                            & $[V]$ \\	 
+	$ U_{T} $    & Schwellspan"-nung (0.6...8)                 & $[V]$ \\
+	$ U_G $       & Gate-Spannung                               & $[V]$  \\	
+	$ u_{DS} $    & Drain-Source-Spannung                       & $[V]$ \\
+	$ u_{GS} $    & Gate-Source-Spannung                        & $[V]$  \\
+	$ u_{SG} $    & Source-Gate-Spannung                        & $[V]$  \\
+	$ R_G $       & R-Gate                                      & $[\Omega]$  \\
+	$ R_D $       & R-Drain                                     & $[\Omega]$  \\
+	$ R_S $       & R-Source                                    & $[\Omega]$  \\
+	$ k $         & Trans"-kon"-duk"-tanz"-pa"-ra"-me"-ter      & $[\frac{A}{V^2}]$  \\ 
+}}
+\vfill
+
+\section{Der FET als Schalter}
+
+\index{Fet!Schalter} 
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	\input{Elektronik/fet/schalter.pstex_t} \\ \\
+	\begin{footnotesize}meistens: $ R_S = 0$ \end{footnotesize} \\  \\ 
+	\begin{footnotesize}Der Fet muss im ohmschen Bereich betrieben werden\end{footnotesize}\\ 
+	\begin{footnotesize}Schalter offen wenn $ |u_{GS} | < | U_{T} | $\end{footnotesize}\\ 
+	\begin{footnotesize}Schalter geschlossen wenn $ |u_{GS} | \gg | U_{T} | $\end{footnotesize}\\ 
+  }
+  \Formelbox{	
+	\begin{footnotesize}Aus I und II: \end{footnotesize}
+	\begin{footnotesize}\[ \left | \begin{array}{lcl}
+			u_G - i_D R_S -u_{GS} & = & 0 \\
+			U^+ - i_D (R_S + R_D ) - u_{DS} & = & 0 \\
+		\end{array} \right | \]\end{footnotesize}
+	\[ \frac{di_D}{du_{DS}} = \frac{1}{r_{DS}} \]
+	\[ \frac{di_D}{du_{DS}} = K ( u_{GS} - U_{T} ) - K u_{DS} \]
+	\[ r_{DS0} = \frac{1}{K(u_{GS} - U_{T} ) } \]
+	\begin{footnotesize}eingeschaltet und $ R_S = 0$:\end{footnotesize}
+	\[ i_D = \frac{U^+}{R_D + r_{DS0}} \]
+	\begin{footnotesize}eingeschaltet und $ R_S \neq 0$:\end{footnotesize}
+	\begin{small}\[ \left | \begin{array}{lcl}
+			u_G - \frac{R_S U^+}{R_S + R_D + r_{DS0}} - u_{GS} & = & 0 \\
+			r_{DS0} = \frac{1}{K (U_{GS} - U_{T} )} & = & 0 \\
+		\end{array} \right | \]\end{small}
+      }
+  }
+  {\Groessenbox{
+	$ U^+ $       & Speisespan"-nung                            & $[V]$ \\	 
+	$ R_S $       & R an Source                                 & $[ \Omega ] $ \\
+	$ R_D $       & R an Drain                                  & $[ \Omega ] $ \\
+	$ u_{GS} $    & Gate-Source"-Spannung                       & $[V]$  \\
+	$ u_{DS} $    & Drain-Source"-Spannung                      & $[V]$  \\
+	$ u_G $       & Gate-Span.                                  & $[V]$  \\
+	$ r_{DS} $    & dyn.Source Widerstand                       & $[ \Omega ] $ \\
+	$ r_{DS0} $   & Einschalt"-wi"-der"-stand $ u_{DS} = 0 $    & $[\Omega]$  \\
+	$ i_D $       & Drainstrom                                  & $[A] $ \\	
+	$ U_{T} $    & Schwellspan"-nung (0.6...8)                 & $[V]$ \\
+	$ K $         & Transkond.                                  & $[\frac{A}{V^2}]$  \\
+}}
+\vfill
+
+
+
+\section{Des FET als AC-Verstärker} \index{Fet!AC-Verstärker}
+				\index{AC-Verstärker}
+\subsection{Sourceschaltung}
+
+\index{Fet!Sourceschaltung}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	\input{Elektronik/fet/sourceSchaltung.pstex_t}\\
+	\begin{footnotesize}\begin{itemize}
+	\item invertierend
+	\item Für tiefe bis mittlere Frequenzen
+	\item $r_{in}$ gross
+	\item $r_{out} $ gross
+	\end{itemize} \end{footnotesize}
+  }
+  \Formelbox{
+	\[ A = \frac{u_{out}}{u_{in}} \]
+	\[ A = - \frac{R_D}{R_S + r_S + \frac{R_S + R_D}{\mu}} \]
+	\[ \mu = \frac{r_{DS}}{r_S} = A_{max} \]
+	\begin{footnotesize}Für grosses $\mu$:\end{footnotesize}
+	\[ A \thickapprox - \frac{R_D}{R_S + r_S } \]
+	\begin{footnotesize}Bei $R_S = 0$ gilt:\end{footnotesize}
+	\[ A = - \frac{R_D \| r_{DS}}{r_S} \]
+	\begin{footnotesize}Bei $R_S = 0$ und $R_D = \infty$ gilt:\end{footnotesize}
+	\[ |A| = \left |\frac{r_{DS}}{r_S} \right | = \mu \]
+	\[ r_S = \frac{1}{g_m} \]
+	\[ r_{DS} = \frac{U_{Early} + U_{DS}}{I_D} \thickapprox \frac{U_{Early}}{I_D} \]
+      }
+  }
+  {\Groessenbox{
+	$ U^+ $       & Speisespan"-nung                            & $[V]$ \\	 
+	$ u_{in} $    & Eingangssp.                                 & $[V]$ \\
+	$ u_{out} $   & Ausgangssp.                                 & $[V]$ \\
+	$ A $         & Verstärkung                                 & $[1]$ \\
+	$ R_G $       & R-Gate                                      & $[\Omega]$ \\
+	$ R_D $       & R-Drain                                     & $[\Omega]$ \\
+	$ R_S $       & R-Source                                    & $[\Omega]$ \\
+	$ r_S $       & dyn.Source Widerstand                       & $[\Omega]$ \\
+	$ \mu $       & Max A bei Sourceschaltung                   & $[1]$ \\
+	$ g_m $       & Steilheit Kennlinie                         & $[1]$ \\
+	$ U_{Early} $ & Early $5...100$                             & $[V]$ \\
+	$ U_{DS} $    & Drain-Source"-Spannnung                     & $[V]$ \\
+	$ I_D $       & Drainstrom                                  & $[A]$ \\
+}}
+\vfill
+
+\subsection{Gateschaltung}
+
+\index{Fet!Gateschaltung}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	\input{Elektronik/fet/gateSchaltung.pstex_t}\\
+	\begin{footnotesize}\begin{itemize}
+	\item nicht invertierend
+	\item Für hohe Frequenzen
+	\item $r_{in}$ klein
+	\item $r_{out} $ gross
+	\end{itemize} \end{footnotesize}
+  }
+  \Formelbox{
+	\[ A = \frac{u_{out}}{u_{in}} \]
+	\[ A = \frac{R_D \left( 1 + \frac{1}{\mu} \right)} {r_S + R_S + \frac{R_D+R_S}{\mu}} = \frac{R_D}{R_S + r_S } \]
+	\[ r_S = \frac{1}{g_m} \]
+	\[ r_{DS} = \frac{U_{Early} + U_{DS}}{I_D} \thickapprox \frac{U_{Early}}{I_D} \]
+	\vspace{2.5cm}
+      }
+  }
+  {\Groessenbox{
+	$ U^+ $       & Speisespan"-nung                            & $[V]$ \\	 
+	$ u_{in} $    & Eingangssp.                                 & $[V]$ \\
+	$ u_{out} $   & Ausgangssp.                                 & $[V]$ \\
+	$ A $         & Verstärkung                                 & $[1]$ \\
+	$ R_D $       & R-Drain                                     & $[\Omega]$ \\
+	$ R_S $       & R-Source                                    & $[\Omega]$ \\
+	$ r_S $       & dyn.Source Widerstand                       & $[\Omega]$ \\
+	$ g_m $       & Steilheit Kennlinie                         & $[1]$ \\
+	$ U_{Early} $ & Early $5...100$                             & $[V]$ \\
+	$ U_{DS} $    & Drain-Source                                & $[V]$ \\
+	$ I_D $       & Drainstrom                                  & $[A]$ \\
+	$ \mu $       & Max A bei Sourceschaltung                   & $[1]$ \\
+}}
+
+
+
+\subsection{Drainschaltung}
+
+\index{Fet!Drainschaltung}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	\input{Elektronik/fet/drainSchaltung.pstex_t}\\
+	\begin{footnotesize}\begin{itemize}
+	\item nicht invertierend
+	\item Spannungsfolger ($A=1$), Impedanzwandler, Leistungstreiber
+	\item $r_{in}$ gross
+	\item $r_{out} $ klein
+	\end{itemize} \end{footnotesize}
+  }
+  \Formelbox{
+	\[ A = \frac{u_{out}}{u_{in}} \]
+	\[ A = - \frac{R_S}{R_S + r_S \left( 1+ \frac{R_S}{r_ {ds}} \right)} \]
+	\[ r_S = \frac{1}{g_m} \]
+	\[ r_{DS} = \frac{U_{Early} + U_{DS}} {I_D} \thickapprox \frac{U_{Early}}{I_D} \]
+	\vspace{2.2cm}
+      }
+  }
+  {\Groessenbox{
+	$ U^+ $       & Speisespan"-nung                            & $[V]$ \\	 
+	$ u_{in} $    & Eingangssp.                                 & $[V]$ \\
+	$ u_{out} $   & Ausgangssp.                                 & $[V]$  \\
+	$ A $         & Verstärkung                                 & $[1]$  \\
+	$ R_S $       & R-Source                                    & $[\Omega]$  \\
+	$ r_S $       & dyn.Source Widerstand                       & $[ \Omega ] $ \\
+	$ g_m $       & Steilheit Kennlinie                         & $[1]$  \\
+	$ U_{Early} $ & Early $5...100$                             & $[V]$  \\
+	$ U_{DS} $    & Drain-Source                                & $[V]$  \\
+	$ I_D $       & Drainstrom                                  & $[A] $ \\
+	$ \mu $       & Max A bei Sourceschaltung                   & $[1]$ \\
+}}
+\vfill
+
+
+\section{Dynamische Innenwiderstände des MOS-Transistors}
+
+\index{Fet!Innenwiderstände}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	\input{Elektronik/fet/innenwiderstand.pstex_t}\\
+  }
+  \Formelbox{
+	\[ r_{iG} \rightarrow \infty \]
+	\[ r_{iS} = r_S \| r_{DS} \thickapprox r_S \mbox{\hspace{0.8cm}} (R_D = 0)\]
+	\[ r_{iD} = r_{DS} \left ( 1 + \frac{R_S}{r_S} + \frac{R_S}{r_{DS}} \right )  \]
+	Falls $ r_{DS} \gg R_S $:
+	\[ r_{iD} \thickapprox r_{DS} \left ( 1 + \frac{R_S}{r_S} \right )\]
+	\[ r_{DS} = \frac{U_{DS} + U_{Early}}{I_D} \thickapprox \frac{U_{Early}}{I_D} \]
+      }
+  }
+  {\Groessenbox{
+	$ r_{iG} $    & dyn. r-Gate                                 & $[\Omega]$  \\
+	$ r_{iD} $    & dyn. r-Drain                                & $[\Omega]$  \\
+	$ r_{iS} $    & dyn. r-Source                               & $[\Omega]$  \\
+	$ r_S $       & siehe \ref{rs} auf S. \pageref{rs}          & $[\Omega]$  \\
+	$ r_{DS} $    & r-Drain-Source                              & $[ \Omega ] $ \\
+	$ U_{Early} $       & Early $5...100$                             & $[V]$  \\
+	$ U_{DS} $    & Drain-Source                                & $[V]$  \\
+	$ I_D $       & Drainstrom                                  & $[A] $ \\
+        $ R $         & Widerstand                                  & $[ \Omega ] $ \\
+}}
+
+
+
+\section{Der FET als Spannungsgesteuerter Widerstand}
+
+\index{Fet!Widerstand} 
+\index{Fet!VCR}
+\index{VCR}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	\input{Elektronik/fet/fetWiderstand.pstex_t}
+  }
+  \Formelbox{
+	\begin{footnotesize}ohne Linearisierung $ R_2 = \infty $ und $ R_3 = 0 $:\end{footnotesize} \\
+	\begin{footnotesize}für kleine AC-Spannung:\end{footnotesize}
+	\[ r_{DS} (t) = r_{DS0} \]
+	\[ u_{DS}(t) = \frac{u_{in}(t) r_{DS}(t)}{R_1 + r_{DS}(t)} \]
+	\begin{footnotesize}für grössere AC-Spannung:\end{footnotesize}
+	\[ r_{DS} (t) = \frac{1}{K ( U_{GS} - U_{T} ) -u_{DS} (t)} \]
+	\begin{footnotesize}mit Linearisierung $ R_2 = R_3 \gg r_{DS} $:\end{footnotesize}
+	\[ \frac{u_{out}}{u_{in}} = \frac{r_{DS}}{R_1 + r_{DS}} \]
+	\[ r_{DS} = \frac{du_{DS}}{di_{DS}} = \frac{2}{K(U_{G'S} - 2 U_{T})} \]
+      }
+  }
+  {\Groessenbox{
+	
+	$ R_1 $       & Widerstand                                  & $[ \Omega ] $ \\
+	$ R_{2,3} $   & Linearisierung                              & $[ \Omega ] $ \\
+	$ r_{DS} $    & dyn.Source Widerstand                       & $[ \Omega ] $ \\
+	$ u_{in} $    & Eingangs-Sp.                                & $[V]$  \\
+	$ u_{out} $   & Ausgangs-Sp.                                & $[V]$  \\
+	$ u_{G'S} $   & Gate'-Span.                                 & $[V]$  \\
+	$ r_{DS} $    & Drain-Source"-Widerstand                    & $[\Omega]$  \\
+	$ r_{DS0} $   & Einschalt"-wi"-der"-stand $ u_{DS} = 0 $    & $[\Omega]$  \\
+	$ i_D $       & Drainstrom                                  & $[A] $ \\	
+	$ U_{T} $    & Schwellspan"-nung (0.6...8)                 & $[V]$ \\
+	$ K $         & Transkond.                                  & $[\frac{A}{V^2}]$  \\	
+}}
+\vfill
+
+
+\section{MOS-Diode}
+
+\index{Fet!Diode}
+\index{MOS-Diode}
+\index{Fet!MOS-Diode}
+\index{Diode}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	\input{Elektronik/fet/fetDiode.pstex_t}
+  }
+  \Formelbox{
+	\[ I_D = \frac{k}{2} (U_{GS} - U_{T}) ^2 \]
+	\[ r_{MD} = r_S \| r_{DS} \]
+	\[ r_{MD} = \frac{u_{DS}}{i_D} \]
+	\[ r_{DS} = \frac{U_A + U_{DS}}{I_D} \]
+	\[ r_S = \frac{1}{g_m} = \frac{1}{\sqrt{2 I_D k}} \]
+	\[ U_{GS} = U_T + \sqrt{\frac{2 I_D}{k(1+\lambda U_{DS}}} \]
+	\[ U_{GS} \approx U_T + \sqrt{\frac{2I_D}{k}} \]
+      } 
+  \Bildbox{
+	\input{Elektronik/fet/fetDiodeSP.pstex_t}\\
+	\begin{small}Wichtig, alle Substrate auf gleichem Potential!\end{small}
+  }
+  \Formelbox{
+	\begin{small}Spannungsteiler\end{small}
+	\[ \frac{U_{GS1} - U_{T1}} {U_{GS2} - U_{T2}} = \sqrt{\frac{\frac{W_2}{L_2}}{\frac{W_1}{L_1}}} \]
+	\vspace{1.4cm}
+      }
+  }
+  {\Groessenbox{
+	$ I_D $       & Drainstrom                                  & $[A]$ \\ 
+	$ U_{T} $    & Schwellspan"-nung (0.6...8)                 & $[V]$ \\ 
+	$ k $         & Trans"-kon"-duk"-tanz"-pa"-ra"-me"-ter      & $[\frac{A}{V^2}]$  \\ 
+	$ U_{GS} $    & Gate-Source-Spannung                        & $[V]$ \\
+	$ U_{DS} $    & Drain-Source-Spannung                        & $[V]$ \\
+	$ r_{MD} $    & Dynamischer Widerstand                      & $[\Omega]$ \\
+	$ g_m $       & Steilheit Übertragungskennlinie             & $[1] $     \\ 
+	$ r_S $       & int. Source Widerstand                      & $[ \Omega ] $ \\
+        $ U_A $       & Early-Span.                                 & $[V]$ \\	
+	$ W $         & Gate-Breite                                 & $[m]$ \\	
+	$ L $         & Gate-Länge                                  & $[m]$ \\	
+}}
+\vfill
+
+\section{Stromquellen}
+
+\subsection{Einfache Stromquelle}
+
+\index{Fet!Stromquelle}
+\index{Stromquelle}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	\input{Elektronik/fet/iQuelle.pstex_t}\\
+	\begin{footnotesize}Die Schaltung ist für extrem kleine Betriebsspannungen ungeeignet, da über $ R_S $ eine Spannung abfallen muss. Für diesen Einsatzbereich eignet sich die Kaskodeschaltung, bei der $ R_S $ durch einen Transistor ersetzt wird.\end{footnotesize}
+  }
+  \Formelbox{
+	Der Fet muss im gesättigten Bereich (siehe Kapitel \ref{satt}) betrieben werden.\\
+	\begin{small}Für $ R_S = 0$: \end{small}
+	\[ I_D = \frac{k}{2}(U_{GS}-U_T)^2 (1+\lambda U_{DS}) \]	
+	\[ r_{iD} = r_{DS} = \frac{U_A + U_{DS}}{I_D} \approx \frac{U_A}{I_D} \]
+	\[ U_o \geq U_{DSsat} \] 
+	\begin{small}Für $ R_S \neq 0$:\end{small}
+	\[ I_D = \frac{U_G -U_{GS} -U_{SS}}{R_S} \]
+	\[ r_{iD} = r_{DS} \left( 1 + \frac{R_S}{r_S} + \frac{R_S}{r_{DS}} \right) \]
+	\[ r_S = \frac{1}{g_m} = \frac{1}{\sqrt{2 I_D k}} , \;r_{DS} \approx \frac{U_A}{I_D} \]
+	\[ U_o > R_S I_D + U_{DSsat} \]
+	\begin{footnotesize}$R_S $ dient als Gegenkopplung\end{footnotesize} \\
+      }
+  }
+  {\Groessenbox{
+	$ I_D $       & Drainstrom                                  & $[A]$\\
+	$ r_{iD}$     & Innen"-wi"-der"-stand                       & $[\Omega]$\\
+	$ U_o $       & Ausgangs"-span"-nung                        & $[V]$\\
+	$ U_A $       & Early-Span.                                 & $[V]$ \\
+	$ U_{DS} $    & U-Drain-Source                              & $[V]$ \\
+	$ U_{SS} $    & Negative Speisespannung                     & $[V]$ \\ 
+	$ U_{T} $    & Schwellspan"-nung (0.6...8)                  & $[V]$ \\ 
+	$ R $         & Widerstand                                  & $[\Omega]$\\
+	$ k $         & Transkond.                                  & $[\frac{A}{V^2}]$  \\ 
+	$ \lambda $   & Mod-fakt.                                   & $[\frac{1}{V} ]$ \\
+}}
+
+
+\subsection{Stromquelle mit Kaskode-Schaltung}
+
+\index{Fet!Stromquelle!Kaskode}
+\index{Stromquelle!Kaskode}
+\index{Kaskode}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	\input{Elektronik/fet/iQuelleKaskode.pstex_t}\\
+  }
+  \Formelbox{
+	\[ r_{o2} = r_{DS2}\left( 1+ \frac{r_{DS1}}{r_{S2}} + \frac{r_{DS1}}{r_{DS2}} \right)  \]
+	\begin{footnotesize}Falls Typ($M_1$) $ = $ Typ($M_2$):\end{footnotesize}
+	\[ r_{o2} \approx \frac{r_{DS}^2}{r_{D2}} = \mu r_{DS}  \]
+	\[ U_o \geq U_{G2} - U_{GS2} + U_{DSsat2} \]
+      }
+  }
+  {\Groessenbox{
+	$ r_{iD}$     & Innen"-wi"-der"-stand                       & $[\Omega]$\\
+	$ U_o $       & Ausgangs"-span"-nung                        & $[V]$\\
+	$ R $         & Widerstand                                  & $[\Omega]$\\
+	$ \mu $       & Max Verstärkung Source Schlautng            & $[1]$ \\
+}}
+\vfill
+
+
+\subsection{Stromquelle mit geregelter Kaskode-Schaltung}
+
+\index{Fet!Stromquelle!Geregelte Kaskode}
+\index{Stromquelle!Geregelte Kaskode}
+\index{Geregelte Kaskode}
+\index{Fet!Stromquelle!Kaskode geregelt}
+\index{Stromquelle!Kaskode geregelt}
+\index{Kaskode geregelt}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	\input{Elektronik/fet/iQuelleKaskodeGeregelt.pstex_t}\\
+	\begin{footnotesize}Die Schaltung kann auch als Supertransistor interpretiert werden.\end{footnotesize}
+  }
+  \Formelbox{
+	\[ r_o = r_{DS1} r_{DS2} g_{m1} g_{m3} (r_{DS3} \| r_{iQ} )  \]
+	\[ U_o \geq 2 U_{DSsat} \]
+	\begin{small}Strom kann wie in vorhergehender Schaltung berechnet werden.\end{small}
+      }
+  }
+  {\Groessenbox{
+	$ r_o$        & Innen"-wi"-der"-stand                       & $[\Omega]$\\
+	$ U_o $       & Ausgangs"-span"-nung                        & $[V]$\\
+	$ U_{DS} $    & U-Drain-Source                              & $[V]$ \\
+	$ R $         & Widerstand                                  & $[\Omega]$\\
+	$ g $         & Gate-Steilheit                              & $[1]$ \\
+}}
+
+
+\section{Stromspiegel}
+
+\subsection{Widlar Stromspiegel}
+
+\index{Fet!Stromspiegel!Widlar}
+\index{Stromspiegel!Widlar}
+\index{Widlar}
+
+\Hauptbox{                                                                    
+  \Bildbox{
+	\input{Elektronik/fet/iSpiegel.pstex_t}
+	\begin{footnotesize}Ein Stromspiegel kann auch mehrere Ausgänge haben.\end{footnotesize} \\
+	\begin{footnotesize}Der Eingangstransistor ist als MOS-Diode geschaltet.\end{footnotesize} \\ \\
+	\begin{footnotesize}Die Genauigkeit der Schaltung hängt sehr von den Exemplaren der Transistoren ab.\end{footnotesize}
+  }
+  \Formelbox{
+	\[ U_{omin} = U_{DSsat} = U_{GS2} - U_{T2} \] 
+	\[ U_{omin} = \sqrt{\frac{2 I_{D2}}{k}} \]
+	\[ n = \frac{I_o}{I_i} \approx{i_o}{i_i}  \]
+	\[ n = \frac{\frac{W_2}{L_2}}{\frac{W_1}{L_1}} \cdot \frac{1+ \lambda_2 U_{DS2}}{1+\lambda U_{DS1}} \]
+	\[ r_o = r_{DS2} = \frac{U_{A2} + U_{DS2}}{I_{D2}} \] 
+	\[ r_o \approx \frac{U_{A1}}{I_D} = \frac{1}{\lambda I_D} \]
+	\[ r_i = r_{S1} \| r_{DS1} \approx r_{S1} = \frac{1}{g_{m1}} \]
+	\[ r_i = \frac{1}{\sqrt{2 I_D k}} \]
+	\[ U_i = U_{GS1} = \sqrt{\frac{2 I_D}{k}} + U_{T1} \]	
+      }
+  }
+  {\Groessenbox{
+	$ r_o$        & Innen"-wi"-der"-stand                       & $[\Omega]$\\
+	$ r_i$        & Ausgangs"-wi"-der"-stand                    & $[\Omega]$\\
+	$ r_{DS}$     & r-Source                                    & $[\Omega]$\\
+	$ r_{S}$      & r-Drain-Source                              & $[\Omega]$\\
+	$ U_o $       & Ausgangs"-span"-nung                        & $[V]$\\
+	$ U_{DS} $    & U-Drain-Source                              & $[V]$ \\
+	$ U_{GS} $    & U-Gate-Source                               & $[V]$ \\ 
+	$ U_{T} $     & Schwellspan"-nung (0.6...8)                 & $[V]$ \\ 
+	$ U_A $       & Early-Span.                                 & $[V]$ \\
+	$ I_D$        & Drain-Strom                                 & $[A]$ \\
+	$ R $         & Widerstand                                  & $[\Omega]$\\
+	$ g $         & Gate-Steilheit                              & $[1]$ \\
+	$ k $         & Transkond.                                  & $[\frac{A}{V^2}]$  \\ 
+	$ \lambda $   & Mod-fakt.                                   & $[\frac{1}{V} ]$ \\
+	$ W $         & Gate-Breite                                 & $[m]$ \\	
+	$ L $         & Gate-Länge                                  & $[m]$ \\	
+}}
+\vfill
+
+
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 

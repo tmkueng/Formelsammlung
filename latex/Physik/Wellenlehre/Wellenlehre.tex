@@ -1,0 +1,639 @@
+%==========================================================
+% Titel:    Physik, Schwingungen 
+% Autor:    Adrian Freihofer
+% Erstellt: 7.11.2001
+% Geändert:
+%==========================================================
+
+
+\chapter{Wellenlehre}                                          \index{Wellenlehre}
+
+
+\section{Wellengeschwindigkeiten}                                    \index{Wellengeschwindigkeiten}
+
+\index{Welle!Longitudinalwelle}
+\index{Welle!Transversalwelle}
+\index{Welle!Seilwelle}
+\index{Welle!Schwerewelle}
+\index{Welle!Kapillarwelle}
+\index{Welle!Schallwelle}
+                                                                
+\Hauptbox{
+  \Bildbox{
+ 	Elastische Longitudinalwellen
+  }
+  \Formelbox{
+   	\[ u_L = \sqrt{\frac{E}{\varrho}} \]
+      } 
+  \Bildbox{
+ 	Elastische Transversalwellen
+  }
+  \Formelbox{
+	\[ u_T = \sqrt{\frac{G}{\varrho}} \]
+      }  
+  \Bildbox{
+ 	Transversalwellen auf einem Seil oder einer Saite
+  }
+  \Formelbox{
+	\[ u_T = \sqrt{\frac{F}{\varrho A}} \]
+      }
+  \Bildbox{
+ 	Schwerewellen in tiefem Wasser
+  }
+  \Formelbox{
+	\[ u_S = \sqrt{\frac{g \lambda}{2 \pi}} \]
+      }  
+  \Bildbox{
+ 	Schwerewellen in flachem Wasser
+  }
+  \Formelbox{
+	\[ u_S = \sqrt{g h} \]
+      } 
+  \Bildbox{
+ 	Kapillarwellen
+  }
+  \Formelbox{
+	\[ u_K = \sqrt{\frac{2 \pi \sigma}{\varrho \lambda}} \]
+      }
+  \Bildbox{
+ 	Schallwellen in Fluiden
+  }
+  \Formelbox{
+	\[ u = \sqrt{\frac{1}{\varrho \kappa}} \]
+      } 
+  \Bildbox{
+ 	Schallwellen in Gasen
+  }
+  \Formelbox{
+	\[ u_G = \sqrt{\frac{\varkappa p}{\varrho}} \]
+	\[ u_G = \sqrt{\frac{\varkappa R T}{M}} \]
+  }
+  }
+  {\Groessenbox{
+     $ u$            & Wellengeschw.                   & $ [\frac{m}{s}] $ \\
+     $ A$            & Fläche                          & $ [m^2] $ \\
+     $ E$            & Elastizi"-täts"-mo"-dul         & $ [\frac{N}{m^2}] $  \\
+     $ F$            & Spannkraft                      & $ [N] $    \\
+     $ G$            & Schubmodul                      & $ [\frac{N}{m^2}] $   \\
+     $ h$            & Wassertiefe                     & $ [m] $ \\
+     $ M$            & Molmasse                        & $ [\frac{kg}{mol}] $ \\
+     $ p$            & Druck                           & $ [Pa ] $ \\
+     $ T$            & abs. Temp.                      & $ [ K ] $ \\
+     $ \kappa$       & Kompres"-si"-bi"-li"-tät        & $ [\frac{m^2}{N}] $\\
+     $ \varkappa$    & Adiabaten"-ex"-po"-nent         & $ [ 1]$ \\
+     $ \lambda$      & Wellen"-länge                   & $ [ m]$ \\ 
+     $ \varrho$      & Dichte                          & $ [ \frac{kg}{m^3}]$ \\
+     $ \sigma$       & Oberflä"-chen"-spann"-ung       & $ [ \frac{N}{m}]$ \\ 
+     $ g$            & Erdbeschl.  $ = 9.81$                    & $ [\frac{m}{s^2}] $   \\
+     $ R$            & univers. Gas-Konst. $ = 8.3145$     & $ [\frac{J}{K mol} ] $ \\ 
+}}
+\vfill
+
+\subsection{Zusammenhänge der verschiedenen Wellen}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\begin{footnotesize}Gilt nur bei einem Stab\end{footnotesize}
+  }
+  \Formelbox{
+	\[ u_T = \sqrt{\frac{1}{2(1+\mu) }}  u_L \]
+	\vspace{1cm}
+      } 
+  }
+  {\Groessenbox{ 
+     $ u$            & Wellengeschw.                     & $ [\frac{m}{s}] $ \\
+     $ u_T$          & u longitudinal                    & $ [\frac{m}{s^2}] $ \\
+     $ u_L$          & u transversal                     & $ [\frac{m}{s^2}] $ \\
+     $ \mu$          & Poissonzahl                       & $ [ 1 ] $  \\
+}}
+
+
+
+\section{Wellengleichung}                                    \index{Wellengleinchung}
+
+\index{Welle!Wellengleichung}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\begin{footnotesize}Bei Wellengleichungen (lineare Dgl) gilt das Superpositionsprinzip, d.h. die Summe zweier Lösungen ist wieder eine Lösung. \end{footnotesize}	
+  }
+  \Formelbox{
+	Eindimensional:
+   	\[ \frac{\partial^2 \xi}{\partial x^2} = \frac{1}{u^2} \frac{\partial^2 \xi}{\partial t^2} \]
+	Zweidimensional:
+	\[ \frac{\partial^2 \xi}{\partial x^2} + \frac{\partial^2 \xi}{\partial y^2} = \frac{1}{u^2} \frac{\partial^2 \xi}{\partial t^2} \]
+	Dreidimesnional:
+	\[ \frac{\partial^2 \xi}{\partial x^2} + \frac{\partial^2 \xi}{\partial y^2} + \frac{\partial^2 \xi}{\partial z^2} = \frac{1}{u^2} \frac{\partial^2 \xi}{\partial t^2} \]
+	\[ \mbox{\begin{footnotesize} oder : \end{footnotesize}} \Delta \xi = \frac{1}{u^2} \frac{\partial^2 \xi}{\partial t^2} \]
+	\[\mbox{\begin{footnotesize} wobei : \end{footnotesize}} \Delta \equiv \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2 }{\partial z^2} \]
+      } 
+  }
+  {\Groessenbox{ 
+     $ u$            & Wellengeschw.                   & $ [\frac{m}{s}] $ \\
+     $ \xi$          & Störung                         & $ [...] $ \\
+     $ t$            & Zeit                            & $ [ s ] $  \\
+     $ \Delta$       & Laplace-OP                      & $ [] $    \\
+}}
+
+
+\section{Intensität}                                    \index{Intensität}         
+
+\index{Welle!Intensität}  
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\boxdump
+  }
+  \Formelbox{
+	\[ I= \frac{1}{2} \rho u \omega ^2 \xi_0 ^2\]
+	\vspace{1.5cm}
+      } 
+  }
+  {\Groessenbox{ 
+     $ I$            & Intensität                      & $ [\frac{W}{m^2}] $ \\
+     $ u$            & Wellengeschw.                   & $ [\frac{m}{s}] $ \\
+     $ \xi$          & Störung                         & $ [...] $ \\
+     $ \rho$         & Dichte                          & $ [ \frac{kg}{m^3} ] $  \\
+     $ \omega$       & Winkelgeschw.                   & $ [\frac{1}{s}] $    \\
+}}
+\vfill
+
+
+\section{Harmonische Wellen}
+                                    
+\index{Harmonische Welle}
+\index{Welle!Harmonische}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\includegraphics[width=120pt]{Physik/Wellenlehre/Welle.eps} \\ \\
+	\begin{footnotesize}$\xi = f(x - ut) \rightarrow Ausbreitung pos. x - Koord. $ \\
+        $\xi = f(x + ut) \rightarrow Ausbreitung neg. x - Koord. $ \\
+	Bei EM - Wellen: \\
+	$u = c = 299'792'458 \frac{m}{s} $\end{footnotesize}
+  }
+  \Formelbox{
+	\[ \omega = 2 \pi f = \frac{2 \pi}{T} = k u \]
+	\[ k = \frac{\omega}{u} = \frac{2 \pi}{\lambda} \]
+        \[ \xi(x, t ) = \xi_0 \sin ( k x - \omega t + \varphi) \]
+	\[ \xi(x, t ) = \xi_0 \sin ( \omega t - k x ) \]
+	\[ T = \frac{2 \pi}{\omega} = \frac{1}{f} \]
+        \[ f = \frac{\omega}{2 \pi } = \frac{1}{T} = \frac{u}{\lambda} \]
+	\[ \lambda = \frac{2 \pi}{k}  = \frac{u}{f}\]
+	\[ u = \frac{\omega}{k}  = \lambda f \]
+	} 
+  }
+  {\Groessenbox{ 
+     $ u $            & Wellengeschw.                   & $ [\frac{m}{s}] $ \\
+     $ \xi$           & Störung                         & $ [...] $ \\
+     $ t$             & Zeit                            & $ [ s ] $  \\
+     $ \omega $       & Kreisfrequenz                   & $ [\frac{1}{s}] $    \\
+     $ T $            & Periode                         & $ [s] $    \\
+     $ \lambda $      & Wellenlänge                     & $ [m] $    \\
+     $ \varphi $      & Phase                           & $ [rad] $    \\
+     $ k $            & Wellenzahl                      & $ [\frac{1}{m}] $    \\
+     $ f$             & Frequenz                        & $ [ Hz ] $  \\
+}}
+
+
+
+\section{Räumliche Ausbreitung von Wellen}
+                                    
+\index{Welle!Räumliche Ausbreitung}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\input{Physik/Wellenlehre/ebeneWelle.pstex_t}
+  }
+  \Formelbox{
+	Ebene Welle:
+	\[ \xi ( x, y ,z, t) = \xi _0 e^{i(\omega t- \vec k \vec r )} \]
+	\[ \vec k \vec r = konst. \]
+	}  
+  \Bildbox{
+	\boxdump
+	%\input{Physik/Wellenlehre/ebeneWelle.pstex_t}
+  }
+  \Formelbox{
+	Kugel Welle:
+	\[ \xi ( r, t) = \frac{A}{r} e^{i(\omega t- k r )} \]
+	} 
+  }
+  {\Groessenbox{ 
+     $ \xi$           & Störung                         & $ [...] $ \\
+     $ t$             & Zeit                            & $ [ s ] $  \\
+     $ \omega $       & Kreisfrequenz                   & $ [\frac{1}{s}] $    \\
+     $ k $            & Wellenzahl                      & $ [\frac{1}{m}] $    \\
+     $ r $            & Radius                          & $ [m] $ \\ 
+     $ A $            & Amplitude                       & $ [...] $ \\
+}}
+\vfill
+
+\section{Doppler-Effekt}
+
+\index{Doppler-Effekt}
+
+\subsection{Akustischer Doppler-Effekt}
+                                    
+\index{Doppler-Effekt!Akustischer}
+\index{Welle!Doppler-Effekt!Akustischer}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\input{Physik/Wellenlehre/dopplerEffekt.pstex_t} \\
+	\begin{footnotesize}ruhende und bewegte Punktquelle\end{footnotesize}
+  }
+  \Formelbox{
+	bewegte Quelle, ruhender Beobachter:
+	\[ f' = \frac{1}{1 \mp \frac{v_Q}{u}} f \mbox{\hspace{0.3cm} \begin{scriptsize} $-$ auf Hörer zu  \end{scriptsize}} \]
+	\[ f' = \frac{1}{1- \frac{v_Q}{u} \cos (\vartheta_Q)} f \]
+	}
+ \Bildbox{
+	\input{Physik/Wellenlehre/dopplerWinkel.pstex_t} \\
+	\begin{footnotesize}bewegte Punktquelle\end{footnotesize}
+  }
+  \Formelbox{
+	ruhende Quelle, bewegter Beobachter:
+	\[ f' = (1 \pm \frac{v_B}{u}) f \mbox{\hspace{0.3cm} \begin{scriptsize} $+$ auf Quelle zu  \end{scriptsize}}\]
+	\[ f' = (1 + \frac{v_B}{u} \cos ( \vartheta_B) f \]
+	}
+\Bildbox{
+	\input{Physik/Wellenlehre/bewegtQB.pstex_t} \\
+	\begin{footnotesize}bewegter Beobachter und bewegte Punktquelle\end{footnotesize}
+  }
+  \Formelbox{
+	Allgemein:
+	\[ f_B = \frac{u + v_B \cos ( \vartheta _B )}{u - v_Q \cos ( \vartheta_Q)} f_Q \]
+	} 
+  }
+  {\Groessenbox{ 
+     $ u $            & Wellengeschw.                   & $ [\frac{m}{s}] $ \\
+     $ f$             & Frequenz                        & $ [ Hz ] $  \\
+     $ f'$            & gehörte Frequenz                & $ [ Hz ] $    \\
+     $ v_Q $          & Geschw. Quelle                  & $ [\frac{m}{s}] $    \\ 
+     $ v_B $          & Geschw. Beobachter              & $ [\frac{m}{s}] $    \\
+     $ \vartheta $    & Winkel                          & $ [rad] $    \\
+}}
+
+
+
+\subsection{Optischer Doppler-Effekt}
+                                    
+\index{Doppler-Effekt!Optischer}
+\index{Welle!Doppler-Effekt!Optischer}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\input{Physik/Wellenlehre/bewegtQB.pstex_t} \\
+	\begin{footnotesize}bewegter Beobachter und bewegte Punktquelle\end{footnotesize}
+  }
+  \Formelbox{
+	\[ f' = \frac{\sqrt{1 - \beta ^2}}{1- \beta \cos ( \vartheta) } f \]
+	\[ \beta = \frac{v}{c} \]
+	\begin{footnotesize}falls $f \gg c$:\end{footnotesize}
+	\[ \frac{f-f'}{f} = \frac{\Delta f}{f} = \frac{v}{c} \]
+	\begin{footnotesize}falls $\vartheta = 0^\circ $ oder $ \vartheta = 180 ^\circ $:\end{footnotesize}
+	\[ \frac{\Delta \lambda }{\lambda} = - \frac{v}{c} \]
+	} 
+  }
+  {\Groessenbox{ 
+     $ f$             & Frequenz                        & $ [ Hz ] $  \\
+     $ f'$            & gesehene Frequenz               & $ [ Hz ] $    \\
+     $ v $            & Geschw. relativ Beobachter Quelle    & $ [\frac{m}{s}] $    \\ 
+     $ \vartheta $    & Winkel                          & $ [rad] $    \\
+     $ c $            & Lichtge"-schwin"-dig"-keit $ = 299'792'458$            & $ [\frac{m}{s} ] $ \\
+}}
+\vfill
+
+\subsection{Machscher Kegel}
+                                    
+\index{Machscher Kegel}
+\index{Welle!Machscher Kegel}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\input{Physik/Wellenlehre/mach.pstex_t} \\
+  }
+  \Formelbox{
+	\begin{footnotesize}Falls $ v > u $ entsteht ein Machscher Kegel \end{footnotesize}
+	\[ \sin (\vartheta) = \frac{u}{v} \]
+	\[ M = \frac{v}{u} \]
+	} 
+  }
+  {\Groessenbox{ 
+     $ u $            & Wellengeschw.                   & $ [\frac{m}{s}] $ \\
+     $ v $            & Geschw. Flugzeug                & $ [\frac{m}{s}] $    \\
+     $ \vartheta $    & Winkel des Kegels               & $ [rad] $    \\
+     $ M $            & Machzahl                        & $ [1]$\\
+}}
+
+
+
+
+\section{Überlagerung von Wellen gleicher Frequenz}
+                                    
+\index{Interferenz}
+\index{Welle!Überlagerung}
+\index{Welle!Interferenz}
+\index{Welle!Phasensprung}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\input{Physik/Wellenlehre/ueberlagerung.pstex_t} 
+  }
+  \Formelbox{
+	\[ l = n r \]
+ 	\begin{footnotesize}In 1s geht Energie S durch $ 1m^2$:\end{footnotesize}
+	\[ S = \frac{\delta \xi^2 \omega^2}{2} u \]
+	\begin{footnotesize} Prinzip von Huygens: \\
+	Jedes Flächenelement auf einer Welle kann als Zentrum einer Kugelwelle betrachtet weden. Die Wellenfläche zu einem späteren Zeitpunkt ist die Einhüllende all dieser Elementarwellen.\vspace{0.1cm}\end{footnotesize}
+  } \hline
+  \Bildbox{
+ 	\input{Physik/Wellenlehre/Phasensprung.pstex_t}
+  }
+  \Formelbox{
+	\begin{footnotesize}Bei der Reflexion an einem optisch dichteren Medium findet ein Phasensprung von $\pi$ statt.\\
+	Beispiel: Falls Medium 1 dichter Medium 2 dichter Medium 3:
+	Phasensprung in P und Q.\end{footnotesize}
+	\[ \Rightarrow + \frac{\lambda}{2} \]
+	\begin{footnotesize}$ \rightarrow $ Auslöschung bei $ m \frac{\lambda}{2}$ , $ m= \{ 1, 3, 5, ... \} $ \vspace{0.1cm} \end{footnotesize} 
+
+      }  }
+  {\Groessenbox{ 
+     $ u $            & Wellengeschw.                   & $ [\frac{m}{s}] $ \\
+     $ l $            & Optische Weglänge               & $ [m] $ \\
+     $ n $            & Brechungs"-in"-dex              & $ [1] $    \\
+     $ S $            & Energie                         & $ [\frac{J}{m^2 s} ] $ \\
+     $ \xi$           & Störung                         & $ [...] $ \\
+     $ \omega $       & Kreisfrequenz                   & $ [\frac{1}{s}] $    \\
+}}
+\vfill
+
+\section{Optische Länge}
+                                    
+\index{Optische Weglänge}
+\index{Welle!Optische Weglänge}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\begin{footnotesize}Durchqueren Wellen Medien muss mit optischen Längen gerechnet werden\end{footnotesize}
+  }
+  \Formelbox{
+	\[ s \rightarrow ns\]
+	\[ \lambda \rightarrow \frac{\lambda}{n} \]
+	} 
+  }
+  {\Groessenbox{ 
+     $ n $            & Brech-Index                  & $ [1] $    \\
+     $ s $            & Strecke                      & $ [m] $    \\ 
+     $ \lambda $      & Wellenlänge                  & $ [m] $    \\
+}}
+
+
+
+
+\section{Stehende Wellen}
+                                    
+\index{Stehende Welle}
+\index{Welle!Stehende}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\input{Physik/Wellenlehre/reflexion.pstex_t} \\
+	\begin{footnotesize}Einfallende Welle wird von Grenzfläche reflektiert\end{footnotesize}
+  }
+  \Formelbox{
+	1. Fall: Phasensprung $ \pi $ bei Reflexion
+	\begin{footnotesize}\[ \xi_0 \sin ( k_x - \omega t ) + \xi_0 \sin (k_x + \omega t) = \] \end{footnotesize}
+	\[2 \xi \sin (k_x ) \cos(\omega t) \]
+	Knoten bei $ k_x = $  $ 0 $, $ \pi $, $ 2\pi $ ... \\
+	Bäuche bei: $ k_x = $ $ \frac{1}{2} \pi $, $ \frac{3}{2}\pi $ ... \\ \\
+	2. Fall: Kein Phasensprung
+	\begin{footnotesize}\[ \xi_0 \sin ( k_x - \omega t ) - \xi_0 \sin (k_x + \omega t) = \] \end{footnotesize}
+	\[- 2 \xi \cos (k_x ) \sin(\omega t) \]
+	Knoten bei $ k_x = $ $ \frac{1}{2} \pi $, $ \frac{3}{2}\pi $ ... \\
+	Bäuche bei: $ k_x = $ $ 0 $, $ \pi $, $ 2\pi $ ... \vspace{0.1cm}
+	} 
+  }
+  {\Groessenbox{ 
+     $ \xi$           & Störung                         & $ [...] $ \\
+     $ \omega $       & Kreisfrequenz                   & $ [\frac{1}{s}] $    \\
+     $ t$             & Zeit                            & $ [ s ] $  \\
+     $ k $            & Wellenzahl                      & $ [\frac{1}{m}] $    \\
+}}
+\vfill
+
+
+\section{Eigenschwingungen}
+  
+\subsection{Saite}
+                                  
+\index{Eigenschingungen}
+\index{Welle!Eigenschwingung}
+\index{Saite}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\input{Physik/Wellenlehre/eigenschwingung.pstex_t} \\
+	\begin{footnotesize}Die Saite ist zweiseitig fixiert\end{footnotesize}
+  }
+  \Formelbox{
+	\[ \lambda_n = \frac{2 l}{n} \]
+	\[ f_n = \frac{u}{\lambda_n} = \frac{u}{2 l } n  = n f_1\]
+	\[ f_1 = \frac{1}{2 l } \sqrt{ \frac{F}{\varrho A}} \]
+	\[ u= \sqrt{\frac{F}{\varrho A}} \]
+	\[ F = \frac{4 l^2}{n^2} \varrho A f^2 \]
+	\begin{footnotesize}Bei Temperatur Änderung:
+	\[ \Delta f = \left( \frac{E_{Sa} ( \alpha_{Trag} - \alpha_{Sa} ) }{8 \rho_{Sa} l^2 f^2} -\alpha _{Trag} \right) \Delta T f  \]\end{footnotesize}
+	} 
+  }
+  {\Groessenbox{  
+     $ u$            & Wellengeschw.                   & $ [\frac{m}{s}] $ \\
+     $ A$            & Fläche                          & $ [m^2] $ \\
+     $ F$            & Spannkraft                      & $ [N] $    \\
+     $ \lambda$      & Wellen"-länge                   & $ [ m]$ \\ 
+     $ \varrho$      & Dichte Saite                    & $ [ \frac{kg}{m^3}]$ \\
+     $ \xi$          & Störung                         & $ [...] $ \\
+     $ \omega $      & Kreisfrequenz                   & $ [\frac{1}{s}] $    \\
+     $ f $           & Frequenz                        & $ [ Hz ] $ \\
+     $ f_1 $         & Grundfrequenz                   & $ [ Hz ] $ \\
+     $ l $           & Saitenlänge                     & $ [ m ] $ \\
+     $ n $           & n-te Harmonische                & $ [ 1 ] $ \\
+     $ \alpha $      & Längenausd. koef.               & $ [ \frac{1}{K} ] $ \\
+     $ \rho $        & Dichte                          & $ [ \frac{kg}{m^3} ]$ \\
+     $ E $           & Elastizitäts"-modul             & $ [\frac{N}{m^2}] $   \\   
+}}
+
+
+\subsection{Pfeife}
+                                  
+\index{Eigenschingungen}
+\index{Welle!Eigenschwingung}
+\index{Pfeife}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\input{Physik/Wellenlehre/pfeife.pstex_t} \\
+  }
+  \Formelbox{
+	offene Pfeife:
+	\[ f_1 = \frac{1}{2 l} \sqrt{\frac{\varkappa R T}{M}}  = \frac{u}{2 l}\]
+	\[ f_n = n f_1 \]
+	\[ \lambda_n = \frac{ 4 l}{n} \mbox{\hspace{0.3cm}} n = 1, 3, 5, ...\]
+	gedackte Pfeife:
+	\[ f_1 = \frac{1}{4 l} \sqrt{\frac{\varkappa R T}{M}} = \frac{u}{4 l}\]
+	\[ f_n = n f_1 \]
+	\[ \lambda_n = \frac{ 4 l}{n} \mbox{\hspace{0.3cm}} n = 2, 4, 6, ...\]
+	} 
+  }
+  {\Groessenbox{  
+     $ f $           & Frequenz                        & $ [ Hz ] $ \\
+     $ f_1 $         & Grundfrequenz                   & $ [ Hz ] $ \\    
+     $ M$            & Molmasse                        & $ [\frac{kg}{mol}] $ \\
+     $ T$            & abs. Temp.                      & $ [ K ] $ \\
+     $ \varkappa$    & Adiabaten"-ex"-po"-nent         & $ [ 1]$ \\
+     $ R$            & univers. Gas-Konst. $ = 8.3145$  & $ [\frac{J}{K mol} ] $ \\ 
+     $ l $           & Saitenlänge                     & $ [ m ] $ \\
+     $ \lambda$      & Wellen"-länge                   & $ [ m]$ \\ 
+}}
+\vfill
+
+
+\subsection{Rechteckige Membrane}
+                                  
+\index{Welle!Membrane}
+\index{Membrane}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\includegraphics[width=120pt]{Physik/Wellenlehre/Membrane2.eps}
+	\begin{footnotesize}m=3, n=2\end{footnotesize}
+  }
+  \Formelbox{
+	\begin{scriptsize}\[f(x,y) = \xi_0 \sin(k_x x + \varphi_x) \sin(k_y y + \varphi _y) \]
+	\[ k_x a = m \pi \mbox{\hspace{1cm}} k_y b = n \pi \]\end{scriptsize}
+	\[f_{mn} = \frac{1}{2} \sqrt{\frac{F}{\mu}} \sqrt{\frac{m^2}{a^2}+ \frac{ n^2}{b^2}} \]
+	\vspace{1.8cm}
+	} 
+  }
+  {\Groessenbox{  
+     $ f_{mn} $      & Eigenfrequenz                   & $ [ Hz ] $ \\    
+     $ F$            & Spannkraft                      & $ [N] $ \\
+     $ \mu$          & Masse pro Fläche                & $ [ \frac{kg}{m^2} ] $ \\
+     $ \xi$          & Störung                         & $ [...]$ \\
+     $ x,y$          & Richtung x,y                    & $ [...] $ \\ 
+     $ a$            & Länge                           & $ [ m]$ \\     
+     $ b$            & Breite                          & $ [ m]$ \\
+     $ m,n$          & Anz. Oberwellen                 & $ [ 1]$ \\  
+}}
+
+
+
+\section{Beugung}
+
+\index{Welle!Beugung}
+\index{Beugung}
+
+\subsection{Beugung am Spalt}
+                                  
+\index{Welle!Beugung!Am Spalt}
+\index{Beugung!Am Spalt}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\input{Physik/Wellenlehre/Spalt.pstex_t} \\
+  }     
+  \Formelbox{
+	\[\xi = \frac{A}{r} A_s \cos (\omega t - k r_s) \]
+	\[ A_s = \frac{\sin \left( \frac{k s \sin (\varphi ) }{2} \right) }{\frac{ k s \sin ( \varphi )}{2}} \]
+	\[ I_s \sim \xi^2 \]
+	\begin{footnotesize}Nullstelle n-ter Ordnung:\end{footnotesize}
+	\[ \sin(\varphi_n) = n \frac{\lambda}{s} \]
+	} 
+  }
+  {\Groessenbox{  
+     $ A $           & Amplitude                       & $ [ ... ] $ \\    
+     $ A_s $         & Formfaktor                      & $ [ 1 ] $ \\    
+     $ s$            & Spaltbreite                     & $ [m] $ \\
+     $ r$            & Abstand                         & $ [ m ] $ \\
+     $ t$            & Zeit                            & $ [ s] $ \\
+     $ \xi$          & Störung                         & $ [...]$ \\
+     $ k$            & Wellenzahl                      & $ [ \frac{1}{m} ] $ \\
+     $ \varphi$      & Betrachtungs"-winkel            & $ [ rad ] $ \\
+     $ I_s$          & Intensität                      & $ [\frac{W}{m^2}]$ \\
+     $ \lambda$      & Wellenlänge                     & $ [m]$ \\
+     $ n$            & Ordnung                         & $ [1]$ \\
+}}
+
+
+
+
+
+\subsection{Beugung an Kreisförmiger Öffnung}
+                                  
+\index{Welle!Beugung!kreisförmige Öffnung}
+\index{Beugung!kreisförmige Öffnung}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\boxdump
+  }     
+  \Formelbox{
+	\[ \sin(\varphi_1) = 1.22 \frac{\lambda}{D} \]
+	\[ a = 1.22 f \frac{\lambda}{D} \]
+	\vspace{1cm}
+	} 
+  }
+  {\Groessenbox{  
+     $ D $           & Öffnungs"-durch"-messer         & $ [ m] $ \\
+     $ \varphi$      & Betrachtungs"-winkel            & $ [ rad ] $ \\
+     $ \lambda$      & Wellenlänge                     & $ [m]$ \\
+     $ a $           & Radius erster dunkler Ring      & $ [m]$ \\
+}}
+\vfill
+
+
+
+\subsection{Beugung am Gitter}
+                                  
+\index{Welle!Beugung!Am Gitter}
+\index{Beugung!Am Gitter}
+                                                                
+\Hauptbox{
+  \Bildbox{
+	\input{Physik/Wellenlehre/Gitter.pstex_t} \\
+  }     
+  \Formelbox{
+	\[ I_g \sim \frac{A^2}{r^2}A_s^2 B^2 \]
+	\[ B = \frac{\sin \left( \frac{k d \sin (\varphi ) }{2} Z \right) }{\sin \left( \frac{ k d \sin ( \varphi )}{2} \right) } \]
+	
+	\begin{footnotesize}Hauptmaximum n-ter Ordnung:\end{footnotesize}
+	\[ \sin(\varphi_n) = n \frac{\lambda}{d} \]
+	\[ \frac{\lambda}{\Delta \lambda} = n Z \]
+	} 
+  }
+  {\Groessenbox{  
+     $ A $           & Amplitude                       & $ [ ... ] $ \\    
+     $ A_s $         & Formfaktor                      & $ [ 1 ] $ \\    
+     $ s$            & Spaltbreite                     & $ [m] $ \\
+     $ r$            & Abstand                         & $ [ m ] $ \\
+     $ t$            & Zeit                            & $ [ s] $ \\
+     $ \xi$          & Störung                         & $ [...]$ \\
+     $ d$            & Gitterkonst.                    & $ [ m ] $ \\
+     $ \varphi$      & Betrachtungs"-winkel            & $ [ rad ] $ \\
+     $ I_s$          & Intensität                      & $ [\frac{W}{m^2}]$ \\
+     $ \lambda$      & Wellenlänge                     & $ [m]$ \\
+     $ Z $           & Zahl Gitter"-öff"-nung"-en      & $ [ 1] $ \\
+}}
+
+\vfill
+
+
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 
+ 

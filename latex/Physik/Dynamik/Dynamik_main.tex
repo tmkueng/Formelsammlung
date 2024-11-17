@@ -1,0 +1,727 @@
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 
+%==========================================================
+% Titel:    Physik, Dynamik 
+% Autor:    Adrian Freihofer
+% Erstellt: 7.11.2001
+% Geändert:
+%==========================================================
+
+
+\chapter{Dynamik} \index{Dynamik}
+
+\section{Newtonsche Gesetze}
+
+\subsection{Erstes Newtonsches Gesetz (Trägheitsgesetz)}
+Ein Körper verharrt im Zustand der Ruhe oder der gleichförmigen Bewegung, wenn er nicht durch einwirkende Kräfte gezwungen wird, seinen Zustand zu ändern. Die Gesamtsumme der Kräfte in einem abgeschlossenen System ist unveränderlich:
+\[ F = \sum_{i}^{} F_i = 0 \]
+
+\subsection{Zweites Newtonsches Gesetz (Aktionsgesetz)}
+Die Beschleunigung eines Körpers ist umgekehrt proportional zu seiner Masse und direkt proportional zur Kraft, die auf ihn wirkt.
+\[ \vec F = m \vec{a} \]
+
+\subsection{Drittes Newtonsches Gesetz (Actio = Reactio)}
+Wirkt ein Körper A auf einen Körper B mit der Kraft $\vec{F_{AB}}$ , so wirkt der Körper B mit der entgegengesetzt gerichteten, gleich grossen Kraft $\vec{F_{BA}}$.
+\[ \sum_{i=1}^n F_{ix} = m a_x \vec{a} \mbox{\hspace{1cm}} \sum_{i=1}^n F_{iy} = m a_y \vec{a} 
+\mbox{\hspace{1cm}} \sum_{i=1}^n F_{iz} = m a_z \vec{a} \]
+
+\subsection{Allgemeines Vorgehen beim lösen von Bewegungsproblemen}
+
+\begin{enumerate}
+\item Zeichnung anfertigen
+\item Für jeden Körper, der untersucht werden soll, wird ein Kräftediagramm eingezeichnet
+\item Ein geeignetes Koordinatensystem einführen
+\item Das entstandene Gleichungssystem auflösen
+\item Ergebnisse mit gesundem Menschenverstand auflösen
+\end{enumerate}
+
+
+\section{Masse und Gewicht}
+\subsection{Spezielle Kräfte, Masse, Dichte und Reibung}          
+
+\index{Reibungskraft}
+\index{Gewichtskraft}
+\index{Dichte}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Dynamik/Schraeg.pstex_t}
+  }
+
+  \Formelbox{
+    \[ F_G = mg  \]   
+    \[ F_R = \mu_G F_N \]  
+    \[ \rho = \frac{m}{V} \]  
+    \[ \mu = - \frac{a}{g} \]  
+    \[ \mu_H = \tan(\varphi_{krit}) \]  
+    \[ F_{Hmax} = \mu_H F_N \] 
+    \vspace{2.7cm}
+   }
+  }
+  {\Groessenbox{ 
+      $ F_G$                & Gewichtskraft           & $ [N] $                 \\   
+      $ F_R$                & Reibungskraft           & $ [N] $                 \\   
+      $ F_N$                & Normalkraft             & $ [N] $                 \\ 
+      $ \rho$               & Dichte                  & $ [\frac{kg}{m³}] $     \\     
+      $ \mu$                & Reibung                 & $ [ 1 ] $                 \\  
+      $ \mu_G$              & Gleitreibung            & $ [ 1 ] $                 \\   
+      $ \mu_H$              & Haftreibung             & $ [ 1 ] $                 \\   
+      $ \varphi_{krit}$     & kritiesscher Winkel     & $ [rad] $                 \\ 
+      $ F_{Hmax}$           & Max. Haftreibungskraft  & $ [N] $                 \\     
+      $ a$                  & Beschleuni"-gung          & $ [\frac{m}{s²}] $       \\ 
+      $ g$                  & Fallbe"-schleu"-ni"-gung      & $ [\frac{m}{s²}] $   \\   
+      $ m$                  & Masse                   & $ [kg] $                 \\   
+      $ V$                  & Volumen                 & $ [m³] $                 \\ 
+}}
+
+
+\section{Arbeit und Energie, Energieerhaltung}
+
+\index{Energie}
+\index{Arbeit}
+
+\Hauptbox{
+  \Bildbox{
+  Energie ist die Fähigkeit Arbeit zu leisten. Arbeit = überwinden eines Widerstandes
+  }
+
+  \Formelbox{
+    \[ dW = \vec{F} \cdot \vec{ds} \]  
+    \[ W = P t \]
+    Energieerhaltung im abgeschlossenen System: \[ \sum_i E_i = const. \]
+   }
+  }
+  {\Groessenbox{ 
+      $ W$               & Arbeit           & $ [J] $                 \\   
+      $ E$               & Energie          & $ [J] $                 \\   
+      $ F$               & Kraft            & $ [N] $                 \\ 
+      $ s$               & Weg              & $ [m] $                 \\     
+      $ t$               & Zeit             & $ [s] $                 \\
+}}
+\vfill
+
+\subsection{Hubarbeit, Potentielle Energie}
+
+\index{Energie!Potentielle-}
+\index{Arbeit!Hub-}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Dynamik/epot.pstex_t}
+  }
+
+  \Formelbox{
+    \[ E_{pot} = mgh \] 
+    \[ W_H \vec{F} \cdot \vec{h}  \]  
+    \[ E_{pot} = W_H  \]
+  \vspace{0.9cm}
+   }
+  }
+  {\Groessenbox{ 
+      $ E_{pot}$         & potentielle Energie     & $ [J] $                 \\   
+      $ W_H$             & Hubarbeit               & $ [J] $                 \\   
+      $ m$               & Masse                   & $ [kg] $                 \\ 
+      $ g$               & Fallbe"-schleu"-ni"-gung& $ [\frac{m}{s²}] $      \\       
+      $ h$               & Höhe                    & $ [m] $                 \\     
+}}
+
+\subsection{Spannarbeit, Spannenergie}
+
+\index{Energie!Spann-}
+\index{Arbeit!Spann-}
+\index{Feder}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Dynamik/Feder.pstex_t}
+  }
+
+  \Formelbox{
+    \[ E_{s} = \frac{c x²}{2}  \]   
+    \[ W_{s} = \vec{F} \cdot \vec{x}  \]  
+    \[ E_{s} = W_s  \]   
+   }
+  }
+  {\Groessenbox{ 
+      $ E_s$             & Spannenergie          & $ [J] $                 \\   
+      $ W_s$             & Spannarbeit           & $ [J] $                 \\   
+      $ c$               & Federkonst.           & $ [\frac{N}{m}] $       \\ 
+      $ x$               & Spann-Weg             & $ [m] $                 \\  
+      $ F$               & Spannkraft            & $ [N] $                 \\    
+}}
+
+\subsection{Beschleunigungsarbeit, Kinetische Energie}
+
+\index{Energie!Kinetische-}
+\index{Arbeit!Beschleunigungs-}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Dynamik/ekin.pstex_t}
+  }
+
+  \Formelbox{
+    \[ E_{kin} = \frac{m v^2}{2}  \]   
+    \[ W_B = \frac{m (\Delta v)^2}{2}  \]  
+    \vspace{0.4cm}
+   }
+  }
+  {\Groessenbox{ 
+      $ E_{trans}$          & Translations"-energie      & $ [J] $                 \\   
+      $ W_B$                & Beschleuni"-gungs"-arbeit    & $ [J] $                 \\   
+      $ m$                  & Masse                    & $ [kg] $                 \\ 
+      $ v$                  & Geschw.                  & $ [\frac{m}{s}] $        \\     
+}}
+
+\subsection{Rotationsenergie}
+
+\index{Energie!Rotations-}
+
+\Hauptbox{
+  \Bildbox{
+  \includegraphics{Physik/Dynamik/erot.eps}
+  }
+
+  \Formelbox{
+    \[ E_{rot} = \frac{1}{2} J \omega ^2 \]    
+    \vspace{1cm}
+   }
+  }
+  {\Groessenbox{ 
+      $ E_{rot}$                & Rotations"-energie         & $ [J] $               \\   
+      $ J $                     & Masseträgheit              & $ [kg m²] $           \\   
+      $ \omega $                & Winkelgeschw.              & $ [\frac{rad}{s}] $    \\     
+}}
+\vfill
+
+
+\subsection{Reibungsarbeit}
+
+\index{Arbeit!Reibungs-}
+\index{Energie!Reibungs-}
+\index{Reibungsarbeit}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Dynamik/ereib.pstex_t}
+  }
+
+  \Formelbox{
+    \[ W_{R} = F_R s  \]    
+    \vspace{1cm}
+   }
+  }
+  {\Groessenbox{ 
+      $ W_R$               & Reibarbeit         & $ [J] $                 \\   
+      $ F_R $              & Reibkraft          & $ [N] $                 \\   
+      $ s $                & Strecke            & $ [m] $                 \\     
+}}
+
+\subsection{Verformungsarbeit}
+
+\index{Arbeit!Verformungs-}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Dynamik/WD.pstex_t}
+  }
+
+  \Formelbox{  
+    Inelastisch: \[ W_{D} = \frac{m_1 m_2 (v_1 - v_2)²}{2 ( m_1 + m_2 ) }  \]    
+    Elastisch:   \[ W_{D} = \frac{F_1 + F_2}{2} \Delta s  \]    
+   }
+  }
+  {\Groessenbox{ 
+      $ W_D$               & Deforma"-tions"-arbeit         & $ [J] $                 \\   
+      $ m_1 , m_2 $        & Massen                         & $ [kg] $                 \\   
+      $ v_1 , v_2 $        & Geschw.                        & $ [\frac{m}{s}] $      \\       
+      $ F_1 , F_2 $        & Kräfte                         & $ [N] $                 \\     
+}}
+
+\subsection{Einstein, Kernbindungsenergie}
+
+\index{Energie!Kernbindungs-}
+\index{Einstein}
+
+\Hauptbox{
+  \Bildbox{
+  \boxdump
+  }
+
+  \Formelbox{
+    \[ E = m c²  \]   
+    \vspace{1.8cm}
+   }
+  }
+  {\Groessenbox{ 
+      $ E$                & Energie                                                  & $ [J] $              \\   
+      $ m$                & Masse                                                    & $ [kg] $              \\   
+      $ c$                & v $_{Licht}$ \newline \small {$= 299'792'458$ (Vakuum) }     & $ [\frac{m}{s}] $  \\     
+}}
+
+
+\section{Leistung}
+
+\index{Leistung}
+
+\Hauptbox{
+  \Bildbox{
+  \boxdump
+  }
+  \Formelbox{
+    \[ P = \frac{dW}{dt} \] 
+    \[ P = \frac{F ds}{dt} = \vec F \vec s \]
+    \[ P = M \omega \]
+    \vspace{1.1cm}
+   }
+  }
+  {\Groessenbox{ 
+      $ P$        & Leistung                               & $ [W] $         \\   
+      $ W$        & Energie                                & $ [J] $         \\   
+      $ t$        & Zeit                                   & $ [s] $          \\ 
+      $ F$        & Kraft                                  & $ [N] $ \\      
+      $ s$        & Strecke                                & $ [m] $           \\ 
+      $ M$        & Drehmoment                             & $ [Nm] $   \\ 
+      $ \omega$   & Winkel"-geschwin"-dig"-keit            & $ [\frac{rad}{s}] $         \\         
+}}
+\vfill
+
+\section{Wirkungsgrad}
+
+\index{Wirkungsgrad}
+
+\Hauptbox{
+  \Bildbox{
+  \boxdump
+  }
+  \Formelbox{
+    \[ \eta = \frac{W_{ab}}{W_{zu}} = \frac{p_{ab}}{P_{zu}} \] 
+    \[ \eta_{tot} = \eta_1 \cdot \eta_2 \cdot ...  \]
+    \vspace{0.6cm}
+   }
+  }
+  {\Groessenbox{ 
+      $ \eta $         & Wirkungsgrad                           & $ [1] $ \\
+      $ P_{ab}$        & P-Abgeg.                               & $ [W] $         \\ 
+      $ P_{zu}$        & P-Aufge.                               & $ [W] $         \\   
+      $ W_{ab}$        & W-Abgeg.                               & $ [J] $         \\   
+      $ W_{zu}$        & W-Aufge.                               & $ [J] $         \\ 
+}}
+
+
+\section{Impuls, Impulserhaltung}
+
+\index{Impuls}
+
+\Hauptbox{
+  \Bildbox{
+   Impulserhaltungssatz: 
+  Im abgeschlossenen System bleibt der Impuls konstant
+  }
+  \Formelbox{
+   \[ \vec p = m \vec v \] 
+    \[ \vec F = \dot{\vec p} \] 
+    \[ p_{ges} = \sum _{i=1} ^n m_i v_s  \] 
+    \footnotesize Kraftstoss: \normalsize  \[ \vec F = \frac{\Delta \vec p}{\Delta t} \] 
+   }
+  }
+  {\Groessenbox{ 
+      $ p $       & Impuls                           & $ [\frac{kgm}{s}] $ \\
+      $ m$        & Masse                            & $ [kg] $         \\ 
+      $ v$        & Geschw.                          & $ [\frac{m}{s}] $         \\   
+      $ F$        & Kraft                            & $ [N] $         \\   
+      $ \Delta t$ & Wirkungs"-dauer                  & $ [s] $         \\ 
+}}
+
+\subsection{Drehimpuls}
+
+\index{Drehimpuls}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Dynamik/drehimp.pstex_t}
+  }
+  \Formelbox{
+    \[ L = m v r \sin(\varphi) \] 
+    \[ \vec L = \vec r \times \vec p  \] 
+    \[ L = J \omega  \] 
+    \[ \vec M = \frac{ d \vec p}{dt} \] 
+   }
+  }
+  {\Groessenbox{ 
+      $ L $       & Drehimpuls                       & $ [\frac{kgm}{s}] $ \\
+      $ m$        & Masse                            & $ [kg] $         \\ 
+      $ r $       & Radius                           & $ [m] $ \\
+      $ v$        & Geschw.                          & $ [\frac{m}{s}] $         \\   
+      $ \omega $  & Winkelgeschw.                    & $ [\frac{rad}{s}] $         \\   
+      $ M$        & Drehmoment                       & $ [Nm] $         \\ 
+}}
+\vfill
+
+
+\subsection{Raketenantrieb}
+
+\index{Raketenantrieb}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Dynamik/rakete.pstex_t}
+  }
+  \Formelbox{
+    \[ v = u \ln \frac{m_0}{m} + v_0 \] 
+    \[ F_s = \frac{dm}{dt} u  \] 
+    \begin{footnotesize}Spezifischer Impuls:\end{footnotesize}
+    \[ T = \frac{u}{g} \]
+   }
+  }
+  {\Groessenbox{ 
+      $ v $       & Geschw.                       & $ [\frac{m}{s}] $ \\
+      $ u $       & v-Strahl relativ zu Rakete    & $ [\frac{m}{s}] $ \\
+      $ m_0$      & Startmasse                    & $ [kg] $         \\   
+      $ m$        & Masse                         & $ [kg] $         \\ 
+      $ F_s $     & Schubkraft                    & $ [N] $ \\
+      $ T $       & Zeit                          & $ [s] $ \\
+      $ g $        & Erdbeschl.                   & $ [\frac{m}{s^2} ]$ \\
+}}
+
+\subsection{Inelastischer Stoss}
+
+\index{inelastischer Stoss}
+\index{Stoss!inelastisch}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump
+  }
+  \Formelbox{
+    \[ v' = \frac{m_1 v_1 + m_2 v_2}{m_1 + m_2}  \] 
+    \vspace{0.9cm}
+   }
+  }
+  {\Groessenbox{ 
+      $ v' $      & Geschw. nach Stoss            & $ [\frac{m}{s}] $ \\
+      $ v_{1,2} $ & v vor Stoss                   & $ [\frac{m}{s}] $ \\
+      $ m_{1,2}$  & Massen                        & $ [kg] $         \\   
+}}
+
+
+\subsection{Elastischer Stoss}
+
+\index{Elastischer Stoss}
+\index{Stoss!elastisch}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump
+  }
+  \Formelbox{
+    \[ v_1 - v_2  = -(v'_1 - v'_2)  \]
+    \[ v'_1 = \frac{(m_1 - m_2) v_1 + 2 m_2 v_2}{m_1 + m_2 } \]
+    \[ v'_2 = \frac{(m_2 - m_1) v_2 + 2 m_1 v_2}{m_1 + m_2 } \]
+    \[ m_1 v_1 + m_2 v_2 = m_1 v'_1 + m_2 v'_2 \]
+   }
+  }
+  {\Groessenbox{ 
+      $ v'_{1,2} $ & Geschw. nach Stoss            & $ [\frac{m}{s}] $ \\
+      $ v_{1,2} $  & v vor Stoss                   & $ [\frac{m}{s}] $ \\
+      $ m_{1,2}$   & Massen                        & $ [kg] $         \\   
+}}
+\vfill
+
+
+
+\section{Analogie Translation und Rotation}
+
+\index{Translation}
+\index{Rotation}
+
+\begin{tabular}{|l|p{3.5cm}|l|l|p{3.5cm}|l|}\hline
+\multicolumn{3}{|c|}{Translation}  & \multicolumn{3}{|c|}{ Rotation } \\ \hline
+Symb       & Grösse              & Beziehung                      & Symb      & Grösse               & Beziehung \\ \hline \rule{0mm}{18pt}
+$s$        & Weg                 &                                & $\varphi$ & Winkel               &  \\ \hline \rule{0mm}{18pt}
+$v$        & Geschwin"-dig"-keit     & $v = \frac{ds}{dt}$            & $\omega$  & Winkelge"-schwin"-dig"-keit& $\omega = \frac{d \varphi}{dt}$ \\ \hline \rule{0mm}{18pt}
+$a$        & Beschleu"-ni"-gung      & $a = \frac{dv}{dt}$            & $\alpha$  & Winkelbe"-schleu"-ni"-gung & $\alpha = \frac{d \omega}{dt}$  \\ \hline \rule{0mm}{18pt} 
+$m$        & Masse               & $ $                       & $J$       & Träg"-heits"-mo"-ment      & $J = \int r^2 dm$  \\ \hline \rule{0mm}{18pt}
+$p$        & Impuls              & $p = mv$                             & $L$       & Dreh"-impuls           & $L = J \omega $ \\ \hline \rule{0mm}{18pt}
+$F$        & Kraft               & $F=\frac{dp}{dt}$              & $M$       & Dreh"-mo"-ment           & $M = \frac{dL}{dt}$ \\ \hline \rule{0mm}{18pt}
+$dW$       & Arbeit              & $dW=\vec{F} \vec{ds}$          & $dW$      & Arbeit               & $dW = M d\varphi $ \\ \hline \rule{0mm}{18pt}
+$P$        & Leistung            & $P = \vec{F} \vec{v} $         & $P$       & Leistung             & $P = M \omega$  \\ \hline \rule{0mm}{18pt} 
+$E_{trans}$& Transla"-tions"-ener"-gie & $E_{trans} = \frac{m v^2}{2}$  & $E_{rot}$ & Rotations"-ener"-gie     & $ E_{rot} = {J \omega^2}{2} $ \\ \hline
+\end{tabular}
+\vfill
+
+
+\section{Gravitation und Masse}
+
+\index{Gravitation}
+\index{Masse}
+
+\subsection{Keplersche Gesetze ($\rightarrow$ Bewegung der Planeten)}
+
+\index{Kepler-Gesetze}
+\index{Planeten-Bewegung}
+\index{Bewegung der Planeten}
+
+\Hauptbox{
+  \Bildbox{
+    1. Keplergesetz
+  }
+  \Formelbox{
+    Die Planeten bewegen sich auf Elypsen, in deren einem Brennpunkt die Sonne steht. (Bahn ist eben)
+   }
+ \hline
+ \Bildbox{
+    2. Keplergesetz\\
+    \input{Physik/Dynamik/kepler.pstex_t}
+  }
+  \Formelbox{
+    Der Fahrstrahl des Planeten überstreicht in gleichen Zeiten gleiche Flächen.
+    \[ v_P  r_P = v_A r_A \]
+    \[ A_P = A_A \]
+   }
+ \hline
+\Bildbox{
+    3. Keplergesetz
+  }
+  \Formelbox{
+    Das Quadrat der Umlaufdauer eines Planeten ist proportional zur dritten Potenz seiner mittleren Entfernung zur Sonne. 
+    \[T^2 = C r^3 \]
+    \[ t = \frac{4 \pi}{GM_{Sonne}} r^3 \]
+    \footnotesize Planetengeschwindigkeit: \normalsize
+    \[v_K = \frac{2 \pi r}{T} \]
+    \[v_K = \sqrt{\frac{g M_{Sonne}}{r}} \] 
+   }
+  }
+  {\Groessenbox{ 
+      $ v_{P,A}     $ & Bahngeschw.                                      & $ [\frac{m}{s}] $ \\
+      $ r_{P,A} $   & Elypsen-Radien                                     & $ [m] $ \\
+      $ T $         & Umlaufdauer Planet                                 & $ [s] $         \\     
+      $ C $         & Konstante                                          & $ [1] $         \\  
+      $ r $         & mitlerer Abstand                                   & $ [m] $         \\  
+      $ v_K $       & Kreis"-bahn"-ge"-schwin"-dig"-keit                 & $ [\frac{m}{s}] $      \\   
+      $ G $         & Gravita"-tions"-kon"-stan"-te $= 6.673 \cdot 10 ^{-11}$    & $ [\frac{m^3}{kg s^2}] $   \\      
+}}
+
+
+
+\subsection{Newtonsches Gravitationsgesetz}
+
+\index{Gravitationsgesetz}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Dynamik/gravitation.pstex_t}
+  }
+  \Formelbox{
+    \[ F = G \frac{m_1 m_2}{r^2} \]
+    \[ g = G \frac{m_E}{r^2} = \frac{ F}{m} \]
+    \vspace{1.8cm}
+   }
+  }
+  {\Groessenbox{ 
+      $ F $        & Anziehungs"-kraft               & $ [N] $ \\
+      $ m_{1,2} $  & Körpermasse                   & $ [kg] $ \\
+      $ r $        & Abstand                       & $ [m] $   \\    
+      $ G $        & Gravita"-tions"-kon"-stan"-te $= 6.673 \cdot 10 ^{-11}$    & $ [\frac{m^3}{kg s^2}] $   \\ 
+      $ g $        & Erdbeschl.                    & $ [\frac{m}{s^2} ]$ \\
+}}
+\vfill
+
+
+\subsection{Potentielle Energie im Gravitationsfeld einer Zentralmasse}
+
+\index{Gravitationsfeld}
+\index{Zentralmasse}
+\index{Potentielle Energie}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump
+  }
+  \Formelbox{
+    \[ E_{pot} = - G \frac{m_Z m}{r} \]
+    \[ \varphi = -\frac{G m_Z}{r} \]
+    \vspace{1.6cm}
+   }
+  }
+  {\Groessenbox{ 
+      $ m_Z $      & m-Zentralmasse                & $ [kg] $ \\
+      $ m $        & Körpermasse                   & $ [kg] $ \\
+      $ \varphi $  & Gravitations"-potential       & $ [\frac{m^2}{s^2}] $   \\    
+      $ G $        & Gravita"-tions"-kon"-stan"-te $= 6.673 \cdot 10 ^{-11}$    & $ [\frac{m^3}{kg s^2}] $   \\ 
+}}
+
+
+\subsection{Fluchtgeschwindigkeit}
+
+\index{Fluchtgeschwindigkeit}
+
+\Hauptbox{
+  \Bildbox{
+    Die Bahn ist eine Parabel
+  }
+  \Formelbox{
+    \[ v_F = \sqrt{2 \frac{G m_Z}{r_0}} \]
+    \[ v_F = \sqrt{2} v_K \]
+    \vspace{2.5cm}
+   }
+  }
+  {\Groessenbox{ 
+      $ v_F $      & Fluchtgeschw.                 & $ [ \frac{m}{s^2}] $ \\
+      $ v_K $      & Kreis"-bahn"-ge"-schwin"-dig"-keit   & $ [ \frac{m}{s^2}] $ \\
+      $ m_Z $      & m-Zentralmasse                & $ [kg] $ \\
+      $ r_0 $      & Abstand                       & $ [m] $ \\    
+      $ G $        & Gravita"-tions"-kon"-stan"-te $= 6.673 \cdot 10 ^{-11}$    & $ [\frac{m^3}{kg s^2}] $   \\ 
+}}
+
+
+
+\subsection{Geostationäre Bahn}
+
+\index{Geostationär}
+
+\Hauptbox{
+  \Bildbox{
+    Ein geostationärer Satellit scheint von der Erde aus gesehen still zu stehen.
+  }
+  \Formelbox{
+    \[ r = \sqrt[3]{\frac{G m_P t^2}{4 \pi ^2}} \]
+    \vspace{1.7cm}
+   }
+  }
+  {\Groessenbox{ 
+      $ r $        & Bahnradius                 & $ [ m] $ \\
+      $ m_P $      & m-Planet                   & $ [kg] $ \\
+      $ t $        & Umlaufzeit                 & $ [s] $ \\    
+      $ G $        & Gravita"-tions"-kon"-stan"-te $= 6.673 \cdot 10 ^{-11}$    & $ [\frac{m^3}{kg s^2}] $   \\ 
+}}
+\vfill
+
+\section{Rotation und Massenträgheitsmoment}
+
+\label{J}
+
+\index{Massenträgheit}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Dynamik/traegheit.pstex_t} 
+  }
+  \Formelbox{
+    \[ M = F_t l = F r \sin ( \varphi )  \]
+    \[ M = J \frac{d \omega}{dt} = J \alpha \]
+    \[ J = \sum _i m_i r_i ^2 \]
+    \scriptsize Satz von Steiner: \normalsize
+    \[ J_A = J_S + m d^2 \]
+    \vspace{0.7cm}
+   }
+  }
+  {\Groessenbox{ 
+      $ M $        & Drehmoment                 & $ [ Nm] $ \\
+      $ F $        & Kraft                      & $ [N] $ \\
+      $ F_t $      & F-tangential               & $ [N] $ \\      
+      $ l $        & Hebelarm                   & $ [ m] $ \\
+      $ J $        & Massen"-träg"-heits"-mo"-ment      & $ [kgm^2] $ \\
+      $ J_A $      & J bez. Achse A             & $ [kgm^2] $ \\    
+      $ J_S $      & J bez. Schwp         & $ [ kgm^2] $ \\
+      $ \omega $   & Winkelgeschw.              & $ [\frac{rad}{s}] $ \\
+      $ t $        & Zeit                       & $ [s] $ \\
+      $ d $        & Abst. Drehp.               & $ [m] $ \\
+}}
+
+\subsection{Massenträgheitsmoment bei Getriebe}
+
+\index{Getriebe}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/Dynamik/getriebe.pstex_t} 
+  }
+  \Formelbox{
+    \[ J_1 = \frac{J_2}{\eta_G} \left( \frac{\omega _2}{\omega _1} \right ) ^2 = \frac{J_2}{\eta_G} \left( \frac{n_2}{n _1} \right ) ^2 \]
+    \[ J_1 = \frac{J_2}{\eta _G i^2} \]
+   }
+  }
+  {\Groessenbox{ 
+      $ J $        & Massenträgheit             & $ [kgm^2] $ \\    
+      $ \omega $   & Winkelgeschw.              & $ [\frac{rad}{s}] $ \\
+      $ n $        & Drehzahl                   & $ [1] $ \\
+      $ i $        & Übersetzung                & $ [1] $ \\
+}}
+\vfill
+
+\subsection{Massenträgheitsmomente oft verwendeter Körper}
+
+\index{Massenträgheit (tabelle)}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump 
+  }
+  \Formelbox{
+    \scriptsize Allgemein: \normalsize
+    \[ J = \int r^2 dm  \]
+   }
+ \hline
+\Bildbox{
+    \input{Physik/Dynamik/vollzyl.pstex_t} 
+  }
+  \Formelbox{
+    \scriptsize Vollzylinder: \normalsize
+    \[ J = \frac{m r^2}{2}  \]
+   }
+\hline
+  \Bildbox{
+    \input{Physik/Dynamik/hohlzyl.pstex_t} 
+  }
+  \Formelbox{
+    \scriptsize Hohlzylinder: \normalsize
+    \[ J = \frac{m ( r_a ^2 + r_i ^2)}{2}  \]
+   }
+ \hline
+\Bildbox{
+    \input{Physik/Dynamik/kugel.pstex_t} 
+  }
+  \Formelbox{
+    \scriptsize Kugel: \normalsize
+    \[ J = \frac{2}{5} m r^2  \]
+   }
+\hline 
+ \Bildbox{
+     \input{Physik/Dynamik/quader.pstex_t} 
+  }
+  \Formelbox{
+    \scriptsize Quader: \hspace{2.7cm} Stange: \normalsize
+    \[ J = \frac{m ( a^2 + b^2 )}{12} \mbox{\hspace{1cm}} J = \frac{m l^2}{12}  \]
+   }
+ \hline
+\Bildbox{
+     \input{Physik/Dynamik/kreis.pstex_t} 
+  }
+  \Formelbox{
+    \scriptsize Kreisscheibe: \normalsize
+    \[ J = \frac{m r^2}{4} = \frac{m d^2}{16}  \]
+   }
+\hline
+  }
+  {\Groessenbox{ 
+      $ J $        & Massen"-träg"-heits"-mo"-ment      & $ [kgm^2] $ \\
+      $ m $        & Masse                              & $ [kg] $ \\    
+      $ r $        & Radius                             & $ [ m] $ \\
+      $ a,b $      & Seite                              & $ [m] $ \\  
+      $ l $        & Länge                              & $ [ m] $ \\  
+}}
+
+\vfill
+
+
+
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 

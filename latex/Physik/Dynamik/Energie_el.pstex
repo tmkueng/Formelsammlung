@@ -1,0 +1,153 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: Energie_el.pstex
+%%Creator: fig2dev Version 3.2 Patchlevel 3c
+%%CreationDate: Wed Dec  5 20:29:00 2001
+%%For: adrian@adis-pinguin (Adrian Freihofer)
+%%BoundingBox: 0 0 78 61
+%%Magnification: 1.0000
+%%EndComments
+/$F2psDict 200 dict def
+$F2psDict begin
+$F2psDict /mtrx matrix put
+/col-1 {0 setgray} bind def
+/col0 {0.000 0.000 0.000 srgb} bind def
+/col1 {0.000 0.000 1.000 srgb} bind def
+/col2 {0.000 1.000 0.000 srgb} bind def
+/col3 {0.000 1.000 1.000 srgb} bind def
+/col4 {1.000 0.000 0.000 srgb} bind def
+/col5 {1.000 0.000 1.000 srgb} bind def
+/col6 {1.000 1.000 0.000 srgb} bind def
+/col7 {1.000 1.000 1.000 srgb} bind def
+/col8 {0.000 0.000 0.560 srgb} bind def
+/col9 {0.000 0.000 0.690 srgb} bind def
+/col10 {0.000 0.000 0.820 srgb} bind def
+/col11 {0.530 0.810 1.000 srgb} bind def
+/col12 {0.000 0.560 0.000 srgb} bind def
+/col13 {0.000 0.690 0.000 srgb} bind def
+/col14 {0.000 0.820 0.000 srgb} bind def
+/col15 {0.000 0.560 0.560 srgb} bind def
+/col16 {0.000 0.690 0.690 srgb} bind def
+/col17 {0.000 0.820 0.820 srgb} bind def
+/col18 {0.560 0.000 0.000 srgb} bind def
+/col19 {0.690 0.000 0.000 srgb} bind def
+/col20 {0.820 0.000 0.000 srgb} bind def
+/col21 {0.560 0.000 0.560 srgb} bind def
+/col22 {0.690 0.000 0.690 srgb} bind def
+/col23 {0.820 0.000 0.820 srgb} bind def
+/col24 {0.500 0.190 0.000 srgb} bind def
+/col25 {0.630 0.250 0.000 srgb} bind def
+/col26 {0.750 0.380 0.000 srgb} bind def
+/col27 {1.000 0.500 0.500 srgb} bind def
+/col28 {1.000 0.630 0.630 srgb} bind def
+/col29 {1.000 0.750 0.750 srgb} bind def
+/col30 {1.000 0.880 0.880 srgb} bind def
+/col31 {1.000 0.840 0.000 srgb} bind def
+
+end
+save
+newpath 0 61 moveto 0 0 lineto 78 0 lineto 78 61 lineto closepath clip newpath
+-8.0 64.0 translate
+1 -1 scale
+
+/cp {closepath} bind def
+/ef {eofill} bind def
+/gr {grestore} bind def
+/gs {gsave} bind def
+/sa {save} bind def
+/rs {restore} bind def
+/l {lineto} bind def
+/m {moveto} bind def
+/rm {rmoveto} bind def
+/n {newpath} bind def
+/s {stroke} bind def
+/sh {show} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/slw {setlinewidth} bind def
+/srgb {setrgbcolor} bind def
+/rot {rotate} bind def
+/sc {scale} bind def
+/sd {setdash} bind def
+/ff {findfont} bind def
+/sf {setfont} bind def
+/scf {scalefont} bind def
+/sw {stringwidth} bind def
+/tr {translate} bind def
+/tnt {dup dup currentrgbcolor
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add srgb}
+  bind def
+/shd {dup dup currentrgbcolor 4 -2 roll mul 4 -2 roll mul
+  4 -2 roll mul srgb} bind def
+ /DrawEllipse {
+	/endangle exch def
+	/startangle exch def
+	/yrad exch def
+	/xrad exch def
+	/y exch def
+	/x exch def
+	/savematrix mtrx currentmatrix def
+	x y tr xrad yrad sc 0 0 1 startangle endangle arc
+	closepath
+	savematrix setmatrix
+	} def
+
+/$F2psBegin {$F2psDict begin /$F2psEnteredState save def} def
+/$F2psEnd {$F2psEnteredState restore end} def
+
+$F2psBegin
+%%Page: 1 1
+10 setmiterlimit
+ 0.06299 0.06299 sc
+%
+% Fig objects follow
+%
+7.500 slw
+% Ellipse
+n 540 630 180 180 0 360 DrawEllipse gs col0 s gr
+
+% Polyline
+n 1170 450 m 1350 450 l 1350 810 l 1170 810 l
+ cp gs col0 s gr 
+% Polyline
+n 540 810 m
+ 540 990 l gs col0 s gr 
+% Polyline
+n 540 990 m
+ 1260 990 l gs col0 s gr 
+% Polyline
+n 1260 990 m
+ 1260 810 l gs col0 s gr 
+% Polyline
+n 1260 450 m
+ 1260 270 l gs col0 s gr 
+% Polyline
+n 1260 270 m
+ 540 270 l gs col0 s gr 
+% Polyline
+n 540 270 m
+ 540 450 l gs col0 s gr 
+% Polyline
+gs  clippath
+915 300 m 915 240 l 763 240 l 883 270 l 763 300 l cp
+eoclip
+n 810 270 m
+ 900 270 l gs col0 s gr gr
+
+% arrowhead
+n 763 300 m 883 270 l 763 240 l  col0 s
+% Polyline
+n 540 450 m
+ 540 810 l gs col0 s gr 
+% Polyline
+gs  clippath
+247 825 m 292 825 l 292 721 l 270 796 l 247 721 l cp
+eoclip
+n 270 450 m
+ 270 810 l gs col0 s gr gr
+
+% arrowhead
+n 247 721 m 270 796 l 292 721 l 247 721 l  cp gs 0.00 setgray ef gr  col0 s
+$F2psEnd
+rs

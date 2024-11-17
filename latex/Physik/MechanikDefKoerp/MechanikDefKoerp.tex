@@ -1,0 +1,814 @@
+%==========================================================
+% Titel:    Formelsammlung-HSR
+% Autor:    Adrian Freihofer
+% Erstellt: 7.11.2001
+% Geändert:
+%==========================================================
+
+\chapter{Mechanik deformierbarer Körper}   
+
+\index{Deformierbare Körper}
+\index{Fluide}
+\index{Flüssigkeiten}
+
+\section{Druck}
+
+\index{Druck}
+\index{Fluide!Druck}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Physik/MechanikDefKoerp/Druck.pstex_t}
+  }
+  \Formelbox{
+      \[ p = \frac{F}{A}  \]
+      \[ \tau = \frac{F}{A}  \]
+      }
+  }
+  {\Groessenbox{
+     $ p$          & Druck              & $ [Pa] $                 \\ 
+     $ F$          & Kraft              & $ [N] $                 \\
+     $ A$          & Fläche             & $ [m²] $                 \\
+     $ \tau$       & Schub"-span"-nung  & $ [Pa] $                 \\
+}}
+
+
+\subsection{Absoluter Druck Überdruck}
+
+\index{Überdruck}
+\index{Fluide!Überdruck}
+\index{Absoluter Druck}
+\index{Fluide!Absoluter Druck}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/MechanikDefKoerp/AbsDruck.pstex_t}
+  }
+
+  \Formelbox{
+      \[ \Delta p = p - p_0 \]
+      \[ F = F_i - F_a \]
+      \[ F = pA - p_0 A \]
+      \vspace{0.5cm}
+      }
+  }
+  {\Groessenbox{            
+     $ p$          & Druck                                    & $ [Pa] $      \\
+     $ p_0 $       & Aussendruck = $1,013 \cdot 10^5 $        & $ [Pa] $      \\
+     $ F_i , F_a $ & Kraft innen, aussen                      & $ [N] $       \\
+     $ A $         & Fläche                                   & $ [m²] $      \\
+}}
+
+\section{Kompression}
+
+\index{Kompression}
+\index{Fluide!Kompression}
+
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/MechanikDefKoerp/kompression.pstex_t}\\
+	\begin{footnotesize}Ideale Fluide sind inkompressibel und reibungsfrei, Gase können zusammengedrückt werden.\end{footnotesize}
+  }
+
+  \Formelbox{
+	\[ \kappa = \frac{-1}{V} \frac{\Delta V}{\Delta p}\]
+	\[ K = \frac{1}{\kappa} \]
+	\begin{footnotesize}ideales Gas:\end{footnotesize}
+	\[ p V = konst. \]
+	\[ p_1 V_1 = p_2 V_2 \]
+      }
+  }
+  {\Groessenbox{  
+	$ \kappa$     & Kompressi"-bi"-li"-tät                   & $ [\frac{1}{Pa}] $      \\ 
+	$ K $         & Kompressions"-mo"-dul                    & $ [Pa] $      \\         
+	$ p$          & Druck                                    & $ [Pa] $      \\
+	$ V $         & Volumen                                  & $ [m^3] $      \\
+	$ \rho $      & Dichte                                   & $ [ \frac{kg}{m^3} ] $\\
+}}
+\vfill
+
+\section{Hydrostatik}
+
+\index{Hydrostatik}
+\index{Fluide!Hydrostatik}
+
+
+\subsection{Schweredruck}
+
+\index{Schweredruck}
+\index{Fluide!Schweredruck}
+
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/MechanikDefKoerp/schweredruck.pstex_t}
+  }
+
+  \Formelbox{
+	\[ dp = - \rho \cdot g \cdot dh \mbox{\hspace{0.2cm}\begin{scriptsize}(h positiv nach oben)\end{scriptsize}}\]
+	\begin{footnotesize}Bei Flüssigkeiten:\end{footnotesize}
+	\[ p = \rho g h + p_0 \mbox{\hspace{0.2cm}\begin{scriptsize}(h positiv nach unten)\end{scriptsize}}\]
+	\[ \frac{p_0}{\rho_0} = \frac{p(h)}{\rho(h)} \]
+	\begin{footnotesize}Bei Gasen:\end{footnotesize}
+	\[ p = p_0 e^{- \frac{\rho_0}{p_0} g h} \]
+      }
+  }
+  {\Groessenbox{  
+	$ p$          & Druck                                    & $ [Pa] $      \\
+	$ p_0$        & Druck bei $h=0$                          & $ [Pa] $      \\
+	$ \rho $      & Dichte                                   & $ [\frac{kg}{m^3}] $      \\
+	$ \rho_0 $    & Dichte bei $h=0$                         & $ [\frac{kg}{m^3}] $      \\
+	$ h $         & Höhe                                     & $ [m] $      \\
+	$ g $         & Erdbe"-schleu"-ni"-gung $ = 9.81$        & $ [ \frac{m}{s^2} ]$ \\
+}}
+
+
+
+\subsection{Statischer Auftrieb}
+
+\index{Auftrieb}
+\index{Fluide!Auftrieb}
+\index{Statischer Auftrieb}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/MechanikDefKoerp/auftrieb.pstex_t}
+  }
+
+  \Formelbox{
+	\[ F_A = \rho _{Fl} V_K g - \rho _K V_K g \] 
+	\[ F_A = m_{Fl} g - m_K g \]
+	\[ F_A = A \rho_{Fl} g \Delta h \]
+	\vspace{1.9cm}
+      }
+  }
+  {\Groessenbox{  
+	$ F_A$        & Auftriebskraft                           & $ [N] $      \\
+	$ \rho_{Fl} $ & Dichte Fluid                             & $ [\frac{kg}{m^3}] $      \\
+	$ \rho_K $    & Dichte Körper                            & $ [\frac{kg}{m^3}] $      \\
+	$ m_{Fl} $    & Masse Fluid                              & $ [kg] $      \\
+	$ m_K $       & Masse Körper                             & $ [kg] $      \\
+	$ A $         & Fläche Körper                            & $ [m^2] $      \\
+	$ g $         & Erdbe"-schleu"-ni"-gung $ = 9.81$        & $ [ \frac{m}{s^2} ]$ \\
+}}
+
+
+\subsection{Druckwandler}
+
+\index{Druckwandler}
+\index{Fluide!Druckwandler}
+
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/MechanikDefKoerp/druckwandler.pstex_t}
+  }
+
+  \Formelbox{
+	\[ \frac{p_1}{p_2} = \frac{A_2}{A_1} \]
+      }
+  }
+  {\Groessenbox{  
+	$ p$          & Druck                                    & $ [Pa] $      \\
+	$ A $         & Fläche                                   & $ [m^2] $      \\
+}}
+
+
+\subsection{Kraftwandler}
+
+\index{Kraftwandler}
+\index{Fluide!Kraftwandler}
+
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/MechanikDefKoerp/kraftwandler.pstex_t}
+  }
+  \Formelbox{
+	\[ \frac{F_1}{F_2} = \frac{A_1}{A_2} \]
+      }
+  }
+  {\Groessenbox{  
+	$ F$          & Kraft                           & $ [N] $      \\	
+	$ A $         & Fläche                          & $ [m^2] $      \\
+}}
+\vfill
+
+
+\subsection{Druckmessung}
+
+\index{Druckmessung}
+\index{Fluide!Druckmessung}
+
+
+\subsubsection{Manometer}
+
+\index{Manometer}
+\index{Fluide!Manometer}
+
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/MechanikDefKoerp/manometer.pstex_t}
+  }
+  \Formelbox{
+	\[ \Delta p = p_1 - p_2 \]
+	\[ \Delta p = \rho g \Delta h \]
+      }
+  }
+  {\Groessenbox{  
+	$ p$          & Druck                           & $ [Pa] $      \\	
+	$ h $         & Höhe                            & $ [m] $ \\
+	$ \rho $      & Dichte                          & $ [ \frac{kg}{m^3} ] $ \\
+}}
+
+
+\subsubsection{Absoluter Druck}
+
+\index{Druck!Absoluter}
+\index{Fluide!Druck!Absoluter}
+
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/MechanikDefKoerp/AbsDruck.pstex_t}
+  }
+  \Formelbox{
+	\[  p_a = \rho g \Delta h \] 
+	\vspace{1.7cm}
+      }
+  }
+  {\Groessenbox{ 
+	$ p$          & Druck                           & $ [Pa] $      \\	
+	$ h $         & Höhe                            & $ [m] $ \\
+	$ \rho $      & Dichte                          & $ [ \frac{kg}{m^3} ] $ \\ 
+	$ g$          & Erdbeschl. $ = 9.81 $           & $ [\frac{m}{s^2}] $      \\
+}}
+
+
+\subsubsection{Statischer Druck (Druck auf Rohrwand)}
+
+\index{Druck!Statischer}
+\index{Fluide!Druck!Statischer}
+\index{Druck auf Rohrwand}
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/MechanikDefKoerp/statischerDruck.pstex_t}
+  }
+  \Formelbox{
+	\[ p_{stat} = p_1 + \rho g \Delta h \] 
+	\begin{footnotesize}Falls oben offen:\end{footnotesize}
+	\[ p_1 = p_0 \] 
+	\vspace{1cm}
+      }
+  }
+  {\Groessenbox{ 
+	$ p$          & Druck                                  & $ [Pa] $      \\
+	$ p_0$        & Aussendruck $= 1.013 \cdot 10^5 $      & $ [Pa] $      \\	
+	$ h $         & Höhe                                   & $ [m] $ \\
+	$ \rho $      & Dichte                                 & $ [ \frac{kg}{m^3} ] $ \\ 
+	$ g$          & Erdbeschl. $ = 9.81 $                  & $ [\frac{m}{s^2}] $      \\
+}}
+
+
+
+\subsubsection{Dynamischer Druck}
+
+\index{Druck!Dynamischer}
+\index{Fluide!Druck!Dynamischer}
+
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/MechanikDefKoerp/dynamischerDruck.pstex_t}
+  }
+  \Formelbox{
+	\[ p_{ges} = \rho g \Delta h \]
+	\vspace{1.7cm} 
+      }
+  }
+  {\Groessenbox{ 
+	$ p$          & Druck                                  & $ [Pa] $      \\
+	$ h $         & Höhe                                   & $ [m] $ \\
+	$ \rho $      & Dichte                                 & $ [ \frac{kg}{m^3} ] $ \\ 
+	$ g$          & Erdbeschl. $ = 9.81 $                  & $ [\frac{m}{s^2}] $      \\
+}}
+\vfill
+
+
+\subsubsection{Gesamtdruck}
+
+\index{Druck!Gesamt}
+\index{Fluide!Druck!Gesamt}
+
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/MechanikDefKoerp/gesamtDruck.pstex_t}
+  }
+  \Formelbox{
+	\[ p_{dyn} = \rho g \Delta h \] 
+	\begin{footnotesize}Strömgeschwindigkeit:\end{footnotesize}
+	\[ v = \sqrt{\frac{2 p_{dyn}}{\rho}} \] 
+      }
+  }
+  {\Groessenbox{ 
+	$ p$          & Druck                                  & $ [Pa] $      \\
+	$ h $         & Höhe                                   & $ [m] $ \\
+	$ \rho $      & Dichte                                 & $ [ \frac{kg}{m^3} ] $ \\ 
+	$ g$          & Erdbeschl. $ = 9.81 $                  & $ [\frac{m}{s^2}] $      \\
+	$ v $         & Geschw.                                & $ [\frac{m}{s}] $      \\
+}}
+
+
+
+\subsubsection{Druckdifferenzen}
+
+\index{Druck!Differenzen}
+\index{Fluide!Druck!Differenzen}
+
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/MechanikDefKoerp/venturirohr.pstex_t} \\
+	\begin{footnotesize}Venturirohr\end{footnotesize}
+  }
+  \Formelbox{
+	\[ \Delta p = p_1 - p_2 \]
+	\[ \Delta p = \rho g \Delta h \] 
+	\begin{footnotesize}Strömgeschwindigkeit:\end{footnotesize}
+	\[ v_1 = \sqrt{\frac{2 \Delta p}{\left [ \left ( \frac{A_1}{A_2} \right) ^2 - 1 \right ] \rho }} \] 
+      }
+  }
+  {\Groessenbox{ 
+	$ p$          & Druck                                  & $ [Pa] $      \\
+	$ h $         & Höhe                                   & $ [m] $ \\
+	$ A $         & Fläche                                 & $ [m^2] $      \\
+	$ \rho $      & Dichte                                 & $ [ \frac{kg}{m^3} ] $ \\ 
+	$ g$          & Erdbeschl. $ = 9.81 $                  & $ [\frac{m}{s^2}] $      \\
+	$ v $         & Geschw.                                & $ [\frac{m}{s}] $      \\
+}}
+
+
+\subsection{Grenzflächeneffekte}
+
+\index{Grenzflächeneffekte}
+\index{Fluide!Grenzflächeneffekte}
+
+
+\subsubsection{Oberflächenspannung}
+
+\index{}
+\index{Fluide!}
+
+
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/MechanikDefKoerp/oberflaechensp.pstex_t} \\
+	
+  }
+  \Formelbox{
+	\[ \sigma = \frac{F}{l} \]
+	\[ \sigma = \frac{\Delta W}{\Delta A} \] 
+	\begin{footnotesize}Kraft um Draht zu heben:\end{footnotesize}
+	\[ F = 2 \sigma l + m_{Drath} g \] 
+      }
+  }
+  {\Groessenbox{ 
+	$ \sigma$     & Oberflä"-chen"-span"-nung              & $ [\frac{N}{m}] $      \\
+	$ F$          & Kraft                                  & $ [N] $      \\
+	$ l $         & Länge                                  & $ [m] $ \\
+	$ A $         & Kontaktfläche                          & $ [m^2] $      \\
+	$ W $         & Arbeit                                 & $ [ J ] $ \\ 
+	$ g$          & Erdbeschl. $ = 9.81 $                  & $ [\frac{m}{s^2}] $      \\
+}}
+\vfill
+
+
+\subsubsection{Grenzflächenspannung}
+
+\index{Grenzflächenspannung}
+\index{Spannung!an Grenzflächen}
+\index{Fluide!Grenzflächenspannung}
+
+
+\Hauptbox{
+  \Bildbox{
+	\begin{footnotesize}Flüssigkeit auf Festkörper\end{footnotesize}
+  	\input{Physik/MechanikDefKoerp/grenzflaechensp.pstex_t} \\ \\
+	\begin{footnotesize}Flüssigkeit auf Flüssigkeit\end{footnotesize}
+	\input{Physik/MechanikDefKoerp/flflgrenzflaechensp.pstex_t} 
+  }
+  \Formelbox{
+	\begin{footnotesize}Benetzung: $ \varphi < 90 ^{\circ} $\end{footnotesize} \\ 	
+	\begin{footnotesize}Nicht Benetzung: $ \varphi > 90 ^{\circ} $\end{footnotesize}  \\ 
+	\begin{footnotesize}Flüssigkeit auf Festkörper\end{footnotesize}  \\ 
+	\[ \cos(\varphi ) = \frac{\sigma_{sg} - \sigma_{sl}}{\sigma_{lg}} \]
+	\begin{footnotesize}Flüssigkeit auf Flüssigkeit\end{footnotesize}  \\ 
+	\[ \cos(\varphi ) = \frac{\sigma_{2g}^2 - \sigma_{lg}^2 -\sigma_{-2}}{2 \sigma_{lg} \sigma_{l2}} \] 
+      }
+  }
+  {\Groessenbox{ 
+	$ \varphi$    & Kontaktwinkel                         & $ [rad] $      \\
+	$\sigma $     & Zugspannung                           & $ [\frac{N}{m}] $ \\
+	$\sigma_{sl}$ & $\sigma $ fest, flüssig               & $ [\frac{N}{m}] $ \\
+	$\sigma $     & $\sigma $ fest, Gas                   & $ [\frac{N}{m}] $ \\
+	$\sigma $     & $\sigma $ flüssig, Gas                & $ [\frac{N}{m}] $ \\	
+}}
+
+
+
+\subsubsection{Kapillarität}
+
+\index{Kapillarität}
+\index{Fluide!Kapillarität}
+
+
+\Hauptbox{
+  \Bildbox{
+  	\input{Physik/MechanikDefKoerp/kapillar.pstex_t} 
+	\begin{footnotesize}Röhrchen:\end{footnotesize} \\
+	\input{Physik/MechanikDefKoerp/roerchen.pstex_t}
+  }
+  \Formelbox{
+	\[ h = \frac{2 \sigma}{\rho g r} \] 
+      }
+  }
+  {\Groessenbox{ 
+	$\sigma $     & Zugspannung                           & $ [\frac{N}{m}] $ \\
+	$ h $         & Höhe                                  & $ [ m ] $ \\ 
+	$ r $         & Radius                                & $ [ m ] $ \\ 
+	$ \rho $      & Dichte                                & $ [ \frac{kg}{m^3} ] $ \\ 
+	$ g$          & Erdbeschl. $ = 9.81 $                 & $ [\frac{m}{s^2}] $      \\	
+}}
+\vfill
+
+ 
+
+\section{Hydrodynamik}
+
+\index{Hydrodynamik}
+\index{Fluide!Hydrodynamik}
+
+\subsection{Kontinuitätsgleichung}
+
+\index{Kontinuitätsgleichung}
+\index{Fluide!Kontinuitätsgleichung}
+
+
+\Hauptbox{
+  \Bildbox{
+  	\input{Physik/MechanikDefKoerp/kontinuitaet.pstex_t} 
+  }
+  \Formelbox{
+	\[ A_1 v_1 = A_2 v_2 \] 
+	\[ \Delta V = A_1 v_1 \Delta t \]
+	\[ \dot V = v A = konst \]
+	\[ s_1 = v_1 \Delta t \]
+	\[ s_2 = v_2 \Delta t \]
+      }
+  }
+  {\Groessenbox{ 
+	$ A $     & Fläche                           & $ [ m^2] $ \\
+	$ v $     & Geschw.                          & $ [ \frac{m}{s} ] $ \\ 
+	$ s $     & Strecke                          & $ [ m ] $ \\ 
+	$ V $     & Volumen                          & $ [ m^3 ] $ \\ 
+	$ t$      & Zeit                             & $ [ s] $      \\	
+}}
+
+
+ 
+\subsection{Bernoulli Gleichung (Energieerhaltung)}
+
+\index{Kontinuitätsgleichung}
+\index{Fluide!Kontinuitätsgleichung}
+
+\Hauptbox{
+  \Bildbox{
+  	\input{Physik/MechanikDefKoerp/bernoulli.pstex_t} 
+  }
+  \Formelbox{
+	\[ \begin{array}{c}
+ 	\overbrace{p_1}^{p_{statisch}} + \overbrace{\frac{1}{2} \rho v_1 ^2}^{p_{dynamisch}} + \overbrace{g h_1 \rho}^{p_{schwer}}\\ 
+ 	=\\
+	\underbrace{p_2}_{p_{statisch}} + \underbrace{\frac{1}{2} \rho v_2 ^2}_ {p_{dynamisch}} + \overbrace{g h_2 \rho}_{p_{schwer}}
+\end{array} \]  
+	\[ p_1 + \frac{1}{2} \rho v^2 + g h \rho = konst. \]
+	\begin{footnotesize}Mit Berücksichtigung der Reibung: \\ \end{footnotesize}
+	\[ \begin{array}{c}
+ 	\overbrace{p_1}^{p_{statisch}} + \overbrace{\alpha_1 \frac{ \rho v_1 ^2}{2}}^{p_{dynamisch}} + 
+	\overbrace{g h_1 \rho}^{p_{schwer}}\\ 
+ 	=\\
+	\underbrace{p_2}_{p_{statisch}} + \underbrace{\alpha_2 \frac{\rho v_2 ^2}{2}}_ {p_{dynamisch}} + 
+	\overbrace{g h_2 \rho}_{p_{schwer}}
+	\end{array} \]  
+	\begin{footnotesize} 
+	Laminar: $ \alpha  = 2 $ \\
+	Turbulent: $ \alpha  \approx 1 $ \vspace{0.1cm}
+	\end{footnotesize}
+      }
+  }
+  {\Groessenbox{ 
+	$ p $     & Druck                            & $ [ Pa] $ \\
+	$ v $     & Geschw.                          & $ [ \frac{m}{s} ] $ \\ 
+	$ h $     & Höhe                             & $ [ m ] $ \\ 
+	$ \rho$   & Dichte                           & $ [ \frac{kg}{m^3} ] $ \\ 
+	$ F$      & Kraft                            & $ [ N ] $      \\
+	$ \alpha$ & Korrektur"-fak"-tor               & $ [ 1 ] $ \\
+}}
+\vfill
+
+ 
+\section{Reale Strömung}
+
+\index{Strömung!Reale}
+\index{Fluide!Strömung!Reale}
+
+\subsection{Zirkulation}
+
+\index{Strömung!Zirkulation}
+\index{Fluide!Strömung!Zirkulation}
+
+\Hauptbox{
+  \Bildbox{
+\boxdump
+  }
+  \Formelbox{
+	\[ \Gamma = \oint \vec v d \vec s\] 
+	\vspace{0.5cm}
+      }
+  }
+  {\Groessenbox{ 
+	$\Gamma $     & Zirkulation                      & $ [\frac{m^2}{s} ] $ \\
+	$ v $         & Geschw.                          & $ [ \frac{m}{s} ] $ \\ 
+	$ s $         & Strecke                          & $ [ m ] $ \\ 
+}}
+
+
+\subsection{Vortizität}
+
+\index{Vortizität}
+\index{Strömung!Vortizität}
+\index{Fluide!Strömung!Vortizität}
+
+
+\Hauptbox{
+  \Bildbox{
+  	\boxdump
+  }
+  \Formelbox{
+	\[ \vec \omega = rot \vec v \] 
+	\begin{footnotesize}Rotation der Geschwindigkeit\end{footnotesize}
+      }
+  }
+  {\Groessenbox{ 
+	$\omega $     & Vortizität                       & $ [\frac{1}{s}] $ \\
+	$ v $         & Geschw.                          & $ [ \frac{m}{s} ] $ \\ 
+}}
+
+
+ 
+\subsection{Newtonsches Reibungsgesetz}
+
+\index{Newtonsches Reibungsgesetz}
+\index{Strömung!Newtonsches Reibungsgesetz}
+\index{Fluide!Strömung!Newtonsches Reibungsgesetz}
+
+
+\Hauptbox{
+  \Bildbox{
+  	\input{Physik/MechanikDefKoerp/newtonReibung.pstex_t} 
+  }
+  \Formelbox{
+	\[ \tau = \eta \frac{dv}{dz} \] 
+	\[ \nu = \frac{\eta}{rho} \]
+	\[ \varphi = \frac{1}{\eta} \]
+	\vspace{0.9cm}
+      }
+  }
+  {\Groessenbox{ 
+	$\tau $       & Schubspan.                            & $ [\frac{N}{m^2}] $ \\
+	$ v $         & Geschw.                               & $ [ \frac{m}{s} ] $ \\ 
+	$ \eta $      & Dynamische Viskosität                 & $ [ Pas ] $ \\ 
+	$ \nu $       & Kinetische Viskosität                 & $ [ \frac{m^2}{s} ] $ \\ 
+	$ \rho $      & Dichte                                & $ [ \frac{kg}{m^3} ] $ \\ 
+	$ z$          & Abst. Platten                         & $ [ m ] $      \\	
+	$ \varphi $   & Fluidität                             & $ [ \frac{1}{Pas} ] $\\
+}}
+\vfill
+
+\section{Strömungsformen}
+
+\index{Strömungsformen}
+\index{Strömung!Formen}
+\index{Fluide!Strömung!Formen}
+
+
+\subsection{Raynolds-Zahl}
+
+\index{Raynolds-Zahl}
+\index{Strömung!Raynolds-Zahl}
+\index{Fluide!Strömung!Raynolds-Zahl}
+
+\Hauptbox{
+  \Bildbox{
+  	\boxdump
+  }
+  \Formelbox{
+	\[ Re = \frac{\rho v L}{\eta} = \frac{v L}{\nu} \]
+	\begin{footnotesize}Im Rohr:\end{footnotesize} 
+	\[ Re = \frac{\rho v d}{\eta} = \frac{v d}{\nu} \]
+	\[ Re_{kritisch} = 2320 \]
+      }
+  }
+  {\Groessenbox{ 
+	$ Re $        & Raynolds-Zahl                         & $ [1] $ \\
+	$ \rho $      & Dichte                                & $ [ \frac{kg}{m^3} ] $ \\ 
+	$ v $         & Geschw.                               & $ [ \frac{m}{s} ] $ \\ 
+	$ L $         & Linearabm.                            & $ [ m ] $ \\ 
+	$ d $         & Rohr-$\emptyset$                      & $ [ m ] $ \\ 
+	$ \eta $      & Dyn.Visk.                             & $ [ Pas ] $ \\ 
+	$ \nu $       & Kin. Visk.                            & $ [ \frac{m^2}{s} ] $ \\ 
+}}
+\vfill
+
+\subsection{Laminare Strömung (Re $ < $ 2320)}
+
+\index{Strömung!Laminare}
+\index{Fluide!Strömung!Laminare}
+
+\Hauptbox{
+  \Bildbox{
+	\begin{footnotesize}Die Strömung ist laminar, wenn die Raynolds-Zahl $ Re < $ 2320 ist.\end{footnotesize}\\ \\
+  	\input{Physik/MechanikDefKoerp/laminareStroemung.pstex_t} 	\\ \\
+	\input{Physik/MechanikDefKoerp/fluidInFluid.pstex_t} 
+  }
+  \Formelbox{
+	\begin{footnotesize}Umströmte Kugel:\end{footnotesize}
+	\[ F_R = 6 \pi \eta R v \]
+	\begin{footnotesize}Kugelgeschwindigkeit:\end{footnotesize} 
+	\[ v_{Kugel} = \frac{2 R^2 g ( \rho_K - \rho_{Fl})}{9 \eta} \]
+	\begin{footnotesize}Fluidzylinder in Fluid:\end{footnotesize}
+	\[ v_{Zylinder} = \frac{p_1 - p_2 }{4 l \eta} ( R^2 - r^2) \]
+	\begin{footnotesize}Durchflussmenge:\end{footnotesize}
+	\[ \dot V = \frac{\pi \Delta p R ^4}{8 \eta l} \]
+	\[ \Delta p = p_1 - p_2 \]
+	\begin{footnotesize}Volumenfluss:\end{footnotesize}
+	\[ V = \frac{ \pi \Delta p R^4}{8 \eta l} t\]
+	\begin{footnotesize}Druckabfall im glatten Rohr:\end{footnotesize}
+	\[ \Delta p = \lambda_l \frac{l}{d} \frac{\rho v^2}{2} \mbox{, \hspace{1cm}} \lambda_l = \frac{64}{Re} \] 
+	\begin{footnotesize}Reibungskraft auf Rohr:\end{footnotesize}
+	\[ F_R = \Delta p R^2 \pi = 8 \pi \eta l v \]
+      }
+  }
+  {\Groessenbox{ 
+	$ F_R $       & Reibungskraft                         & $ [ N ] $ \\
+	$ v $         & Geschw.                               & $ [ \frac{m}{s} ] $ \\ 
+ 	$ r $         & Radius Zylinder                       & $ [ m ] $ \\ 
+	$ R $         & Radius Kugel, Rohr                    & $ [ m ] $ \\ 
+	$ \eta $      & Dynamische Viskosität                 & $ [ Pas ] $ \\ 
+	$ \rho $      & Dichte                                & $ [ \frac{kg}{m^3} ] $ \\ 
+	$ Re $        & Raynolds-Zahl                         & $ [1] $ \\
+	$ \rho $      & Dichte                                & $ [ \frac{kg}{m^3} ] $ \\	
+	$ l $         & Rohrlänge                             & $ [ m ] $ \\ 
+	$ V $         & Volumen                               & $ [ m^3 ] $\\
+	$ d $         & Rohr-$\emptyset$                      & $ [ m ] $ \\
+	$ \lambda $   & Wider"-stands"-zahl                   & $ [ 1 ] $ \\
+	$ p $         & Druck                                 & $ [ Pa ] $ \\
+	$ g$          & Erdbeschl. $ = 9.81 $                 & $ [\frac{m}{s^2}] $      \\	
+}}
+
+
+ 
+\subsection{Volumenstrom}
+
+\index{Strömung!Volumenstrom}
+\index{Strömung!Austrittsgeschwindikkeit}
+\index{Austrittsgeschwindikkeit}
+\index{Fluide!Strömung!Volumenstrom}
+
+\Hauptbox{
+  \Bildbox{
+  	\input{Physik/MechanikDefKoerp/vStrom.pstex_t} 
+  }
+  \Formelbox{
+	\[ A_1 \gg A_2 \] 
+	\[ v_1 \approx 0 \]
+	\[ v_2 = \sqrt{2 g h } \] 
+	\begin{footnotesize}Volumenstrom:\end{footnotesize}
+	\[ \dot V = a_2 v_2 \]
+      }
+  }
+  {\Groessenbox{ 
+	$ h $         & Höhe                                  & $ [ m ] $ \\ 
+	$ v $         & Geschw.                               & $ [ \frac{m}{s} ] $ \\ 
+ 	$ V $         & Volumen                               & $ [ m^3 ] $\\
+	$ A $         & Fläche                                & $ [ m^2 ] $ \\
+	$ t$          & Zeit                                  & $ [ s] $ \\
+	$ g$          & Erdbeschl. $ = 9.81 $                 & $ [\frac{m}{s^2}] $      \\		
+}}
+\vfill
+
+
+\subsection{Turbulente Strömung (Re $ > $ 2320)}
+
+\index{Strömung!Turbulent}
+\index{Fluide!Strömung!Turbulent}
+
+\Hauptbox{
+  \Bildbox{\begin{footnotesize}Die Strömung ist turbulent, wenn die Raynolds-Zahl $ Re > $ 2320 ist.\end{footnotesize}\\ \\
+  	\input{Physik/MechanikDefKoerp/turbulenteStroemung.pstex_t}  
+  }
+  \Formelbox{
+	Druckwiderstand:
+	\[ F_D = \frac{c_W \rho v^2}{2} A \]
+	\begin{footnotesize}Druckabfall im glatten Rohr:\end{footnotesize}
+	\[ \Delta p = \lambda_t \frac{l}{d} \frac{\rho v^2}{2} \mbox{, \hspace{1cm}} \lambda_t = \frac{0.316}{\sqrt[4]{Re}} \] 
+	\vspace{4.2cm}
+      }
+  }
+  {\Groessenbox{ 
+	$ F_D $       & Druckwiderst.                         & $ [ N ] $ \\
+	$ v $         & Geschw.                               & $ [ \frac{m}{s} ] $ \\ 
+	$ A $         & Angriffsfläche                        & $ [ m^2 ] $\\
+ 	$ c_W $       & Widerstands"-koef"-fi"-zient          & $ [ 1 ] $ \\ 
+	$ \rho $      & Dichte                                & $ [ \frac{kg}{m^3} ] $ \\ 
+	$ Re $        & Raynolds-Zahl                         & $ [1] $ \\
+	$ \rho $      & Dichte                                & $ [ \frac{kg}{m^3} ] $ \\	
+	$ l $         & Rohrlänge                             & $ [ m ] $ \\ 
+	$ d $         & Rohr-$\emptyset$                      & $ [ m ] $ \\
+	$ \lambda $   & Wider"-stands"-zahl                   & $ [ 1 ] $ \\
+	$ p $         & Druck                                 & $ [ Pa ] $ \\
+	$ g$          & Erdbeschl. $ = 9.81 $                 & $ [\frac{m}{s^2}] $      \\		
+}}
+
+
+
+
+\section{Dynamischer Auftrieb}
+
+\index{Strömung!Dynamischer Auftrieb}
+\index{Fluide!Strömung!Dynamischer Auftrieb}
+
+\Hauptbox{
+  \Bildbox{
+	\begin{footnotesize}Beispiel: Schiff mit Zylinder-Segel:\\ \end{footnotesize}\\
+  	\input{Physik/MechanikDefKoerp/dynAuftrieb.pstex_t} 
+  }
+  \Formelbox{
+	\begin{footnotesize}Bei Zylinderform:\end{footnotesize}
+	\[ F_A = \rho l v \Gamma \] 
+	\[ \Gamma = 4 \pi ^2 r ^2 f \]
+      }
+  }
+  {\Groessenbox{ 
+	$ F_A $       & Auftriebskraft                         & $ [N] $ \\
+	$ l $         & Zylinderlänge                         & $ [ m ] $ \\ 
+	$ r $         & Radius                                & $ [ m ] $ \\ 
+	$ v $         & Fluidgeschw.                          & $ [\frac{m}{s}] $ \\
+	$ f $         & Drehfrequenz Zylinder                 & $ [ \frac{1}{s}] $ \\
+	$ \rho $      & Dichte                                & $ [ \frac{kg}{m^3} ] $ \\ 
+	$ \Gamma $    & Zirkulaion                            & $ [\frac{m^2}{s}] $      \\	
+}}
+\vfill
+
+\subsection{Tragflügel}
+
+\index{Tragflügel}
+\index{Strömung!Tragflügel}
+\index{Fluide!Strömung!Tragflügel}
+
+\Hauptbox{
+  \Bildbox{
+	\begin{footnotesize}Tragflügel:\end{footnotesize} \\ \\
+  	\input{Physik/MechanikDefKoerp/tragfluegel.pstex_t} 
+  }
+  \Formelbox{
+	\begin{footnotesize}Auftrieb:\end{footnotesize}
+	\[ F_A = c_A \frac{ \rho v^2}{2} A_T \] 
+	\begin{footnotesize}Induzierter Widerstand:\end{footnotesize}
+	\[ F_W = c_W \frac{\rho v^2}{2} A_T \]
+	\[ F_R = F_{GH} = F_G \sin(\alpha) \]
+	\[ F_A = F_{GN} = F_G \cos(\alpha) \]
+	\[ \frac{c_W}{c_A} = \frac{H"ohenverlust}{Meter Flug} \]
+      }
+  }
+  {\Groessenbox{ 
+	$ F_A $     & Auftriebs"-kaft                        & $ [N] $ \\
+	$ F_W $     & Widerstands"-kraft                     & $ [N] $ \\
+	$ c_A $     & Auftriebskoef"-fi"-zient               & $ [1] $ \\
+	$ c_W $     & Widerstands"-koef"-fi"-zient           & $ [1] $ \\
+	$ v $       & Geschw.                                & $ [\frac{m}{s}] $ \\
+	$ A_T $     & Fläche aus Anström"-rich"-tung gesehen & $ [m^2] $ \\
+	$ \rho $    & Dichte Fluid                           & $ [\frac{kg}{m^3}] $ \\
+	$ \alpha $  & Gleitwinkel                            & $ [rad] $ \\
+}}
+\vfill
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 

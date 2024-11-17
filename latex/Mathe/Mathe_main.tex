@@ -1,0 +1,1280 @@
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../FoSaHSR"
+%%% End: 
+
+\part{Mathematik} \index{Mathematik}
+%\twocolumn
+
+\chapter{Grundlagen}
+
+\setlength{\unitlength}{1mm}
+\section{Allgemeines}
+\subsection{Binome}     \index{Binom}
+
+\[ {n \choose k}= \frac{{n!}}{{k!\left( {n - k} \right)!}}\]
+\[\left( {a + b} \right)^n  = \sum\limits_{k = 0}^n {{n \choose k}a^{n - k} b^k } \]
+\[\left( {a - b} \right)^n  = \sum\limits_{k = 0}^n {\left( { - 1} \right)^k {n \choose k}a^{n - k} b^k } \]
+\[\left( {a^2  - b^2 } \right) = \left( {a - b} \right)\left( {a + b} \right)\]
+\[\left( {a^3  \pm b^3 } \right) = \left( {a \pm b} \right)\left( {a^2  \mp ab + b^2 } \right)\]
+%\fontsize{7}{8}\selectfont
+\begin{scriptsize}
+\begin{center}
+\[
+\begin{array}{c}        \index{Pascal Dreieck}
+
+1 \\
+1 \quad 1 \\
+1 \quad 2 \quad 1 \\
+1 \quad 3 \quad 3 \quad 1 \\
+1 \quad 4 \quad 6 \quad 4 \quad 1\\
+1 \quad 5 \quad 10 \quad 10 \quad 5 \quad 1\\
+1 \quad 6 \quad 15 \quad 20 \quad 15 \quad 6 \quad 1 \\
+1 \quad 7 \quad 21 \quad 35 \quad 35 \quad 21 \quad 7 \quad 1 \\
+1 \quad 8 \quad 28 \quad 56 \quad 70 \quad 56 \quad 28 \quad 8 \quad 1 \\
+1 \quad 9 \quad 36 \quad 84 \quad 126 \quad 126 \quad 84 \quad 36 \quad 9 \quad 1 \\
+1 \quad 10 \quad 45 \quad 120 \quad 210 \quad 252 \quad 210 \quad 120 \quad 45 \quad 10 \quad 1\\
+1 \quad 11 \quad 55 \quad 165 \quad 330 \quad 462 \quad 462 \quad 330 \quad 165 \quad 55 \quad 11 \quad 1\\
+1 \quad 12 \quad 66 \quad 220 \quad 495 \quad 792 \quad 924 \quad 792 \quad 495 \quad 220 \quad 66 \quad 12 \quad 1 \\
+\end{array}
+\]
+\end{center}
+\end{scriptsize}
+
+\subsection{Faktorzerlegungen}                                                          \index{Faktorzerlegungen}
+
+\[a^2 - b^2 = (a + b)(a - b)\]
+\[a^3 - b^3 = (a - b)(a^2 + ab + b^2)\]
+\[a^3 + b^3 = (a + b)(a^2 - ab + b^2)\]
+\[a^n - b^n = (a - b)(a^{n-1} + a^{n-2}b + ... + ab^{n-2} + b^{n-1})\]
+f"ur n gerade:
+
+\[a^n - b^n = (a + b)(a^{n-1} - a^{n-2}b + - ... + ab^{n-2} - b^{n-1})\]
+f"ur n ungerade:
+
+\[a^n + b^n = (a + b)(a^{n-1} - a^{n-2}b + - ... - ab^{n-2} + b^{n-1})\]
+
+\[s^2 + 1 = (s-j)(s+j)\]
+
+\subsection{Quadratische Gleichung}             \index{Quadratische Gleichung}
+
+\[ a x ^2  + b x  + c = 0\quad \quad  x  = \frac{{ - b \pm \sqrt {b^2  - 4ac} }}{{2a}} \]
+
+\subsection{Arithmetische Folge}                \index{Folge!Aritmetische}
+
+\[a_{n + 1}  - a_n  = d,\quad d\;{\mathrm const}{\mathrm .}\]
+\[a_n  = a_1  + \left( {n - 1} \right)d\]
+\[s_n  = n\frac{{a_1  + a_n }}{2} = a_1 n + \frac{{n\left( {n - 1} \right)}}{2}d\]
+
+\subsection{Geometrische Folge}                 \index{Folge!Geometrische}
+
+\[{{a_{n + 1} } \mathord{\left/
+ {\vphantom {{a_{n + 1} } {a_n }}} \right.
+ \kern-\nulldelimiterspace} {a_n }} = q,\quad q\;{\mathrm const}{\mathrm .}\]
+\[a_n  = a_1 q^{n - 1} \]
+\[s_n  = a_1 \frac{{1 - q^n }}{{1 - q}}\]
+\[s = \mathop {\lim }\limits_{n \to \infty } s_n  = \frac{{a_1 }}{{1 - q}},\quad {\mathrm falls }\left| q \right| < 1\]
+
+\subsection{Partialbruchzerlegung}      \index{Partialbruchzerlegung}
+
+\[r\left( z \right) = \frac{{r_1 \left( z \right)}}{{\left( {z - a} \right)\left( {z - b} \right)^3 \left( {\left( {z - c} \right)^2  + d^2 } \right)^3 }}\]
+\[r\left( z \right) = \frac{\alpha }{{z - a}} + \frac{{\beta _1 }}{{z - b}} + \frac{{\beta _2 }}{{\left( {z - b} \right)^2 }} + \frac{{\beta _3 }}{{\left( {z - b} \right)^3 }} + \]
+\[\frac{{\gamma _1 z + \delta _1 }}{{\left( {z - c} \right)^2  + d^2 }} + \frac{{\gamma _2 z + \delta _2 }}{{\left( {\left( {z - c} \right)^2  + d^2 } \right)^2 }} + \frac{{\gamma _3 z + \delta _3 }}{{\left( {\left( {z - c} \right)^2  + d^2 } \right)^3 }}\]
+
+
+\section{Matrizen und Determinanten}      \index{Matrizen und Determinanten}
+
+\subsection{2 $\times$ 2 Matrizen}        \index{2 $\times$ 2 Matrizen!Matrizen und Determinanten}
+
+\[\mbox{det}\left[\begin{array}{ll}
+ a_{11} & a_{12} \\ 
+ a_{21} & a_{22} \\
+\end{array} \right] = a_{11}a_{22} - a_{12}a_{21}
+\]
+
+\[
+\left[\begin{array}{ll}
+ a_{11} & a_{12} \\ 
+ a_{21} & a_{22} \\
+\end{array} \right]
+\left[\begin{array}{ll}
+ c_{11} & c_{12} \\ 
+ c_{21} & c_{22} \\
+\end{array} \right] =
+\left[\begin{array}{ll}
+ a_{11}c_{11} + a_{12}c_{21} & a_{11}c_{12} + a_{12}c_{22} \\ 
+ a_{21}c_{11} + a_{22}c_{21} & a_{21}c_{12} + a_{22}c_{22} \\
+\end{array} \right] \]
+Achtung: $ A B \neq B A $ ! \\ \\
+Inverse: (falls $ a_{11} a_{22} - a_{12} a_{21} \neq 0 $ )
+\[ A^{-1} = \left[\begin{array}{ll}
+ a_{11} & a_{12} \\ 
+ a_{21} & a_{22} \\
+\end{array} \right] ^{-1} = \frac{1}{a_{11} a_{22} - a_{12} a_{21}} \left[\begin{array}{ll}
+ a_{22} & -a_{12} \\ 
+ -a_{21} & a_{11} \\
+\end{array} \right] \]
+
+\subsection{3 $\times$ 3 Matrizen}        \index{3 $\times$ 3 Matrizen!Matrizen und Determinanten}
+
+\[\mbox{det} \left[\begin{array}{lll}
+ a_{11} & a_{12} & a_{13}\\ 
+ a_{21} & a_{22} & a_{23}\\
+ a_{31} & a_{32} & a_{33}\\
+\end{array} \right] = \]
+
+\[= a_{11}\, 
+\mbox{det}\left[\begin{array}{ll}
+ a_{22} & a_{23} \\ 
+ a_{32} & a_{33} \\
+\end{array} \right] 
+- a_{12}\,
+\mbox{det}\left[\begin{array}{ll}
+ a_{21} & a_{23} \\ 
+ a_{31} & a_{33} \\
+\end{array} \right] 
++ a_{13}\,
+\mbox{det}\left[\begin{array}{ll}
+ a_{21} & a_{22} \\ 
+ a_{31} & a_{32} \\
+\end{array} \right]\]
+
+\subsection{Transponierte einer Matrix} \index{Transponierte}
+                                        \index{Matrix!Transponierte}
+\[ 
+\left[ \begin{array}{ll}
+ a_{11} & a_{12} \\ 
+ a_{21} & a_{22} \\
+ a_{31} & a_{32} \\ 
+ a_{41} & a_{42} \\
+\end{array} \right]  
+\mbox{\hspace{1cm}} 
+A^T =
+\left[ \begin{array}{llll}
+ a_{11} & a_{21} & a_{31} & a_{41} \\
+ a_{21} & a_{22} & a_{32} & a_{42} \\
+\end{array} \right] 
+\]  
+
+\[ ( A \cdot B ) ^T = B^T \cdot A^T \]
+\[ ( A \cdot B \cdot C) ^T = C^T \cdot B^T \cdot A^T \]
+\[ ( A^T ) ^{-1} = (A^{-1} )^T \]
+
+
+\section{Vektorrechnung}                  \index{Vektorrechnung}
+
+\subsection{Grundlagen}                   \index{Grundlagen!Vektorrechnung}
+
+\subsubsection{Skalarprodukt}             \index{Skalarprodukt!Vektorrechnung}
+
+\[\vec{x}\cdot\vec{y} = x y \cos \alpha\]
+\[\vec{x}\bot \vec{y}\Leftrightarrow \vec{x}\cdot\vec{y} = 0\]
+
+\subsubsection{Skalare Projektion von $\vec{b}$ auf $\vec{a}$} \index{Skalare Projektion !Vektorrechnung}
+
+\[b _a = \vec{b}\,\vec{e} _a\]
+
+\subsubsection{Vektorielle Projektion von $\vec{b}$ auf $\vec{a}$} \index{Vektorielle Projektion !Vektorrechnung}
+
+\[\vec{b} _a = b _a\,\vec{e} _a = (\vec{b}\,\vec{e} _a)\vec{e} _a \]
+
+\subsubsection{Vektorprodukt}             \index{Vektorprodukt!Vektorrechnung}
+
+\[|\vec{a} \times \vec{b}| = a \, b \sin \alpha\]
+\[ \vec a \times \vec b = \left[ a_1 , a_2 , a_3 \right ] \times \left[ b_1 , b_2 , b_3 \right ] = 
+\left[ det\left[ \begin{array}{cc}
+a_2 & a_3 \\ 
+b_2 & b_3
+\end{array}  \right ] , - det\left[ \begin{array}{cc}
+a_3 & a_1 \\ 
+b_3 & b_1
+\end{array}  \right ], det\left[ \begin{array}{cc}
+a_1 & a_2 \\ 
+b_1 & b_2
+\end{array}  \right ] \right ] \]
+\[\vec{a} = \lambda \cdot \vec{b}\Leftrightarrow \vec{a} \times \vec{b} = 0\]
+\[\vec{a} \times \vec{b} = - (\vec{b} \times \vec{a})\]
+
+\subsubsection{Steigung eines Vektors}
+
+\[\vec{x}=(x_1,x_2,x_3)\]
+\[\tan\alpha = \frac{x_3}{\sqrt{x_1^2+x_2^2}}\]
+
+\subsection{Lineare Abbildungen}                   \index{Lineare Abbildungen!Vektorrechnung}
+
+\subsubsection{Drehung der XY-Ebene um den Ursprung mit Drehwinkel $\varphi$}
+
+\[\left[\begin{array}{l}
+\tilde{x} \\ 
+\tilde{y}\\
+
+\end{array} \right] = 
+\left[\begin{array}{rr}
+\cos\varphi & -\sin\varphi  \\ 
+\sin\varphi & \cos\varphi\\
+\end{array}\right] 
+\left[\begin{array}{l}
+x \\ 
+y \\
+\end{array} \right] 
+\] 
+
+
+\subsubsection{Spiegelung der XY-Ebene an der Geraden g durch den Ursprung mit den Steigungswinkel $\varphi$}
+
+\[\left[\begin{array}{l}
+\tilde{x} \\ 
+\tilde{y}\\
+\end{array} \right] = 
+\left[\begin{array}{rr}
+\cos 2\varphi & \sin 2\varphi  \\ 
+\sin 2\varphi & -\cos 2\varphi\\
+\end{array}\right] 
+\left[\begin{array}{l}
+x \\ 
+y \\
+\end{array} \right]\]
+
+\subsubsection{Drehung des Raumes um die X-Achse}
+\[\left[\begin{array}{l}
+\tilde{x} \\ 
+\tilde{y}\\
+\tilde{z}\\
+\end{array} \right] = 
+\left[\begin{array}{ccc}
+1 & 0 & 0 \\ 
+0 & \cos\varphi & -\sin\varphi \\
+0 & \sin\varphi & \cos\varphi \\
+\end{array}\right] 
+\left[\begin{array}{l}
+x \\ 
+y \\
+z \\
+\end{array} \right] 
+\] 
+
+\subsubsection{Drehung des Raumes um die Y-Achse}
+\[\left[\begin{array}{l}
+\tilde{x} \\ 
+\tilde{y}\\
+\tilde{z}\\
+\end{array} \right] = 
+\left[\begin{array}{ccc}
+\cos\varphi  & 0 & \sin\varphi  \\ 
+0 & 1 & 0 \\
+-\sin\varphi & 0 & \cos\varphi \\
+\end{array}\right] 
+\left[\begin{array}{l}
+x \\ 
+y \\
+z \\
+\end{array} \right] 
+\] 
+
+
+\subsubsection{Drehung des Raumes um die Z-Achse}
+
+\[\left[\begin{array}{l}
+\tilde{x} \\ 
+\tilde{y}\\
+\tilde{z}\\
+\end{array} \right] = 
+\left[\begin{array}{ccc}
+\cos\varphi & -\sin\varphi & 0 \\ 
+\sin\varphi & \cos\varphi & 0 \\
+0 & 0 & 1 \\
+\end{array}\right] 
+\left[\begin{array}{l}
+x \\ 
+y \\
+z \\
+\end{array} \right] 
+\] 
+
+
+\section{Trigonometrie}                  \index{Trigonometrie}
+
+\subsection{Komplementwinkel}            \index{Trigonometrie!Komplementwinkel}
+
+\[\sin \alpha = \cos (\frac{\pi}{2} - \alpha) \quad \quad \cos \alpha = \sin (\frac{\pi}{2} -\alpha )\]
+\[\tan \alpha = \cot (\frac{\pi}{2} - \alpha) \quad \quad \cot \alpha = \tan (\frac{\pi}{2} -\alpha )\]
+ 
+
+\subsection{Sinussatz}             \index{Trigonometrie!Sinussatz}
+
+\[\sin \alpha = \sin (\pi - \alpha)\]
+\[\frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma} = 2r\]
+wobei r = Umkreisradius
+
+\subsection{Cosinussatz}             \index{Trigonometrie!Cosinussatz}
+\[a^2 = b^2 + c^2 - 2bc \cos \alpha\]
+\[b^2 = a^2 + c^2 - 2ac \cos \beta\]
+\[c^2 = a^2 + b^2 - 2ab \cos \gamma\]
+
+\section{Goniometerie}                  \index{Goniometrie}
+\subsection{Serien (Lösungsmengen)}
+\[\alpha _1  = \arcsin x,\,\,\,\,\alpha _2  = \pi  - \alpha _1 \]
+\[\alpha _{1n}  = \alpha _1  + n2\pi ,\,\,\,\,\alpha _{2n}  = \alpha _2  + n2\pi \]
+\[ \pm \alpha  = \arccos x,\,\,\,\,\alpha _n  =  \pm \alpha  + n2\pi \]
+\[\alpha _0  = \arctan x,\,\,\,\,\alpha _n  = \alpha _0  + n\pi ,\,\,\,\,n \in {\mathbb{Z}}\]
+
+
+
+\subsection{Potenzen}                   \index{Goniometrie!Potenzen}
+
+
+\[1 + \tan ^2 \alpha = \frac{1}{\cos ^2 \alpha}\]
+
+\[\sin ^2 \alpha  + \cos ^2 \alpha  = 1\]
+\[\sin ^3 \alpha  = \frac{1}{4}\left( {3\sin \alpha  - \sin 3\alpha } \right)\]
+\[\cos ^3 \alpha  = \frac{1}{4}\left( {3\cos \alpha  + \cos 3\alpha } \right)\]
+\[\sin ^4 \alpha  = \frac{1}{8}\left( {\cos 4\alpha  - 4\cos 2\alpha  + 3} \right)\]
+\[\cos ^4 \alpha  = \frac{1}{8}\left( {\cos 4\alpha  + 4\cos 2\alpha  + 3} \right)\]
+
+\subsection{Additionstheoreme}          \index{Goniometrie!Additionstheoreme}
+                                        \index{Additionstheoreme}
+
+\[\sin \left( {\alpha  \pm \beta } \right) = \sin \alpha \cos \beta  \pm \cos \alpha \sin \beta \]
+\[\cos \left( {a \pm \beta } \right) = \cos \alpha \cos \beta  \mp \sin \alpha \sin \beta \]
+\[\tan \left( {\alpha  \pm \beta } \right) = \frac{{\tan \alpha  \pm \tan \beta }}{{1 \mp \tan \alpha \tan \beta }}\]
+
+\subsection{Doppelwinkel}       \index{Goniometrie!Doppelwinkel}
+                                \index{Doppelwinkel}
+
+\[\sin 2\alpha  = 2\sin \alpha \cos \alpha \]
+\[\cos 2\alpha  = \cos ^2 \alpha  - \sin ^2 \alpha =  2 cos²(\alpha)-1 = 1 - sin²(\alpha) \]
+\[\tan 2\alpha  = \frac{{2\tan \alpha }}{{1 - \tan ^2 \alpha }}\]
+
+\subsection{Dreifachwinkel}     \index{Goniometrie!Dreifachwinkel}
+                                \index{Dreifachwinkel}
+
+\[\sin 3\alpha  = 3\sin \alpha  - 4\sin ^3 \alpha \]
+\[\cos 3\alpha  = 4\cos ^3 \alpha  + 3\cos \alpha \]
+\[\tan 3\alpha  = \frac{{3\tan \alpha  - \tan ^3 \alpha }}{{1 - 3\tan ^2 \alpha }}\]
+
+\subsection{Halbwinkel}         \index{Goniometrie!Halbwinkel}
+                                \index{Halbwinkel}
+
+\[\sin ^2 \frac{\alpha }{2} = \frac{{1 - \cos \alpha }}{2}\]
+\[\cos ^2 \frac{\alpha }{2} = \frac{{1 + \cos \alpha }}{2}\]
+\[\tan ^2 \frac{\alpha }{2} = \frac{{1 - \cos \alpha }}{{1 + \cos \alpha }}\]
+
+\subsection{Summen und Produkte}        \index{Goniometrie!Summe und Produkte}
+
+
+\[\sin \alpha  + \sin \beta  = 2\sin \frac{ \alpha  + \beta }{2}\cos \frac{\alpha  - \beta }{2}\]
+\[\sin \alpha  - \sin \beta  = 2\cos \frac{ \alpha  + \beta }{2}\sin \frac{\alpha  - \beta }{2}\]
+\[\cos \alpha  + \cos \beta  = 2\cos \frac{ \alpha  + \beta }{2}\cos \frac{\alpha  - \beta }{2}\]
+\[\cos \alpha  - \cos \beta  =  - 2\sin \frac{ \alpha  + \beta}{2}\sin \frac{\alpha  - \beta }{2}\]
+\[\sin \alpha \sin \beta  = \frac{1}{2}\left( {\cos( \alpha  - \beta)   - \cos( \alpha  + \beta) } \right)\]
+\[\cos \alpha \cos \beta  = \frac{1}{2}\left( {\cos( \alpha  - \beta)  + \cos( \alpha  + \beta) } \right)\]
+\[\sin \alpha \cos \beta  = \frac{1}{2}\left( {\sin( \alpha  - \beta)  + \sin( \alpha  + \beta) } \right)\]
+
+\subsection{Genaue Funktionswerte}      \index{Goniometrie!Genaue Funktionswerte}
+                                        \index{Sinuswerte}
+                                        \index{Cosinuswerte}
+                                        \index{Tangenswerte}
+
+\begin{tabular}{l|ccccc} 
+  $\alpha$ & $0$ & $\frac{\pi}{6}$ & $\frac{\pi}{4}$ & $\frac{\pi}{3}$ & $\frac{\pi}{2}$\\
+  \hline
+  $\sin\alpha$ & $0$ & $\frac{1}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{3}}{2}$ & $1$\\
+  $\cos\alpha$ & $1$ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}{2}$ & $0$\\
+  $\tan\alpha$ & $0$ & $\frac{\sqrt{3}}{3}$ & $1$ & $\sqrt{3}$ & $-$\\
+  $\cot\alpha$ & $-$ & $\sqrt{3}$ & $1$ & $\frac{\sqrt{3}}{3}$ & $0$\\
+\end{tabular}
+
+
+
+\section{Logarithmen}   \index{Goniometrie!Logarithmen}
+                                
+\[\log \left( {u \cdot v} \right) = \log u + \log v\]
+\[\log \left( {\frac{u}{v}} \right) = \log u - \log v\]
+\[\log \left( {u^k } \right) = k\log u\]
+\[\log \sqrt[k]{u} = \frac{1}{k}\log u\]
+\[\log _b r = \frac{{\log _a r}}{{\log _a b}}\]
+
+\section{Komplexe Zahlen}       \index{Komplexe Zahlen}
+\subsection{Allgemeines}
+
+\[j^2  =  - 1,\;\;\;\frac{1}{j} =  - j,\;\;\;\;\left( { - 1} \right)^j  = \left( {e^{j\pi } } \right)^j  = e^{ - \pi } \]
+\[\underline z  \in {\mathbb{C}},\,\,\,\overline {\underline z } :{\mathrm konjugiertkomplex}\]
+\[{\mathrm karthesisch:}\,\,\underline z  = a + jb,\;\;\;\;\underline {\overline z }  = a - jb\,\]
+\[{\mathrm polar:}\,\,\underline z  = r \cdot e^{j\varphi } ,\,\,\,\,\underline {\overline z }  = r \cdot e^{ - j\varphi } \]
+\[\underline z  = r\left( {\cos \varphi  + j\sin \varphi } \right) = r \cdot e^{j\varphi }  = a + jb\]
+\[a = r\cos \varphi ,\;\;\;\;b = r\sin \varphi \]
+\[r = \left| {\underline z } \right| = \sqrt {a^2  + b^2 } ,\,\,\,\,\varphi  = \left \{ \begin{array}{lll}
+    I. & \mbox {Quadrant} & \arctan \frac{b}{a} \\
+    II. & \mbox {Quadrant} & \arctan \frac{b}{a} + \pi \\
+    III. & \mbox {Quadrant} & \arctan \frac{b}{a} + \pi \\
+    IV. & \mbox {Quadrant} & \arctan \frac{b}{a} + 2 \pi \\
+    \end{array} \right.\]
+
+\subsection{Rechenregeln}       \index{Komplexe Zahlen}
+
+\[\left( {a_1  + jb_1 } \right) \pm \left( {a_2  + jb_2 } \right) = a_1  \pm a_2  + j\left( {b_1  \pm b_2 } \right)\]
+\[\left( {a_1  + jb_1 } \right)\left( {a_2  + jb_2 } \right) = \left( {a_1 a_2  - b_1 b_2 } \right) + j\left( {a_1 b_2  + b_1 a_2 } \right)\]
+\[\underline z _1  \cdot \underline z _2  = r_1 r_2  \cdot e^{j\left( {\varphi _1  + \varphi _2 } \right)} \]
+\[\frac{{\left( {a_1  + jb_1 } \right)}}{{\left( {a_2  + jb_2 } \right)}} = \frac{{\left( {a_1  + jb_1 } \right)\left( {a_2  - jb_2 } \right)}}{{\left( {a_2^2  + b_2^2 } \right)}}\]
+\[\frac{{\underline z _1 }}{{\underline z _2 }} = \frac{{r_1 }}{{r_2 }} \cdot e^{j\left( {\varphi _1  - \varphi _2 } \right)} \]
+\[\sqrt[n]{{\underline z }} = \sqrt[n]{r}\left( {\cos \frac{\varphi }{n} + j\sin \frac{\varphi }{n}} \right)\]
+\[\sqrt[n]{{\underline z }} = e^{\frac{1}{n}\ln \underline z } \mbox{\small $+(n-1)$ weitere Lösungen gleichmässig verteilt auf einem Kreis mit Radius $\sqrt[n]{r}$}  \]
+
+\subsection{Euler}                      \index{Komplexe Zahlen!Euler}
+                                        \index{Euler}
+
+\[e^{ \pm jkt}  = \cos kt \pm j\sin kt\]
+\[e^{ \pm jk\pi }  = \left( { - 1} \right)^k ,\;\;\;\;e^{t + j2\pi }  = e^t \]
+\[\cos kt = \frac{1}{2}\left( {e^{jkt}  + e^{ - jkt} } \right)\]
+\[\sin kt = \frac{1}{{2j}}\left( {e^{jkt}  - e^{ - jkt} } \right)\]
+\[\cosh kt = \frac{1}{2}\left( {e^{kt}  + e^{ - kt} } \right)\]
+\[\sinh kt = \frac{1}{2}\left( {e^{kt}  - e^{ - kt} } \right)\]
+
+\section{Ableiten}                      \index{Ableiten}
+                                        \index{Differenzieren}
+\subsection{Rechenregeln}               \index{Ableiten!Rechenregeln}
+                                        \index{Differenzieren!Rechenregeln}
+
+
+\[\left( {\lambda f} \right)' = \lambda f'\]
+\[\left( {f \pm g} \right)' = f' \pm g'\]
+\[\left( {f \cdot g} \right)' = f' \cdot g + f \cdot g'\]
+\[\left(\frac{f}{g}\right)' = \frac{{g \cdot f' - f \cdot g'}}{{g^2 }}\]
+\[f'^{ - 1}  = \frac{1}{{f' \circ f^{ - 1} }}\]
+\[\left( {f \circ g} \right)' = \left( {f' \circ g} \right) \cdot g'\]
+
+\subsubsection{Elementare Funktionen}      \index{Ableiten!Elementare Funktionen}
+                                           \index{Differenzieren!Elementare Funktionen}
+
+
+\[\,{\mathop{\mathrm pot'}\nolimits} _k  x  = k\,{\mathop{\mathrm pot}\nolimits} _{k - 1}  x \]
+\[\sin' k x = k\cos k x \]
+\[\cos' k x  =  - k\sin k x \]
+\[\exp' k x  = k\exp k x \]
+\[\log'  x  = \frac{1}{ x }\]
+\[\ln' \left| f \right| = \frac{{f'}}{f}\]
+\[\left(a^{k x }\right)'  = \left( {k\ln a} \right)a^{k x } \]
+\[\tan'  x  = \frac{1}{{\cos ^2  x }} = 1 + \tan ^2  x \]
+\[\cot'  x  =  - \frac{1}{{\sin ^2  x }} =  - 1 - \cot ^2  x \]
+\[\sqrt  x'   = \frac{1}{{2\sqrt  x  }}\]
+\[\arcsin'  x  = \frac{1}{{\sqrt {1 -  x ^2 } }}\]
+\[\arccos'  x  =  - \frac{1}{{\sqrt {1 -  x ^2 } }}\]
+\[\arctan'  x  = \frac{1}{{1 +  x ^2 }}\]
+\[{\mathop{\mathrm arccot'}\nolimits} \, x  =  - \frac{1}{{1 +  x ^2 }}\]
+\[{\mathop{\mathrm cosh'\, x}} = {\mathop{\mathrm sinh x}} = \frac{e^z - e^{-z}}{2}\]
+\[{\mathop{\mathrm sinh'\, x}} = {\mathop{\mathrm cosh x}} = \frac{e^z + e^{-z}}{2}\]
+\[{\mathop{\mathrm arcosh'\, x}} =  \frac{1}{\sqrt{1+x^2}}\]
+\[{\mathop{\mathrm arsinh'\, x}} =  \frac{1}{\sqrt{x^2-1}}\]
+
+
+\subsubsection{Satz von Bernoulli und de l'Hospital}       \index{Ableiten!Bernoulli, de l'Hospital}
+                                                        \index{Differenzieren!Bernoulli, de l'Hospital}
+                                                        \index{Bernoulli}
+                                                        \index{Hospital}
+\[
+\mathop {\lim }\limits_{t \to t_0 } \frac{{f(x)}}{{g(x)}} = \mathop {\lim }\limits_{t \to t_0 } \frac{{f'(x)}}{{g'(x)}}
+\]
+
+\noindent \textbf{Beispiel:}
+
+\[
+\mathop {\lim }\limits_{t \to \infty } \frac{t}{{e^t }} = \mathop {\lim }\limits_{t \to \infty } \frac{1}{{e^t }} = 0
+\]
+
+
+
+\section{Integrieren}                                    \index{Aufleiten}
+                                                        \index{Integrieren}
+
+\subsection{Rechenregeln}                               \index{Aufleiten!Rechenregeln}
+                                                        \index{Integrieren!Rechenregeln}
+
+\[\int {\lambda f}  = \lambda \int f \]
+\[\int {\left( {f \pm g} \right) = \int {f \pm \int g } } \]
+\[\int {f \cdot g' = f \cdot g - \int {f' \cdot g} } \]
+
+
+\subsection{Substitution}                               \index{Integrieren!Substitution}
+
+\[\int{f(x)\,dx} \]
+\noindent Aufstellen der Substitutionsgleichung:
+\[ u= g(x) , \; \frac{du}{dx} = g'(x), \; dx = \frac{du}{g'(x)} \qquad \mbox{ bzw. } \; x=h(u) , \; \frac{dx}{du} = h'(u), \; dx = \frac{h'(u)}{du} \]
+\begin{footnotesize}( $u = g(x) $ bzw. $ x = h(u) $ müssen monotone Funktionen sein)\end{footnotesize}\\
+Substitution:
+\[\int f(x) \, dx = \int \varphi(d) \, du \]
+Integration:
+\[ \int \varphi(u) \, du = \Phi(u) \]
+Rücksubstitutuion:
+\[ \int f(x) \, dx = \int \varphi(u) \, du = \Phi(u) = \Phi(g(x)) = F(x) \]
+\textbf{Beispiel:}
+\[ \int _0 ^2 x \sqrt{3 x^2 +4} \, dx \]
+\[ \mbox{Subst: } u = 3x^2 + 4 \: \Leftrightarrow \: u' =\frac{du}{dx} = 6x \]
+\begin{small}Die neuen Grenzen erhalten wir durch Einsetzten der ursprünglichen Grenzen in die Substitutionsgleichung, die Rücksubstition entfällt:\end{small}
+\[ \begin{array}{lcl}
+2 & \mapsto & 16 \\ 
+0 & \mapsto & 4
+\end{array} \]
+\[ \Rightarrow \int _4 ^{16} \sqrt{u} \, du \]
+
+\subsection{Sätze}                                      \index{Aufleiten!Sätze}
+                                                        \index{Integrieren!Sätze}
+
+\[\int\limits_{a}^{b} {f} =  - \int\limits_{b}^{a}{ f } \]
+\[\int\limits_{a}^{b}{f(t)\,dt} = -\int\limits_{-a}^{-b}{f(-t)\,dt}\]
+\[\int\limits_{a}^{b} {f = \int\limits_a^c {f + \int\limits_c^b f } } \]
+\[\int\limits_{a}^{b} {f\left(  t  \right)}  = \int\limits_{a + c}^{b + c} f \left( { t  - c} \right)\]
+\[f\;{\mathrm stetig} \Rightarrow \int\limits_a^b {f = \int {f\left( b \right) - \int {f\left( a \right)} } }  = F\left( b \right) - F\left( a \right)\]
+\[f\;{\mathrm stetig}\;{\mathrm in}\;\left[ {a,b} \right] \Rightarrow \exists \;\xi  \in \left[ {a,b} \right]\;{\mathrm mit}\;\int\limits_a^b {f = \left( {b - a} \right)f\left( \xi  \right)} \]
+
+
+
+\subsection{Integration rationaler Funktionen}                 \index{Integrieren!Integration rationaler Funktionen}
+
+
+Rationale Funktionen k"onnen integriert werden, indem man Division der Polynome durchf"uhrt\\
+Beispiel:\quad$\int{\frac{x^2}{x^2+1}}$
+
+\[x^2 : (x^2+1) = 1 + \frac{1}{x^2+1}\]
+\[\int{1+\frac{1}{x^2+1}}\,dx=x+\arctan x\]
+
+\subsection{Rationalisierungsformeln}                   \index{Rationalisierungsformeln} 
+
+\subsubsection{Für Rationale Funktionen von $\sin{x}$ und $\cos{x}$}
+
+\begin{itemize}
+
+\item Beispiel
+\[ \int \frac{1 + \cos{x}}{\sin{x}}\,dx\]
+\item Substitution
+\[ u=\tan{x/2} \quad \] \[ \Rightarrow \quad dx=\frac{2}{1+u^2}\,du \quad \sin{x}=\frac{2u}{1+u^2} \quad \cos{x} \frac{1-u^2}{1+u^2}\]
+
+\end{itemize}
+
+\subsubsection{Weitere Rationalisierungsformeln siehe {Papula Seite 148}} 
+
+\subsection{Spezielle Integrale}                        \index{Aufleiten!Spezielle Integrale}
+                                                        \index{Integrieren!Spezielle Integrale}
+
+\[\int {{\mathop{\mathrm pot}\nolimits} _k  = \frac{1}{{k + 1}}} \,{\mathop{\mathrm pot}\nolimits} _{k + 1} \]
+\[\int {\exp k x\,dx = \frac{1}{k}} \exp k x \]
+\[\int {a^{c x } }\,dx  = \frac{1}{{c\ln a}}a^{c x } \]
+\[\int {\frac{1}{ x }}\,dx  = \ln  x \]
+\[\int {\ln \left|  x  \right|}\,dx  =  x \left( {\ln \left|  x  \right| - 1} \right)\]
+\[\int {\frac{1}{{ x \ln  x }}}\,dx  = \ln \left| {\ln \left|  x  \right|} \right|\]
+\[\int {\log _a } \left|  x  \right|\,dx =  x \left( {\log _a \left|  x  \right| - \log _a {\mathrm e}} \right)\]
+\[\int { x ^k } \ln  x \,dx  = \frac{{ x ^{k + 1} }}{{k + 1}}\left( {\ln  x  - \frac{1}{{k + 1}}} \right),\quad k \ne  - 1,\quad x > 0\]
+\[\int {\frac{{\ln  x }}{ x }\,dx = \frac{1}{2}} \left( {\ln  x } \right)^2 \]
+\[\int {\sin \left( {a x  + b} \right)\,dx =  - \frac{1}{a}\cos \left( {a x  + b} \right)} \]
+\[\int {\cos \left( {a x  + b} \right)\,dx = \frac{1}{a}\sin \left( {a x  + b} \right)} \]
+\[\int {\tan  x \,dx =  - \ln \left| {\cos  x } \right|} \]
+\[\int {\cot  x\,dx  = \ln \left| {\sin  x } \right|} \]
+\[\int {\frac{1}{{\sin  x }}}\,dx  = \ln \left| {\tan \frac{ x }{2}} \right|\]
+\[\int {\frac{1}{{\cos  x }}}\,dx  = \ln \left| {\tan \left( {\frac{ x }{2} + \frac{\pi }{4}} \right)} \right|\]
+\[\int {\sin ^2  x }\,dx  = \frac{1}{2}\left( { x  - \sin  x \cos  x } \right)\]
+\[\int {\cos ^2  x }\,dx  = \frac{1}{2}\left( { x  + \sin  x \cos  x } \right)\]
+\[\int {\tan ^2  x }\,dx  = \tan  x  -  x \]
+\[\int {\cot ^2  x \,dx =  - \cot  x  -  x } \]
+\[\int {\frac{1}{{ x ^2 }}} \sin \frac{1}{ x }\,dx = \cos \frac{1}{ x }\]
+\[\int {\arcsin  x \,dx =  x \arcsin  x  + \sqrt {1 -  x ^2 } } \]
+\[\int {\arccos  x \,dx = }  x \arccos  x  - \sqrt {1 -  x ^2 } \]
+\[\int {\arctan }  x \,dx =  x \arctan  x  - \frac{1}{2}\ln \left( {1 +  x ^2 } \right)\]
+\[\int {{\mathop{\mathrm arccot}\nolimits} \, x \,dx =  x \,{\mathop{\mathrm arccot}\nolimits}  x  + } \frac{1}{2}\ln \left( {1 +  x ^2 } \right)\]
+\[\int {\left( {a x  + b} \right)^k } \,dx = \frac{{\left( {a x  + b} \right)^{k + 1} }}{{a\left( {k + 1} \right)}},\quad k \ne 1\]
+\[\int {\left( {a x ^p  + b} \right)^k  x ^{p - 1} } \,dx = \frac{{\left( {a x ^p  + b} \right)^{k + 1} }}{{ap\left( {k + 1} \right)}},\quad k \ne 1,\quad ap \ne 0\]
+\[\int {\frac{1}{{a x  + b}}} \,dx = \frac{1}{a}\ln \left| {a x  + b} \right|\]
+\[\int {\frac{{a x  + b}}{{c x  + d}}} \,dx = \frac{{a x  + b}}{c} - \frac{{ad - bc}}{{c^2 }}\ln \left| {c x  + d} \right|\]
+\[\int {\frac{{ x ^{p - 1} }}{{a x ^p  + b}} \,dx= \frac{1}{{ap}}\ln \left| {a x ^p  + b} \right|,\quad ap \ne 0} \]
+\[\int {\frac{{a x  + b}}{{c x  + d}} \,dx= \frac{{a x  + b}}{c}}  - \frac{{ad - bc}}{{c^2 }}\ln \left| {c x  + d} \right|\]
+\[\int {\frac{1}{{ x ^2  + a^2 }}} \,dx = \frac{1}{a}\arctan \frac{ x }{a}\]
+\[\int {\frac{1}{{ x ^2  - a^2 }}} \,dx = \frac{1}{{2a}}\ln \left| {\frac{{ x  - a}}{{ x  + a}}} \right|\]
+\[\int {\frac{{ x ^2 }}{{ x ^2  + a^2 }}} \,dx =  x  - a\arctan \frac{ x }{a}\]
+\[\int {\frac{{2 x }}{{1 -  x ^2 }} \,dx=  - \ln \left| {1 -  x ^2 } \right|} \]
+\[\int {\sqrt { x ^2  \pm a^2 } } \,dx = \frac{ x }{2}\sqrt { x ^2  \pm a^2 }  \pm \frac{{a^2 }}{2}\ln \left( { x  + \sqrt { x ^2  \pm a^2 } } \right)\]
+\[\int {\frac{1}{{\sqrt { x ^2  \pm a^2 } }}} \,dx = \ln \left( { x  + \sqrt { x ^2  \pm a^2 } } \right)\]
+\[\int {\sqrt {a^2  -  x ^2 } }  \,dx= \frac{ x }{2}\sqrt {a^2  -  x ^2 }  + \frac{{a^2 }}{2}\arcsin \frac{ x }{{\left| a \right|}}\]
+\[\int {\frac{1}{{\sqrt {a^2  -  x ^2 } }}}\,dx = \arcsin \frac{ x }{{\left| a \right|}}\]
+\[\int {e^{c x } \sin \left( {a x  + b} \right) \,dx= \frac{{e^{c x } }}{{a^2  + c^2 }}\left( {c\sin \left( {a x  + b} \right) - a\cos \left( {a x  + b} \right)} \right)} \]
+\[\int {e^{c x } } \cos \left( {a x  + b} \right)\,dx = \frac{{e^{c x } }}{{a^2  + c^2 }}\left( {c\cos \left( {a x  + b} \right) + a\sin \left( {a x  + b} \right)} \right)\]
+\[\int {\exp _k } \sin _l \,dx = \frac{{\exp _k }}{{l^2  - k^2 }}\left( {jk\sin _l  - l\cos _l } \right)\]
+\[\int {\exp _k } \cos _l \,dx = \frac{{\exp _k }}{{l^2  - k^2 }}\left( {jk\cos _l  - l\sin _l } \right)\]
+\[\int { x ^n } \sin k x \,dx =  - \frac{{ x ^n }}{k}\cos k x  + \frac{n}{k}\int { x ^{n - 1} } \cos k x\,dx \quad n \in {\mathbb{N}}\]
+\[\int { x ^n } \cos k x \,dx =  + \frac{{ x ^n }}{k}\sin k x  - \frac{n}{k}\int { x ^{n - 1} } \sin k x\,dx \quad n \in {\mathbb{N}}\]
+
+
+\chapter{Fourierreihen}                                       \index{Fourierreihe}
+                                                        \index{Fourier!Reihen}
+                                                        \index{Reihen!Fourier}
+
+\section{Bezeichungen}                                  \index{Fourier!Bezeichnungen}
+                                                        \index{Fourier!trig. Polynome}
+                                                        \index{Fourier!Exp. Polynome}
+\noindent
+Vektorraum der trigonometrischen Polynome: $\mathbb{P}\subset\mathbb{V}$
+\noindent
+\[\mathbb{P}=\{ a_0 \cos_0 + \sum\limits_{k=1}^n a_k \cos_k + b_k \sin_k | n \in N^* \}\]
+Vektorraum der Exponentialpolynome: $\mathbb{E}\subset\mathbb{V}$
+\[\mathbb{E}=\{ \sum\limits_{k=-n}^m c_k \exp_k | c_k \in \mathbb{C}\}\]
+
+\[\sin _k  = \sin kt\]
+\[\cos _k  = \cos kt\]
+\[\exp _k  = e^{jkt}\]
+
+\section{Skalarprodukt}        \index{Fourier!Skalarprodukt}
+
+\subsection{Eigenschaften}
+
+\[\left[ {a,b} \right] = \left[ {b,a} \right]\]
+\[\left[ {a + b,c} \right] = \left[ {a,c} \right] + \left[ {b,c} \right]\]
+\[\left[ {\lambda a,b} \right] = \lambda \left[ {a,b} \right]\]
+\[\left[ {a,a} \right] \ge 0\quad \quad \left[ {a,a} \right] = 0 \Leftrightarrow a = 0\]
+
+\subsection{Definitionen in $\mathbb{P}$ und $\mathbb{E}$}\[\left[ {f,g} \right] = \frac{1}{\pi }\int\limits_{ - \pi }^\pi  {f \cdot g\quad \quad f,g \in } \,{\mathbb{P}}\mbox{ und }{\mathrm STF}\]
+\[\left[ {f,g} \right] = \frac{1}{{2\pi }}\int\limits_0^{2\pi}{f \cdot \overline g } \quad \quad f,g \in {\mathbb{E}}\]
+\[\left[ {f,g} \right] = \overline {\left[ {g,f} \right]} \quad \quad f,g \in {\mathbb{E}}\]
+
+
+\subsection{Für orthonormierte Basis}           \index{Fourier!Orthonormierte Basis}
+                                                \index{Orthonormierte Basis}
+
+\[\left[ {\cos _k ,\sin _l } \right] = 0\quad \quad \quad \quad \quad k \in {\mathbb{N}}_0 ,\;l \in {\mathbb{N}}\]
+\[\left[ {\cos _k ,\cos _l } \right] = \left\{ {\begin{array}{*{20}c}
+   {1\quad k = l}  \\
+   {0\quad k \ne l}  \\
+\end{array}} \right.\quad \quad k,l \in {\mathbb{N}}_0 \]
+\[\left[ {\sin _k ,\sin _l } \right]\; = \left\{ {\begin{array}{*{20}c}
+   {1\quad k = l}  \\
+   {0\quad k \ne l}  \\
+\end{array}} \right.\quad \quad k,l \in {\mathbb{N}}\]
+\[\left[ {\exp _k ,\exp _l } \right] = \left\{ {\begin{array}{*{20}c}
+   {1\quad k = l}  \\
+   {0\quad k \ne l}  \\
+\end{array}} \right.\quad \quad k,l \in {\mathbb{Z}}\]
+
+\section{Norm in $\mathbb{P}$ und $\mathbb{E}$}         \index{Fourier!Norm in $\mathbb{P}$ und $\mathbb{E}$}
+                                                        \index{Norm in $\mathbb{P}$ und $\mathbb{E}$}
+\[\left\| p \right\| = \sqrt {\left[ {p,p} \right]} \quad \quad p \in{\mathbb{P}\mbox{ und }}{\mathrm STF}\]
+\[\left\| p \right\|^2  = \left[ {p,p} \right] = a_0^2  + \sum\limits_{k = 1}^n {a_k^2 }  + b_k^2 \]
+\[\left\| e \right\| = \sqrt {\left[ {e,e} \right]} \quad \quad e \in {\mathbb{E}}\]
+\[\left\| e \right\|^2  = \left[ {e,e} \right] = \sum\limits_{k =  - n}^n {\left| {c_k } \right|^2 } \]
+
+\section{Cauchy-Schwarzsche Ungleichung}                \index{Fourier!Cauchy-Schwarzsche}
+                                                        \index{Cauchy-Schwarzsche}
+\[
+\left[ {f,g} \right]^2  \le \left[ {f,f} \right] \cdot \left[ {g,g} \right]
+\]
+
+
+\section{Abstand}
+
+\[
+{\mathrm d}\left( {f,g} \right) = \left\| {f - g} \right\|
+\]
+
+\section{Fourierreihe reell}                            \index{Fourier!Reihe reel}
+                                                        
+\subsection{Fourierkoeffizienten}                       \index{Fourier!Koeffizienten}
+
+\[a_k  = \left[ {f,\cos _k } \right] = \frac{1}{\pi }\int\limits_{-\pi}^{\pi} {f(t)\cos kt\;dt} \quad f \in {\mathrm STF}\]
+\[b_k  = \left[ {f,\sin _k } \right] = \frac{1}{\pi }\int\limits_{-\pi}^{\pi} {f(t)\sin kt\;dt} \quad b_0  = 0\]
+gerade Funktion: \\ $g(-t) = g(t) \Rightarrow b_k = 0$\\
+ungerade Funktion: \\ $ u(-t) = -u(t) \Rightarrow a_k = 0$
+
+\subsection{Fourierreihe der Funktion $f \in \mathbb{P}$}       \index{Fourier!Funktion $f \in \mathbb{P}$}
+
+\[f = \sum\limits_{k = 0}^\infty  {\left( {a_k \cos _k  + b_k \sin _k } \right)} \]
+\[\cos _0  = \frac{1}{{\sqrt 2 }}\quad \quad a_0  = \left[ {f,\cos _0 } \right]\quad \quad b_0  = 0\]
+
+\section{Fourierreihe komplex}          \index{Fourier!Reihe komplex}
+\subsection{Fourierkoeffizienten}       \index{Fourier!Koeffizienten komplex}
+
+\[c_0  = \frac{{a_0 }}{{\sqrt 2 }}\quad \quad c_{ - k}  = \overline {c_k } \]
+\[c_k  = \frac{1}{2}\left( {a_k  - jb_k } \right)\quad \quad a_k  = 2\,{\mathop{\mathrm Re}\nolimits} \left( {c_k } \right) = c_k  + c_{ - k} \]
+\[c_{ - k}  = \frac{1}{2}\left( {a_k  + jb_k } \right)\quad \quad b_k  =  - 2\,{\mathop{\mathrm Im}\nolimits} \left( {c_k } \right) = j\left( {c_k  - c_{ - k} } \right)\]
+\[c_k  = \left[ {f,\exp _k } \right] = \frac{1}{{2\pi }}\int\limits_{-\pi}^{\pi} {f\exp _{ - k} }  = \frac{1}{{2\pi }}\int\limits_{-\pi}^{\pi} {f(t)\,e^{ - jkt} \,dt} \]
+
+
+\subsection{Fourierreihe der Funktion $f \in \mathbb{E}$}       \index{Fourier!Funktion $f \in \mathbb{E}$}
+
+\[
+f = \sum\limits_{k =  - \infty }^\infty  {c_k } \exp _k  = c_0  + \sum\limits_{k = 1}^\infty  {\left( {c_k \exp _k  + c_{ - k} \exp _{ - k} } \right)} 
+\]
+
+\section{Parsevalsches Theorem}         \index{Parsevalsches Theorem}
+\label{parseval} 
+\[\left\| {f - \sum\limits_{k = 0}^n {\left( {a_k \cos _k  + b_k \sin _k } \right)} } \right\|^2  = \left\| f \right\|^2  - \sum\limits_{k = 0}^n {\left( {a_k^2  + b_k^2 } \right)}  = \left\| f \right\|^2  - \sum\limits_{k =  - n}^n {\left| {c_k } \right|^2 } \]
+Leistung periodischer Signale:
+\[ \frac{1}{T_0} \int_{-\frac{T_0}{2}}^{\frac{T_0}{2}} | f(t)|^2 dt = \sum _{n=-\infty}^{\infty} |c_n|^2 \]
+
+\section{Durchgang durch LTI-System}
+
+\[ \mbox{gegeben:} \quad f(t)=c_k e^{jkt} + c_{-k} e^{-jkt} = a_k\cos_k + b_{k}\sin_k \mbox{;} \quad H(\omega) \]
+\[ \mbox{gesucht:} \quad T(f(t))= \tilde{f}\]
+
+\[\tilde{f} = \sum\limits_{-\infty}^{\infty} c_k e^{jkt} H(k)\]
+\[\tilde{a}_k = \mbox{Re}(H(k)(a_k -jb_k))\]
+\[\tilde{b}_{k} = -\mbox{Im}(H(k)(a_k -jb_k))\]
+\[\tilde{f}= \tilde{a}_k\cos_k + \tilde{b}_{k}\sin_k\] 
+
+\section{Fourierkoeffizienten wichtiger periodischer Signale}
+  \begin{tabular}[t]{ll}
+    \begin{minipage}[t][\totalheight][c]{0.55\textwidth}
+	Periodische Rechteckfolge\\		\index{Fourier!Rechtecksignal}
+    	\input{Mathe/perRecht.pstex_t}
+  \end{minipage} & \begin{minipage}[t][\totalheight][c]{0.4\textwidth}\vspace{0.3cm}
+	\[c_n = a_n = \frac{ \tau }{T} \frac{ \sin \left( \frac{n\pi\tau}{T} \right) }{ \frac{n\pi\tau}{T} } \]
+	\[b_n = 0 \]
+  \end{minipage}
+  \end{tabular} \\
+  \begin{tabular}[t]{ll}
+    \begin{minipage}[t][\totalheight][c]{0.55\textwidth}
+	Doppelweggleichgerichtete $\cos$-Schwingung\\	\index{Fourier!Doppelweg Gleichgerichtet}
+    	\input{Mathe/doppelCos.pstex_t}
+  \end{minipage} & \begin{minipage}[t][\totalheight][c]{0.4\textwidth}\vspace{0.3cm}
+	\[c_n = a_n = \frac{ 2 }{\pi} (-1)^{n+1} \frac{1}{4 n^2-1} \]
+	\[b_n = 0 \]
+  \end{minipage}
+  \end{tabular}\\
+  \begin{tabular}[t]{ll}
+    \begin{minipage}[t][\totalheight][c]{0.55\textwidth}
+	Einweggleichgerichtete $\cos$-Schwingung\\	\index{Fourier!Einweg Gleichgerichtet}
+    	\input{Mathe/einwegCos.pstex_t}
+  \end{minipage} & \begin{minipage}[t][\totalheight][c]{0.4\textwidth}\vspace{0.3cm}
+	\[c_n = a_n = \frac{ 1 }{\pi} \frac{ \cos \left( \frac{n\pi}{2} \right) }{ 1-n^2 } \]
+	\[b_n = 0 \]
+  \end{minipage}
+  \end{tabular}\\ 
+  \begin{tabular}[t]{ll}
+    \begin{minipage}[t][\totalheight][c]{0.55\textwidth}
+	Folge von Raised-Cosine-Impulsen\\	\index{Fourier!Cosine Folge}
+    	\input{Mathe/raisedCos.pstex_t}
+  \end{minipage} & \begin{minipage}[t][\totalheight][c]{0.4\textwidth}\vspace{0.3cm}
+	\[c_n = a_n = \frac{ \tau }{2T} \frac{ \sin \left( \frac{n\pi\tau}{T} \right) }{ \frac{n\pi\tau}{T} } \frac{1}{1-\left( \frac{n \tau}{T} \right)^2} \]
+	\[b_n = 0 \]
+  \end{minipage}
+  \end{tabular}\\
+  \begin{tabular}[t]{ll}
+    \begin{minipage}[t][\totalheight][c]{0.55\textwidth}
+	Dreieckschwingung DC-frei\\		\index{Fourier!Dreieck Folge}
+    	\input{Mathe/dreieck.pstex_t}
+  \end{minipage} & \begin{minipage}[t][\totalheight][c]{0.4\textwidth}\vspace{0.3cm}
+	\[c_n = a_n = \frac{ 2 [1-(-1)^n] }{(n \pi)^2}, \qquad c_0 = 0 \]
+	\[b_n = 0 \]
+  \end{minipage}
+  \end{tabular}\\
+  \begin{tabular}[t]{ll}
+    \begin{minipage}[t][\totalheight][c]{0.55\textwidth}
+	Sägezahnschwingung DC-frei\\	\index{Fourier!Sägezahn Signal}
+    	\input{Mathe/saegezahn.pstex_t}
+  \end{minipage} & \begin{minipage}[t][\totalheight][c]{0.4\textwidth}\vspace{0.3cm}
+	\[c_n = -jb_n , \qquad c_0 = 0 \]
+	\[a_n = 0, \qquad b_n = \frac{(-1)^{n+1}}{n \pi} \]
+  \end{minipage}
+  \end{tabular}
+
+
+
+
+
+
+\chapter{Fouriertransformation}         \index{Fourier!Tranformation}
+\begin{picture}(60,25)
+\thicklines
+\put(10,0){$F$}
+\put(10,20){$f$}
+\put(40,0){$\tilde{F}=F \cdot H$}
+\put(40,20){$\tilde{f}=f*h$}
+\put(7,10){${\cal F}$}
+\put(42,10){${\cal F}^{-1}$}
+\put(13,1){\vector(1,0){26}}
+\put(11,18){\vector(0,-1){14}}
+\put(13,21){\vector(1,0){26}}
+\put(41,4){\vector(0,1){14}}
+%\put(62,10){$G=\frac{1}{{\mathrm cp}(s)}$}
+\end{picture}
+
+
+\section{Fouriertransformation}
+
+\[{\cal F}(f(t)) = F(\omega ),\quad \quad {\cal F}^{ - 1} (F(\omega )) = f(t)\]
+\[F(\omega ) = \int\limits_{ - \infty }^\infty  {f(t)e^{ - j\omega t} } \,dt\]
+\[f(t) = \frac{1}{{2\pi }}\int\limits_{ - \infty }^\infty  {F(\omega )} \,e^{j\omega t} \,d\omega \]
+Wichtig: Sonderfälle beachten! (Division durch 0 in der Lösung separat behandeln)
+
+\section{Fourier-Cosinustransformation}         \index{Fourier!Cosinustransformation}
+\noindent Für gerade Funktionen
+
+\[{\cal F}_c (f(t)) = F_c \left( \omega  \right),\quad \quad {\cal F}_c^{ - 1} (F_c (\omega )) = f(t)\]
+\[F_c (\omega ) = \int\limits_{0 }^\infty  {f(t)\cos \omega t} \,dt\]
+\[f(t) = \frac{1}{\pi }\int\limits_0^\infty  {F_c (\omega )} \,\cos{\omega t} \,d\omega \]
+\[F = 2F_c \]
+
+\section{Fourier-Sinustransformation}
+\noindent Für ungerade Funktionen
+
+\[{\cal F}_s (f(t)) = F_s (\omega ),\quad \quad {\cal F}_s^{ - 1}(F_s (\omega )) = f(t)\]
+\[F_s (\omega ) = \int\limits_{0}^\infty  {f(t)\sin {\omega t}\,dt}\]
+\[f(t) = \frac{j}{\pi }\int\limits_0^\infty  {F_s (\omega )} \,\sin{\omega t} \,d\omega \]
+\[F =  - 2jF_s \]
+
+\section{Faltung}               \index{Fourier!Faltung}
+
+\[\left( {f * g} \right)(t) = \int\limits_{ - \infty }^\infty  {f(\tau )}  \cdot g(t - \tau )\,d\tau \]
+\[f * g = g * f\quad \quad \left( {f * g} \right) * k = f * \left( {g * k} \right)\]
+\[{\cal F}\left( {f * g} \right) = {\cal F}(f) \cdot {\cal F}(g) = F \cdot G\]
+
+\subsection{Fallunterscheidung bei Definitionsbereichen}
+\label{faltungFourier}
+\begin{tabular}[t]{ll}
+ \begin{minipage}[t][\totalheight][c]{5.5cm}
+        $p(t) = (f \ast g)$\\
+        $D(g(t)) = [a | b ]$\\
+        $D(f(t)) = [c | d ]$\\ \\
+        \input{Mathe/fourierFaltung.pstex_t}
+        \vspace{1ex}
+  \end{minipage} &
+ \begin{minipage}[t][\totalheight][c]{5.4cm}
+        \begin{tabular}{|l|ll|}
+        \multicolumn{3}{l}{1. Fall: $c+b < a+d$}  \\ \hline
+        I   & $t < a+c$:             & $p(t) = 0$  \\ 
+        II  & $a+c \leq t \leq b+c$: & $p(t) = \int_a ^{t-c} {f(\tau )}  \cdot g(t - \tau )\,d\tau$  \\ 
+        III & $b+c \leq t \leq a+d$: & $p(t) = \int_{a} ^{b} {f(\tau )}  \cdot g(t - \tau )\,d\tau$ \\ 
+        IV  & $a+d \leq t \leq b+d$: & $p(t) = \int_{t-d} ^b {f(\tau )}  \cdot g(t - \tau )\,d\tau$ \\ 
+        V   & $b+d < t$:             & $p(t) = 0$  \\ \hline 
+        \multicolumn{3}{l}{}\\
+        \multicolumn{3}{l}{2. Fall: $c+b > a+d$} \\ \hline
+        I   & $t < a+c$: & $p(t) = 0$ \\
+	II  & $a+c \leq t \leq a+d$: & $p(t) = \int_a ^{t-c} {f(\tau )}  \cdot g(t - \tau )\,d\tau$  \\
+        III & $a+d \leq t \leq b+c$: & $p(t) = \int_{t-d} ^{t-c} {f(\tau )}  \cdot g(t - \tau )\,d\tau$  \\
+	IV  & $b+c \leq t \leq b+d$: & $p(t) = \int_{t-d} ^b {f(\tau )}  \cdot g(t - \tau )\,d\tau$ \\  
+        V   & $b+d < t$:             & $p(t) = 0$  \\  \hline  
+        \multicolumn{3}{l}{}\\
+        \multicolumn{3}{l}{3. Fall: $c+b = a+d$} \\ \hline
+        III & $a+d = t = b+c$: & $p(t) = p(a+d)$  \\ \hline
+        \end{tabular} 
+ \end{minipage}   \\
+\end{tabular}
+
+
+\section{Eigenschaften}
+
+\begin{displaymath}
+\begin{array}{lp{5em}l}
+t \mapsto f(t)& & \omega \mapsto \overline{F(-\omega)}\\
+t \mapsto f(-t)& & \omega \mapsto {F(-\omega)}\\
+t \mapsto f(at)& & \omega \mapsto \frac{1}{\mid a \mid}F(\frac{\omega}{a})\\
+t \mapsto f(t-t_0)& & \omega \mapsto F(\omega) e^{-jwt_0}\\
+t \mapsto e^{j\omega_0 t}f(t)& & \omega \mapsto F(\omega-\omega_0)\\
+t \mapsto F(t)& & \omega \mapsto 2\pi f(-\omega)\\
+t \mapsto f^{(n)}(t)& & \omega \mapsto (j\omega)^{n}F(\omega)\\
+t \mapsto (-jt)^{n}f(t)& & \omega \mapsto F^{(n)}(\omega)\\
+t \mapsto \int\limits_{-\infty}^t{f(\tau)\,d\tau} & &\omega \mapsto \frac{1}{j\omega}F(\omega)
+\end{array}
+\end{displaymath}
+
+\section{Fouriertransformationen mit Diracdelta}   \index{Fourier!Diracdelta}
+                                                   \index{Diracdelta}
+\begin{displaymath}
+\begin{array}{lp{5em}l}
+Funktion                   & & Fourier-Transformierte \\
+t \mapsto \delta(t)        & & \omega \mapsto 1 \\
+t \mapsto 1                & & \omega \mapsto 2 \pi \delta(\omega) \\
+t \mapsto \delta(t-t_0)    & & \omega \mapsto e^{-j \omega t_0}\\
+t \mapsto e^{j \omega_0 t} & & \omega \mapsto 2 \pi \delta(\omega - \omega_0) \\
+t \mapsto \sin(\omega_0 t) & & \omega \mapsto j \pi (\delta(\omega + \omega_0) - \delta(\omega - \omega_0))\\
+t \mapsto \cos(\omega_0 t) & & \omega \mapsto \pi (\delta(\omega + \omega_0) + \delta(\omega - \omega_0))\\
+t \mapsto \delta^{(n)}(t)  & & \omega \mapsto (j\omega)^{n}\\
+t \mapsto sign(t)          & & \omega \mapsto \frac{2}{j \omega}\\
+t \mapsto \frac{1}{\pi t}      & & \omega \mapsto -j \pi sign(\omega) \\
+us                         & & \omega \mapsto \frac{1}{j \omega} +\pi \delta(\omega)
+\end{array}
+\end{displaymath}
+
+Faltung mit Dirac:\\
+\[(f(t) \ast \delta(t_0)) = \int_{-\infty}^{\infty} f(t) \delta(t_0 -t) dt = f(t_0) \]
+\vfill
+
+\section{Fouriertransformationen wichtiger Impulse} \index{Fourier!Impulse}
+							\index{Impulse}
+  \begin{tabular}[t]{ll}				\index{Fourier!Rechteck-Impuls}
+    \begin{minipage}[t][\totalheight][c]{0.4\textwidth}
+	Rechteckimpuls\\
+    	\input{Mathe/rechteckPuls.pstex_t}
+  \end{minipage} & \begin{minipage}[t][\totalheight][c]{0.4\textwidth}\vspace{1cm}
+	\[S(\omega) = h T \frac{\sin \left( \frac{T \omega}{2}\right) } {\left( \frac{T \omega}{2}\right)}\]
+  \end{minipage}
+  \end{tabular} \\  					\index{Fourier!Dreieck-Impuls}
+  \begin{tabular}[t]{ll}
+    \begin{minipage}[t][\totalheight][c]{0.4\textwidth}
+	Dreieckimpuls\\
+    	\input{Mathe/dreieckImpuls.pstex_t}
+  \end{minipage} & \begin{minipage}[t][\totalheight][c]{0.4\textwidth}\vspace{1cm}
+	\[ S(\omega) = \frac{hT}{2} \left[ \frac{\sin \left( \frac{T \omega}{4}\right)  }{\frac{T \omega}{4}} \right] ^2 \]
+  \end{minipage}
+  \end{tabular}\\					\index{Fourier!Cosinus-Impuls}
+  \begin{tabular}[t]{ll}
+    \begin{minipage}[t][\totalheight][c]{0.4\textwidth}
+	Cosinusimpuls\\
+    	\input{Mathe/cosinusImpuls.pstex_t}
+  \end{minipage} & \begin{minipage}[t][\totalheight][c]{0.4\textwidth}\vspace{1cm}
+	\[ S(\omega) = \frac{2hT}{\pi} \frac{\cos \left( \frac{T \omega}{2}\right)  }{1-\left( \frac{T \omega}{\pi}\right) ^2} \]
+  \end{minipage}
+  \end{tabular}\\ 					\index{Fourier!Cosine-Impuls}
+  \begin{tabular}[t]{ll}
+    \begin{minipage}[t][\totalheight][c]{0.4\textwidth}
+	Raised-Cosine-Impuls\\
+    	\input{Mathe/raisedCosImp.pstex_t}
+  \end{minipage} & \begin{minipage}[t][\totalheight][c]{0.4\textwidth}\vspace{1cm}
+	\[ S(\omega) = \frac{hT}{2} \frac{\sin \left( \frac{T \omega}{2}\right)  }{\frac{T \omega}{2}\left[ 1- \left( \frac{T \omega}{2 \pi}\right)^2 \right] } \]
+  \end{minipage}
+  \end{tabular}\\					\index{Fourier!Cosine-Impuls}
+  \begin{tabular}[t]{ll}
+    \begin{minipage}[t][\totalheight][c]{0.4\textwidth}
+	Gauss-Impuls\\
+    	\input{Mathe/gaussImp.pstex_t}
+  \end{minipage} & \begin{minipage}[t][\totalheight][c]{0.4\textwidth}\vspace{1cm}
+	\[ S(\omega) = h \tau \sqrt{\pi} e^{\frac{-\omega^2\tau ^2}{4}} \]
+  \end{minipage}
+  \end{tabular}\\
+
+\chapter{Laplace}         \index{Laplace}
+\begin{picture}(60,25)
+\thicklines
+\put(10,0){$F$}
+\put(10,20){$f$}
+\put(40,0){$\tilde{F}=F \cdot G$}
+\put(40,20){$\tilde{f}=f*g$}
+\put(7,10){${\cal L}$}
+\put(42,10){${\cal L}^{-1}$}
+\put(13,1){\vector(1,0){26}}
+\put(11,18){\vector(0,-1){14}}
+\put(13,21){\vector(1,0){26}}
+\put(41,4){\vector(0,1){14}}
+\put(62,10){$G=\frac{1}{{\mathrm cp}(s)}$}
+\end{picture}
+
+\section{Laplacetransformation}
+
+\[{\cal L}\,(f(t)) = F(s),\quad \quad {\cal L}^{ - 1} \,(F(s)) = f(t),\quad \quad s \in {\mathbb{C}}\]
+\[F(s) = \int\limits_0^\infty  {f(t)\,} e^{ - st} \,dt\]
+\[f(t) = \frac{1}{{2\pi j}}\int\limits_{x - j\infty }^{x + j\infty } {F(s)} \,e^{st} \,ds,\quad {\mathrm falls}\;t \ge 0\]
+\[f(t) = 0,\quad {\mathrm falls}\;t < 0\]
+
+\vfill
+
+\section{Rechenregeln}                          \index{Laplacetransformation!Rechenregeln}
+
+\begin{displaymath}
+\begin{array}{lll}
+
+t \mapsto f(at) && s \mapsto \frac{1}{a}F\left( {\frac{s}{a}} \right) \quad a > 0 \\
+
+t \mapsto \frac{1}{a}f\left(\frac{t}{a}\right) && (s \mapsto F(a\,s)) \\
+t \mapsto {u(t - a) \cdot f(t - a)} && s \mapsto e^{ - as} F(s) \quad a > 0 \\
+t \mapsto f(t + a)) && s \mapsto e^{as} \left( {F(s) - \int\limits_0^a {f(t)\,e^{ - st} \,dt} }  \right)\quad a > 0 \\
+
+t \mapsto e^{ - bt} f(t) && s \mapsto F(s + b) \quad c \in {\mathbb{C}} \\
+t \mapsto f'(t) && s \mapsto s\,F(s) - f(0)\\
+t \mapsto f^{(2)}(t) && s \mapsto s^2 F(s) - s\,f(0) - f'(0)\\
+
+t \mapsto f^{(3)}(t) && s \mapsto s^3 F(s) - s^2 f(0) - sf'(0) - f^{(2)}(0)\\
+t \mapsto f^{(n)}(t) && s \mapsto s^n F(s) - \sum\limits_{k = 0}^{n - 1} {s^{n-1-k} } f^{(k)} (0)\\
+t \mapsto - t\,f(t) && s \mapsto F'(s)\\
+t \mapsto + t^2 f(t) && s \mapsto F^{(2)}(s)\\
+t \mapsto - t^3 f(t) && s \mapsto F^{(3)}(s)\\
+t \mapsto \left( { - 1} \right)^n t^n f(t) && s \mapsto F^{(n)}(s)\\
+t \mapsto \int\limits_0^t f (\tau )\,d\tau  && s \mapsto \frac{1}{s}F(s)\\
+
+\end{array}
+\end{displaymath}
+
+\section{Spezielle Laplacetransformationen}             \index{Laplacetransformation!Spezielle}
+
+\[{\cal L}\,(\delta (t)) = 1\]
+\[{\cal L}\,(u(t)) = \frac{1}{s} \quad {\mathop{\mathrm Re}\nolimits} \,(s) > 0\]
+\[{\cal L}\,(e^{at})  = \frac{1}{{s - a}}\quad {\mathop{\mathrm Re}\nolimits} \,(s) > {\mathop{\mathrm Re}\nolimits} \,(a)\]
+\[{\cal L}\,(t^n)  = \frac{{n!}}{{s^{n + 1} }}\]
+\[{\cal L}\,(t^n e^{at})  = \frac{{n!}}{{\left( {s - a} \right)^{n + 1} }}\]
+
+\[{\cal L}(\sin at) = \frac{a}{{s^2  + a^2 }}\]
+\[{\cal L}(\cos at) = \frac{s}{{s^2  + a^2 }}\]
+\[{\cal L}\,\left(\frac{1}{d}e^{ct} \sin ct\right) = \frac{1}{{\left( {s - c} \right)^2  + d^2 }}\]
+\[{\cal L}\,\left(e^{ct} \left( {\frac{c}{d}\sin dt + \cos dt} \right)\right) = \frac{s}{{\left( {s - c} \right)^2  + d^2 }}\]
+
+
+\section{Faltung}                               \index{Laplacetransformation!Faltung}
+\[\left( {f * g} \right)\left( t \right) = \int\limits_0^t {f(\tau )}  \cdot g(t - \tau )\;d\tau \]
+\[f * g = g * f\quad \quad f(t) = g(t) = 0\quad {\mathrm falls}\;t < 0\]
+\[{\cal L}\left( {f * g} \right) = {\cal L}(f) \cdot {\cal L}(g) = F \cdot G\]
+Die Fallunterscheidung bei eingeschränkten Definitionsbereichen der Funktionen ist die selbe wie bei der Fourier-Theorie in Abschnitt \ref{faltungFourier} auf S. \pageref{faltungFourier} \\
+\noindent \textbf{Beispiel:}\\
+\noindent Geg:\quad$g(t)=u(t)-u(t-5)$ und $ f(t)=u(t-2)-u(t-6)$\\
+Ges:\quad$\tilde{f}=(f*g)(t)$
+\[ \tilde{f} = \int\limits_0^t {f(\tau)} \cdot g(t-\tau)\,d\tau\]
+\[g(t-\tau) = 1 \quad \mbox{falls}\quad 0 \leq t - \tau\leq 5 \quad \Leftrightarrow \quad \tau \leq t \leq 5 + \tau\]
+\input Mathe/Faltung.tex
+
+\section{Periodische Funktionen}                \index{Laplacetransformation!Periodische Funktionen}
+$f$ auf einer Periode $T$ vorgeben.
+
+\[
+F(s) = \int\limits_0^T {f(t)\,} e^{ - st} \,dt
+\]
+
+\noindent Periodische Fortsetzung:
+
+\[
+F_{per} (s) = F(s)\frac{1}{{1 - e^{ - sT} }}
+\]
+
+
+
+\chapter{Differentialgleichungen}               \index{Differential Gleichungen}
+\section{1. Ordnung}                             \index{Differential Gleichungen!1.Ordnung}
+\subsection{Homogene} \label{homogeneDgl}        \index{Differential Gleichungen!Homogene}
+\subsubsection{Separierbar}
+
+Praktisches Vorgehen beim L"osen der separierbaren Differentialgleichungen:
+\[y' = \frac{g(x)}{h(y)} \quad \Leftrightarrow \quad \frac{dy}{dx} = \frac{g(x)}{h(y)}\]
+\[\Leftrightarrow \quad h(y)\,dy = g(x)\,dx \quad \Leftrightarrow \quad \int{h(y)\,dy} = \int{g(x)\,dx}\]
+\[\Leftrightarrow \quad H(y) = G(x) + c\]
+
+
+\noindent Wenn durch ein Ausdruck, der die unbekannte Funktion enth"alt zu dividieren ist, so ist zu pr"ufen ob sein Verschwinden eine L"osung der DGL ergibt.
+
+
+\subsubsection{Substitution}
+
+Gegeben:
+ \[\quad y'(x) = (x + y(x))^2 \]
+Substitution:
+\[\quad z = x + y(x) \Rightarrow z' = 1 + y'(x) \quad \Leftrightarrow \quad y'(x) = z' - 1\]
+Einsetzten:
+\[\quad z' - 1 = z^2 \quad  \Leftrightarrow  \quad \frac{dz}{dx} - 1 = z^2 \]
+\[\Leftrightarrow \quad \frac{1}{1 - z^2}\,dz = dx \quad \Rightarrow \quad \mbox{separierbar}\]
+
+\subsection{Partikul"are}                        \index{Differential Gleichungen!Partikul"are}
+
+DGL:\quad $y' + y = q$
+
+\subsubsection{Ansatz}
+
+\noindent Ansatz für partikuläre Lösung: <<Ähnlich>> wie die Störfunktion ($q$), jedoch nicht in der homogenen Lösung enthalten.
+
+\begin{tabular}{ll}
+  Störfunktion & Ansatz \\ \hline
+  $\sin t$, $\cos t$ & $a \sin t + b \cos t$ \\
+  $e^{-t}$ & $a\,e^{-t}$ \\
+  $t\,e^{-t}$ & $ a\,e^{-t} + bt\,e^{-t}$ \\
+  $t$ & $at+b$ \\   
+\end{tabular}\\
+Ansatz in DGL einsetzten und Koeffizientenvergleich durchf"uhren.
+
+\subsubsection{Variation der Konstanten}
+Homogene Lsg:\quad$y_h = c\,p(x)$\\
+Ansatz:\quad$y_p = g(x)\,p(x)$ \hspace{2cm} (c wird durch $ g(x) $ ersetzt)  \\
+Ansatz in DGL einsetzten und nach $g(x)$ aufl"osen
+
+
+
+\subsection{L"osung}
+
+Gesamtl"osungsmenge:\quad$y = y_h + y_p$
+
+
+\section{H"ohere Ordnung}              \index{Differential Gleichungen!H"ohere Ordnung}
+
+\subsection{Homogen, linear mit konstanten Koeffizienten}          \index{Differential Gleichungen!Homogen, linear, konst}
+
+DGL:\quad $y^{(4)} + 6 y^{(3)} + 22 y'' + 30 y' + 13 y = 0$\\
+$\Rightarrow$ \quad charakteristisches Polynom: $p(t) = t^4 + 6 t^3 + 22 t^2 + 30 t + 13$ 
+\[\Leftrightarrow \quad p(t) = (t+1)^2(t+2-3j)(t+2+3j)\]
+\[\mathbb{N}(p) = \{-1; -1; -2+3j; -2-3j \} \]
+\noindent Aus den Nullstellen des charakteristischen Polynoms ergeben sich die L"osungen.\\
+\noindent Ordnung DGL = Anzahl L"osungen
+\[y_1(t) = e^{-t} \quad \quad y_2(t) = t\,e^{-t} \quad \quad y_3(t) = e^{t(-2+3j)} \quad \quad y_4 = e^{t(-2 - 3j)}\]
+\noindent Linearkombinationen aus Lösungen komplexer Nullstellen ergibt reelle L"osungen:
+\[\frac{1}{2}\left( {y_{3}(t) + y_{4}(t) } \right) = e^{-2t} \cos 3t \] 
+\[\frac{1}{{2j}}\left( {y_{3}(t)  - y_{4}(t) } \right) = e^{-2t} \sin 3t\]
+
+\subsection{Partikul"are}                        \index{Differential Gleichungen!Partikul"are}
+
+\subsubsection{Ansatz}
+\noindent $\Rightarrow$ Siehe \ref{homogeneDgl} Homogene S. \pageref{homogeneDgl}
+
+\subsubsection{Variation der Konstanten}
+St"orfunktion: \quad $q(x)$ \\
+Homogene Lsg:\quad $y_1(t)\quad y_2(t)$ \\
+Ansatz:\quad $y_p = g_1(t)\,y_1(t) + g_2(t)\,y_2(t)$ \\
+$\Rightarrow \quad$ Gleichungssystem:
+\begin{displaymath}
+\begin{array}{l}
+g_1'(t)\,y_1(t) + g_2'(t)\,y_2(t) = 0 \\
+g_1'(t)\,y_1'(t) + g_2'(t)\,y_2'(t) = q(x) \\
+\end{array}
+\end{displaymath}
+Dieses Gleichungsystem liefert $g_1(t)$ und $g_2(t)$ 
+
+\section{Laplace}
+\subsection{Lineare Übertragung}                \index{Laplace!Lineare Übertragung}
+
+Uebertragungsfunktion:\quad $G(s) = \frac{1}{{{\mathop{\mathrm cp}\nolimits} (s)}}$\\
+Stossantwort:\quad $g(t) = {\cal L}^{-1}(G(s)) = \tilde{u}'$\\
+wobei cp = Charakteristisches Polynom und $\tilde{u}$ = Sprungantwort
+\[y(0) = 0,\;y'(0) = 0,\;y^{(2)}(0) = 0,\; \ldots ,\;y^{(n)}(0) = 0\]
+\[a_n y^{(n)} + a_{n - 1} y^{(n - 1)} +  \ldots  + a_1 y' + a_0 y = q\]
+\[ \Downarrow {\cal L}\]
+\[Y(s) \cdot {\mathop{\mathrm cp}\nolimits} (s) = F(s)\quad  \Leftrightarrow \quad Y(s) = \frac{{F(s)}}{{{\mathop{\mathrm cp}\nolimits} (s)}} = F(s) \cdot G(s)\]
+\[ \Downarrow {\cal L}^{ - 1} \]
+\[y(t) = \left( {f * g} \right)\left( t \right)\]
+\noindent \textbf{Beispiel:}
+\[y^{(2)} + 5y' + 6y = u,\quad \quad y(0) = 0,\quad y'(0) = 0\]
+\[ \Downarrow {\cal L}\]
+\[Y(s) \cdot \left( {s^2  + 5s + 6} \right) = Y(s) \cdot \left( {s + 2} \right)\left( {s + 3} \right) = \frac{1}{s}\]
+\[Y(s) = \frac{1}{{s\left( {s + 2} \right)\left( {s + 3} \right)}} = \frac{\alpha }{s} + \frac{\beta }{{s + 2}} + \frac{\gamma }{{s + 3}}\]
+\[1 = \alpha \left( {s + 2} \right)\left( {s + 3} \right) + \beta \left( {s + 3} \right)s + \gamma \left( {s + 2} \right)s\]
+
+\[
+\begin{array}{llll}
+  s=0:  & 1=6\alpha & \Rightarrow & \alpha=\frac{1}{6}\\
+  s=-2: & 1=-2\beta & \Rightarrow & \beta=-\frac{1}{2}\\
+  s=-3: & 1=3\gamma & \Rightarrow & \gamma=\frac{1}{3}
+\end{array}
+\]
+
+\[Y(s) = \frac{1}{6}\frac{1}{s} - \frac{1}{2}\frac{1}{{s + 2}} + \frac{1}{3}\frac{1}{{s + 3}}\]
+\[ \Downarrow {\cal L}^{ - 1} \]
+\[y(t) = \frac{1}{6}u(t) - \frac{1}{2}e^{ - 2t} u(t) + \frac{1}{3}e^{ - 3t} u(t)\]
+\[y(t) = \left( {\frac{1}{6} - \frac{1}{2}e^{ - 2t}  + \frac{1}{3}e^{ - 3t} } \right)u(t)\]
+
+\subsection{Nichtlineare Übertragung}           \index{Laplace!Nichtlineare Übertragung}
+
+\noindent \textbf{Beispiel:}
+\noindent Geg:\quad $g(t) = 1 - \cos t$\\
+Ges:\quad $\tilde{v}$ auf $v=\sin t$ \quad \\
+mit $\tilde{v}''(0)=1,\quad \tilde{v}'(0)=0,\quad \tilde{v}(0)=0$\\  
+\[g(t) = 1 - \cos t\]
+\[ \Downarrow {\cal L}\]
+\[G(s) = \frac{1}{s} - \frac{s}{s^2 + 1} = \frac{1}{s^3 + s} = \frac{1}{cp(s)}\]
+\[\Rightarrow \quad \mbox{DGL:}\quad y^{(3)} + y' = \sin t\]
+\[ \Downarrow {\cal L}\]
+\[s^3Y(s) - 1 +s\,Y(s) = \frac{1}{s^2 +1} \quad \Leftrightarrow \quad Y(s)(s^3 + s) = \frac{1}{s^2 + 1} + 1\]
+\[\Leftrightarrow \quad Y(s) = \frac{1}{s^3 + s}\,\frac{1}{s^2 + 1} + \frac{1}{s^3 + 1}\]
+\[ \Downarrow {\cal L}^{ - 1} \]
+\[y(t) = (g * \sin)(t) + g(t)\]
+\vfill
+
+\section{Übersicht Laplace und Fourier}
+
+\input{Mathe/fourLapUeber.pstex_t} 
+
+
+\chapter{Funktionsdiskussion}                                 \index{Funktionsdiskussion}
+
+
+
+\section{Funktionen mit einer Variablen}                 \index{Funktionsdiskussion!Funktionen mit einer Variablen}
+
+\subsection{Zu beantwortende Fragen} \index{Kurvendiskussion}
+                                 \index{Funktionsdiskussion}
+
+\begin{enumerate}
+\item Definitiondbereich $ D(f) $
+\item Bild von $ f $
+\item Hat der Graph von $ f $, $ G(f) $ Symmetrien? \\
+Gerade $ f(-x) = f(x) $ oder Ungerade $ f(-x) = -f(x) $
+\item Gibt es Polstellen? 
+\item Gibt es Gebiete der Koordinatenebene wo der Graph keine Punkte hat? \\ (Achtung beim kürzen)
+\item Gibt es Schranken für die Funktionswerte?
+\item Welches sind die Nullstellen von $ f $? 
+\item Welches sind die Nullstellen der Ableitungen von $ f $?
+\item Wo steigt $ f $ , wo fällt $ f $?
+\item Gibt es Grenzwerte für Argumente gegen $ \pm \infty $?
+\item Gibt es Asymptoten?
+\begin{footnotesize} \[ m = \lim _{|x| \rightarrow \infty} \left( \frac{f(x)}{x}\right) \qquad q = \lim _{|x| \rightarrow \infty} \left( f(x) - m x \right) \]
+Asymptote: $ mx + q $ \\ \\
+Bei Brüchen mit Polynomen ergibt eine Division mit Rest die Asymptote:\\
+Beispiel: 
+\[ (x^3 - 4x^2 - 17x + 60) \div (x^2 -4) = \underbrace{x - 4}_{Assymptote} + \underbrace{\frac{44-13x}{x^2-4}}_{Rest} \] \end{footnotesize}
+
+Die Nullstellen des Zählerpolynoms im Rest ergeben die Schnittpunkte zwischen der Asymptote und der Funktion.
+\item Gibt es absolute Maximal- oder Minimalstellen?
+\end{enumerate} 
+
+\subsection{Gerade (2-Punkte-Form)}
+
+\[ y = \frac{y_2 - y_1}{x_2 - x_1}(x - x_1) + y_1\]
+
+\subsection{Abstand eines Punktes von einer Geraden}
+\noindent Gegeben: Gerade $Ax + By + C = 0$, Punkt $P = (p_1,p_2)$
+\[d = \left|\frac{Ap_1 + Bp_2 + C}{\sqrt{A^2 + B^2}}\right| \quad (A^2 + B^2 \not= 0)\]
+
+\section{Funktionen mit mehreren Variablen}                 \index{Funktionsdiskussion!Funktionen mit mehreren Variablen}
+
+\subsection{Bezeichnungen}                             \index{Funktionsdiskussion!Bezeichnungen}
+\[f_1(x,y) = \frac{\partial f}{\partial x}\]
+\[f_2(x,y) = \frac{\partial f}{\partial y}\]
+
+\subsubsection{Richtungsvektoren an die Parameterlinien}
+Richtungsvektor an die Abszissenlinie:\quad $(1,0,f_1(x,y))$\\
+Richtungsvektor an die Ordinatenlinie:\quad $(0,1,f_2(x,y))$
+
+\subsubsection{Tangentialebene}
+\[\varepsilon:\quad\vec{p}=(p_1,p_2,p_3)=(x,y,f(x,y))+\alpha (1,0,f_1(x,y))+\beta (0,1,f_2(x,y))\]
+\[\vec{n_\varepsilon}=(f_1(x,y),f_2(x,y),-1)\]
+
+\subsubsection{Gradient}
+Wir betrachten die Funktion $f:(x_1,x_2)\mapsto f(x_1,x_2)$. Sie ist in einer gewissen Umgebung U von $(x_0,y_0)$ definiert.\\
+Die Richtung des st"arksten Anstiegs von $f$ in $(x_0,y_0)$ ist
+\[\hbox{grad}f(x_0,y_0)=(f_1(x_0,y_0),f_2(x_0,y_0)) = \vec{v}\]
+($\Rightarrow$ Richtung der Fallgeraden in der Grundrissebene)\\
+Richtungsvektor der Fallgerade der Tangentialebene:
+\[(f_1(x_0,y_0),f_2(x_0,y_0),f_1(x_0,y_0)^2 + f_2(x_0,y_0)^2)\]
+
+\subsubsection{Richtungsableitung}
+\[D_{\vec{v}} f(x_0,y_0) = \hbox{grad}f(x_0,y_0)\cdot\vec{e_v}\]
+wobei $\vec{e_v}$ der Einheitsvektor in Richtung $\vec{v}$ ist
+
+\subsubsection{Totales Differential}
+\[df = h \cdot f_1(x,y) + k \cdot f_2(x,y)\]
+\noindent wobei h und k die Inkremente sind 
+
+\subsubsection{Kettenregel}
+\noindent Vollst"andig differenzierbare Funktionen:
+\[f:(x_1,x_2) \mapsto f(x_1,x_2)\]
+\[u:(y_1,y_2) \mapsto u(y_1,y_2)\]
+\[v:(y_1,y_2) \mapsto v(y_1,y_2)\]
+\[\tilde{f}:(y_1,y_2) \mapsto f(u(y_1,y_2),v(y_1,y_2))\]
+\noindent Dann sind
+\[\tilde{f_1}(y_1,y_2)=f_1(u(y_1,y_2),v(y_1,y_2))\cdot u_1(y_1,y_2) + f_2(u(y_1,y_2),v(y_1,y_2))\cdot v_1(y_1,y_2)\]
+\[\tilde{f_2}(y_1,y_2)=f_1(u(y_1,y_2),v(y_1,y_2))\cdot u_2(y_1,y_2) + f_2(u(y_1,y_2),v(y_1,y_2))\cdot v_2(y_1,y_2)\]
+
+\section{Kegelschnitte}
+
+\subsection{Kreis}
+
+\[(x - x_0)^2 + (y - y_0)^2 = r^2\]
+\[M = (x_0, y_0)\]
+
+\subsection{Ellipse}
+
+\[\frac{(x - x_0)^2}{a^2} + \frac{(y - y_0)^2}{b^2} = 1\]
+\[M = (x_0, y_0)\]
+
+
+\subsection{Hyperbel}
+
+\[\frac{(x - x_0)^2}{a^2} - \frac{(y - y_0)^2}{b^2} = 1\]
+\[M = (x_0, y_0)\]
+
+\subsection{Parabel}
+
+\[(y - y_0)^2 = 2p(x - x_0)\]
+\[S = (x_0,y_0)\]
+
+
+%\onecolumn
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../FoSaHSR"
+%%% End: 

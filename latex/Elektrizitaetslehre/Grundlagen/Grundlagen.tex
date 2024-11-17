@@ -1,0 +1,555 @@
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 
+%==========================================================
+% Titel:    Elektrizitätslehre, Grundlagen
+% Autor:    Thomas Küng
+% Erstellt: 24.08.2002
+% Geändert:
+%==========================================================
+
+\section{Grundgrössen} \index{Grundlagen!Grundgrössen}
+
+\index{Ladung}
+\index{Strom} 
+\index{Stromdichte}
+\index{Feldstärke} 
+\index{DriftGeschwindigkeit}
+\index{Spannung}
+\index{El. Arbeit}  
+\index{El. Leistung}
+\index{Widerstand}
+\index{Spez. Widerstand}
+\index{Leitwert}
+\index{spez. Leitwert}
+\index{Elekronendichte}
+\index{Elementarladung} 
+
+\index{Elektrizitätslehre!Ladung}
+\index{Elektrizitätslehre!Strom}
+\index{Elektrizitätslehre!Stromdichte}
+\index{Elektrizitätslehre!Feldstärke} 
+\index{Elektrizitätslehre!DriftGeschwindigkeit}
+\index{Elektrizitätslehre!Spannung}
+\index{Elektrizitätslehre!Arbeit} 
+\index{Elektrizitätslehre!Leistung}
+\index{Elektrizitätslehre!Widerstand}
+\index{Elektrizitätslehre!Spez. Widerstand}
+\index{Elektrizitätslehre!Leitwert}
+\index{Elektrizitätslehre!spez. Leitwert}
+\index{Elektrizitätslehre!Elekronendichte}
+\index{Elektrizitätslehre!Elementarladung} 
+
+\Hauptbox{
+ \Bildbox{Ladung $Q$\\}
+ \Formelbox{
+   \[\Delta Q = I(t)\cdot \Delta t = \int I(t)\]
+   \[\Delta Q = \frac{\Delta W(t)}{\Delta U(t)}\]
+  } \\ \hline
+ \Bildbox{Strom $I$\\}
+ \Formelbox{
+   \[I = \frac{\Delta Q}{\Delta t}\]
+   \[I = \frac{U}{R} = \frac{P}{U}\]
+  } \\ \hline
+ \Bildbox{Driftgeschwindigkeit~$v$\\}
+ \Formelbox{
+   \[v = \frac{I}{n e A}\]
+  } \\ \hline
+ \Bildbox{Spannung $U$\\}
+ \Formelbox{
+   \[U = R I\]
+   \[U(t) = \frac{\Delta W(t)}{\Delta Q}\]
+   \[U = \frac{P}{I} = \sqrt{P R}\]
+   \[\Delta U = E \Delta x\]
+  } \\ \hline
+ \Bildbox{Energie $W$\\}
+ \Formelbox{
+   \[ W = F h = m g h\]
+   \[ \Delta W(t) = U(t) I(t) \Delta t\]
+  } \\ \hline
+}{
+ \Groessenbox{
+  $Q$      & Ladung                        & $[C]$, $[As]$ \\
+  $I$      & Strom                         & $[A]$ \\
+  $J$      & Stromdichte                   & $[\frac{A}{m^2}]$ \\
+  $E$      & el.\ Feldstärke               & $[\frac{V}{m}]$ \\
+  $v$      & Drift"-Geschwin"-dig"-keit    & $[\frac{m}{s}]$ \\
+  $U$      & Spannung                      & $[V]$ \\
+  $W$      & Arbeit                        & $[Ws]$, $[J]$ \\
+  $P$      & Leistung                      & $[W]$ \\
+  $R$      & Widerstand                    & $[\Omega]$ \\
+  $\rho$   & Spez.\ Widerstand             & {\small $[\frac{\Omega mm^2}{m}]$} \\
+  $G$      & Leitwert                      & $[S]$ \\
+  $\kappa$ & spez.\ Leitwert               & $[\frac{S}{m}]$ \\
+  $t$      & Zeit                          & $[t]$ \\
+  $A$      & Fläche                        & $[m^2]$ \\
+  $F$      & Kraft                         & $[N]$ \\
+  $m$      & Masse                         & $[kg]$ \\
+  $g$      & Erdberschleu"-nigung          & $[\frac{m}{s^2}]$ \\
+  $l$      & Länge                         & $[m]$ \\
+  $\alpha$ & Temp.\ Koeff.                 & $[\frac{1}{^\circ C}]$ \\
+  $\vartheta $ & Temperatur                & $[^\circ C]$ \\
+  $n$      & Elekronen"-dichte             & $[\frac{1}{m^3}]$ \\
+  $e$      & Elementar"-ladung             & $[C]$ \\
+           & $1.602 \cdot 10^{19}C$ \\
+ }}
+
+
+\Hauptbox{
+ \Bildbox{Leistung $P$\\}
+ \Formelbox{
+   \[ P(t) = \frac{\Delta W(t)}{\Delta t}\]
+   \[ P(t) = U(t) I(t)\]
+   \[ P(t) = I^2(t)R = \frac{U^2(t)}{R}\] 
+  } \\ \hline
+ \Bildbox{Widerstand $R$\\}
+ \Formelbox{
+   \[ R = \frac{U}{R} = \frac{U^2}{P} = \frac{P}{I^2}\]
+   \[ R = \frac{\rho l}{A} = \frac{l}{\kappa A}\]
+  } \\ \hline
+ \Bildbox{Spez.\ Widerstand~$\rho$\\}
+ \Formelbox{
+   \[ \rho = \frac{1}{\kappa A}\]
+   \[ \rho = \rho_{20}(1+\alpha_{20}) \Delta \vartheta\]
+  } \\ \hline
+ \Bildbox{Leitwert $G$\\}
+ \Formelbox{
+   \[ G = \frac{\kappa A}{l} = \frac{1}{R}\]
+  } \\ \hline
+ \Bildbox{Spez.\ Leitwert $\kappa$\\}
+ \Formelbox{
+   \[ \kappa = \frac{1}{\rho}\]
+  } \\ \hline
+ \Bildbox{Stromdichte $J$\\}
+ \Formelbox{
+   \[ J(t) = \frac{I(t)}{A} = \frac{\Delta I(x,y)}{\Delta A}\]
+   \[ \vec{J} = \kappa \vec{E}\]
+  } \\ \hline
+ \Bildbox{Feldstärke $E$\\}
+ \Formelbox{
+   \[ E(x) = \frac{\Delta U}{\Delta x}\]
+   \[ E = \frac{F}{Q}\]
+   \[ \vec{E} = \rho \vec{J} \]
+  } \\ \hline
+}{
+ \Groessenbox{
+  $Q$      & Ladung                        & $[C]$, $[As]$ \\
+  $I$      & Strom                         & $[A]$ \\
+  $J$      & Stromdichte                   & $[\frac{A}{m^2}]$ \\
+  $E$      & el.\ Feldstärke               & $[\frac{V}{m}]$ \\
+  $v$      & Drift"-Geschwin"-dig"-keit    & $[\frac{m}{s}]$ \\
+  $U$      & Spannung                      & $[V]$ \\
+  $W$      & Arbeit                        & $[Ws]$, $[J]$ \\
+  $P$      & Leistung                      & $[W]$ \\
+  $R$      & Widerstand                    & $[\Omega]$ \\
+  $\rho$   & Spez.\ Widerstand             & {\small $[\frac{\Omega mm^2}{m}]$} \\
+  $G$      & Leitwert                      & $[S]$ \\
+  $\kappa$ & spez.\ Leitwert               & $[\frac{S}{m}]$ \\
+  $t$      & Zeit                          & $[t]$ \\
+  $A$      & Fläche                        & $[m^2]$ \\
+  $F$      & Kraft                         & $[N]$ \\
+  $m$      & Masse                         & $[kg]$ \\
+  $g$      & Erdberschleu"-nigung          & $[\frac{m}{s^2}]$ \\
+  $l$      & Länge                         & $[m]$ \\
+  $\alpha$ & Temp.\ Koeff.                 & $[\frac{1}{^\circ C}]$ \\
+  $\vartheta $ & Temperatur                & $[^\circ C]$ \\
+  $n$      & Elekronen"-dichte             & $[\frac{1}{m^3}]$ \\
+  $e$      & Elementar"-ladung             & $[C]$ \\
+           & $1.602 \cdot 10^{19}C$ \\
+}}
+
+\section{Netzwerke bei Gleichstrom}
+
+\index{Gleichstrom}
+\index{Elektrizitätslehre!Gleichstrom}
+
+\subsection{Kirchoffsche Gesetzte}
+
+\index{Kirchoff}
+\index{Elektrizitätslehre!Kirchoff}
+
+\subsubsection{Stromgesetz}
+
+\index{Stromgesetz}
+\index{Elektrizitätslehre!Stromgesetz}
+\index{Knotensatz}
+\index{Elektrizitätslehre!Knotensatz}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Grundlagen/Abbildungen/Stromgesetz.pstex_t \\
+    }
+  \Formelbox{
+    Die Summe aller zufliessenden Ströme ist gleich der Summe aller Abfliessenden Ströme
+    \[ \sum_{k=1}^N I_k=0 \]
+    }} { 
+ \Groessenbox{
+    $I$             & Strom                    & $[A]$ \\
+    }}
+
+\subsubsection{Spannungsgesetz}
+
+\index{Spannungsgesetz}
+\index{Elektrizitätslehre!Spannungsgesetz}
+\index{Maschensatz}
+\index{Elektrizitätslehre!Maschensatz}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Grundlagen/Abbildungen/Spannungsgesetz.pstex_t \\
+    }
+  \Formelbox{
+    Die Summe aller Spannungen im Kreis ist null.
+    \[ \sum_{k=1}^N U_k=0 \]
+    }} { 
+ \Groessenbox{
+    $U$             & Spannung                   & $[V]$ \\
+    }}
+
+\section{Reale Quellen}
+
+\index{Quellen}
+\index{Elektrizitätslehre!Quellen}
+
+\subsection{Reale Spannungsquelle}
+
+\index{Spannungsquelle}
+\index{Elektrizitätslehre!Spannungsquelle}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Grundlagen/Abbildungen/Source_1.pstex_t \\
+    }
+  \Formelbox{
+    \[ U = U_0 - R_i I \]
+    \[ R_i = \frac{U_0}{I_C} \]
+    }} { 
+ \Groessenbox{
+    $U$             & Spannung                   & $[V]$ \\
+    $I$             & Strom                      & $[I]$ \\
+    $R$             & Widerstand                 & $[\Omega]$ \\
+    }}
+\vfill
+
+\subsection{Reale Stromquelle}
+
+\index{Stromquelle}
+\index{Elektrizitätslehre!Stromquelle}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Grundlagen/Abbildungen/Source_2.pstex_t \\
+    }
+  \Formelbox{
+    \[ I = I_C - G_i U \]
+    \[ G_I = \frac{1}{R_i} = \frac{I_C}{U_0} \]
+    }} { 
+ \Groessenbox{
+    $U$             & Spannung                   & $[V]$ \\
+    $I$             & Strom                      & $[I]$ \\
+    $R$             & Widerstand                 & $[\Omega]$ \\
+    }}
+
+\section{Netzwerkanalyse}
+
+\index{Netzwerkanalyse}
+\index{Elektrizitätslehre!Netzwerkanalyse}
+
+\subsection{Netzwerkumwandlung}
+
+\index{Netzwerkumwandlung}
+\index{Elektrizitätslehre!Netzwerkumwandlung}
+
+\subsubsection{Widerstandsschaltungen}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Grundlagen/Abbildungen/rserie.pstex_t 
+    }
+  \Formelbox{
+    Serieschaltung:
+    \[ R_{\mathrm{ers}}= \sum_{k=1}^{n}R_k \]
+    }
+    \Bildbox{
+    \input Elektrizitaetslehre/Grundlagen/Abbildungen/rparallel.pstex_t 
+    }
+  \Formelbox{
+    Parallelschaltung:
+    \[ R_{\mathrm{ers}}= \frac{1}{\sum\limits_{k=1}^{n}\frac{1}{R_k}} \]
+    }} { 
+ \Groessenbox{
+    $U$             & Spannung                   & $[V]$ \\
+    $I$             & Strom                      & $[I]$ \\
+    $R$             & Widerstand                 & $[\Omega]$ \\
+    }}
+
+\subsubsection{Mehrere Quellen}
+
+\index{Quellen!Mehrere}
+\index{Elektrizitätslehre!Quellen!Mehrere}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Grundlagen/Abbildungen/uquellen.pstex_t 
+    }
+  \Formelbox{
+    Serieschaltung von Spannungsquellen:
+    \[ U_{0_{\mathrm{ers}}}= \sum_{k=1}^{n}U_{0_{k}} \]
+   
+    } 
+\Bildbox{
+    \input Elektrizitaetslehre/Grundlagen/Abbildungen/iquellen.pstex_t 
+    }
+  \Formelbox{
+    Parallelschaltung von Stromquellen:
+    \[ I_{C_{\mathrm{ers}}}= \sum\limits_{k=1}^{n} I_{C_{k}} \]
+    }} { 
+ \Groessenbox{
+    $U$             & Spannung                   & $[V]$ \\
+    $I$             & Strom                      & $[I]$ \\
+    }}
+\vfill
+
+\subsubsection{Quellenumwandlung}
+
+\index{Quellenumwandlung}
+\index{Elektrizitätslehre!Quellenumwandlung}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Grundlagen/Abbildungen/Source_umw.pstex_t \\    
+    }
+  \Formelbox{
+    U-Quelle $\rightarrow$ I-Quelle:
+    \[ R_i = R_i \qquad I_C = \frac{U_0}{R_i}\]
+    I-Quelle $\rightarrow$ U-Quelle:
+    \[ R_i = R_i \qquad U_0 = I_C R_i\]
+    }} { 
+ \Groessenbox{
+    $U$             & Spannung                   & $[V]$ \\
+    $I$             & Strom                      & $[I]$ \\
+    $R$             & Widerstand                 & $[\Omega]$ \\
+    }}
+
+\subsubsection{Stern -- Dreieck Umwandlung}
+
+\index{Stern -- Dreieck}
+\index{Elektrizitätslehre!Stern -- Dreieck}
+
+\Hauptbox{
+  \Bildbox{
+   \hspace{0.5cm} \input Elektrizitaetslehre/Grundlagen/Abbildungen/Dreieck.pstex_t \\ 
+    \\
+    \input Elektrizitaetslehre/Grundlagen/Abbildungen/Stern.pstex_t \\  
+    }
+  \Formelbox{
+    Dreieck $\rightarrow$ Stern:
+    \[ R_a = \frac{R_1 R_2}{R_0}\]
+    \[ R_b = \frac{R_2 R_3}{R_0}\]
+    \[ R_c = \frac{R_1 R_3}{R_0}\]
+    \[ R_0 = R_1 + R_2 + R_3 \]
+    Stern $\rightarrow$ Dreieck:
+    \[ R_1 = R_a R_b B_0 \qquad G_1 = \frac{G_a G_b}{G_0}\]
+    \[ R_2 = R_b R_c B_0 \qquad G_1 = \frac{G_b G_c}{G_0}\]
+    \[ R_3 = R_a R_c B_0 \qquad G_1 = \frac{G_a G_c}{G_0}\]
+    \[ G_0 = \frac{1}{R_1}+\frac{1}{R_2}+\frac{1}{R_3} \]
+    }} { 
+ \Groessenbox{
+    $U$             & Spannung                   & $[V]$ \\
+    $I$             & Strom                      & $[I]$ \\
+    $R$             & Widerstand                 & $[\Omega]$ \\
+    $G$             & Leitwert                   & $[S]$ \\
+    }}
+
+\subsubsection{Überlagerungsprinzip (Superposition)}
+
+\index{Überlagerungsprinzip}
+\index{Elektrizitätslehre!Überlagerungsprinzip}
+\index{Superposition}
+\index{Elektrizitätslehre!Superposition}
+
+Die Wirkungen der entsprechenden Ursachen werden einzeln betrachtet. In einer Schaltung mit mehreren Quellen wird jede Quelle einzeln betrachtet. Die übrigen Spannungsquellen werden durch einen Kurzschluss und die restlichen Stromquellen durch einen Unterbruch ersetzt. Sie Summen der einzelnen Teilwirkungen ergibt die gesamte Wirkung. (Voraussetzung: lineares System)
+
+\subsubsection{Nichtlinearer Verbraucher an linearer Schaltung (Thévenin)}
+
+\index{Nichtlinear}
+\index{Elektrizitätslehre!Nichtlinear}
+\index{Thévenin}
+\index{Elektrizitätslehre!Thévenin}
+
+Die gesammte Schaltung muss in eine Ersatzquelle umgeformt werden. Das Ersatzschema gilt für $U$ und $I$. (Achtung: z.B.\,$P_{Quellen} \neq U_0 I$)
+
+\subsection{Wirkungsgrad und Leistungsanpassung}
+
+\index{Wirkungsgrad}
+\index{Elektrizitätslehre!Wirkungsgrad}
+\index{Leistungsanpassung}
+\index{Elektrizitätslehre!Leistungsanpassung}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Grundlagen/Abbildungen/Wirkungsgrad.pstex_t \\  
+    }
+  \Formelbox{
+    \[\eta = \frac{P_L}{P_0}=\underbrace{\frac{R_L}{R_L + R_i}}_{\mbox{(*)}} \]
+    (*) {\small gilt nicht für Ersatzschaltungen}
+    }} { 
+ \Groessenbox{
+    $U$             & Spannung                   & $[V]$ \\
+    $P$             & Leistung                   & $[W]$ \\
+    $R$             & Widerstand                 & $[\Omega]$ \\
+    }}
+
+\subsection{Systematische Analyse linearer Netzwerke}
+
+\subsubsection{Kreisströme als Variablen (Kreisstrom-Methode)}
+
+\index{Kreisströme}
+\index{Elektrizitätslehre!Kreisströme}
+\index{Kreisstrom-Methode}
+\index{Elektrizitätslehre!Kreisstrom-Methode}
+
+\begin{multicols}{2}
+\input Elektrizitaetslehre/Grundlagen/Abbildungen/Kreis.pstex_t  
+
+
+\begin{center}
+\begin{tabular}{lll}
+  $\alpha$ & $=$ & Anzahl Knoten \\
+  $\beta$  & $=$ & Anzahl Zweige  
+\end{tabular} 
+
+ 
+
+\noindent  $\beta - \alpha + 1$ unabhängige Gleichungen
+\end{center}
+
+\begin{footnotesize}
+\[
+\begin{array}{lllll}
+j_1 (R_1 +  R_2 + R_4) & + & j_2 R_4 & = & U_1 \\
+j_1 R_4 & + & j_2 (R_3 + R_4) & = & U_2
+\end{array}
+\]
+
+\[ \left[
+\begin{array}{ll}
+R_1 + R_2 + R_4 & R_4 \\
+R_4 & R_3 + R_4
+\end{array} \right]
+\left[
+\begin{array}{l}
+j_1 \\
+j_2
+\end{array} \right]
+=
+\left[
+\begin{array}{l}
+U_1 \\
+U_2
+\end{array} \right]
+\]
+\end{footnotesize}
+\end{multicols}
+
+\subsubsection{Trennspannungen als Variable (Knotenspannungsmethode)}
+
+\index{Trennspannungen}
+\index{Elektrizitätslehre!Trennspannungen}
+\index{Knotenspannungsmethode}
+\index{Elektrizitätslehre!Knotenspannungsmethode}
+
+\begin{multicols}{2}
+\input Elektrizitaetslehre/Grundlagen/Abbildungen/Knoten.pstex_t  
+
+\begin{center}
+  $\alpha = $  Anzahl Knoten \\  
+
+  $\alpha - 1$ unabhängige Gleichungen
+\end{center}
+
+\begin{footnotesize}
+\[
+\begin{array}{lllll}
+e_A (G_1 + G_3 + G_4) & - & e_B G_1 & = & -I_1 - I_2 \\
+e_A G_1 & + & e_B (G_1 + G_2) & = & I_1
+\end{array}
+\]
+
+\[ \left[
+\begin{array}{ll}
+G_1 + G_3 + G_4 & -G_1 \\
+G_1 & G_1 + G_2
+\end{array} \right]
+\left[
+\begin{array}{l}
+e_A \\
+e_B
+\end{array} \right]
+=
+\left[
+\begin{array}{l}
+-I_1 -I_2 \\
+I_1
+\end{array} \right]
+\]
+\end{footnotesize}
+\end{multicols}
+
+\newpage
+
+\subsection{Quellenverschiebung}
+\index{Quellenverschiebung}
+\index{Elektrizitätslehre!Quellenverschiebung}
+\begin{multicols}{2}
+%\rule{0mm}{15mm}\\
+Es werden gleiche Quellen so in die Schaltung eingefügt, dass die Wirkung der ursprünglichen Quelle aufgehoben wird.
+
+\input Elektrizitaetslehre/Grundlagen/Abbildungen/Verschiebung.pstex_t
+
+\input Elektrizitaetslehre/Grundlagen/Abbildungen/Verschiebung_2.pstex_t 
+
+\end{multicols}
+
+\vfill
+
+\subsection{Netzwerke mit gesteuerten Quellen} \index{Grundlagen!Grundgrössen}
+
+\index{Quellen!gesteuerte}
+\index{Elektrizitätslehre!Quellen!gesteuerte}
+
+\Hauptbox{
+ \Bildbox{\input Elektrizitaetslehre/Grundlagen/Abbildungen/U-U_gest.pstex_t}
+ \Formelbox{
+   \flushleft Spannungsgesteuerte Spannungsquelle
+   \[U_{02}=V_U U_1\]
+  } \\ \hline
+ \Bildbox{\input Elektrizitaetslehre/Grundlagen/Abbildungen/I-U_gest.pstex_t}
+ \Formelbox{
+   \flushleft Stromgesteuerte Spannungsquelle
+   \[U_{02}=R_{12} U_1\]
+  } \\ \hline
+ \Bildbox{\input Elektrizitaetslehre/Grundlagen/Abbildungen/U-I_gest.pstex_t}
+ \Formelbox{
+   \flushleft Spannungsgesteuerte Stromquelle
+   \[I_{C2}=G_{12} U_1\]
+  } \\ \hline
+ \Bildbox{\input Elektrizitaetslehre/Grundlagen/Abbildungen/I-I_gest.pstex_t}
+ \Formelbox{
+   \flushleft Stromgesteuerte Stromquelle
+   \[I_{C2}=V_{i} U_1\]
+  } \\ \hline
+}{
+ \Groessenbox{
+  $I$      & Strom                         & $[A]$ \\
+  $U$      & Spannung                      & $[V]$ \\
+  $R$      & Widerstand                    & $[\Omega]$ \\
+  $G$      & Leitwert                      & $[S]$ \\
+  $V$      & Verstärkung                   & $[1]$ \\
+ }}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 

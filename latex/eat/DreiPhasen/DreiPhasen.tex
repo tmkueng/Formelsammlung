@@ -1,0 +1,122 @@
+
+%==========================================================
+% Titel:    Elektrizitätslehre, Elektrische Maschinen
+% Autor:    Adrian Freihofer
+% Erstellt: 7.11.2001
+% Geändert:
+%==========================================================
+
+
+\index{Dreiphasen} 
+\index{Drehstrom}
+
+\Hauptbox{
+ \Bildbox{
+   \input eat/DreiPhasen/DreiSin
+}
+ \Formelbox{
+   \footnotesize Maschensatz: \normalsize
+   \[\underline{U}_1 + \underline{U}_2 + \underline{U}_3 = 0\]
+   \[\underline{I}_1 + \underline{I}_2 + \underline{I}_3 = 0\] 
+  }}{
+ \Groessenbox{
+  $\underline{U}$       & Spannung (komplex)     & $[V]$ \\
+  $\underline{I}$       & Strom (komplex)        & $[A]$ \\            
+ }}
+
+
+\section{Sternschaltung }
+
+\index{Sternschaltung} 
+
+\Hauptbox{
+ \Bildbox{
+   \input eat/DreiPhasen/stern.pstex_t
+}
+ \Formelbox{
+   \footnotesize Strang-Sternspannungen: \normalsize \\
+   $\underline{U}_{Str 1} = \underline{U}_{1} = \underline{U}_1 - \underline{U}_2$ \\
+   $\underline{U}_{Str 2} = \underline{U}_{2} = \underline{V}_1 - \underline{V}_2$ \\ 
+   $\underline{U}_{Str 3} = \underline{U}_{3} = \underline{W}_1 - \underline{W}_2$ \\
+   \footnotesize Aussenleiterspannungen: \normalsize \\
+   $ \underline{U}_{12} = \underline{U}_1 - \underline{U}_2 $ \hspace{0.1cm} 
+   \scriptsize $ \angle (\underline{U}_1 , \underline{U}_2 ) = 120 ^{\circ} $\\ \normalsize
+   $ \underline{U}_{23} = \underline{U}_2 - \underline{U}_3 $ \\
+   $ \underline{U}_{31} = \underline{U}_3 - \underline{U}_1 $ 
+   \[U = U_{Str} \sqrt{3} \]
+   \[I = I_{Str} \]
+  
+  }}{
+ \Groessenbox{
+  $\underline{U}$       & Spannung                 & $[V]$ \\
+  $ U_{Str} $           & Strangspan"-nung         & $[V] $ \\
+  $\underline{I}$       & Strom                    & $[A]$ \\            
+ }}
+\vfill
+
+
+\section{Dreieckschaltung }
+
+\index{Dreieckschaltung} 
+
+\Hauptbox{
+ \Bildbox{
+   \input eat/DreiPhasen/dreieck.pstex_t
+}
+ \Formelbox{
+   \footnotesize Strang-Sternspannungen: \normalsize \\
+   $U_{Str 1} = \underline{U}_{1} = \underline{U}_1 - \underline{U}_2$ \\
+   $U_{Str 2} = \underline{U}_{2} = \underline{V}_1 - \underline{V}_2$ \\ 
+   $U_{Str 3} = \underline{U}_{3} = \underline{W}_1 - \underline{W}_2$ \\
+   \footnotesize Aussenleiterspannungen: \normalsize \\
+   $ \underline{U}_{12} = \underline{U}_1 $ \hspace{0.1cm} 
+   \scriptsize $ \angle (\underline{U}_1 , \underline{U}_2 ) = 120 ^{\circ} $\\ \normalsize
+   $ \underline{U}_{23} = \underline{U}_2 $ \\
+   $ \underline{U}_{31} = \underline{U}_3 $ 
+   \[U = U_{Str} \]
+   \[I = 2 I_{Str} \cos (30 ^{\circ} ) =  I_{Str} \sqrt{3}\]
+  
+  }}{
+ \Groessenbox{
+  $\underline{U}$       & Spannung                 & $[V]$ \\
+  $ U_{Str} $           & Strangspan"-nung         & $[V] $ \\
+  $\underline{I}$       & Strom                    & $[A]$ \\            
+ }}
+
+
+
+\subsection{Leistungen bei Stern- und Dreieckschaltung }
+
+\index{Leistung bei Sternschaltung} 
+
+\Hauptbox{
+ \Bildbox{
+   \input eat/DreiPhasen/leist1.pstex_t
+}
+ \Formelbox{
+   \[S_{Str} = U_{Str} I_{Str} \]
+   \[S = 3 S_{Str}  = \sqrt{3} U I \]
+   \[P = S \cos(\varphi) = \sqrt{3} U I \cos (\varphi ) \]
+   \[Q = S \sin (\varphi) = \sqrt{3} U I \sin (\varphi) \]
+   \[W = P t = \sqrt{3} U I \cos (\varphi ) t \]
+   \[W_b = Q t = \sqrt{3} U I \sin (\varphi ) t \]
+  }}{
+ \Groessenbox{
+  $U$       & Spannung                  & $[V]$ \\
+  $I$       & Strom                     & $[A]$ \\  
+  $S$       & Scheinleitung             & $[VA]$ \\
+  $P $      & Wirkleistung              & $[W]$ \\  
+  $Q$       & Blindleistung             & $[Var]$ \\    
+  $W$       & Wirkarbeit                & $[Ws]$ \\ 
+  $W_b$     & Blindarbeit               & $[Vars]$ \\    
+  $t$       & Zeit                      & $[s]$ \\           
+ }}
+
+\vfill
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../../../FoSaHSR"
+%%% End:

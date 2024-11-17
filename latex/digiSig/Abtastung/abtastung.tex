@@ -1,0 +1,224 @@
+%==========================================================
+% Titel:    Digitale Signalverarbeitung Abtasten der Signale
+% Autor:    Adrian Freihofer
+% Erstellt: 11.1.2003
+% Geändert:
+%==========================================================
+
+
+\section{Ideale Abtastung} 
+
+\index{Abtastung!Ideale} 
+
+\Hauptbox{
+ \Bildbox{
+	\begin{footnotesize}Zeitbereich:\end{footnotesize}\\
+	\input digiSig/Abtastung/idealAbt.pstex_t 
+}
+ \Formelbox{
+	\[ s_a(t) = s(t) T \delta_p(t) \] 
+	\[ s_a(t) = T s(t) \sum_{m=-\infty}^\infty \delta (t-mT) \]
+	\[ s_a(t) = T \sum_{m=-\infty}^\infty s(mT) \delta(t-mT) \]
+  }
+\Bildbox{
+	\begin{footnotesize}Frequenzbereich:\end{footnotesize}\\
+	\input digiSig/Abtastung/idealAbtSpec.pstex_t 
+}
+ \Formelbox{
+	\begin{small}\[ S_a(\omega) = S(\omega) \ast \sum_{k=-\infty}^\infty \delta (\omega - k \omega_c) \]\end{small}
+	\[ S_a(\omega) = \sum_{k=-\infty}^\infty S (\omega - k \omega_c) \]
+	\[\omega_c = \frac{2 \pi}{T} \]
+  }
+}{
+ \Groessenbox{
+	$s$       & Signal                 & $[...]$ \\
+	$s_a$     & s abgetastet           & $[...]$ \\
+	$S$       & Spektrum von s         & $[...]$ \\
+	$t$       & Zeit                   & $[s]$ \\
+	$T$       & Periode                & $[s]$ \\
+	$m$       & m-te Periode           & $[1]$ \\
+	$\omega$  & Kreisfrequenz          & $[\frac{1}{s}]$ \\
+	$\omega_c$& Abtastfrequenz         & $[\frac{1}{s}]$ \\
+ }}
+
+\section{Flat Top Sampling}
+
+\index{Abtastung!Flat Top Sampling} 
+\index{Abtastung!Rechteckpuls} 
+\index{Abtastung!Real} 
+
+\Hauptbox{
+\Bildbox{
+	\input digiSig/Abtastung/flatTop.pstex_t 
+	\input digiSig/Abtastung/flatTopPlot.pstex_t \\ 
+	\begin{footnotesize}Signal wird verzerrt durch $ G_\tau(\omega)$\end{footnotesize}
+}
+ \Formelbox{\label{flatTop}
+	\[ s_a(t) = \sum_{m=-\infty}^\infty s(mT) r_\tau(t-mT) \]
+	\[ S_a(\omega) = G_\tau(\omega) \sum_{k=-\infty}^\infty S(\omega - k \omega_c) \]
+	\[ G_\tau(\omega) = \frac{1}{T} R_\tau(\omega) = \frac{\tau}{T} \frac{\sin \left(\frac{\tau}{2} \omega \right)}{\frac{\tau}{2} \omega} \]
+	\begin{footnotesize}Je kürzer die Abtast-Pulse desto breiter die $ \frac{\sin(x)}{x} $ Kurve.\end{footnotesize}
+  }
+}{
+ \Groessenbox{
+	$s$       & Signal                 & $[...]$ \\
+	$s_a$     & s abgetastet           & $[...]$ \\
+	$S$       & Spektrum von s         & $[...]$ \\
+	$t$       & Zeit                   & $[s]$ \\
+	$T$       & Periode                & $[s]$ \\
+	$\tau$    & Rechteckbreite         & $[s]$ \\
+	$m$       & m-te Periode           & $[1]$ \\
+	$\omega$  & Kreisfrequenz          & $[\frac{1}{s}]$ \\
+ }}
+\vfill
+
+
+\section{Sample and Hold}
+
+\index{Sample and Hold} 
+\index{Abtastung!Sample and Hold} 
+\index{Abtastung!Rechteckpuls} 
+\index{Abtastung!Real} 
+
+\Hauptbox{
+\Bildbox{
+	\input digiSig/Abtastung/sampleHold.pstex_t 
+}
+ \Formelbox{
+	Entspricht Flat Top Sampling (S. \pageref{flatTop}) bei $\tau = T$ \\
+	Die $ \frac{\sin(x)}{x} $ Kurve hat die Nulldurgänge bei $ k \frac{2 \pi}{T}, k = \{ 1,2,...\} $
+  }
+}{
+ \Groessenbox{
+	$T$       & Periode                & $[s]$ \\
+	$\tau$    & Rechteckbreite         & $[s]$ \\
+ }}
+
+
+\section{Abtasttheorem}
+
+\index{Abtasttheorem} 
+\index{Abtastung!Abtasttheorem} 
+
+\Hauptbox{
+\Bildbox{
+	\begin{footnotesize}Problem:\end{footnotesize}\\
+	\input digiSig/Abtastung/abtastTheo.pstex_t \\
+	\begin{footnotesize}$\Rightarrow $ Rekonstruktion ist nicht möglich.\end{footnotesize}
+}
+ \Formelbox{
+	\[ \omega_c > 2 \omega_{max} \]
+	\begin{footnotesize}$\Rightarrow $ Praktisch muss immer ein analoger Tiefpass vorgeschaltet werden.\end{footnotesize}
+  }
+}{
+ \Groessenbox{
+	$\omega_c$& Abtastfrequenz         & $[\frac{1}{s}]$ \\
+	$\omega_{max}$& max Frequenz in $s(t)$   & $[\frac{1}{s}]$ \\
+ }}
+
+
+\section{Rekonstruktion}
+
+\index{Abtastung!Rekonstruktion} 
+
+\Hauptbox{
+\Bildbox{
+	\begin{small}Ist das Abtasttheorem erfüllt, so ist das ursprüngliche Signal exakt reproduzierbar.\end{small}\\ \\
+	\input digiSig/Abtastung/rekonst.pstex_t \\ \\
+}
+ \Formelbox{
+	\[ s_r(t) = T \sum_{m=-\infty}^{\infty} s(mT) h_r(t-mT) \]
+	\begin{footnotesize}\[ s_r(t) = T \sum_{m=-\infty}^{\infty} s(mT) \delta(t-mT) \ast h_r(t) \]\end{footnotesize}
+	\[ h_r (t) = \frac{\omega_c}{2 \pi} \frac{\sin\left(\frac{\omega_c}{2} t \right)}{\frac{\omega_c}{2}t}\]
+  }
+}{
+ \Groessenbox{
+	$s_r$      & Signal rekonst.        & $[...]$ \\
+	$h_r$      & Stossantw. Rekonstruktions-Tiefpass  & $[...]$ \\
+	$t$        & Zeit                   & $[s]$ \\
+	$T$        & Periode                & $[s]$ \\
+	$m$        & m-te Periode           & $[1]$ \\
+	$\omega_c$ & Abtastfrequenz         & $[\frac{1}{s}]$ \\
+ }}
+\vfill
+
+\subsection{Interpolation}
+
+\index{Abtastung!Interpolation} 
+
+\Hauptbox{
+\Bildbox{
+	\input digiSig/Abtastung/interpol.pstex_t
+}
+ \Formelbox{
+	\[ s_i(t) = \sum_{m=-\infty}^{\infty} s(mT) h_i(t-mT) \]
+	\begin{small}\[ S_i(\omega) = \frac{1}{T} \sum_{k=-\infty}^{\infty} S(\omega - k \omega_c) H_i(\omega) \]\end{small}
+  }
+\Bildbox{
+	\input digiSig/Abtastung/interpolOrdNull.pstex_t 
+}
+ \Formelbox{
+	\begin{footnotesize}Halteglied nullter Ordnung \end{footnotesize} 
+	\[ h_i (t) = \mbox{Rechteck, } h=1, \tau = T \]	
+	\[ H_i (\omega) = T \frac{\sin\left(\frac{T}{2} \omega \right)}{\frac{T}{2}\omega} e^{-j \frac{T}{2} \omega}\]
+  }
+\Bildbox{
+	\input digiSig/Abtastung/interpolLin.pstex_t
+}
+ \Formelbox{
+	\begin{footnotesize}Lineare Interpolation \end{footnotesize} 
+	\[ h_i (t) = \mbox{Dreieck, } h=1, \tau = 2T \]	
+	\[ H_i (\omega) = T \left (\frac{\sin\left(\frac{T}{2} \omega \right)}{\frac{T}{2}\omega} \right)^2 e^{-jT \omega}\]
+  }
+}{
+ \Groessenbox{
+	$s_i$      & Signal interpoliert    & $[...]$ \\
+	$h_i$      & Interpolatios"-funktion & $[1]$ \\
+	$t$        & Zeit                   & $[s]$ \\
+	$T$        & Periode                & $[s]$ \\
+	$\tau$     & Pulsbreite             & $[s]$ \\
+	$m,k$      & m,k-te Periode         & $[1]$ \\
+	$\omega$  & Kreisfrequenz           & $[\frac{1}{s}]$ \\
+	$\omega_c$ & Abtastfrequenz         & $[\frac{1}{s}]$ \\
+ }}
+
+
+\section{Energie und Leistung bandbegrenzter Signale}
+
+\index{Abtastung!Energie} 
+\index{Abtastung!Leistung} 
+\index{Energie} 
+\index{Leistung} 
+
+\Hauptbox{
+\Bildbox{
+	\begin{small}Falls das Abtasttheorem, $ T < \frac{1}{2} f_{max} $ eingehalten wird, hat das abgetastete Signal die selbe Energie bzw. Leistung wie das Original. Siehe Parsevalsches Theorem S. \pageref{parseval}\end{small}
+}
+ \Formelbox{
+	\[ W =  \int_{-\infty}^{\infty} s^2(t) dt \] 
+	\[ W = T\sum_{m=-\infty}^{\infty} s^2(mT) \]
+	\[ P = \frac{1}{T_{per}}\int_0 ^{T_{per}} s^2(t) dt \]
+	\[ P = \frac{1}{N}\sum_{m=0} ^{N-1} s^2(mT) \]
+	\[ N = \frac{T_{per}}{T} \]
+  }
+}{
+ \Groessenbox{
+	$W$        & Energie                & $[Ws]$ \\
+	$P$        & Leistung               & $[W]$ \\
+	$s$        & Signal                 & $[...]$ \\
+	$t$        & Zeit                   & $[s]$ \\
+	$T$        & Periode                & $[s]$ \\
+	$T_{per}$  & Periodenin"-ter"-vall  & $[s]$ \\
+	$m$        & m-te Periode           & $[1]$ \\
+	$\omega_c$ & Abtastfrequenz         & $[\frac{1}{s}]$ \\
+	$N$        & Abtastwerte"-zahl        & $[1]$ \\
+ }}
+\vfill
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../../../FoSaHSR"
+%%% End:

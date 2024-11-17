@@ -1,0 +1,192 @@
+%==========================================================
+% Titel:    Elektrische Maschinen
+% Autor:    Adrian Freihofer
+% Erstellt: 7.11.2001
+% Geändert:
+%==========================================================
+
+\section{Allgemein} 
+
+\index{Motoren} 
+\index{Generatoren}
+
+\Hauptbox{
+ \Bildbox{
+\input eat/Emotor/motoralg.pstex_t 
+}
+ \Formelbox{
+   \[M = F r \]
+   \[F = B I l z \alpha \]
+   \[M = B I l z \alpha r = B I C_m\]
+   \[C_m = l z \alpha r \]
+   \[U_i = B l \omega z \alpha \]
+   \[\omega = 2 \pi n \]
+   \[U_i \approx \phi n C_n\]
+   \[C_n = 2 \pi r z \alpha\]
+   \vspace{0.3cm}
+  }}{
+ \Groessenbox{
+  $r$       & Radius                 & $[m]$ \\
+  $F$       & Kraft                  & $[N]$ \\
+  $B$       & Induktion              & $[\frac{Vs}{m}]$ \\
+  $I$       & Strom                  & $[A]$ \\
+  $l$       & Leiterlänge            & $[m]$\\
+  $z$       & Anz. Leiter            & $[1]$ \\
+  $\alpha$  & Polbe"-deckungs"-winkel    & $[rad]$\\
+  $C_m$     & Maschinen"-konst.        & $[1]$\\
+  $\Phi$    & magn. Fluss            & $[Wb]$\\
+  $\omega$  & Winkelgeschw.          & $[\frac{rad}{s}]$\\
+  $U_i$     & U-Generator $/$ Motor  & $[V]$\\
+  $n$       & Drehzahl               & $[1]$\\
+ }}
+\vfill
+
+
+
+\section{Gleichstrommaschine} 
+
+\index{Gleichstrommaschine} 
+\index{Motoren!Gleichstrom}
+
+\Hauptbox{
+ \Bildbox{
+   \input eat/Emotor/ersAnker.pstex_t 
+   \footnotesize Ersatzschaltbild Ankerkreis \normalsize
+}
+ \Formelbox{
+   Falls $ U > U_i \rightarrow $ Motorbetrieb, sonst Genratorbetrieb
+   \[ U_i = k_1 \Phi n \]
+   \[ U = U_i + R_A I L_a \frac{dI}{dt} \]
+   \[ I = \frac{U - U_i}{R_A} \mbox{(stationär)}\]
+   \[ n_0 = \frac{U}{k_1 \Phi} \]
+   \[ P_{el} = U_i I \pm ^{Mot} _{Gen} (I^2 R_A) \]
+   \[ M = \frac{k_1}{2 \pi} \Phi I = \frac{P_{mech}}{2 \pi n} \]
+   \[ M = k_2 \Phi I \]
+   \[ n = \underbrace{\frac{U}{k_1 \Phi}}_{Leerlaufterm} - \underbrace{\frac{R_A M}{k_1 k_2 \Phi ^2}}_{Lastterm} \]
+   \[ M_A = \frac{k_2 \Phi U}{R_A} \]
+  }}{
+ \Groessenbox{
+  $U_i$     & Ankerspan"-nung induziert       & $[V]$ \\ 
+  $U$       & Ankerspan"-nung               & $[V]$ \\
+  $I$       & Strom                         & $[A]$ \\
+  $n$       & Drehzahl                      & $[1]$ \\
+  $n_0$     & n-Leerlauf                    & $[1]$ \\
+  $P $      & Leistung                      & $[W]$ \\
+  $R_A$     & R-Anker                       & $[\Omega]$ \\
+  $L_a$     & L-Anker                       & $[\Omega]$ \\ 
+  $\Phi$    & magn. Fluss                   & $[Wb]$\\
+  $M$       & Drehmoment                    & $[Nm]$\\
+  $M_A$     & M-Anlauf                      & $[Nm]$ \\
+  $k_1$     & Maschinen"-konst.        & $[1]$\\
+  $k_2$     & Maschinen"-konst.        & $[1]$\\
+ }}
+
+
+
+\subsection{Fremderregte Gleichstrommaschine (GNSM)} 
+
+\index{Gleichstrommaschine!Fremderregt} 
+
+\Hauptbox{
+ \Bildbox{
+   \input eat/Emotor/fremdGSM.pstex_t 
+}
+ \Formelbox{
+   \[ M = \frac{k_2 \Phi U }{R_A} - \frac{k_1 k_2 \Phi ^2 n}{R_A} \]
+\footnotesize Drehzahlsteuerung: \\
+   1. Änderung des Erregerfeldes \\
+   2. Änderung der Ankerspannung \\
+   3. Vergrösserung des Ankerwiderstandes \normalsize 
+   \vspace{0.8cm}
+  }}{
+ \Groessenbox{
+  $U$       & Ankerspan"-nung               & $[V]$ \\
+  $R_A$     & R-Anker                       & $[\Omega]$ \\
+  $M$       & Drehmoment                    & $[Nm]$\\ 
+  $\Phi$    & magn. Fluss            & $[Wb]$\\
+  $k_1$     & Maschinen"-konst.        & $[1]$\\
+  $k_2$     & Maschinen"-konst.        & $[1]$\\
+ }}
+\vfill
+
+
+\subsection{Nutzbremsung mit fremderregter Gleichstrommaschine } 
+
+\index{Gleichstrommaschine!Nutzbremsung} 
+
+\Hauptbox{
+ \Bildbox{
+   \input eat/Emotor/nubr.pstex_t 
+}
+ \Formelbox{
+   \[ n = \frac{(R_A + R_{Br}) M_{Br}}{k_1 k_2 \Phi ^2} \]
+   \[ M = \frac{k_1 k_2 \Phi ^2 n}{R_A + R_{Br}}  \]
+   \vspace{1.7cm}
+  }}{
+ \Groessenbox{
+   $n$       & Drehzahl                      & $[1]$ \\
+   $R_A$     & R-Anker                       & $[\Omega]$ \\
+   $R_{Br} $ & R-Brems                       & $[\Omega]$ \\
+   $M$       & Drehmoment                    & $[Nm]$\\
+   $\Phi$    & magn. Fluss            & $[Wb]$\\
+   $k_1$     & Maschinen"-konst.        & $[1]$\\
+   $k_2$     & Maschinen"-konst.        & $[1]$\\
+ }}
+
+
+
+\section{Gleichstrom Nebenschlussmaschine (GNSM)} 
+
+\index{Gleichstrommaschine!Nebenschluss} 
+\index{Nebenschlussmaschine} 
+
+\Hauptbox{
+ \Bildbox{
+   \input eat/Emotor/nebenschluss.pstex_t 
+}
+ \Formelbox{
+   Es gelten die selben Regeln wie bei der fremderregten Gleichstrommaschine, jedoch kann die Drehzahl nicht durch erniedrigen der Spannung gesenkt werden. \\ Bei Widerstandsbremsung ist nur der Anker an $R_{Br}$ anzuschliessen. \vspace{0.1cm}
+  }}{
+ \Groessenbox{&&\\}}
+
+\vfill
+
+\section{Gleichstrom Reihenschlussmaschine (GRSM)} 
+
+\index{Gleichstrommaschine!Nebenschluss} 
+\index{Nebenschlussmaschine} 
+
+\Hauptbox{
+ \Bildbox{
+   \input eat/Emotor/reihenschluss.pstex_t 
+}
+ \Formelbox{
+   \[ \sum R_A = R_A + R_B + R_D \]
+   \[ U_i = k_1 c* I n = k_3 I n \]
+   \[ M = I^2 \frac{k_3}{2 \pi} = I^2 k_4 \]
+   \[ n = \frac{U}{\sqrt{2 \pi k_3 M }} - \frac{\sum R_A}{k_3} \]
+   \[ M = \frac{k_3}{2 \pi} \left( \frac{U}{k_3 n + \sum R_A} \right) ^2 \]
+   \[ M_A = \frac{k_3}{2 \pi} \left( \frac{U}{\sum R_A} \right ) ^2 \]
+   Die änderung der Drehzahl ist wie bei GNSM \vspace{0.1cm}
+  }}{
+ \Groessenbox{
+   $n$       & Drehzahl                      & $[1]$ \\
+   $R_A$     & R-Anker                       & $[\Omega]$ \\
+   $R_B $    & R-Wendepol"-wick"-lung        & $[\Omega]$ \\ 
+   $R_D $    & R-Reihen"-schluss"-wick"-lung & $[\Omega]$ \\  
+   $U_i$     & Ankerspan"-nung induziert     & $[V]$ \\  
+   $U$       & Spannung                      & $[V]$ \\ 
+   $M$       & Drehmoment                    & $[Nm]$\\ 
+   $M_A$     & M-Anlauf                      & $[Nm]$\\
+   $k$       & Maschinen"-konst.             & $[1]$\\
+ }}
+
+\vfill
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../../../FoSaHSR"
+%%% End:

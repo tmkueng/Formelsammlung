@@ -1,0 +1,126 @@
+%====================================================================
+% Titel: Global Settings für Formelbuch
+% Autor(en):von Adrian Freihofer und Thomas Küng
+% Erstellt: 5.11.2001
+% Geändert:
+% ===================================================================
+
+\documentclass[12pt,a4paper,ngerman,openany,fleqn]{scrbook}
+%\usepackage{a4,german}
+\usepackage{noChapapp}
+\usepackage{fancyhdr}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[T1]{fontenc}                                %T1 fontencoding
+\usepackage{multicol}                                   %Package for Multicolums
+\usepackage[bookmarks=true, bookmarksnumbered=true, linkbordercolor={0 0 1}, pdfborder={0 0 10.0}]{hyperref}                                   %hyperlinks and bookmarks in DVI
+%\usepackage[ps2pdf, bookmarks=true, bookmarksnumbered=true, linkbordercolor={0 0 1}, pdfborder={0 0 10.0}]{hyperref}                                   %hyperlinks and bookmarks in PDF 
+\hypersetup{
+pdfauthor = {Thomas Küng, Urs Winiger und Adrian Freihofer},
+pdftitle = {HSR Formelsammlung},
+pdfsubject = {Freie Formalsammlung},
+pdfkeywords = {Elektrizitätslehre, Elektronik, Physik, Mathematik, Energietechnik, Antriebstechnik},
+pdfcreator = {LaTeX with hyperref package},
+pdfproducer = {dvips + ps2pdf}}
+
+\usepackage{ae}                                         %Almost European Computer Modern
+\usepackage[slantedGreek]{mathpple}                     %Palatino with slanted greek uppercase letters
+\usepackage{amssymb}
+\usepackage{babel}                                      %German Package
+\usepackage{amsfonts}                                   %AMS-Fonts
+\usepackage{textcomp}
+\usepackage{latexsym}                                   %additional Symbols
+\makeindex
+\usepackage{makeidx}
+\usepackage{multicol}
+
+\renewcommand{\sectfont}{\rmfamily\bfseries}            %Select rmfamily for section-font
+%\renewcommand{\descfont}{\sffamily\bfseries}
+%\renewcommand{\pnumfont}{\normalfont}
+%\renewcommand{\headfont}{\slshape}
+%\renewcommand{\capfont}{\normalfont}
+%\renewcommand{\caplabelfont}{\normalfont}
+\renewcommand{\sfdefault}{bfr}                          %Frutiger SansSerif
+%\renewcommand{\sfdefault}{phv}                         %Helvetica SansSerif
+%\renewcommand{\ttdefault}{pcr}                         %Courier Typewriter
+%\renewcommand{\rmdefault}{put}                         %Utopia Roman
+
+\newcommand*{\zb}{z.\,B.\xspace}
+\newcommand{\D}{\displaystyle}
+\newcommand{\T}{\textstyle}
+\newcommand{\E}{\displaystyle \rm}
+
+%\setlength{\voffset}{-10mm}                              %type area
+%\setlength{\hoffset}{0cm}
+\setlength{\textheight}{243mm}
+\addtolength{\textwidth}{1cm}
+\addtolength{\evensidemargin}{-1cm}
+%\setlength{\oddsidemargin}{}
+%\setlength{\topmargin}{0cm}
+%\setlength{\columnsep}{5mm}
+%\setlength{\headsep}{1cm}
+\setlength{\mathindent}{0pt}
+%\setlength{\unitlength}{0.75mm}
+%\setlength{\parindent}{0em}                            %setzt einen anderen Einzug am Absatzanfang
+%\setlength{\parskip}{1.5ex}                                                    %setzt einen anderen Zeilenabstandzwischen zwei Absaetzen
+%\renewcommand{\baselinestretch}{1.2}                   %setzt einen anderen Zeilenabstand innerhalb eines Absatzes
+%\renewcommand{\arraystretch}{1.5}
+
+
+%\pagestyle{headings}
+
+
+
+\newcommand{\Hauptbox}[2]{
+\noindent
+\begin{tabular}[t]{@{\vline}l@{\extracolsep\fill}@{\vline}l|}
+  \hline
+  \begin{tabular}[t]{l|l}
+    #1
+  \end{tabular}&
+    #2 \\
+  \hline
+\end{tabular}
+}
+
+\newcommand{\Bildbox}[2][0.25]{
+ 
+  \begin{minipage}[t][\totalheight][c]{#1\textwidth}
+    #2
+    \vspace{1ex}
+
+  \end{minipage} &}
+
+
+\newcommand{\Formelbox}[2][0.35]{
+  \begin{minipage}[t][\totalheight][c]{#1\textwidth}
+%    \begin{tabular*}{#1\textwidth}{[t]{l}
+      #2 %[1ex]
+%    \end{tabular*}
+\vspace{0ex}
+  \end{minipage} \\ }
+
+\newlength{\temp}
+\newlength{\tempint}
+\newcommand{\Groessenbox}[2][0.4]{
+\setlength{\temp}{#1\textwidth}
+\addtolength{\temp}{-8\tabcolsep}
+\setlength{\tempint}{1\temp}
+\addtolength{\tempint}{-1\tabcolsep}
+%\addtolength{\tempint}{-1em}
+ \begin{minipage}[t][\totalheight][c]{\temp}
+  \begin{tabular*}{\temp}[t]{@{}p{0.2\tempint}@{\hspace{0.5em}}p{0.55\tempint}@{\hspace{0.5em}}p{0.25\tempint}@{}}
+   #2 [1ex]
+  \end{tabular*}
+ \end{minipage}}
+
+\newcommand{\boxdump}{\rule{2cm}{0mm}}
+
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "FoSaHSR"
+%%% End: 

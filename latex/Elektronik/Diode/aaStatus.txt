@@ -1,0 +1,12 @@
+Dioden
+------
+
+- 17.01.02
+sollte den Prüfungsumfang decken
+
+ToDo
+----
+- Fehler suchen
+
+
+

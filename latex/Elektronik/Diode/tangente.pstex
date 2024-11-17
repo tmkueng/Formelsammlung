@@ -1,0 +1,130 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: tangente.pstex
+%%Creator: fig2dev Version 3.2 Patchlevel 3c
+%%CreationDate: Sun Feb 17 14:55:12 2002
+%%For: adrian@adis-pinguin (Adrian Freihofer)
+%%BoundingBox: 0 0 44 60
+%%Magnification: 1.0000
+%%EndComments
+/$F2psDict 200 dict def
+$F2psDict begin
+$F2psDict /mtrx matrix put
+/col-1 {0 setgray} bind def
+/col0 {0.000 0.000 0.000 srgb} bind def
+/col1 {0.000 0.000 1.000 srgb} bind def
+/col2 {0.000 1.000 0.000 srgb} bind def
+/col3 {0.000 1.000 1.000 srgb} bind def
+/col4 {1.000 0.000 0.000 srgb} bind def
+/col5 {1.000 0.000 1.000 srgb} bind def
+/col6 {1.000 1.000 0.000 srgb} bind def
+/col7 {1.000 1.000 1.000 srgb} bind def
+/col8 {0.000 0.000 0.560 srgb} bind def
+/col9 {0.000 0.000 0.690 srgb} bind def
+/col10 {0.000 0.000 0.820 srgb} bind def
+/col11 {0.530 0.810 1.000 srgb} bind def
+/col12 {0.000 0.560 0.000 srgb} bind def
+/col13 {0.000 0.690 0.000 srgb} bind def
+/col14 {0.000 0.820 0.000 srgb} bind def
+/col15 {0.000 0.560 0.560 srgb} bind def
+/col16 {0.000 0.690 0.690 srgb} bind def
+/col17 {0.000 0.820 0.820 srgb} bind def
+/col18 {0.560 0.000 0.000 srgb} bind def
+/col19 {0.690 0.000 0.000 srgb} bind def
+/col20 {0.820 0.000 0.000 srgb} bind def
+/col21 {0.560 0.000 0.560 srgb} bind def
+/col22 {0.690 0.000 0.690 srgb} bind def
+/col23 {0.820 0.000 0.820 srgb} bind def
+/col24 {0.500 0.190 0.000 srgb} bind def
+/col25 {0.630 0.250 0.000 srgb} bind def
+/col26 {0.750 0.380 0.000 srgb} bind def
+/col27 {1.000 0.500 0.500 srgb} bind def
+/col28 {1.000 0.630 0.630 srgb} bind def
+/col29 {1.000 0.750 0.750 srgb} bind def
+/col30 {1.000 0.880 0.880 srgb} bind def
+/col31 {1.000 0.840 0.000 srgb} bind def
+
+end
+save
+newpath 0 60 moveto 0 0 lineto 44 0 lineto 44 60 lineto closepath clip newpath
+-54.0 61.0 translate
+1 -1 scale
+
+/cp {closepath} bind def
+/ef {eofill} bind def
+/gr {grestore} bind def
+/gs {gsave} bind def
+/sa {save} bind def
+/rs {restore} bind def
+/l {lineto} bind def
+/m {moveto} bind def
+/rm {rmoveto} bind def
+/n {newpath} bind def
+/s {stroke} bind def
+/sh {show} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/slw {setlinewidth} bind def
+/srgb {setrgbcolor} bind def
+/rot {rotate} bind def
+/sc {scale} bind def
+/sd {setdash} bind def
+/ff {findfont} bind def
+/sf {setfont} bind def
+/scf {scalefont} bind def
+/sw {stringwidth} bind def
+/tr {translate} bind def
+/tnt {dup dup currentrgbcolor
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add srgb}
+  bind def
+/shd {dup dup currentrgbcolor 4 -2 roll mul 4 -2 roll mul
+  4 -2 roll mul srgb} bind def
+/$F2psBegin {$F2psDict begin /$F2psEnteredState save def} def
+/$F2psEnd {$F2psEnteredState restore end} def
+
+$F2psBegin
+%%Page: 1 1
+10 setmiterlimit
+ 0.06299 0.06299 sc
+%
+% Fig objects follow
+%
+% Polyline
+7.500 slw
+gs  clippath
+1545 832 m 1545 787 l 1459 787 l 1519 810 l 1459 832 l cp
+eoclip
+n 900 810 m
+ 1530 810 l gs col0 s gr gr
+
+% arrowhead
+n 1459 832 m 1519 810 l 1459 787 l 1459 832 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+gs  clippath
+922 75 m 877 75 l 877 161 l 900 101 l 922 161 l cp
+eoclip
+n 900 810 m
+ 900 90 l gs col0 s gr gr
+
+% arrowhead
+n 922 161 m 900 101 l 877 161 l 922 161 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+ [60] 0 sd
+n 1350 90 m
+ 1125 945 l gs col0 s gr  [] 0 sd
+% Polyline
+2 slj
+n 900 810 m 901 810 l 906 810 l 917 810 l 934 810 l 954 809 l
+ 976 809 l 996 808 l 1014 807 l 1029 806 l 1043 805 l
+ 1054 804 l 1065 803 l 1074 801 l 1082 799 l 1091 796 l
+ 1099 792 l 1107 788 l 1116 782 l 1124 774 l 1132 765 l
+ 1140 754 l 1148 742 l 1156 728 l 1163 712 l 1170 694 l
+ 1178 675 l 1182 661 l 1187 646 l 1192 630 l 1198 612 l
+ 1203 592 l 1209 570 l 1216 545 l 1223 517 l 1231 487 l
+ 1239 454 l 1247 419 l 1256 383 l 1265 346 l 1274 310 l
+ 1282 276 l 1289 246 l 1295 222 l 1300 203 l 1303 190 l
+ 1304 183 l
+ 1305 180 l gs col0 s gr 
+$F2psEnd
+rs

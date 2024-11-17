@@ -1,0 +1,523 @@
+%==========================================================
+% Titel:    Physik, Optik 
+% Autor:    Adrian Freihofer
+% Erstellt: 7.11.2001
+% Geändert:
+%==========================================================
+
+\chapter{Geometrische Optik}                               \index{Optik} \index{Geometrische Optik}
+
+\section{Sichtbares Licht}
+\begin{tabular}{|l|l|}
+\hline Wellenbereich $ \lambda  / nm$ & Farbe \\ 
+\hline 380 - 435 & violett \\ 
+\hline 435 - 465 & blau \\ 
+\hline 465 - 485 & blaugrün \\ 
+\hline 485 - 565 & grün \\ 
+\hline 565 - 590 & gelb \\ 
+\hline 590 - 630 & orange \\ 
+\hline 630 - 780 & rot \\ 
+\hline 
+\end{tabular} 
+
+\section{Reflexionsgesetz}                \index{Optik!Reflexionsgesetz}
+                                          \index{Reflexionsgesetz}
+ \Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/reflexion.pstex_t}
+  }
+
+  \Formelbox{
+      \[ \alpha_1 = \alpha_2 \]
+      }
+  }
+  {\Groessenbox{
+     $ \alpha_1$          & Einfalls"-win"-kel            & $ [rad] $                 \\
+     $ \alpha_2$          & Ausfalls"-win"-kel            & $ [rad] $                \\
+}}
+
+\section{Brechung}                \index{Optik!Brechung}
+                                          \index{Brechung}
+ \Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/brechung.pstex_t}
+  }
+
+  \Formelbox{
+	falls $ n_2 > n_1 $: 
+	\[ n_1 \sin(\alpha_1) = n_2 \sin(\alpha_2) \]
+	\[ n = \frac{c}{u} \]
+	\[ n_2 > n_1 \Rightarrow \alpha_1 > \alpha_2 \] 
+      }
+  }
+  {\Groessenbox{
+     $ \alpha_1$          & Einfalls"-win"-kel            & $ [rad] $                 \\
+     $ \alpha_2$          & Brechungs"-win"-kel           & $ [rad] $                \\
+     $ n_{1, 2}$          & Brechungs"-index              & $ [1] $ \\     
+}}
+\vfill
+
+\section{Totalreflexion}                \index{Optik!Totalreflexion}
+                                          \index{Totalreflexion}
+ \Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/totalreflexion.pstex_t}
+  }
+
+  \Formelbox{
+	falls $ n_2 > n_1 $: 
+	\[ \alpha_g = \arcsin \left(\frac{n_1}{n_2} \right) \]
+      }
+  }
+  {\Groessenbox{
+     $ \alpha_g$          & Grenz"-win"-kel            & $ [rad] $                 \\
+     $ n_{1, 2}$          & Brechungs"-in"-dex             & $ [1] $ \\     
+}}
+
+
+\subsection{Prisma}                \index{Optik!Prisma}
+                                          \index{Prisma}
+ \Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/prisma.pstex_t}
+  }
+
+  \Formelbox{
+	falls $ n_2 = 1 $: 
+	\[ n_1 = \frac{\sin \frac{\delta + \gamma}{2}}{\frac{\delta}{2}} \]
+	\[ n_2 = n_1 \frac{\sin \frac{\delta}{2}}{\frac{\gamma_{min} + \delta}{2}} \]
+	\[ \gamma = \alpha - \delta + \arcsin \left\lbrace \sin (\delta) z \right\rbrace \]
+	\begin{footnotesize}\[ z = \sqrt{\left[ \left( \frac{n_1}{n_2}\right) ^2 - \sin^2 \alpha \right] - \cos \delta \sin \alpha  } \]\end{footnotesize}
+	\[ \gamma_{min} = 2 \arcsin \left( \frac{n_1}{n_2} \sin \frac{\delta}{2} \right) - \delta \]
+      }
+  }
+  {\Groessenbox{
+     $ \alpha$          & Einfalls"-win"-kel            & $ [rad] $ \\ 
+     $ \beta$           & Ausfalls"-win"-kel            & $ [rad] $ \\
+     $ \delta$          & Scheitel"-win"-kel            & $ [rad] $ \\
+     $ \gamma$          & Ablenk"-win"-kel              & $ [rad] $ \\
+     $ \gamma_{min}$    & min Ablenk"-win"-kel          & $ [rad] $ \\
+     $ n_1$             & n-Prisma                      & $ [1] $ \\     
+     $ n_2$             & n-Medium                      & $ [1] $ \\      
+}}
+
+
+
+\subsection{Lichtwellenleiter}                \index{Optik!Lichtwellenleiter}
+                                          \index{Lichtwellenleiter}
+ \Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/lwleiter.pstex_t}
+  }
+
+  \Formelbox{
+	falls $ n_1 > n_2 $: 
+	\begin{small}\[ \alpha_{1max} = \arcsin \frac{n_1 \cos \left[ \arcsin \left( \frac{n_2}{n_1}\right) \right] }{n_0} \]\end{small}
+	\[ n_0 \sin \alpha_1 = n_1 \sqrt{1- \cos^2 \alpha_2} \]
+	\[ n_0 \sin \alpha_1 = n_1 \sqrt{1-\left( \frac{n_2}{n_1} \right)^2} \]
+	\[ n_0 \sin \alpha_1 = \sqrt{n_1 ^2 - n_2 ^2 } \]
+      }
+  }
+  {\Groessenbox{
+     $ \alpha_1$        & Einfalls"-win"-kel            & $ [rad] $ \\ 
+     $ \alpha_{1max}$   & max Einfalls"-win"-kel        & $ [rad] $ \\
+     $ n_0$             & n-Medium                      & $ [1] $ \\  
+     $ n_1$             & n-Kern                        & $ [1] $ \\     
+     $ n_2$             & n-Mantel                      & $ [1] $ \\      
+}}
+\vfill
+
+
+\section{Abbildungen}                \index{Optik!Abbildungen}
+                                          \index{Abbildungen}
+\subsection{Allgemein}
+ \Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/kardinalspunkte.pstex_t}
+	\begin{small}Vorzeichen:
+	\begin{itemize}
+	\item Für sammelde optische Bauelemente ist $ f>0$.
+	\item Für zerstreuende optische Bau"-elemente $ f<0$.
+	\item Für virtuelle Bilder ist $ b<0$ und $ B < 0$. 
+	\item Für vortuelle Gegenstände ist $ g < 0 $ und $ G < 0$. 
+	\end{itemize} \end{small}
+  }
+
+  \Formelbox{
+	\[ g = \overline{H_1 G} \]
+	\[ b = \overline{H_2 B} \]
+	\[ f = \overline{H_1 F_1} \]
+	\[ f = \overline{H_2 F_2} \]
+	\[ \frac{1}{f} = \frac{1}{g} + \frac{1}{b} \]
+	\[ \frac{B}{G} = \frac{b}{g} \]
+	\[ \beta = \frac{B}{G}\]
+      }
+  }
+  {\Groessenbox{
+     $ g$        & Gegenstands"-weite            & $ [m] $ \\ 
+     $ b$        & Bildweite                     & $ [m] $ \\
+     $ f$        & Brennweite                    & $ [m] $ \\  
+     $ H_1$      & vorderer Hauptpunkt           &  \\     
+     $ H_2$      & hinterer Hauptpunkt           &  \\ 
+     $ F_1$      & vorderer Brennpunkt           &  \\ 
+     $ F_2$      & hinterer Brennpunkt           &  \\
+     $ G$        & Gegenstands"-grösse           & $ [m] $ \\  
+     $ B$        & Bildgrösse                    & $ [m] $ \\     
+     $ \beta$    & Abbildungs"-ver"-hält"-nis    & $ [1] $ \\ 
+}}
+
+
+\subsection{Spiegel}               \index{Optik!Spiegel}
+                                          \index{Spiegel}
+
+\subsubsection{Parabolspiegel}               \index{Optik!Parabolspiegel}
+                                          \index{Parabolspiegel}
+
+Bei Parabolspiegeln treffen sich alle paralell einfallenden Strahlen in einem Punkt (Brennpunkt) auf der optische Achse.
+
+\subsubsection{Elliptische Spiegel}               \index{Optik!Elliptische Spiegel}
+                                          \index{Elliptische Spiegel}
+Alle Strahlen die vom einen Brennpunkt ausgesendet werden, treffen auf den zweiten Brennpunkt. (Ellipse ist der geometrische Ort aller Punkte einer Ebene, für die die Summe ihrer Abstände von zwei festen Punkten $ F_1 $ und $ F_2 $ konstant ist.)
+
+\subsubsection{Hyperbolische Spiegel}               \index{Optik!Hyperbolische Spiegel}
+                                          \index{Hyperbolische Spiegel}
+Alle Strahlen, die von einem Brennpunkt ausgesendet werden, verlaufen nach der Reflexion so, als wären sie vom anderen der beiden Brennpunkte ausgesendet worden.(Hyperbel ist der geometrische Ort aller Punkte einer Ebene, für die die Differenz ihrer Abstände von zwei festen Punkten $ F_1 $ und $ F_2 $ konstant ist.)
+
+\vfill
+
+\subsubsection{Sphärische Spiegel}               \index{Optik!Sphärische Spiegel}
+                                          \index{Sphärische Spiegel}
+Die Spiegelnde Fläche ist ein Teil einer Kugel. Wenn nur ein kleiner Ausschnit der Kugelfläche verwendet wird, gehen parallel einfallende Strahlen näherungsweise durch einen Brennpunkt: $ f= r / 2 $.
+
+\subsection{Abbildungen durch Spiegel}
+
+\subsubsection{Konkavspiegel}               \index{Optik!Konkavspiegel}
+                                          \index{Konkavspiegel}
+
+ \Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/konkavspiegel.pstex_t}
+  }
+  \Formelbox{
+	Befindet sich der Gegnstand ausserhalb der Brennweite, so entsteht ein reelles Bild, anderseits ist das Bild virtuell.	
+      }
+  }
+  {\Groessenbox{
+     $ G$        & Gegenstand           & $ [m] $ \\ 
+     $ B$        & Bild                 & $ [m] $ \\
+     $ F$        & Brennpunkt           &  \\  
+}}
+
+
+\subsubsection{Konvexspiegel}              \index{Optik!Konvexspiegel}
+                                          \index{Konvexspiegel}
+
+ \Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/konvexspiegel.pstex_t}
+  }
+  \Formelbox{
+	Konvexspiegel haben stets virtuelle Bilder bei reellen Gegenständen.
+      }
+  }
+  {\Groessenbox{
+     $ G$        & Gegenstand           & $ [m] $ \\ 
+     $ B$        & Bild                 & $ [m] $ \\
+     $ F$        & Brennpunkt           &  \\  
+}}
+
+
+\subsubsection{Planspiegel}              \index{Optik!Planspiegel}
+                                          \index{Planspiegel}
+ \Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/planspiegel.pstex_t}
+  }
+  \Formelbox{
+	Das Virtuelle Bild ist gleich gross wie der Gegenstand. Der Brennpunkt F liegt im Unendlichen. Der Planspiegel ist ein Spezialfall des Konvexspiegels.
+      }
+  }
+  {\Groessenbox{
+     $ G$        & Gegenstand           & $ [m] $ \\ 
+     $ B$        & Bild                 & $ [m] $ \\
+     $ F$        & Brennpunkt           &  \\  
+}}
+\vfill
+
+
+\subsection{Linsen}              \index{Optik!Linsen}
+                                          \index{Linsen}
+
+\subsubsection{Linsentypen}              \index{Optik!Linsentypen}
+                                          \index{Linsentypen}
+
+ \Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/linsen.pstex_t}
+  }
+  \Formelbox{
+	\[ q = \frac{d}{f} \]
+	\[ D = \frac{1}{f} \]
+	\begin{footnotesize}Linsenschleifergleichung:\end{footnotesize}
+	\[ D = \left( \frac{n_2}{n_1}-1 \right) \left( \frac{1}{r_1} + \frac{1}{r_2} \right) \]
+	\begin{footnotesize}Falls das Linsenmaterial optisch dichter ist als das umgebende Medium, zeigt die obere Abbildung eine Sammel- und die untere eine Streulinse.\end{footnotesize} \vspace{0.1cm}
+      }
+  }
+  {\Groessenbox{
+     $ q$        & Öffnungs"-ver"-hält"-nis    & $ [m] $ \\ 
+     $ d$        & effektiver Durchm.          & $ [m] $ \\
+     $ f$        & Brennweite                  & $ [m] $ \\ 
+     $ D$        & Brechkraft                  & $ [dpt] $ \\ 
+     $ n_1$      & n-Umgebung                  & $ [1] $ \\ 
+     $ n_2$      & n-Linse                     & $ [1] $ \\
+     $ r_{1,2}$  & Linsenradien                & $ [m] $ \\     
+}}
+
+
+\subsubsection{Linsensysteme}              \index{Optik!Linsensysteme}
+                                          \index{Linsensysteme}
+ \Hauptbox{
+  \Bildbox{
+  Zwei Linsen mit Brennweiten $ f_1 $ , $ f_2 $ auf einer Achse ergeben eine Linse mit Brennweite f, falls ihr Abstand d kleiner $ f_1 $ ist.
+  }
+  \Formelbox{
+	\[ \frac{1}{f} = \frac{1}{f_1} + \frac{1}{f_2} - \frac{d}{f_1 f_2} \]
+	\[ D = D_1 + D_2 - d D_1 D_2 \]
+      }
+  }
+  {\Groessenbox{
+     $ f_{1,2}$  & Brennweiten                 & $ [m] $ \\ 
+     $ D$        & Brechkraft                  & $ [dpt] $ \\ 
+     $ d$        & Linsenabstand               & $ [m] $ \\     
+}}
+
+
+\subsection{Abbildungen durch Linsen}    
+
+\subsubsection{Sammellinse}              \index{Optik!Sammellinse}
+                                          \index{Sammellinse}
+
+ \Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/linseInnerhalb.pstex_t}
+  }
+  \Formelbox{
+	Der Gegenstand ist innerhalb der Brennweite $ \Rightarrow $ reelles Bild.
+      } 
+  \Bildbox{
+  \input{Physik/Optik/linseAusserhalb.pstex_t}
+  }
+  \Formelbox{
+	Der Gegenstand ist ausserhalb der Brennweite $ \Rightarrow $ virtuelles Bild.
+      }
+  }
+  {\Groessenbox{
+     $ G$        & Gegenstand           & $ [m] $ \\ 
+     $ B$        & Bild                 & $ [m] $ \\
+     $ F$        & Brennpunkt           &  \\  
+     $ f_{1,2}$  & Brennweiten          & $ [m] $ \\ 
+}}
+\vfill
+
+
+\subsubsection{Zerstreuungslinse}              \index{Optik!Zerstreuungslinse}
+                                          \index{Zerstreuungslinse}
+ \Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/zerstreulinse.pstex_t}
+  }
+  \Formelbox{
+	Bei Zerstreungslinsen haben reelle Gegenstände stets virtuelle Bilder, unabhängig von ihrer Position.
+	\vspace{0.3cm}
+      } 
+  }
+  {\Groessenbox{
+     $ G$        & Gegenstand           & $ [m] $ \\ 
+     $ B$        & Bild                 & $ [m] $ \\
+     $ F$        & Brennpunkt           &  \\  
+     $ f_{1,2}$  & Brennweiten          & $ [m] $ \\ 
+}}
+
+\subsection{Optische Geräte}
+
+\subsubsection{Fotoapparat}              \index{Optik!Fotoapparat}
+                                          \index{Fotoapparat}
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/fotoapparat.pstex_t}
+  }
+  \Formelbox{
+	\[ B = \frac{f}{g-f} G \]
+	\[ I \approx d^2 \]
+	\[ H \approx \frac{1}{B^2} \approx \frac{d^2}{f^2} \]
+	\[ E = H t \]
+	\[ q = \frac{d}{f} \mbox{\hspace{1cm}} Z = \frac{1}{q} \]
+	\[ E \approx q^2 t \]
+	\[ \frac{u}{d} = \frac{b - b_0}{b} \]
+	\[ \frac{1}{g} = \frac{1}{g_0} \pm \frac{u}{q f^2} \]
+	\[ g>g_0 \Rightarrow - \mbox{\hspace{0.5cm}} g<g_0 \Rightarrow + \]
+      } 
+  }
+  {\Groessenbox{
+     $ G$        & Gegenstand                         & $ [m] $ \\ 
+     $ g$        & Gegen"-stands"-wei"-te             & $ [m] $ \\ 
+     $ g_0$      & Schärfen"-tiefen"-be"-reich        & $ [m] $ \\ 
+     $ B$        & Bildweite                          & $ [m] $ \\
+     $ b$        & Bild                               & $ [m] $ \\
+     $ f$        & Brennweite                         & $ [m] $ \\ 
+     $ I$        & Lichtstrom                         & $ [W] $ \\ 
+     $ d$        & Durchm. Eintritts"-pu"-pil"-le     & $ [m] $ \\ 
+     $ H$        & Helligkeit                         & $ [\frac{W}{m^2}] $ \\ 
+     $ q$        & Öffnungs"-ver"-hält"-nis           & $ [1] $ \\ 
+     $ Z$        & Brendenein"-stel"-lung             & $ [1] $ \\ 
+     $ E$        & Belichtung                         & $ [1] $ \\ 
+     $ t$        & Belichtungs"-zeit                  & $ [s] $ \\ 
+     $ u$        & Durchm. Un"-schär"-fen"-kreis      & $ [m] $ \\
+}}
+
+\subsubsection{Projektor}              \index{Optik!Projektor}
+                                          \index{Projektor}
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/projektor.pstex_t}
+  }
+  \Formelbox{
+	Das Dia wird im Objektiv abgebidet $ \Rightarrow g_2 = b_1$ \\
+	Das Bild der Lampe muss im Objektiv sein.
+      } 
+  }
+  {\Groessenbox{     
+     $ g_2$      & g-Objektiv                 & $ [m] $ \\      
+     $ b_1$      & b-Konden"-sa"-tor          & $ [m] $ \\
+}}
+\vfill
+
+
+\subsubsection{Lupe}              \index{Optik!Lupe}
+                                          \index{Lupe}
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/lupe.pstex_t}
+  \begin{footnotesize}Sammellinse zur Vergrösserung des Sehwinkels (Bild im Unendlichen) \end{footnotesize}
+  }
+  \Formelbox{
+	\begin{footnotesize}Gegenstand in Brennweite $ \Rightarrow $ Sehwinkel $ \epsilon $ ist unabhängig von der Augenposition\end{footnotesize}
+	\[ V = \frac{\tan \epsilon}{\tan \epsilon_0} \]
+        \[ V =  \frac{s}{g} > V_{normal} \]	
+	\[ \tan \epsilon ' = \frac{G}{f} \]
+	\[ \tan \epsilon _0 = \frac{G}{s} \]
+	\[ V = \frac{s}{f} \]
+      } 
+  }
+  {\Groessenbox{
+     $ G$        & Gegenstand                         & $ [m] $ \\ 
+     $ g$        & Gegen"-stands"-wei"-te             & $ [m] $ \\ 
+     $ B$        & Bildweite                          & $ [m] $ \\
+     $ b$        & Bild                               & $ [m] $ \\
+     $ f$        & Brennweite                         & $ [m] $ \\     
+     $ \epsilon$ & Sehwinkel durch Lupe               & $ [rad] $ \\ 
+     $ \epsilon_0$ & Sehwinkel ohne Lupe              & $ [rad] $ \\ 
+     $ s$        & deutliche Sehweite                 & $ [m] $ \\ 
+     $ V$        & Vergrösserung (max. ca. 25)        & $ [1] $ \\ 
+}}
+
+\subsubsection{Mikroprojektor}              \index{Optik!Mikroprojektor}
+                                          \index{Mikroprojektor}
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/microprojektor.pstex_t}
+  \begin{footnotesize}Das reelle Bild einer Sammellinse wird verwendet und auf einer Mattscheibe abgebildet\end{footnotesize}
+  }
+  \Formelbox{
+	\begin{footnotesize}Bild aus deutlicher Sehweite betrachtet:\end{footnotesize}
+	\[ V = \frac{B}{G} = \frac{b}{g} \] 
+	\begin{footnotesize}Stahlengang siehe Projektor\end{footnotesize}
+      } 
+  }
+  {\Groessenbox{
+     $ G$        & Gegenstand                         & $ [m] $ \\ 
+     $ g$        & Gegen"-stands"-wei"-te             & $ [m] $ \\ 
+     $ B$        & Bildweite                          & $ [m] $ \\
+     $ b$        & Bild                               & $ [m] $ \\
+     $ V$        & Vergrösserung                      & $ [1] $ \\  
+}}
+\vfill
+
+
+\subsubsection{Mikroskop}              \index{Optik!Mikroskop}
+                                          \index{Mikroskop}
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/mikroskop.pstex_t}
+  \begin{footnotesize}Das Objektiv verhält sich wie ein Mikroprojektor. Sein Bild wird durch das Okular, welches sich wie eine Lupe verhält, betrachtet.\end{footnotesize}
+  }
+  \Formelbox{
+	\[ V = V_1 V_2 \]
+	\[ V = \frac{\tan \epsilon}{\tan \epsilon _0} \]
+	\[ V = \frac{B}{G} \frac{f}{f_2} \]
+	\[ V = \frac{\Delta}{f_1} \frac{s}{f_2} \]
+	\[ V_1 = \frac{\Delta}{f_1} \]
+	\[ V_2 = \frac{s}{f_2} \]
+	\[ \Delta = b_1 - f_1 \]
+	\vspace{2cm}
+      } 
+  }
+  {\Groessenbox{
+     $ G$        & Gegenstand                         & $ [m] $ \\ 
+     $ g_1$      & Gegen"-stands"-wei"-te             & $ [m] $ \\ 
+     $ B$        & Bild                               & $ [m] $ \\
+     $ b_1$      & Bildweite                          & $ [m] $ \\
+     $ F_1$      & Brennpunkt Objektiv                &  \\ 
+     $ F_2$      & Brennpunkt Okular                  &  \\ 
+     $ f_1$      & Brennweite Objektiv                & $ [m] $ \\    
+     $ f_2$      & Brennweite Okular                  & $ [m] $ \\   
+     $ \Delta $  & Tubuslänge                         & $ [m] $ \\ 
+     $ \epsilon$ & Sehwinkel                          & $ [rad] $ \\ 
+     $ s$        & deutliche Sehweite                 & $ [m] $ \\ 
+     $ V$        & Vergrösserung total                & $ [1] $ \\  
+     $ V_1$      & V-Objektiv                         & $ [1] $ \\  
+     $ V_2$      & V-Okular                           & $ [1] $ \\ 
+}}
+\vfill
+
+
+\subsubsection{Fernrohre}              \index{Optik!Fernrohre}
+                                          \index{Fernrohre}
+\Hauptbox{
+  \Bildbox{
+  \input{Physik/Optik/fernrohr.pstex_t}
+  \begin{footnotesize}Ein Fernglas mit den Daten $ 10 \times 50 $ hat eine Vergrösserung von 10 und einen Objektivdurchmesser von 50 mm.\end{footnotesize}
+  }
+  \Formelbox{
+	\[ V = \frac{\tan \epsilon}{\tan \epsilon_0} \]
+	\[ \epsilon = V \epsilon ' \]
+	\[ V = \frac{f_1}{f_2} \]
+	\[ \frac{1}{f_1 + f_2} + \frac{1}{a} = \frac{1}{f_2} \]
+	\[ \frac{D}{d} = \frac{f_1 + f_2}{a} = V \]
+	\[ a = \frac{l}{V} \mbox{\hspace{1cm}} d = \frac{D}{V} \]
+	\[ L = d^2 \]
+	\[ L = \left( \frac{D}{V} \right) ^2 \]
+	\[ l = f_1 + f_2 \]
+      } 
+  }
+  {\Groessenbox{     
+     $ B$        & Bildweite                          & $ [m] $ \\    
+     $ f_1$      & Brennweite Objektiv                & $ [m] $ \\    
+     $ f_2$      & Brennweite Okular                  & $ [m] $ \\   
+     $ l $       & Fernrohrlänge                      & $ [m] $ \\ 
+     $ \epsilon$ & Ausfallswinkel                     & $ [rad] $ \\ 
+     $ \epsilon'$& Einfallswinkel                     & $ [rad] $ \\ 
+     $ s$        & deutliche Sehweite                 & $ [m] $ \\ 
+     $ V$        & Vergrösserung total                & $ [1] $ \\  
+     $ L$        & Lichtstärke                        & $ [1] $ \\  
+     $ D$        & Durchm. Objektiv                   & $ [m] $ \\  
+     $ d$        & Durchm. Austrittspupille           & $ [mm] $ \\
+     $ a$        & Abstand Okular Astrittspupille     & $ [m] $ \\    
+}}
+\vfill
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 

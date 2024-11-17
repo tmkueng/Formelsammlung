@@ -1,0 +1,133 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: randKraft.pstex
+%%Creator: fig2dev Version 3.2 Patchlevel 3c
+%%CreationDate: Wed Feb 27 22:32:47 2002
+%%For: adrian@adis-pinguin (Adrian Freihofer)
+%%BoundingBox: 0 0 80 31
+%%Magnification: 1.0000
+%%EndComments
+/$F2psDict 200 dict def
+$F2psDict begin
+$F2psDict /mtrx matrix put
+/col-1 {0 setgray} bind def
+/col0 {0.000 0.000 0.000 srgb} bind def
+/col1 {0.000 0.000 1.000 srgb} bind def
+/col2 {0.000 1.000 0.000 srgb} bind def
+/col3 {0.000 1.000 1.000 srgb} bind def
+/col4 {1.000 0.000 0.000 srgb} bind def
+/col5 {1.000 0.000 1.000 srgb} bind def
+/col6 {1.000 1.000 0.000 srgb} bind def
+/col7 {1.000 1.000 1.000 srgb} bind def
+/col8 {0.000 0.000 0.560 srgb} bind def
+/col9 {0.000 0.000 0.690 srgb} bind def
+/col10 {0.000 0.000 0.820 srgb} bind def
+/col11 {0.530 0.810 1.000 srgb} bind def
+/col12 {0.000 0.560 0.000 srgb} bind def
+/col13 {0.000 0.690 0.000 srgb} bind def
+/col14 {0.000 0.820 0.000 srgb} bind def
+/col15 {0.000 0.560 0.560 srgb} bind def
+/col16 {0.000 0.690 0.690 srgb} bind def
+/col17 {0.000 0.820 0.820 srgb} bind def
+/col18 {0.560 0.000 0.000 srgb} bind def
+/col19 {0.690 0.000 0.000 srgb} bind def
+/col20 {0.820 0.000 0.000 srgb} bind def
+/col21 {0.560 0.000 0.560 srgb} bind def
+/col22 {0.690 0.000 0.690 srgb} bind def
+/col23 {0.820 0.000 0.820 srgb} bind def
+/col24 {0.500 0.190 0.000 srgb} bind def
+/col25 {0.630 0.250 0.000 srgb} bind def
+/col26 {0.750 0.380 0.000 srgb} bind def
+/col27 {1.000 0.500 0.500 srgb} bind def
+/col28 {1.000 0.630 0.630 srgb} bind def
+/col29 {1.000 0.750 0.750 srgb} bind def
+/col30 {1.000 0.880 0.880 srgb} bind def
+/col31 {1.000 0.840 0.000 srgb} bind def
+
+end
+save
+newpath 0 31 moveto 0 0 lineto 80 0 lineto 80 31 lineto closepath clip newpath
+-14.0 52.0 translate
+1 -1 scale
+
+/cp {closepath} bind def
+/ef {eofill} bind def
+/gr {grestore} bind def
+/gs {gsave} bind def
+/sa {save} bind def
+/rs {restore} bind def
+/l {lineto} bind def
+/m {moveto} bind def
+/rm {rmoveto} bind def
+/n {newpath} bind def
+/s {stroke} bind def
+/sh {show} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/slw {setlinewidth} bind def
+/srgb {setrgbcolor} bind def
+/rot {rotate} bind def
+/sc {scale} bind def
+/sd {setdash} bind def
+/ff {findfont} bind def
+/sf {setfont} bind def
+/scf {scalefont} bind def
+/sw {stringwidth} bind def
+/tr {translate} bind def
+/tnt {dup dup currentrgbcolor
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add srgb}
+  bind def
+/shd {dup dup currentrgbcolor 4 -2 roll mul 4 -2 roll mul
+  4 -2 roll mul srgb} bind def
+/$F2psBegin {$F2psDict begin /$F2psEnteredState save def} def
+/$F2psEnd {$F2psEnteredState restore end} def
+
+$F2psBegin
+%%Page: 1 1
+10 setmiterlimit
+ 0.06299 0.06299 sc
+%
+% Fig objects follow
+%
+% Polyline
+7.500 slw
+n 270 360 m 630 360 l 630 810 l
+ 270 810 l gs col0 s gr 
+% Polyline
+n 1440 360 m 1080 360 l 1080 810 l
+ 1440 810 l gs col0 s gr 
+% Polyline
+gs  clippath
+1050 607 m 1050 562 l 946 562 l 1021 585 l 946 607 l cp
+eoclip
+n 675 585 m
+ 1035 585 l gs col0 s gr gr
+
+% arrowhead
+n 946 607 m 1021 585 l 946 562 l 946 607 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+2 slj
+n 270 360 m 269 361 l 266 368 l 260 382 l 253 398 l 247 413 l
+ 243 425 l 241 434 l 240 443 l 241 452 l 244 462 l
+ 248 473 l 251 483 l 254 493 l 255 503 l 254 511 l
+ 253 520 l 250 530 l 248 540 l 245 550 l 242 560 l
+ 241 569 l 240 578 l 241 587 l 244 597 l 248 608 l
+ 251 618 l 254 628 l 255 638 l 254 646 l 253 655 l
+ 250 665 l 248 676 l 245 687 l 242 699 l 241 710 l
+ 240 720 l 241 730 l 243 742 l 247 755 l 253 771 l
+ 260 788 l 266 801 l 269 809 l
+ 270 810 l gs col0 s gr 
+% Polyline
+n 1440 360 m 1441 361 l 1444 368 l 1450 382 l 1457 398 l 1463 413 l
+ 1467 425 l 1469 434 l 1470 443 l 1469 452 l 1466 462 l
+ 1462 473 l 1459 483 l 1456 493 l 1455 503 l 1456 511 l
+ 1457 520 l 1460 530 l 1463 540 l 1465 550 l 1468 560 l
+ 1469 569 l 1470 578 l 1469 587 l 1466 597 l 1462 608 l
+ 1459 618 l 1456 628 l 1455 638 l 1456 646 l 1457 655 l
+ 1460 665 l 1463 676 l 1465 687 l 1468 699 l 1469 710 l
+ 1470 720 l 1469 730 l 1467 742 l 1463 755 l 1457 771 l
+ 1450 788 l 1444 801 l 1441 809 l
+ 1440 810 l gs col0 s gr 
+$F2psEnd
+rs

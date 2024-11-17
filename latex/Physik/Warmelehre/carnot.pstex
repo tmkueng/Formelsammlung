@@ -1,0 +1,162 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: carnot.pstex
+%%Creator: fig2dev Version 3.2 Patchlevel 3c
+%%CreationDate: Fri Dec 28 13:52:58 2001
+%%For: adrian@adis-pinguin (Adrian Freihofer)
+%%BoundingBox: 0 0 104 76
+%%Magnification: 1.0000
+%%EndComments
+/$F2psDict 200 dict def
+$F2psDict begin
+$F2psDict /mtrx matrix put
+/col-1 {0 setgray} bind def
+/col0 {0.000 0.000 0.000 srgb} bind def
+/col1 {0.000 0.000 1.000 srgb} bind def
+/col2 {0.000 1.000 0.000 srgb} bind def
+/col3 {0.000 1.000 1.000 srgb} bind def
+/col4 {1.000 0.000 0.000 srgb} bind def
+/col5 {1.000 0.000 1.000 srgb} bind def
+/col6 {1.000 1.000 0.000 srgb} bind def
+/col7 {1.000 1.000 1.000 srgb} bind def
+/col8 {0.000 0.000 0.560 srgb} bind def
+/col9 {0.000 0.000 0.690 srgb} bind def
+/col10 {0.000 0.000 0.820 srgb} bind def
+/col11 {0.530 0.810 1.000 srgb} bind def
+/col12 {0.000 0.560 0.000 srgb} bind def
+/col13 {0.000 0.690 0.000 srgb} bind def
+/col14 {0.000 0.820 0.000 srgb} bind def
+/col15 {0.000 0.560 0.560 srgb} bind def
+/col16 {0.000 0.690 0.690 srgb} bind def
+/col17 {0.000 0.820 0.820 srgb} bind def
+/col18 {0.560 0.000 0.000 srgb} bind def
+/col19 {0.690 0.000 0.000 srgb} bind def
+/col20 {0.820 0.000 0.000 srgb} bind def
+/col21 {0.560 0.000 0.560 srgb} bind def
+/col22 {0.690 0.000 0.690 srgb} bind def
+/col23 {0.820 0.000 0.820 srgb} bind def
+/col24 {0.500 0.190 0.000 srgb} bind def
+/col25 {0.630 0.250 0.000 srgb} bind def
+/col26 {0.750 0.380 0.000 srgb} bind def
+/col27 {1.000 0.500 0.500 srgb} bind def
+/col28 {1.000 0.630 0.630 srgb} bind def
+/col29 {1.000 0.750 0.750 srgb} bind def
+/col30 {1.000 0.880 0.880 srgb} bind def
+/col31 {1.000 0.840 0.000 srgb} bind def
+
+end
+save
+newpath 0 76 moveto 0 0 lineto 104 0 lineto 104 76 lineto closepath clip newpath
+-5.0 83.0 translate
+1 -1 scale
+
+/cp {closepath} bind def
+/ef {eofill} bind def
+/gr {grestore} bind def
+/gs {gsave} bind def
+/sa {save} bind def
+/rs {restore} bind def
+/l {lineto} bind def
+/m {moveto} bind def
+/rm {rmoveto} bind def
+/n {newpath} bind def
+/s {stroke} bind def
+/sh {show} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/slw {setlinewidth} bind def
+/srgb {setrgbcolor} bind def
+/rot {rotate} bind def
+/sc {scale} bind def
+/sd {setdash} bind def
+/ff {findfont} bind def
+/sf {setfont} bind def
+/scf {scalefont} bind def
+/sw {stringwidth} bind def
+/tr {translate} bind def
+/tnt {dup dup currentrgbcolor
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add srgb}
+  bind def
+/shd {dup dup currentrgbcolor 4 -2 roll mul 4 -2 roll mul
+  4 -2 roll mul srgb} bind def
+/$F2psBegin {$F2psDict begin /$F2psEnteredState save def} def
+/$F2psEnd {$F2psEnteredState restore end} def
+
+$F2psBegin
+%%Page: 1 1
+10 setmiterlimit
+ 0.06299 0.06299 sc
+%
+% Fig objects follow
+%
+% Arc
+7.500 slw
+n 1498.5 -4252.5 4663.6 104.1 92.9 arcn
+gs col0 s gr
+
+% Arc
+n 3469.5 364.5 2209.9 178.9 163.6 arcn
+gs col0 s gr
+
+% Arc
+n 2569.5 229.5 2209.9 178.9 163.6 arcn
+gs col0 s gr
+
+% Arc
+n 1588.5 -3667.5 4663.6 104.1 92.9 arcn
+gs col0 s gr
+
+% Polyline
+gs  clippath
+292 165 m 247 165 l 247 251 l 270 191 l 292 251 l cp
+eoclip
+n 270 1170 m
+ 270 180 l gs col0 s gr gr
+
+% arrowhead
+n 292 251 m 270 191 l 247 251 l 292 251 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+gs  clippath
+1725 1192 m 1725 1147 l 1639 1147 l 1699 1170 l 1639 1192 l cp
+eoclip
+n 450 1170 m
+ 1710 1170 l gs col0 s gr gr
+
+% arrowhead
+n 1639 1192 m 1699 1170 l 1639 1147 l 1639 1192 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+n 270 1170 m
+ 450 1170 l gs col0 s gr 
+% Polyline
+n 360 270 m
+ 360 1170 l gs col0 s gr 
+% Polyline
+n 450 990 m
+ 450 1170 l gs col0 s gr 
+% Polyline
+n 1260 405 m
+ 1260 1170 l gs col0 s gr 
+% Polyline
+n 1350 990 m
+ 1350 1170 l gs col0 s gr 
+% Polyline
+gs  clippath
+1155 967 m 1155 1012 l 1224 1012 l 1179 990 l 1224 967 l cp
+eoclip
+n 1215 990 m
+ 1170 990 l gs col0 s gr gr
+
+% arrowhead
+n 1224 967 m 1179 990 l 1224 1012 l 1224 967 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+gs  clippath
+1185 427 m 1185 382 l 1116 382 l 1161 405 l 1116 427 l cp
+eoclip
+n 1125 405 m
+ 1170 405 l gs col0 s gr gr
+
+% arrowhead
+n 1116 427 m 1161 405 l 1116 382 l 1116 427 l  cp gs 0.00 setgray ef gr  col0 s
+$F2psEnd
+rs

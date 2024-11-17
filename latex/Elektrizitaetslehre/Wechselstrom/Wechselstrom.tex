@@ -1,0 +1,1055 @@
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 
+%==========================================================
+% Titel:    Elektrizitätslehre, Wechselstromlehre
+% Autor:    Thomas Küng und Adrian Freihofer
+% Erstellt: 19.03.2002
+% Geändert:
+%==========================================================
+
+
+\section{Mittel- und Kennwerte} \index{Wechelstrom!Mittel- und Kennwerte}
+                                \index{Mittel- und Kennwerte}
+
+\subsection{Linearer Mittelwert} \index{Wechelstrom!Linearer Mittelwert}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump{}
+    }
+  \Formelbox{
+    \[ A_{\mathrm{m}} = \frac{1}{T} \int\limits_{t_1}^{t_1+T} a(t)\,dt \]
+    \vspace{1ex}
+    }} {
+  \Groessenbox{
+    $A$        & Amplitude               & $[\ldots]$ \\
+    $a(t)$     & Signalfunktion          & $[\ldots]$\\
+    $T$        & Periodendauer           & $[s]$ \\
+    $t$        & Zeit                    & $[s]$ \\
+    }}
+
+\subsection{Betragsmittelwert} \index{Wechelstrom!Betragsmittelwert}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump{}
+    }
+  \Formelbox{
+    \[ A_{|\mathrm{m}|} = \frac{1}{T} \int\limits_{t_1}^{t_1+T} |a(t)|\,dt \]
+    \vspace{1ex}
+    }} {
+  \Groessenbox{
+    $A$        & Amplitude               & $[\ldots]$ \\
+    $a(t)$     & Signalfunktion          & $[\ldots]$\\
+    $T$        & Periodendauer           & $[s]$ \\
+    $t$        & Zeit                    & $[s]$ \\
+    }}
+
+\subsection{Halbwellenmittelwert} \index{Wechelstrom!Halbwellenmittelwert}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump{}
+    }
+  \Formelbox{
+    \[ A_{2\mathrm{m}} = \frac{2}{T} \int\limits_{t_1}^{t_1+T} a(t)\,dt \]
+    \[\mbox{für \hspace{0.1cm}} a(t) > 0 \]
+    }} {
+  \Groessenbox{
+    $A_{2\mathrm{m}}$        & Halbwellen"-mittelwert               & $[\ldots]$ \\
+    $a(t)$     & Signalfunktion          & $[\ldots]$\\
+    $T$        & Periodendauer           & $[s]$ \\
+    $t$        & Zeit                    & $[s]$ \\
+    }}
+\vfill
+
+
+\subsection{Quadratischer Mittelwert (Effektivwert, RMS)} \index{Wechelstrom!Quadratischer Mittelwert}
+                                                     \index{Wechelstrom!Quadratischer Effektivwert}
+                                                     \index{Wechelstrom!Quadratischer RMS}
+						\index{RMS}
+						\index{Wechelstrom!RMS}
+\Hauptbox{
+  \Bildbox{
+    \boxdump{}
+    }
+  \Formelbox{
+    \[ A_{\mathrm{eff}} =\sqrt{\frac{1}{T} \int\limits_{t_1}^{t_1+T} a^2(t)\,dt}\]
+    für sinunsförmige Signale:
+    \[ A_{\mathrm{eff}} = \frac{A}{\sqrt{2}} \] 
+
+    }} {
+  \Groessenbox{
+    $A$        & Amplitude               & $[\ldots]$ \\
+    $a(t)$     & Signalfunktion          & $[\ldots]$ \\
+    $T$        & Periodendauer           & $[s]$ \\
+    $t$        & Zeit                    & $[s]$ \\
+    }}
+
+
+\subsection{Scheitelfaktor (Crestfaktor)} \index{Wechelstrom!Scheitelfaktor}
+                                          \index{Crestfaktor}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump{}
+    }
+  \Formelbox{
+    \[ k_{\mathrm{s}} = \frac{a_{\mathrm{max}}}{A_{\mathrm{eff}}} \]
+    \vspace{2ex}
+    }} {
+  \Groessenbox{
+    $A_{\mathrm{eff}}$  & Effektivwert            & $[\ldots]$ \\
+    $a_{\mathrm{max}}$  & Spitzenwert             & $[\ldots]$ \\
+    $k_{\mathrm{s}}$     & Crestfaktor            & $[1]$ \\
+    }}
+
+\subsection{Formfaktor} \index{Wechelstrom!Formfaktor}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump{}
+    }
+  \Formelbox{
+    \[ k_{\mathrm{f}} = \frac{A_{\mathrm{eff}}}{A_{|\mathrm{m}|}} \]
+    \vspace{4ex}
+    }} {
+  \Groessenbox{
+    $A_{\mathrm{eff}}$  & Effektivwert            & $[\ldots]$ \\
+    $A_{|\mathrm{m}|}$  & Betrags"-mittelwert     & $[\ldots]$ \\
+    $k_{\mathrm{f}}$    & Formfaktor              & $[1] $\\
+    }}
+
+\subsection{Effektivwert eines zusammengesetzten, mehrfrequenten Signals }  \index{Wechelstrom!Quadratischer Effektivwert!zusammeng. Sign.}
+\index{Wechslelstrom!RMS}
+\index{RMS}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump{}
+    }
+  \Formelbox{
+    \[ A_{\mathrm{eff}} = \sqrt{\sum\limits_{n=0}^N A^2 _{{\mathrm{eff}}_n}} \]
+    \vspace{1ex}    }} {
+  \Groessenbox{
+    $A_{\mathrm{eff}}$  & Effektivwert            & $[\ldots]$ \\
+    }}
+\vfill
+
+
+\section{Leistung}
+
+\index{Wechselstrom!Leistung}
+\index{Wechselstrom!Scheinleistung}
+\index{Wechselstrom!Blindleistung}
+\index{Leistung}
+\index{Scheinleistung}
+\index{Blindleistung}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/PQ.pstex_t \\
+	\begin{footnotesize} Beispiel mit Induktiver Last \end{footnotesize}
+    }
+  \Formelbox{
+  	\[ \underline{S} = \underline{U} \underline{I}^\star = \frac{U^2}{\underline{Z}^\star}\]
+        \[ \underline{S} = P + j Q \] 
+ 	\[ P = U I \cos (\varphi) = Re(S) \]
+        \[ Q = U I \sin(\varphi) = Im(S)\]
+	\[ \cos(\varphi) = \frac{P}{S} \mbox{\hspace{0.5cm}} \sin(\varphi) = \frac{Q}{S} \]
+    }} {
+  \Groessenbox{
+    $S$        & Scheinleistung          & $[VA]$ \\
+    $P$        & Wirkleistung            & $[W]$ \\ 
+    $Q$        & Blindleistung           & $[Var]$ \\
+    $I$        & Strom                   & $[A]$ \\
+    $U$        & Spannung                & $[V]$ \\
+    $\varphi$  & Phase                   & $[rad]$ \\
+    $Z$        & Impedanz                & $[\Omega]$ \\
+    }}
+
+
+\subsection{Leistung und Leistungsanpassung bei Quellen}
+
+\index{Leistungsanpassung}
+\index{Wechselstrom!Leistungsanpassung}
+
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/UQuelle.pstex_t 
+    }
+  \Formelbox{
+  	\[ \underline{S} = U_0 ^2 \frac{Z_a} {|Z_i + Z_a |^2}\]
+        \[ P = U_0 ^2 \frac{R_a}{(R_a + R_i)^2 + (X_a + X_i)^2} \] 
+	\begin{footnotesize}Bei Leistungsanpassung:\end{footnotesize}
+ 	\[ X_a = -X_i \mbox{\hspace{0.2cm} bzw. \hspace{0.2cm}} R_a = R_i\]
+        \[ \underline{Z}_a = \underline{Z}_i ^\star \]
+	\[ P_{max} = \frac{U_0 ^2}{4 R_i} \] 
+    }\hline \Bildbox{
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/IQuelle.pstex_t 
+    }
+  \Formelbox{
+	\[ \underline{Y}_a = \underline{Y}_i ^\star \]
+	\[ P_{max} = \frac{I_C ^2}{4 G_i} \]
+    }} {
+  \Groessenbox{
+    $S$        & Scheinleistung          & $[VA]$ \\
+    $P$        & Wirkleistung            & $[W]$ \\ 
+    $I$        & Strom                   & $[A]$ \\
+    $U$        & Spannung                & $[V]$ \\
+    $Z$        & Impedanz                & $[\Omega]$ \\
+    $Y$        & Admittanz               & $[S]$ \\ 
+    $X$        & Reaktanz                & $[\Omega]$ \\ 
+    $R$        & Widerstand              & $[\Omega]$ \\
+    $G$        & Leitwert                & $[S]$\\
+    }}
+
+
+\subsection{Effektivwert und Leistung}
+\index{Effektivwert}
+\index{Wechselstrom!Leistung}
+\index{RMS-Wert}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump{}
+    }
+  \Formelbox{
+    \[ P = \frac{U^2_{\mathrm{eff}}}{R} = I^2_{eff} R\]
+    \vspace{2ex}
+    }} {
+  \Groessenbox{
+    $P$        & Leistung                & $[W]$ \\
+    $R$        & Widerstand              & $[\Omega]$ \\
+    $U$        & Spannung                & $[V]$ \\
+    }}
+\vfill
+
+\section{Energie}
+
+\index{Energie}
+\index{Wechselstrom!Energie}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump{}
+    }
+  \Formelbox{
+    \[ W(t) = \int_{0} ^t P(\tau) d \tau \]
+	\vspace{0.4cm}
+    }} {
+  \Groessenbox{
+    $W$        & Energie                 & $[J]$ \\
+    $P$        & Leistung                & $[W]$ \\
+    $t$        & Zeit                    & $[s]$ \\
+    }}
+
+
+\section{Komplexe Darstellung sinusförmiger Vorgänge}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/Zeiger.pstex_t \\
+    }
+  \Formelbox[0.425]{
+    Hintransformation:
+    \[ a(t)= A \cos(\omega t + \phi)\]
+    \[ \underline{a}(t) = A \cos(\omega t + \phi) + j A \sin(\omega t + \phi) \]
+    \[ \underline{a}(t) = A e^{j(\omega t + \phi)} = A e^{j \phi} e^{j \omega t} = \underline{A} e^{j \omega t} \]
+    \[ \underline{A}= A e^{j \phi}  \]
+    Rücktransformation:
+    \[ \underline{B}= B e^{j \beta} \]
+    \[ \underline{b}(t) = \underline{B} e^{j \omega t} = B e^{j \beta} e^{j \omega t} = \underline{A} e^{j \omega t} \]
+    \[ \underline{b}(t) = B \cos(\omega t + \beta) + j B \sin(\omega t + \beta) \]
+    \[ b(t) = \mbox{Re} \{\underline{b}(t)\} = B \cos(\omega t + \beta)\]
+    }} { 
+ \Groessenbox[0.325]{
+    $A, B$          & Amplitude                & $[V]$ \\
+    $a, b$          & Signal                   & $[V]$ \\
+    $\phi, \beta$   & Phase                    & $[rad]$ \\
+    $\omega$        & Winkel"-geschwindigkeit  & $[\frac{1}{s}]$ \\
+    $t$             & Zeit                     & $[s]$ \\  
+    }}
+\vfill
+
+\section{Komplexe Darstellung von Impedanz und Admittanz}
+\index{Impedanz}
+\index{Admittanz}
+\index{Wechselstrom!Impedanz}
+\index{Wechselstrom!Admittanz}
+
+\Hauptbox{
+  \Bildbox{
+	\begin{footnotesize}Impedanz-Ebene:\end{footnotesize} \\ \\	
+	\input Elektrizitaetslehre/Wechselstrom/Abbildungen/impedanz.pstex_t \\ \\
+	\begin{footnotesize}Admittanz-Ebene:\end{footnotesize} \\ \\
+	\input Elektrizitaetslehre/Wechselstrom/Abbildungen/admittanz.pstex_t
+    }
+  \Formelbox[0.4]{
+    \[\underline{Z} = \frac{\underline{u}(t)}{\underline{i}(t)} =\frac{\underline{U}}{\underline{I}}=\frac{\underline{U}_{\mathrm{eff}}}{\underline{I}_{\mathrm{eff}}}=R+jX\]
+    \[\underline{Y} = \frac{1}{\underline{Z}}=G+jB\]
+    \[\underline{U} = \underline{Z}\,\underline{I} \qquad \mbox{bzw.} \qquad \underline{I} = \underline{Y}\,\underline{U}\]
+    \[\sum\limits_{\mathrm{Kreis}} \underline{U}_{i} = 0 \qquad 
+    \sum\limits_{\mathrm{Trennb"undel}} \underline{I}_{i} = 0\] 
+    \[ \mbox{Serieschaltung:} \quad \underline{Z}_{s} = \sum\limits_{i=1}^{N} \underline{Z}_{i} \]
+    \[ \mbox{Parallelschaltung:} \quad \underline{Y}_{p} = \sum\limits_{i}^{N} \underline{Y}_{i} \] 
+    }} { 
+ \Groessenbox[0.35]{
+    $U, u$         & Spannung                 & $[V]$ \\
+    $I, i$         & Strom                    & $[I]$ \\
+    $R$            & Widerstand               & $[\Omega]$ \\
+    $G$            & Leitwert                 & $[S]$ \\
+    $Z$            & Impedanz                 & $[\Omega]$ \\
+    $Y$            & Admitanz                 & $[S]$ \\
+    $X$            & Reaktanz                 & $[\Omega]$ \\
+    $B$            & Suszeptanz               & $[S]$ \\
+    }}
+
+
+\section{Klemmgrössen von Schaltelementen}
+
+\subsection{Allgemein}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump{}
+    }
+  \Formelbox{
+    \[ q(t)= \int\limits_{t_a}^t i(\tau)\,d\tau \]
+    \[ i(t)= \frac{dq(t)}{dt}\]
+    \[ p(t)= \frac{dW}{dt}\]
+    \[ P_{at}=\frac{1}{t-t_a} \int\limits_{t_a}^tp(\tau)\,d\tau \]
+    \[ w_{at}= \int\limits_{t_a}^tp(\tau)\,d\tau \]
+    }} {
+  \Groessenbox{
+    $i$  & Strom                & $[A]$ \\
+    $u$  & Spannung             & $[V]$ \\
+    $q$  & Ladung               & $[C]$ \\
+    $p$  & Leistung             & $[W]$ \\  
+    $w$  & Gespeicherte Energie & $[J]$ \\ 
+    $t, \tau$  & Zeit           & $[s]$ \\
+    }}
+\vfill
+
+\subsection{Ohm'sche Widerstände} \index{Wechselstrom!Widerstand}
+\index{Widerstand}
+\index{Ohm}
+
+\Hauptbox{
+  \Bildbox{
+    \boxdump{}
+    }
+  \Formelbox{
+    \[ u(t)= R i(t) \] 
+    \[ i(t)= G u(t) \]
+    \[ p(t)= u(t) i(t) \]
+    \[ \underline{Z}_{R} = R \]
+    \[ \underline{Y}_{R} =  \frac{1}{R} = G \]
+    }} {
+  \Groessenbox{
+    $i$  & Strom            & $[A]$ \\
+    $u$  & Spannung         & $[V]$ \\
+    $R$  & Widerstand       & $[\Omega]$ \\ 
+    $G$  & Leitwert         & $[S]$ \\
+    $p$  & Leistung         & $[W]$ \\  
+    $Z$  & Impedanz         & $[\Omega]$ \\
+    $t, \tau$  & Zeit       & $[s]$ \\
+    }}
+
+
+\subsection{Kapazitäten} \index{Wechselstrom!Kapazitäten}
+ \index{Kapazitäten}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/RC.pstex_t
+    }
+  \Formelbox{
+    \begin{footnotesize}Zeitbereich:\end{footnotesize}
+    \[ q(t)= C u(t)\]
+    \[ i(t)= \frac{dq(t)}{dt}=C\frac{du(t)}{dt} \]
+    \[ u(t)= \frac{1}{C} \int\limits_{t_a}^t i(\tau)\,d\tau +u(t_a) \]
+    \begin{footnotesize}Frequenzbereich:\end{footnotesize}
+    \[ \underline{Z}_{C} = \frac{1}{j \omega C} = \frac{1}{s C} = -j \frac{1}{\omega C} \] 
+    \[ \underline{Y}_{C} = j \omega C = s C \]
+    \begin{footnotesize}Leistung, Energie:\end{footnotesize}
+    \[ p(t)= u(t) i(t) \]
+    \[ w(t)= \frac{1}{2} C u^2(t) \]
+    }} {
+  \Groessenbox{
+    $i$  & Strom            & $[A]$ \\
+    $u$  & Spannung         & $[V]$ \\
+    $q$  & Ladung           & $[C]$ \\
+    $C$  & Kapazität        & $[F]$ \\
+    $p$  & Leistung         & $[W]$ \\
+    $Z$  & Impedanz         & $[\Omega]$ \\
+    $Y$  & Admitanz         & $[S]$ \\  
+    $\omega$ & Kreisfrequenz & $[\frac{1}{s}] $ \\
+    $s$  & Laplace"-ope"-ra"-tor  & $ [1]$\\
+    $w$  & Gespeicherte Energie & $[J]$ \\ 
+    $t, \tau$  & Zeit             & $[s]$ \\
+    }}
+\vfill
+
+\subsection{Induktivitäten} \index{Wechselstrom!Induktivitäten}
+  \index{Induktivitäten}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/RL.pstex_t
+    }
+  \Formelbox{
+    \begin{footnotesize}Zeitbereich:\end{footnotesize}
+    \[ \Psi(t)= L i(t)\]
+    \[ u(t)= L \frac{di(t)}{dt} \]
+    \[ i(t)= \frac{1}{L} \int\limits_{t_a}^t u(\tau)\,d\tau +i(t_a) \]
+    \[ p(t)= u(t) i(t) \]
+    \[ w(t)= \frac{1}{2} L i^2(t) \]
+    \begin{footnotesize}Frequenzbereich:\end{footnotesize}
+    \[ \underline{Z}_{L} = j \omega L = s L \] 
+    \[ \underline{Y}_{L} = \frac{1}{j \omega L} = \frac{1}{s L} = -j \frac{1}{\omega L} \]
+    Gegeninduktion:
+    \[ u_{12}(t)=\pm M \frac{di_2(t)}{dt} \]
+    \[ \underline{Z}_{M} = j \omega M \] 
+    \[ \underline{Y}_{M} = \frac{1}{j \omega M} = -j \frac{1}{\omega M} \]    
+    induktive Kopplung:
+    \[ u_1(t)=L_1\frac{di_1(t)}{dt} \pm M \frac{di_2(t)}{dt} \]
+    }} {
+  \Groessenbox{
+    $i$  & Strom            & $[A]$ \\
+    $u$  & Spannung         & $[V]$ \\
+    $q$  & Ladung           & $[C]$ \\
+    $Z$  & Impedanz         & $[\Omega]$ \\
+    $Y$  & Admitanz         & $[S]$ \\ 
+    $\omega$ & Kreisfrequenz & $[\frac{1}{s}] $ \\
+    $s$  & Laplace"-ope"-ra"-tor  & $ [1]$\\
+    $M$  & Gegen"-induktivität& $[\frac{Vs}{A}]$ \\
+    $L$  & Induktivität     & $[\frac{Vs}{A}]$ \\
+    $\Psi$ & Spulenfluss    & $[Vs]$ \\
+    $p$  & Leistung         & $[W]$ \\  
+    $w$  & Gespeicherte Energie & $[J]$ \\ 
+    $t, \tau$  & Zeit             & $[s]$ \\
+    }}
+
+\vfill
+
+
+\newpage
+
+\section{Zeigerdarstellung Komplexer Klemmgrössen}  \index{Zeigerdarstellung}
+\begin{multicols}{2}
+Alle Spannungen und Ströme am folgenden Netzwerk sind graphisch mittels Zeigerdiagramm darzustellen.
+
+\input Elektrizitaetslehre/Wechselstrom/Abbildungen/Zeigerbsp.pstex_t \\
+
+\begin{enumerate}
+\item Impedanzen $\underline{Z}$ aller Elemente berechen.
+
+\item Strom $\underline{I}_{RC}$ auf reeller Achse Re' wählen.
+
+\item Spannungen an $\underline{R}$ und $\underline{C}$ aus $\underline{I}_{RC}$  und $\underline{Z}$ berechnen und einzeichnen.
+
+\item Spannung $\underline{U}_L$ entspricht der Summe von $\underline{U}_R$ und $\underline{U}_C$.
+  \[ \mbox{Korrekturfaktor:} \quad k = \frac{\underline{U}_{Nenn}}{\underline{U}_{gemessen}}  \]
+
+\item Strom $\underline{I}_{L}$ aus $\underline{U}_L$ und  $\underline{Z}_L$ berechnen und einzeichnen.
+
+\item Strom $\underline{I}$ entspricht der Summe von $\underline{I}_{RC}$ und $\underline{I}_L$.
+
+\item Achsen neu bestimmen: Re in Richtung $\underline{U}_L$. 
+
+\end{enumerate}
+\end{multicols}
+\begin{center}
+\input Elektrizitaetslehre/Wechselstrom/Abbildungen/Zeigerbild.pstex_t \\
+\end{center}
+
+
+\subsection{Impedanztransformation} 
+
+\index{Wechselstrom!Impedanztransformation}
+\index{Impedanztransformation}
+ 
+\Hauptbox{
+  \Bildbox{
+	\begin{footnotesize}R seriel zu $ \vec Z_{ist} $:\end{footnotesize} \\ 
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/ZRserie.pstex_t
+    }
+  \Formelbox{
+    	\begin{footnotesize}$\vec Z_{soll} $ bewegt sich auf einer Geraden parallel zur R-Achse nach rechts.\end{footnotesize}
+    } \hline
+  \Bildbox{
+	\begin{footnotesize}L seriel zu $ \vec Z_{ist} $:\end{footnotesize} \\
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/ZLserie.pstex_t
+    }
+  \Formelbox{
+    \begin{footnotesize}$\vec Z_{soll} $ bewegt sich auf einer Geraden parallel zur X-Achse nach oben.\end{footnotesize}
+    }\hline
+  \Bildbox{
+	\begin{footnotesize}C seriel zu $ \vec Z_{ist} $:\end{footnotesize} \\
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/ZCserie.pstex_t
+    }
+  \Formelbox{
+    \begin{footnotesize}$\vec Z_{soll} $ bewegt sich auf einer Geraden parallel zur X-Achse nach unten.\end{footnotesize}
+    }\hline
+  \Bildbox{
+	\begin{footnotesize}R parallel zu $ \vec Z_{ist} $:\end{footnotesize} \\
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/ZRparallel.pstex_t
+    }
+  \Formelbox{
+    \begin{footnotesize}$ \vec Z_{soll} $ bewegt sich auf einem Halbkreis, welcher auf der X-Achse beginnt, durch den Endpunkt des $ \vec Z_{ist} $- Vektors geht um im Nullpunkt endet. Falls $ R=0 \rightarrow \vec Z_{soll} = \vec 0 $. Falls $ R = \infty \rightarrow \vec Z_{soll} = \vec Z_{ist} $. \end{footnotesize}
+    }\hline
+  \Bildbox{
+	\begin{footnotesize}L parallel zu $ \vec Z_{ist} $:\end{footnotesize} \\
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/ZLparallel.pstex_t
+    }
+  \Formelbox{
+    \begin{footnotesize}$ \vec Z_{soll} $ bewegt sich auf einem Kreis mit Mittelpunkt M, welcher durch den Nullpunkt sowie durch den Endpunkt des $ \vec Z_{ist} $- Vektors geht. \\
+Für $ L \longrightarrow 0  \rightarrow \vec Z_{soll} \longrightarrow 0 $ \end{footnotesize}
+    }\hline
+  \Bildbox{
+	\begin{footnotesize}C parallel zu $ \vec Z_{ist} $:\end{footnotesize} \\
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/ZCparallel.pstex_t
+    }
+  \Formelbox{\begin{footnotesize}$ \vec Z_{soll} $ bewegt sich auf einem Kreis mit Mittelpunkt M, welcher durch den Nullpunkt und den Endpunkt des $ \vec Z_{ist} $- Vektors geht. \\
+Für $ C \longrightarrow \infty  \rightarrow \vec Z_{soll} \longrightarrow 0 $ \end{footnotesize}
+    }
+} {
+  \Groessenbox{  
+ 	$Z_{ist}$  & Impedanz, die transformiert werden soll           & $[\Omega]$ \\
+	$Z_{soll}$  & Impedanz, nach Transformation                     & $[\Omega]$ \\
+	$X$  & Blindwider"-stand  & $[\Omega]$ \\
+    	$R$  & Widerstand         & $[\Omega]$ \\
+	$L$  & Induktivität       & $[H]$ \\
+	$C$  & Kapazität          & $[F]$ \\ 
+    }}
+\vfill
+
+\subsection{Transformation von Z-Ebene zu Y-Ebene}
+\index{Wechselstrom!Z und Y-Ebene}
+\index{Wechselstrom!Transformation ZY}
+\index{Impedanz}
+\index{Admittanz}
+\begin{tabular}[t]{ll}
+ \begin{minipage}[t][\totalheight][c]{6.5cm}
+	\input Elektrizitaetslehre/Wechselstrom/Abbildungen/impedanzAdmittanz.pstex_t
+  \end{minipage} &
+ \begin{minipage}[t][\totalheight][c]{7cm}
+	Im Bild ist zu sehen wie gewisse Punktmengen von der Z-Ebene auf die Y-Ebene abgebildet werden.
+ \end{minipage}   \\
+\end{tabular}
+
+\vfill
+
+\section{Netzwerkanalyse}
+
+\subsection{Maschenmethode / Kreisstrommethode}
+\index{Maschenmethode}
+\index{Wechselstrom!Maschenmethode}
+\index{Kreisstrommethode}
+\index{Wechselstrom!Kreisstrommethode}
+Es dürfen nur Spannungsquellen vorkommen, vorhandene Stromquellen sind zuerst umzuwandeln. 
+
+\begin{center}
+
+ \input Elektrizitaetslehre/Wechselstrom/Abbildungen/Schema.pstex_t \\ 
+
+\end{center}
+
+{\scriptsize
+\[
+\begin{array}{llllll}
+\quad \underline{J}_A & \quad \underline{J}_B & \quad \underline{J}_C & \quad \underline{J}_D \\ [1ex]
++\underline{J}_A(j \omega L_6 -j\frac{1}{\omega C_5}) & -\underline{J}_B(-j \frac{1}{\omega C_5}) & +\underline{J}_C j \omega M & -\underline{J}_D j \omega L_6   & = & \underline{U}_{01} \\ [1ex]
+-\underline{J}_A(- j \frac{1}{\omega C_5}) & + \underline{J}_B (R_8 + R_2 + j \omega L_2 -j \frac{1}{\omega C_5})& - \underline{J}_C R_8 & - 0 & = & 0 \\ [1ex]
++ \underline{J}_A j \omega M & - \underline{J}_B R_8 & + \underline{J}_C (R_8 + j \omega L_7 + j \omega L_3 - j \frac{1}{\omega C_3} + \underline Z_x)& - \underline{J}_D ( \underline{Z}_x + j \omega M + j \omega L_7)  & = & 0 \\ [1ex]
+- \underline{J}_A j \omega L_6 & - 0 & - \underline{J}_C ( j \omega L_7 + j \omega M) & + \underline{J}_D (j \omega L_6 + j \omega L_7 -j \frac{1}{ \omega C_4)} & = & 0 \\
+\end{array}\\
+\]
+}
+
+\subsection{Trennbündelmethode / Knotenspannungsmethode}
+
+\index{Trennbündelmethode}
+\index{Wechselstrom!Trennbündelmethode}
+
+Es dürfen nur Stromquellen vorkommen, vorhandene Spannungsquellen sind zuerst umzuwandeln. 
+
+\begin{center}
+
+ \input Elektrizitaetslehre/Wechselstrom/Abbildungen/Schema2.pstex_t \\ 
+
+\end{center}
+
+{\small
+\[
+\begin{array}{llllll}
+\quad \underline{E}_A & \quad \underline{E}_B & \quad \underline{E}_C & \quad \underline{E}_D \\ [1ex]
++\underline{E}_A(\underline{Y}_1 + \underline{Y}_2) & -0 & -\underline{E}_C \underline{Y}_2 & -0   & = & \underline{U}_{01} \underline{Y}_1 \\ [1ex]
+-0 & + \underline{E}_B (\underline{Y}_3 + \underline{Y}_5 +\underline{Y}_6)& - \underline{E}_C \underline{Y}_3  &- \underline{E}_D \underline{Y}_5 & = & 0 \\ [1ex]
+- \underline{E}_A \underline{Y}_2& - \underline{E}_B (\underline{Y}_3+ k \underline{Y}_6)&+ \underline{E}_C (\underline{Y}_2 +  \underline{Y}_3 +\underline{Y}_4 )&- \underline{E}_D \underline{Y}_4  & = & 0 \\ [1ex]
+- 0 &- \underline{E}_B \underline{Y}_5  & - \underline{E}_C \underline{Y}_4 & + \underline{E}_D (\underline{Y}_4 + \underline{Y}_5 + \underline{Y}_7) & = & 0 \\
+\end{array}\\
+\]
+}
+
+
+\section{Darstellungsformen}
+
+\index{Wechselstrom!Darstellungsformen}
+
+\subsection{Beispiel: Nyquistdiagramm, Ortskurve}
+
+\index{Nyquistdiagramm}
+\index{Ortskurve}
+\index{Wechselstrom!Nyquistdiagramm}
+\index{Wechselstrom!Ortskurve}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Elektrizitaetslehre/Wechselstrom/Abbildungen/Niquist.pstex_t} \\
+	\begin{footnotesize}$R = 2k\Omega$ , $L = 10mH$ , $C = 10nF$ \end{footnotesize}
+    }
+  \Formelbox{
+    \[ \underline{G} = \frac{\underline{U}_{out}}{\underline{U}_{in}} \]
+    \[ \underline{G} = \frac{1}{1 - \omega^2 L C + j \omega \frac{L}{R}} \]
+    \begin{footnotesize}tiefe f $ (\omega \ll \frac{1}{\sqrt{LC}} )$: $\underline{G} \approx 1 \angle 0^\circ$ \\
+    hohe f $ (\omega \gg \frac{1}{\sqrt{LC}} )$: $\underline{G} \approx \frac{1}{\omega^2 L C}  \angle -180^\circ$ \\ 
+    Achsenschnittpunkte:\\
+    $ \omega = \frac{1}{\sqrt{LC}}$: $Re(\underline{G}) = 0 $ $ \rightarrow $  $ \omega_0 $ $ \rightarrow $ $\underline{G} = -2j$ \\
+    $Im(\underline{G}) = 0$: $ \rightarrow $ $\omega$ $ \rightarrow $ 1
+\end{footnotesize}
+    }} {
+  \Groessenbox{
+    $G$  & Frequenzgang, Verstärkung          & $[1]$ \\
+    $\omega$  & Kreisfrequenz   & $[\frac{1}{s}]$ \\
+    $U$  & Spannung             & $[V]$ \\
+    $L$  & Induktivität         & $[H]$ \\  
+    $C$  & Kapazität            & $[C]$ \\ 
+    $R$  & Widerstand           & $[\Omega]$ \\
+    }}
+
+
+\subsection{Bodediagramm} \index{Wechselstrom!Bodediagramm}
+\index{Bodediagramm}
+
+Vorgehen beim Erstellen eines Bodediagramms:\\
+Netzwerkfunktion aufstellen \hspace{0.5cm}
+\parbox{3cm}{\[ F(\omega ) =  \frac{a_0 + a_1 j \omega + a_2 (j \omega) ^2 + \ldots +  a_n (j \omega ) ^n  }{b_0 + b_1 j \omega + b_2 (j \omega) ^2 + \ldots +  b_n (j \omega ) ^n } \]} \\	
+In Produktform \hspace{0.5cm}
+\parbox{3cm}{\[ F(\omega ) = K_1 \prod_{i=1} ^r \mbox{Standardterme,} \;\;\; K_1 = \frac{a_0}{b_0} \] }\\
+\mbox{\hspace{1cm} }Standardterme \hspace{0.5cm}  \parbox{8cm}{\[ \left\{ \begin{array}{l}
+	                                 (j \omega T ) ^n \\
+	                                 (1 + j \omega T ) ^n \\
+	                                 \left [ 1 + 2 \xi j \omega T + (j \omega ) ^2 T^2 \right] ^n
+                                         \end{array} \right. \]}
+$ n \pm 1$ , $ \pm 2 $ ... \\
+\mbox{\hspace{4cm} }
+\parbox{5cm}{\[ 1 + 2 \xi j \omega T + (j \omega ) ^2 T^2 = \left\{ \begin{array}{ll}
+	(1 + j \omega T_1) (1 + j \omega T_2) & \mbox{für} \quad \xi > 1 \\ 
+	(1 + j \omega T ) ^2 & \mbox{für} \quad \xi = 1 \\
+	\mbox{nicht aufspaltbar} & \mbox{für} \quad \xi < 1 \\
+	\end{array} \right. \]} \\
+Normierung
+\begin{tabbing}
+$\bullet $ Frequenz: \= Bezugsfrequenz $ \omega_0 = \frac{1}{T_0} $ $ \Longrightarrow $ normierte Frequenz $ \Omega = \frac{\omega}{\omega_0} = \omega T_0 $ \\
+\> Beispiele: $ \omega_0 = \frac{1}{T} $  $ \Longrightarrow $ $ \Omega = \omega T $ oder $ \omega_0 = 1 \frac{1}{s} $ $ \Longrightarrow $ $\Omega = \omega 1s $ \\
+$\bullet $ Wert: \> Betzugswert $K_0 $ $ \Longrightarrow $ normierte Konstante $ K = \frac{K_1}{K_0} $ \\
+\> Beispiel: $ K_0 = K_1 $ $ \Longrightarrow $ $ K = 1 $
+\end{tabbing} 
+Normierte Netzwerkfunktion $ F(\omega ) $  $ \Longrightarrow $ $F_n(\Omega) = F_n(\omega T_0) = F_n (\frac{\omega}{\omega_0}) $ \\
+Normierte Standardterme 
+\[ \begin{array}{lcl}  
+(j \omega T ) ^n                                               & \Longrightarrow & (j \Omega \frac{T}{T_0} ) ^n \\
+(1 + j \omega T ) ^n                                           & \Longrightarrow & (1 + j \Omega \frac{T}{T_0} ) ^n \\
+\left [ 1 + 2 \xi j \omega T + (j \omega ) ^2 T^2 \right] ^n   & \Longrightarrow & \left [ 1 + 2 \xi j \Omega \frac{T}{T_0} + (j \Omega ) ^2 \left( \frac{T}{T_0}\right )^2 \right] ^n \\
+\end{array} \]
+Bodediagramm
+\begin{tabbing}
+$\bullet $ Betrag, Amplitudengang: \= $|G|/dB = \sum _{i=1} ^{r} 20 \log_{10} \{ | norm. Standardterme | \} + 20 \log_{10} K $ \\
+$\bullet $ Argument, Phasengang: \> $\varphi = \sum _{i=1} ^{r} arg \{ norm. Standardterme \} $\\
+\end{tabbing} 
+ 
+\subsubsection{P-Glied: Standardterm $K$ } 
+
+\index{Standardterm}
+\index{Wechselstrom!Bodediagramm!Standardterm}
+\index{Proportionalglied}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Elektrizitaetslehre/Wechselstrom/Abbildungen/stdTermK.pstex_t}
+    }
+  \Formelbox{
+	\begin{footnotesize}Form:\end{footnotesize}
+	\[ K \]
+	Steigung: $ 0 \frac{dB}{DK} $
+	\[ |G| = 20 \log_{10} (K) \]
+	\[ \varphi = const_0 \]
+    }} {
+  \Groessenbox{
+    $K$         & Konstante        & $[1]$ \\
+    $G$         & Verstärkung      & $[dB]$ \\
+    $\varphi$   & Phase            & $[^{\circ}]$ \\
+    }}
+
+\subsubsection{I-Glied: Standardterm $ (j \omega T ) ^n $ } 
+
+\index{Standardterm!P-Glied}
+\index{Standardterm!I-Glied}
+\index{P-Glied}
+\index{I-Glied}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Elektrizitaetslehre/Wechselstrom/Abbildungen/stdTermjwT.pstex_t}\\
+	\vspace{2cm}\\
+	\begin{small}Siehe auch S.\pageref{GBPElektronik}\end{small}
+    }
+  \Formelbox{
+  \begin{footnotesize}Form:\end{footnotesize}
+	\[ (j \omega T ) ^n \]
+	\begin{footnotesize}Normalisiert:\end{footnotesize}
+	\[ (j \omega \frac{T}{T_0} ) ^n \]
+	Amplitude:  $|G| = \omega^n T^n$ \\
+	$|G| \Rightarrow $ Gerade\\
+    	Steigung: $ n \cdot 20 \frac{dB}{DK} $ \\
+	Falls $ \Omega = \frac{T_0}{T} \Rightarrow |G| = 0 $ \\ \\
+	Phase $ \varphi $:\\
+	$\varphi = n \cdot 90 ^\circ$ \\
+	\[ \frac{G_a}{G_b} = \frac{\omega_a^n}{\omega_b^n}, \qquad n= \pm 1 \] \label{GBP}
+    }} {
+  \Groessenbox{
+    $K$         & Konstante        & $[1]$ \\
+    $G$         & Verstärkung      & $[dB]$ \\
+    $\varphi$   & Phase            & $[^{\circ}]$ \\
+    $ n $       & Exponent         & $[1]$ \\
+    $T$         & Periode          & $[s]$ \\
+    $T_0$       & Periode          & $[s]$ \\
+    $\omega$    &Kreisfrequenz      & $[\frac{1}{s}]$\\
+    $\Omega$    & Normierte Frequenz &$[1]$\\ 
+    }}
+\vfill
+
+\subsubsection{PT$_1$-Glied: Standardterm $ (1 + j \omega T ) ^n $ } 
+
+\index{Standardterm!PT$_1$-Glied}
+\index{PT$_1$-Glied}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/stdTerm1jwT.pstex_t 
+    }
+  \Formelbox{
+   \begin{footnotesize}Form:\end{footnotesize}
+	\[ ( 1 + j \omega T ) ^n    \]
+	\begin{footnotesize}Normalisiert:\end{footnotesize}
+	\[ \left( 1 + j \Omega \frac{T}{T_0} \right) ^n  \]
+    	Amplitude: $ |G| = \sqrt{1 + \omega^2 T^2}$ \\
+	Für $ \Omega \ll \frac{T_0}{T} $ : $ |G| \approx 0  \frac{dB}{DK} $ \\
+	Für $ \Omega \gg \frac{T_0}{T} $ : $ |G| \approx n \cdot 20 \frac{dB}{DK} $ \\
+	Knick:\\
+	Bei $ \Omega = \frac{T_0}{T} $ : $ |G| = n \cdot 3 dB $ \\ \\
+	Phase: $ \varphi = \arctan (\omega T )$\\
+	Für $ \Omega \ll \frac{T_0}{T} $ : $ \varphi \approx 0^\circ $ \\
+	Für $ \Omega \gg \frac{T_0}{T} $ : $ \varphi \approx n \cdot 90^\circ $ \\
+	Für $ \Omega = \frac{T_0}{T} $ : $ \varphi = n \cdot 45 ^\circ $ \\
+    }} {
+  \Groessenbox{
+    $K$         & Konstante        & $[1]$ \\
+    $G$         & Verstärkung      & $[dB]$ \\
+    $\varphi$   & Phase            & $[^{\circ}]$ \\
+    $T$         & Periode          & $[s]$ \\
+    $T_0$       & Periode          & $[s]$ \\
+    $\omega$    &Kreisfrequenz      & $[\frac{1}{s}]$\\
+    $\Omega$    & Normierte Frequenz &$[1]$\\ 
+    }}
+
+\subsubsection{PT$_2$-Glied: Standardterm $ \frac{1}{1 + 2 \xi j \omega T + ( j \omega T ) ^2 } $ } 
+
+\index{Standardterm!Quadratisch}
+\index{Standardterm!PT$_2$-Glied}
+\index{PT$_2$-Glied}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/stdTermXi.pstex_t \\ \\
+	\begin{footnotesize}Je kleiner $ \xi $ ist, desto schneller springt die Phase \end{footnotesize}
+    }
+  \Formelbox{
+    \begin{footnotesize}Form:\end{footnotesize}
+	\[ \frac{1}{ 1 + 2 \xi j \omega T + (j \omega ) ^2 T^2 }    \]
+	\begin{footnotesize}Normalisiert:\end{footnotesize}
+	\[ \frac{1}{ 1 + 2 \xi j \Omega \frac{T}{T_0} + (j \Omega ) ^2 \left( \frac{T}{T_0}\right )^2 } \]
+    	Amplitude: \\
+	\begin{small}$|G| = \sqrt{(1-\omega^2 T^2)^2 + ( \omega 2 \xi T)^2}$ \\ \end{small}
+	Für $ \Omega \ll \frac{T_0}{T} $ : $ |G| \approx 0  \frac{dB}{DK} $ \\
+	Für $ \Omega \gg \frac{T_0}{T} $ : $ |G| \approx -40 \frac{dB}{DK} $ \\
+	Überschwingen, Knick:\\
+	$ \Omega = \frac{T_0}{T} $ : $ |G| = -20 \log_{10}(2 \xi) $ \\ \\
+	Phase: $ \varphi = \arctan(\frac{\omega 2 \xi T}{1-\omega^2 T^2})$ \\
+	Für $ \Omega \ll \frac{T_0}{T} $ : $ \varphi \approx 0^\circ $ \\
+	Für $ \Omega \gg \frac{T_0}{T} $ : $ \varphi \approx -180^\circ $ \\
+	Für $ \Omega = \frac{T_0}{T} $ : $ \varphi = -90^\circ $ \\
+    }} {
+  \Groessenbox{
+    $K$         & Konstante        & $[1]$ \\
+    $G$         & Verstärkung      & $[dB]$ \\
+    $\varphi$   & Phase            & $[^{\circ}]$ \\
+    $T$         & Periode          & $[s]$ \\
+    $\frac{1}{T} $ & Resonanz"-fre"-quenz & $[\frac{1}{s}] $\\
+    $T_0$       & Periode          & $[s]$ \\ 
+    $\xi$       & Dämpfung         & $[1] $ \\
+    $\omega$    &Kreisfrequenz      & $[\frac{1}{s}]$\\
+    $\Omega$    & Normierte Frequenz &$[1]$\\ 
+    }}
+
+\vfill
+
+\subsubsection{Totzeitglied: Standardterm $e^{-j\omega T_t}$ } 
+
+\index{Totzeitglied}
+\index{Standardterm!Totzeitglied}
+
+\Hauptbox{
+  \Bildbox{
+    \input{Elektrizitaetslehre/Wechselstrom/Abbildungen/totZeit.pstex_t}
+    }
+  \Formelbox{
+	\begin{footnotesize}Form:\end{footnotesize}
+	\[ e^{-j\omega T_t} \]
+	Steigung: $ 0 \frac{dB}{DK} $
+	\[ |G| = 1 \]
+	\[ \varphi = -\omega T_t \]
+    }} {
+  \Groessenbox{
+    $T_t$       & Totzeit          & $[s]$ \\
+    $G$         & Verstärkung      & $[dB]$ \\
+    $\varphi$   & Phase            & $[^{\circ}]$ \\
+    }}
+
+
+\subsubsection{Irregulärer Aufwärtsknick 1. Ordnung: Standardterm $ (1 - j \omega T ) ^n $ } 
+
+\index{Standardterm!Aufwartsknick}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/irrAufw1.pstex_t
+    }
+  \Formelbox{
+   \begin{footnotesize}Form:\end{footnotesize}
+	\[ ( 1 - j \omega T ) ^n    \]
+	\begin{footnotesize}Normalisiert:\end{footnotesize}
+	\[ \left( 1 - j \Omega \frac{T}{T_0} \right) ^n  \]
+    	Amplitude: $|G| = \sqrt{ 1 + \omega^2 T^2}$ \\
+	Für $ \Omega \ll \frac{T_0}{T} $ : $ |G| \approx 0  \frac{dB}{DK} $ \\
+	Für $ \Omega \gg \frac{T_0}{T} $ : $ |G| \approx n \cdot 20 \frac{dB}{DK} $ \\
+	Knick:\\
+	Bei $ \Omega = \frac{T_0}{T} $ : $ |G| = n \cdot 3 dB $ \\ \\
+	Phase: $ \varphi = - \arctan(\omega T)$\\
+	Für $ \Omega \ll \frac{T_0}{T} $ : $ \varphi \approx 0^\circ $ \\
+	Für $ \Omega \gg \frac{T_0}{T} $ : $ \varphi \approx n \cdot 90^\circ $ \\
+	Für $ \Omega = \frac{T_0}{T} $ : $ \varphi = n \cdot 45 ^\circ $ \\
+    }} {
+  \Groessenbox{
+    $K$         & Konstante        & $[1]$ \\
+    $G$         & Verstärkung      & $[dB]$ \\
+    $\varphi$   & Phase            & $[^{\circ}]$ \\
+    $T$         & Periode          & $[s]$ \\
+    $T_0$       & Periode          & $[s]$ \\
+    $\omega$    &Kreisfrequenz      & $[\frac{1}{s}]$\\
+    $\Omega$    & Normierte Frequenz &$[1]$\\ 
+    }}
+\vfill
+
+
+\subsubsection{Irregulärer Aufwärtsknick 2. Ordnung: Standardterm $ 1 - 2 \xi j \omega T + ( j \omega T ) ^2 $ } 
+
+\index{Standardterm!Quadratisch}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/irrAufw2.pstex_t \\ \\
+	\begin{footnotesize}Je kleiner $ \xi $ ist, desto schneller springt die Phase \end{footnotesize}
+    }
+  \Formelbox{
+    \begin{footnotesize}Form:\end{footnotesize}
+	\[ 1 - 2 \xi j \omega T + (j \omega ) ^2 T^2    \]
+	\begin{footnotesize}Normalisiert:\end{footnotesize}
+	\[ 1 - 2 \xi j \Omega \frac{T}{T_0} + (j \Omega ) ^2 \left( \frac{T}{T_0}\right )^2  \]
+    	Amplitude \\
+	\begin{small}$|G| = \sqrt{(1-\omega^2 T^2)^2 + ( \omega 2 \xi T)^2}$ \\ \end{small}
+	Für $ \Omega \ll \frac{T_0}{T} $ : $ |G| \approx 0  \frac{dB}{DK} $ \\
+	Für $ \Omega \gg \frac{T_0}{T} $ : $ |G| \approx +40 \frac{dB}{DK} $ \\
+	Überschwingen, Knick:\\
+	$ \Omega = \frac{T_0}{T} $ : $ |G| = -20 \log_{10}(2 \xi) $ \\ \\
+	Phase: $ \varphi = - \arctan(\frac{\omega 2 \xi T}{1 - \omega ^2 T^2})$\\
+	Für $ \Omega \ll \frac{T_0}{T} $ : $ \varphi \approx 0^\circ $ \\
+	Für $ \Omega \gg \frac{T_0}{T} $ : $ \varphi \approx -180^\circ $ \\
+	Für $ \Omega = \frac{T_0}{T} $ : $ \varphi = -90^\circ $ \\
+    }} {
+  \Groessenbox{
+    $K$         & Konstante        & $[1]$ \\
+    $G$         & Verstärkung      & $[dB]$ \\
+    $\varphi$   & Phase            & $[^{\circ}]$ \\
+    $T$         & Periode          & $[s]$ \\
+    $\frac{1}{T} $ & Resonanz"-fre"-quenz & $[\frac{1}{s}] $\\
+    $T_0$       & Periode          & $[s]$ \\ 
+    $\xi$       & Dämpfung         & $[1] $ \\
+    $\omega$    &Kreisfrequenz      & $[\frac{1}{s}]$\\
+    $\Omega$    & Normierte Frequenz &$[1]$\\ 
+}}
+
+
+\subsection{Pol- Nullstellendiagramm}
+
+\index{Pol-Nullstellendiagramm}
+\index{Polstelle}
+\index{Nullstelle}
+
+\Hauptbox{
+  \Bildbox{
+    \input Elektrizitaetslehre/Wechselstrom/Abbildungen/polNullstellen.pstex_t \\ \\
+	\begin{footnotesize}Ausser $ K $ ist die gesamte Netzwerkfuntion aus dem Pol- Nullstellendiagramm ersichtlich.\end{footnotesize}
+    }
+  \Formelbox{
+	\[ s = \sigma + jw \qquad \scriptstyle{(\mbox{\begin{footnotesize}Frequenzgang: \end{footnotesize}}  \sigma = 0)}
+\]
+	\begin{footnotesize}Netzwerkfunktion:\end{footnotesize}
+	\begin{footnotesize}\[ F(s) = K \frac{(s-p_1)(s-p_2)\ldots (s-p_n)}{(s-q_1)(s-q_2)\ldots(s-q_n)}\]\end{footnotesize}
+	\begin{footnotesize}Nullstellen $ \Rightarrow \times $ in Diagramm \\Polstellen $ \Rightarrow \scriptstyle{\bigcirc} $ in Diagramm\end{footnotesize} \\ \\
+\begin{footnotesize}Pol nahe an $j\omega$-Achse $ \Rightarrow $ Überhöhung im Amplitudengang\end{footnotesize}
+    }} {
+  \Groessenbox{
+    $K$         & Konstante        & $[1]$ \\
+    $s$         & komplexe Frequenz (Laplace) & $[1] $ \\
+    $\sigma$    & $Re(s)$            & $[1]$\\
+    $\omega$    &Kreisfrequenz      & $[\frac{1}{s}]$\\
+    $p$         & von Polynom        & $[1]$ \\
+    $q$         & von Polynom        & $[1]$ \\
+}}
+\vfill 
+
+\section{Eigenschaften des PT$_1$-Glied} 
+
+\index{PT$_1$-Glied}
+\index{Standardterm!PT$_1$-Glied}
+
+\Hauptbox{
+  \Bildbox{
+	\begin{footnotesize}Beispielschaltung\end{footnotesize}\\ \\
+  	\input{Elektrizitaetslehre/Wechselstrom/Abbildungen/RC-PT1.pstex_t} \\ \\
+	\begin{footnotesize}Sprungantwort:\end{footnotesize}\\
+	\input{Elektrizitaetslehre/Wechselstrom/Abbildungen/pt1}
+    }
+  \Formelbox{
+	\[ G =  \frac{1}{1 + j \omega T} \]
+	\begin{small}Beispiel:\end{small}
+	\[ T = RC \]
+	\begin{footnotesize}Sprungantwort:\end{footnotesize}
+	\[u_o = k \left[ 1- e^{-\frac{t}{T}} \right] \] %\end{eqnarray*}
+	\[ T \dot{u}_o + u_o = k u_{in} \] 
+    }} {
+  \Groessenbox{   
+    $G$         & Verstärkung      & $[dB]$ \\
+    $T$         & Periode          & $[s]$ \\  
+    $\omega$    & Kreisfrequenz     & $[\frac{1}{s}]$\\ 
+    $R $        & Widerstand       & $[\Omega] $ \\
+    $C $        & Kapazität        & $[F] $ \\
+    $u_o $      & u-Ausgang        & $[V] $ \\
+    $u_{in}$    & u-Eingang        & $[V] $ \\
+    $t $        & Zeit             & $[s] $ \\
+    $k $        & Faktor           & $[1] $ \\
+}}
+
+\section{Eigenschaften des PT$_2$-Glied} 
+
+\index{Standardterm!Schwingen}
+\index{Standardterm!Instabilität}
+\index{Standardterm!Ringing}
+\index{Standardterm!Dämpfung}
+\index{Schwingen}
+\index{Instabilität}
+\index{Ringing}
+\index{Dämpfung}
+\index{PT$_2$-Glied}
+\index{Standardterm!PT$_2$-Glied}
+
+\Hauptbox{
+  \Bildbox{
+	\begin{footnotesize}Beispielschaltung\end{footnotesize}\\ \\
+  	\input{Elektrizitaetslehre/Wechselstrom/Abbildungen/RLC-PT2.pstex_t} \\ \\
+	\begin{footnotesize}Sprungantwort:\end{footnotesize}\\
+	\input{Elektrizitaetslehre/Wechselstrom/Abbildungen/pt2}
+    }
+  \Formelbox{
+	\[ G =  \frac{1}{1 + 2 \xi j \omega T + (j \omega ) ^2 T^2}    \]
+	\begin{small}Beispiel:\end{small}
+	\[ \xi = \frac{R}{2} \sqrt{\frac{C}{L}}  \qquad T = \sqrt{LC} \]
+	Je kleiner $ \xi $ desto mehr schwingt die Schaltung. Bei aktiven Schaltungen kann $ \xi < 0 $ werden.
+	\[ \omega_e = \omega_0 \sqrt{1-D^2}, \quad 0<D<1 \]
+	\[ \omega_0 = \frac{1}{T} \]
+	\[ \omega_r = \omega_0 \sqrt{1-2D^2} , \quad D<0.707 \]
+	\begin{footnotesize}Sprungantwort:\end{footnotesize}
+	\begin{small}
+	\[u_o = k \left[ 1- \frac{1}{\sqrt{1-\xi^2}} e^{-\xi \omega_0 t} x  \right] \] %\end{eqnarray*}
+	\[ x = \sin \left\lbrace \sqrt{1-\xi^2} \omega_0 t + \arccos (\xi) \right\rbrace \]
+ 	\end{small}
+	\[ T^2 \ddot{u}_o + 2 \xi T \dot{u}_o + u_o = k u_{in} \] 
+    }} {
+  \Groessenbox{   
+    $G$         & Verstärkung      & $[dB]$ \\
+    $\varphi$   & Phase            & $[rad]$ \\
+    $T$         & Periode          & $[s]$ \\ 
+    $\xi$       & Dämpfung         & $[1] $ \\
+    $\omega$    & Kreisfrequenz     & $[\frac{1}{s}]$\\   
+    $\omega_e$  & Eigenfrequenz     & $[\frac{1}{s}]$\\ 
+    $\omega_0$  & Knickfrequenz     & $[\frac{1}{s}]$\\ 
+    $\omega_r$  & Resonanzfre"-quenz      & $[\frac{1}{s}]$\\ 
+    $R $        & Widerstand       & $[\Omega] $ \\
+    $L $        & Inuktivität      & $[H] $ \\
+    $C $        & Kapazität        & $[F] $ \\
+    $u_o $      & u-Ausgang        & $[V] $ \\
+    $u_{in}$    & u-Eingang        & $[V] $ \\
+    $t $        & Zeit             & $[s] $ \\
+    $k $        & Faktor           & $[1] $ \\
+}}
+\vfill
+
+\section{Verküpfung von Blockdiagrammen}
+\Hauptbox{
+  \Bildbox{
+    \input{Elektrizitaetslehre/Wechselstrom/Abbildungen/blockSerie.pstex_t}
+    }
+  \Formelbox{
+    \[ G = G_1 \cdot G_2 \]
+    } \hline
+  \Bildbox{
+    \input{Elektrizitaetslehre/Wechselstrom/Abbildungen/blockParallel.pstex_t}
+  }
+  \Formelbox{
+  \[ G = G_1 \pm G_2 \]
+    }\hline 
+  \Bildbox{
+    \input{Elektrizitaetslehre/Wechselstrom/Abbildungen/blockFeed.pstex_t}
+  }
+  \Formelbox{
+  \[ G = \frac{G_V}{1 + G_V G_R} \]
+  \[ G = \frac{1}{G_R} \frac{G_V G_R}{1 + G_V G_R}\]
+    }
+} {
+  \Groessenbox{
+    $G$        & Übertra"-gungs"-funk"-tion               & $[1]$ \\
+}}
+
+
+%\input Elektrizitaetslehre/Wechselstrom/Abbildungen/Faltung.tex
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../FoSaHSR"
+%%% End: 

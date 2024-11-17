@@ -1,0 +1,142 @@
+%==========================================================
+% Titel:    Elektrische Maschinen
+% Autor:    Adrian Freihofer
+% Erstellt: 7.11.2001
+% Geändert:
+%==========================================================
+
+\section{Drehstrom Synchrongenerator (DSG)} 
+
+\index{Generator} 
+\index{Synchrongenerator}
+
+
+\Hauptbox{
+ \Bildbox{
+	\input{eat/DSG/DSG.pstex_t}
+	\begin{scriptsize}I, IV: Motorbetrieb\\
+	II,III: Generatorbetrieb\\
+	I,II: Abgabe induktive Blindleistung $=$ Übererregt\\
+	III, IV: Aufnahme kapazitive Blindleistung $=$ Untererregt\end{scriptsize}
+}
+ \Formelbox{
+	\[ n_{syn} = \frac{60 f}{p} \]
+	\[ U_i = z \frac{d \Phi}{dt} \]
+	\[ |U_i| = B l v_R z \]
+	\[ I_w = I \cos(\varphi) \mbox{\hspace{0.5cm}} I_b = I \sin(\varphi) \]
+	\[ I^2 = I_w^2 + I_b^2 \]
+	\[ \underline{I} = I_w + j I_b  = \frac{j}{X_d} (\underline{U}_p - \underline{U}_{Kl})\] 
+	\[ \underline{U}_{Kl} = \underline{U}_p + j X_d \underline{I} \]
+	\[ X_d = X_H + X_{\sigma} \]
+	\begin{footnotesize}Leerlauf:\end{footnotesize}	\[ \frac{I_E}{I_{E0N}} = \frac{U_p \sqrt{3}}{U_N} \]
+	\begin{footnotesize}Kurzsschluss:\end{footnotesize} \[X_d = \frac{U_p}{I_{K0}} \]
+	\[ x_d = X_d \frac{I_N \sqrt{3}}{U_N} = X_d \frac{I_N}{U_{Kl}} = \frac{1}{k_0} \]
+  }}{
+ \Groessenbox{
+  $n_{syn}$ & Drehzahl                 & $[\frac{1}{min}]$ \\
+  $f$       & (Netz-) Frequenz         & $[Hz]$ \\
+  $p$       & Polpaarzahl              & $[1]$ \\
+  $U_i$     & Span. induziert          & $[V]$ \\
+  $U_{Kl}$  & Span. Klemmen            & $[V]$ \\
+  $l$       & Leiterlänge              & $[m]$\\
+  $z$       & Anz. Windungen           & $[1]$ \\
+  $v_R$     & Luftspaltgeschw.         & $[\frac{m}{s}]$\\
+  $B$       & Induktion                & $[\frac{Vs}{m^2}]$\\
+  $\Phi$    & magn. Fluss              & $[Wb]$\\
+  $I_w $    & Wirkstrom                & $[A]$\\
+  $I_b $    & Blindstrom               & $[A]$\\
+  $X_d$     & synch.Reakt              & $[\Omega]$\\
+  $x_d$     & relative synch.Reakt     & $[\Omega]$\\
+  $I_E$     & Erregerstrom             & $[A]$\\
+  $ U_N$    & U-Nenn verkettet         & $[V] $\\
+  $ k_0$    & Leerlauf- Kurzschluss Verhältnis         & $[1] $\\
+ }}
+
+\section{DSG im Inselbetrieb} 
+
+\index{Generator!Inselbetrieb}
+\index{Inselbetrieb}
+
+\Hauptbox{
+ \Bildbox{
+	\boxdump
+}
+ \Formelbox{
+	\[ \underline{U}_p = \underline{U}_{Kl} - j X_d \underline{I} \]
+	\vspace{1.3cm}
+  }}{
+ \Groessenbox{
+  $U_p$     & Span. Polrad             & $[V]$ \\
+  $U_{Kl}$  & Span. Klemmen            & $[V]$ \\
+  $X_d$     & synch.Reakt              & $[\Omega]$\\
+ }}
+
+
+
+\vfill
+
+
+\section{Belastung des DSG am starren Netz} 
+
+\index{Generator am starren Netz}
+
+\Hauptbox{
+ \Bildbox{
+	\boxdump
+}
+ \Formelbox{
+	\begin{scriptsize}\[ U_p = \sqrt{\frac{U^2_{Netz}}{3} + X_d^2 I^2 + 2 \frac{U_{Netz}}{\sqrt{3}} X_d I \sin(\varphi) } \]\end{scriptsize}
+	\begin{scriptsize} falls $U_N = U_{Netz} $ : 
+	\[ \frac{U_p \sqrt{3}}{U_N} = \sqrt{1 + x_d^2 \left(\frac{I}{I_N} \right) ^2 + 2 x_d \frac{I}{I_N} \sin(\varphi)} \]\end{scriptsize}
+	\vspace{2.6cm}
+  }}{
+ \Groessenbox{
+  $U_{Netz}$ & Netzspannung             & $[V]$ \\
+  $U_{Kl}$   & Span. Klemmen            & $[V]$ \\
+  $U_{p}$    & Span. Polrad             & $[V]$ \\
+  $ U_N$     & U-Nenn verkettet         & $[V] $\\
+  $X_d$      & synch.Reakt              & $[\Omega]$\\
+  $x_d$      & rel. synch.Reakt         & $[\Omega]$\\
+  $I$        & Laststrom                & $[A]$\\
+  $\varphi$  &Phase                     & $[rad] $ \\
+ }}
+
+
+\section{Drehmoment und Stabilität des DSG am starren Netz} 
+
+\index{Drehmoment}
+\index{DSG!Stabilität}
+
+\Hauptbox{
+ \Bildbox{
+	\boxdump
+}
+ \Formelbox{
+	\[ P_{el} = \sqrt{3} U_{Netz} I \cos (\varphi) \]
+	\[ P_{el} = 3 U_{Str} I_{Str} \cos(\varphi) \]
+	\[ U_p \sin(\vartheta) = I X_d \cos (\varphi ) \]
+	\[ P_{el} = \sqrt{3} U_{Netz} \frac{U_p}{X_d} \sin ( \vartheta ) \]
+	\[ M_{mech} = \frac{P_{mech}}{2 \pi n} \]
+	\[ M_{el} = \frac{P_{el}} {2 \pi n} \]
+	\[ M_{el} = \frac{ \sqrt{3}}{2 \pi n} U_{Netz} \frac{U_p}{X_d} \sin(\vartheta) \] 
+	\[ M_{} = c_i x l\]
+	\[ c_i = \frac{3}{X_d 2 \pi n} \]
+	\[ x = I X_d \]
+	\[ I = \frac{U_{Netz}}{\sqrt{3}} \cos ( \varphi ) \]
+  }}{
+ \Groessenbox{
+  $U_{Netz}$ & Netzspannung             & $[V]$ \\
+  $U_{Str}$  & Strangspan.              & $[V]$ \\ 
+  $U_{p}$    & Span. Polrad             & $[V]$ \\ 
+  $P_{el}$   & El-Wirkleistung          & $[W] $\\
+  $M_{el}$   & Generator"-mo"-ment      & $[Nm] $ \\
+  $n$        & Drehzahl                 & $[\frac{1}{min} ]$\\
+  $X_d$      & synch.Reakt              & $[\Omega]$\\
+  $I$        & Laststrom                & $[A]$\\
+  $\varphi$  &Phase                     & $[rad] $ \\
+  $\vartheta$ &Lastwinkel               & $[rad] $ \\
+ }}
+
+
+
+\vfill
