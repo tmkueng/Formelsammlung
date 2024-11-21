@@ -4,7 +4,7 @@ Titelbild.
 
 Lizenzbedingungen
 -----------------
-Diese Formelsammlung steht unter der GNU 2 Lizenz
+Diese Formelsammlung steht unter der GNU GENERAL PUBLIC LICENSE Version 3
 
 Für Fehlermeldungen und Anregungen
 ----------------------------------
@@ -97,5 +97,5 @@ Digitale Signalverarbeitung   Guido Schuster
 
 
 
-22.08.2002 Adrian Freihofer
-Letzte Änderung: 16.03.2003
+22.08.2002 Adrian Freihofer, Thomas Küng, Urs Winiger
+Letzte Änderung: 21.11.2024
