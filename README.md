@@ -8,10 +8,11 @@ Die vorliegende Formelsammlung wurde während unserem Studium für Elektrotechni
 
 Zum kompilieren muss LaTeX installiert sein, wir empfehlen die TeX Live https://www.tug.org/texlive/ oder die MikTeX https://miktex.org/ distribution.
 
-1. ins Verzeichnis "latex" wechseln.
-2. Befehl: "latex Formelsammlung.tex" ausführen. 
-3. Befehl: "makeindex Formelsammlung.idx" ausführen.
-4. Befehl: "latex Formelsammlung.tex" ausführen.
-5. Befehl:  "dvipdfm Formelammlung.dvi ausführen.
+1. `latex Formelsammlung.tex`
+2. `makeindex Formelsammlung.idx`
+3. `latex Formelsammlung.tex`
+4. `dvipdfm Formelammlung.dvi`
 
-
+### Buch erstellen
+5. `dvibook -i Formelsammlung.dvi -o Formelsammlung_book.dvi`
+6. `dvipdfm Formelammlung_book.dvi`
